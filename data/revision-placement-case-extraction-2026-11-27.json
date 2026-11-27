@@ -1,0 +1,95 @@
+{
+  "as_of": "2026-11-27",
+  "review_type": "Purposive primary-source re-extraction of five cases from the prior 31-case ledger; not an experiment or prevalence sample.",
+  "claim_tested": "Two model-caused executable revisions active in one continuing remote-access process with an independent remote task result after each.",
+  "companion_note": "docs/revision-placement-and-continuity-2026-11-27.md",
+  "status_codes": {
+    "documented": "The inspected primary source supplies a case-specific artifact or measurement for the stated field.",
+    "reported": "The author or investigator says the event occurred without a complete public trace.",
+    "mechanism": "Code or design supports the event as a capability without a measured instance.",
+    "not_reported": "The inspected source does not supply the field; this is an unknown, not evidence of absence.",
+    "outside_scope": "The case design does not include the required event or workload."
+  },
+  "cases": [
+    {
+      "id": "LLMALMORPH",
+      "category": "offline model-influenced source variants",
+      "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "documented", "value": "External source-transformation workflow, not inference in a deployed sample.", "source_id": "AKIL-LLMALMORPH-2025", "locator": "Sections II-C and III-A"},
+        "model_to_code_authorship": {"status": "documented", "value": "LLM-generated function changes are merged cumulatively, with human syntax and build debugging.", "source_id": "AKIL-LLMALMORPH-2025", "locator": "Section II-C, Algorithm 2 and Compilation and Debugging"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "AKIL-LLMALMORPH-2025", "locator": "Section II-C, Algorithm 2; no exact response-to-compiled-binary hash chain for each variant in the inspected paper"},
+        "code_activation": {"status": "outside_scope", "value": "Compiled variants are separately evaluated, not loaded as revisions by one resident instance.", "source_id": "AKIL-LLMALMORPH-2025", "locator": "Section III evaluation design"},
+        "process_continuity": {"status": "outside_scope", "value": "Offline lineage of variants does not preserve a running target process.", "source_id": "AKIL-LLMALMORPH-2025", "locator": "Section II-C, Algorithm 2"},
+        "two_distinct_active_revisions": {"status": "outside_scope", "value": "Cumulative source edits yield separate compiled variants, not successive active versions in one process.", "source_id": "AKIL-LLMALMORPH-2025", "locator": "Section II-C, Algorithm 2"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "Function-preservation proxies and detection tests are not remote tasks after resident revisions.", "source_id": "AKIL-LLMALMORPH-2025", "locator": "Section III-A evaluation metrics"},
+        "defender_telemetry": {"status": "documented", "value": "Variant detection scores are reported for selected scanners/classifiers; no serial endpoint alert trail is claimed.", "source_id": "AKIL-LLMALMORPH-2025", "locator": "Section III-D and Appendix E"}
+      },
+      "decisive_limit": "Cumulative offline code transformation is not adoption by one continuing remote-access instance."
+    },
+    {
+      "id": "YUAN_ENDPOINT_STUDY",
+      "category": "fresh-endpoint candidate refinement",
+      "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "documented", "value": "External multi-agent controller and test infrastructure, separate from endpoint guest.", "source_id": "YUAN-AUTOBYPASS-2026", "locator": "Sections 4.2-4.3"},
+        "model_to_code_authorship": {"status": "documented", "value": "Agents construct and refine candidate executable loaders.", "source_id": "YUAN-AUTOBYPASS-2026", "locator": "Sections 4.2-4.3"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "YUAN-AUTOBYPASS-2026", "locator": "Sections 4.2-5; no particular response paired with a released tested candidate hash in the inspected paper"},
+        "code_activation": {"status": "documented", "value": "Each candidate is launched for a baseline function check and then evaluated against an active endpoint product.", "source_id": "YUAN-AUTOBYPASS-2026", "locator": "Sections 4.3.1 and 4.3.3"},
+        "process_continuity": {"status": "outside_scope", "value": "VMs are reverted to clean snapshots after every candidate test.", "source_id": "YUAN-AUTOBYPASS-2026", "locator": "Section 4.3.3 final sentence"},
+        "two_distinct_active_revisions": {"status": "outside_scope", "value": "Refinement iterations are separate endpoint launches, not revisions within one continuing process.", "source_id": "YUAN-AUTOBYPASS-2026", "locator": "Sections 4.3.3 and 5.1"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "A candidate can pass a 30-second C2 heartbeat test, but the study does not have resident revisions to check after each.", "source_id": "YUAN-AUTOBYPASS-2026", "locator": "Section 4.3.3"},
+        "defender_telemetry": {"status": "documented", "value": "Product-specific evasion outcomes are reported; inferred alert causes rely on process/file/network heuristics.", "source_id": "YUAN-AUTOBYPASS-2026", "locator": "Sections 4.3.1-4.3.3 and 5.1"}
+      },
+      "decisive_limit": "A restored VM breaks the required continuing-instance lineage between candidate tests."
+    },
+    {
+      "id": "GODEL_AGENT",
+      "category": "benign in-interpreter model-directed self-optimization",
+      "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "not_reported", "value": null, "source_id": "YIN-GODEL-AGENT-2025", "locator": "Sections 4-5; no endpoint-placement claim relevant to a resident payload"},
+        "model_to_code_authorship": {"status": "reported", "value": "Authors report model-guided changes to the agent's logic; pinned code provides a bounded in-interpreter replacement path.", "source_id": "YIN-GODEL-AGENT-2025", "locator": "Sections 4-5; compare pinned agent_module.py"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "YIN-GODEL-AGENT-2025", "locator": "Sections 5-6; no selected model output paired with a versioned process trace"},
+        "code_activation": {"status": "mechanism", "value": "Pinned implementation supports in-memory function or method replacement and subsequent agent calls.", "source_id": "YIN-GODEL-AGENT-PINNED-CODE-2026-AUDIT", "locator": "agent_module.py dynamic modification path"},
+        "process_continuity": {"status": "mechanism", "value": "Interpreter-level replacement is possible; no case-specific OS process and image lineage is published.", "source_id": "YIN-GODEL-AGENT-PINNED-CODE-2026-AUDIT", "locator": "agent_module.py replacement and recursive execution path"},
+        "two_distinct_active_revisions": {"status": "reported", "value": "Authors report repeated optimization cycles, without a public two-version PID and invocation trace for one selected run.", "source_id": "YIN-GODEL-AGENT-2025", "locator": "Sections 5-6"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "Evaluated tasks are benign reasoning problems, not retained remote-access tasks.", "source_id": "YIN-GODEL-AGENT-2025", "locator": "Section 5 experiments"},
+        "defender_telemetry": {"status": "outside_scope", "value": "No endpoint defender measurement.", "source_id": "YIN-GODEL-AGENT-2025", "locator": "Section 5 experiments"}
+      },
+      "decisive_limit": "Repeated benign agent optimization does not document remote function through two identified process-bound revisions."
+    },
+    {
+      "id": "RIGAKI_GARCIA",
+      "category": "laboratory RAT traffic-parameter adaptation",
+      "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "documented", "value": "Separate GAN service in the laboratory network supplies parameters to a RAT client.", "source_id": "RIGAKI-GAN-RAT-2018", "locator": "Section III-B and Figure 1"},
+        "model_to_code_authorship": {"status": "outside_scope", "value": "The GAN emits network-traffic parameters, not executable code revisions.", "source_id": "RIGAKI-GAN-RAT-2018", "locator": "Section III-B and III-C"},
+        "response_to_artifact_lineage": {"status": "outside_scope", "value": "Parameter messages are not accepted code artifacts.", "source_id": "RIGAKI-GAN-RAT-2018", "locator": "Section III-B and III-C"},
+        "code_activation": {"status": "outside_scope", "value": "The tested client changes request timing and sizes under existing code.", "source_id": "RIGAKI-GAN-RAT-2018", "locator": "Section III-C"},
+        "process_continuity": {"status": "reported", "value": "The lab RAT continues communicating during parameter adaptation, without a published OS process-ID or image trace; no code-version lineage follows.", "source_id": "RIGAKI-GAN-RAT-2018", "locator": "Section III and results"},
+        "two_distinct_active_revisions": {"status": "outside_scope", "value": "No executable-code revisions were evaluated.", "source_id": "RIGAKI-GAN-RAT-2018", "locator": "Section III-C"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "The study has no code revisions; reported outcomes concern C2 traffic passage, not an after-each-version command/result.", "source_id": "RIGAKI-GAN-RAT-2018", "locator": "Results and Section III-C"},
+        "defender_telemetry": {"status": "documented", "value": "A configured Stratosphere IPS's traffic decision was evaluated for a selected mimicry profile; this is not universal endpoint invisibility.", "source_id": "RIGAKI-GAN-RAT-2018", "locator": "Section III-A and experimental results"}
+      },
+      "decisive_limit": "Live parameter adaptation is a different intervention from executable-code replacement."
+    },
+    {
+      "id": "GTG_20006",
+      "category": "first-party actor-side AI workflow and field redeployment",
+      "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "reported", "value": "Models assist the actor's development and operational workflow; endpoint-resident inference is not shown.", "source_id": "ANTHROPIC-GTG-20006-2026", "locator": "GTG-20006: Russian espionage, opening and Cyber operations"},
+        "model_to_code_authorship": {"status": "reported", "value": "Anthropic says agents modified and rebuilt detected malware artifacts.", "source_id": "ANTHROPIC-GTG-20006-2026", "locator": "GTG-20006: Russian espionage, paragraphs on monitoring and rebuilding"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "ANTHROPIC-GTG-20006-2026", "locator": "GTG-20006 section; no exact response-to-deployed-binary provenance"},
+        "code_activation": {"status": "reported", "value": "Rebuilt artifacts were staged for live operations; no in-place activation in a prior resident instance is reported.", "source_id": "ANTHROPIC-GTG-20006-2026", "locator": "GTG-20006 section, staging paragraph"},
+        "process_continuity": {"status": "not_reported", "value": null, "source_id": "ANTHROPIC-GTG-20006-2026", "locator": "GTG-20006 section; no two-version implant process lineage"},
+        "two_distinct_active_revisions": {"status": "not_reported", "value": null, "source_id": "ANTHROPIC-GTG-20006-2026", "locator": "GTG-20006 section; rebuilding is actor-side and version counts are not published"},
+        "remote_result_after_each_revision": {"status": "not_reported", "value": null, "source_id": "ANTHROPIC-GTG-20006-2026", "locator": "GTG-20006 section; no after-each-version command/result trail"},
+        "defender_telemetry": {"status": "reported", "value": "The actor's workflow monitored detections; the report does not provide a comparable alert series for each rebuilt artifact.", "source_id": "ANTHROPIC-GTG-20006-2026", "locator": "GTG-20006 section, monitoring paragraphs"}
+      },
+      "decisive_limit": "Operator-side rebuilding and redelivery do not establish two active revisions in one continuing resident process."
+    }
+  ]
+}

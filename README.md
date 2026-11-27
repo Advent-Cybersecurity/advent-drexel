@@ -9,9 +9,10 @@ This repository assesses public evidence for model-driven changes in deployed so
 3. [26 November source-review decision brief](docs/source-review-decision-brief-2026-11-26.md) summarizes the eight-hour source-only review and the remaining evidentiary gap.
 4. [27 November source-only research update](docs/source-only-research-update-2026-11-27.md) integrates the latest case, platform, and observation-validity reviews for a future paper version.
 5. [Accepted-version evidence chain](docs/live-update-evidence-chain-2026-11-27.md) examines four further live-update cases and the gap between accepted code and version-specific function.
-6. [Research guide](docs/README.md) indexes every detailed note by topic.
-7. [Data guide](data/README.md) explains source registries, raw runs, and incomplete trials.
-8. [Script guide](scripts/README.md) maps the reproducibility tools to their studies.
+6. [Revision placement and continuity](docs/revision-placement-and-continuity-2026-11-27.md) compares five more primary cases and identifies where each change took effect.
+7. [Research guide](docs/README.md) indexes every detailed note by topic.
+8. [Data guide](data/README.md) explains source registries, raw runs, and incomplete trials.
+9. [Script guide](scripts/README.md) maps the reproducibility tools to their studies.
 
 Version 0.4 is published on [Zenodo](https://doi.org/10.5281/zenodo.24591891) as a preprint with its PDF and research archive (DOI: `10.5281/zenodo.24591891`).
 

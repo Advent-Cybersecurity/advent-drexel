@@ -13,6 +13,7 @@ The model-efficiency work uses four joint checks: complete deployable bytes, pea
 | [27 November source-only research update](source-only-research-update-2026-11-27.md) | Integrates the bounded case re-extraction, platform-policy boundaries, and environmental-observation validity. |
 | [27 November bounded case-evidence update](case-evidence-update-2026-11-27.md) | Re-extracts nine selected cases with first-party locators and explicit selection limits. |
 | [27 November accepted-version evidence chain](live-update-evidence-chain-2026-11-27.md) | Re-extracts four additional live-update comparators and separates accepted artifacts, loaded code, selected calls, and version-specific outcomes. |
+| [27 November revision placement and continuity](revision-placement-and-continuity-2026-11-27.md) | Re-extracts five more cases, separating offline builds, restored-endpoint trials, benign in-process revision, traffic parameters, and operator-side redevelopment. |
 | [27 November platform-policy boundaries](platform-policy-boundaries-2026-11-27.md) | Compares documented Windows, Linux, and macOS update paths with conditional policy constraints. |
 | [27 November environmental-observation trust](environment-observation-trust-2026-11-27.md) | Reviews observation provenance, noisy tools, benchmark validity, and defender collection health. |
 | [Drexel feasibility assessment](drexel-feasibility-assessment.md) | The original claim and the available public evidence. |
