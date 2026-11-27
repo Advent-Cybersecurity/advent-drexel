@@ -1,0 +1,79 @@
+{
+  "as_of": "2026-11-27",
+  "review_type": "Purposive source-only re-extraction of four live-update comparators from the prior 31-case ledger; not a prevalence sample or reproduction.",
+  "claim_tested": "Two model-caused executable revisions active in one identified continuing remote-access process, with an independent remote task result after each.",
+  "companion_note": "docs/live-update-evidence-chain-2026-11-27.md",
+  "status_codes": {
+    "documented": "Case-specific source artifact or measurement supports this field, within its locator and stated limit.",
+    "reported": "First-party source says it occurred but the complete underlying trace is not public.",
+    "mechanism": "Source code or design supports a capability without a case-specific demonstrated use.",
+    "not_reported": "The inspected public source does not supply this field; value is null and absence is not inferred.",
+    "outside_scope": "The system or evaluated workload does not include this event."
+  },
+  "cases": [
+    {
+      "id": "ASIEL_CORE_HOT_RELOAD",
+      "category": "benign model-directed plugin evolution and Python reload",
+      "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "not_reported", "value": null, "source_id": "ASIEL-CORE-APP-9CCDCCE-2026", "locator": "app.py evolution loop; inference-serving location is not established by this extraction"},
+        "model_to_code_authorship": {"status": "mechanism", "value": "Application asks an LLM for a complete revised plugin; committed proposal entries identify the self-edit loop as source but do not pair exact responses with final files.", "source_id": "ASIEL-CORE-APP-9CCDCCE-2026", "locator": "app.py plugin evolution loop; compare proposals.json source fields"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "ASIEL-CORE-PROPOSALS-9CCDCCE-2026", "locator": "proposals.json; no exact model-response-to-integrated-file byte chain"},
+        "code_activation": {"status": "mechanism", "value": "After integration the application calls plugin reload; the loader imports accepted modules and registers callable hooks. Registry integration alone does not record a successful import or call.", "source_id": "ASIEL-CORE-LOADER-9CCDCCE-2026", "locator": "plugin_loader.py reload and hook registration; app.py post-integration reload"},
+        "process_continuity": {"status": "mechanism", "value": "Reload occurs in the application interpreter, but no case-specific process-ID and image trace is published.", "source_id": "ASIEL-CORE-APP-9CCDCCE-2026", "locator": "app.py background evolution task and loader call"},
+        "two_distinct_active_revisions": {"status": "not_reported", "value": null, "source_id": "ASIEL-CORE-PROPOSALS-9CCDCCE-2026", "locator": "proposals.json; 11 integrated records target distinct plugin paths, without two active versions of one target"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "Benign agent plugin hooks, not a remote-access workload; no version-bound task outcome after each of two revisions.", "source_id": "ASIEL-CORE-APP-9CCDCCE-2026", "locator": "app.py application handlers and plugin evolution loop"},
+        "defender_telemetry": {"status": "outside_scope", "value": "No endpoint defender test in the inspected benign repository.", "source_id": "ASIEL-CORE-APP-9CCDCCE-2026", "locator": "Pinned application source and proposal registry"}
+      },
+      "decisive_limit": "A model-to-reload mechanism and integrated file records do not show two version-specific active hook results in one identified process."
+    },
+    {
+      "id": "NEXAGENT_BEAM_HOT_UPGRADE",
+      "category": "benign agent-facing source upgrade in BEAM",
+      "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "not_reported", "value": null, "source_id": "NEXAGENT-UPGRADE-TOOL-8EC412F-2026", "locator": "upgrade_code tool; model-serving location not established"},
+        "model_to_code_authorship": {"status": "mechanism", "value": "Agent-facing tool accepts module source; no published response-to-two-upgrade run is present in the inspected source and tests.", "source_id": "NEXAGENT-UPGRADE-TOOL-8EC412F-2026", "locator": "upgrade_code.ex input contract"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "NEXAGENT-EVOLUTION-TEST-8EC412F-2026", "locator": "evolution_integration_test.exs uses a mock model and does not pair two real model responses with loaded modules"},
+        "code_activation": {"status": "mechanism", "value": "HotReload compiles and selects a module in the running VM; its success flag can be true without a completed tool-registry swap.", "source_id": "NEXAGENT-HOT-RELOAD-8EC412F-2026", "locator": "hot_reload.ex compile/load return and registry-swap handling"},
+        "process_continuity": {"status": "mechanism", "value": "A BEAM hot-load path is implemented, but no identified operating-system process across two upgrades is published.", "source_id": "NEXAGENT-HOT-RELOAD-8EC412F-2026", "locator": "hot_reload.ex module compile/load path"},
+        "two_distinct_active_revisions": {"status": "not_reported", "value": null, "source_id": "NEXAGENT-EVOLUTION-TEST-8EC412F-2026", "locator": "evolution_integration_test.exs; no two module invocations bound to successive model-produced versions"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "The benign agent tests do not exercise remote-access control after two versions; the code health check lists exports rather than invoking a task.", "source_id": "NEXAGENT-HOT-RELOAD-8EC412F-2026", "locator": "hot_reload.ex health check; evolution_integration_test.exs"},
+        "defender_telemetry": {"status": "outside_scope", "value": "No endpoint defender test in this benign agent source.", "source_id": "NEXAGENT-EVOLUTION-TEST-8EC412F-2026", "locator": "Pinned integration test scope"}
+      },
+      "decisive_limit": "Compile success and stored versions do not prove registry selection, version-specific invocation, or two retained remote results."
+    },
+    {
+      "id": "AUTOPOIESIS",
+      "category": "benign online LLM-serving policy evolution",
+      "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "reported", "value": "The model-driven synthesis is in a control plane separate from the serving data plane; it is not endpoint-resident inference in a payload.", "source_id": "JIANG-AUTOPOIESIS-LIVE-POLICY-2026", "locator": "Sections 4, 5 and 6.2"},
+        "model_to_code_authorship": {"status": "reported", "value": "The authors describe synthesis of bounded schedule and should_reschedule policy functions.", "source_id": "JIANG-AUTOPOIESIS-LIVE-POLICY-2026", "locator": "Sections 5.1-5.4 and 6.2"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "JIANG-AUTOPOIESIS-LIVE-POLICY-2026", "locator": "Sections 6.2 and 7; no exact response-to-selected-policy hash chain for two swaps"},
+        "code_activation": {"status": "reported", "value": "Authors describe staged policy code loaded by the data plane at a monitoring point while service continues.", "source_id": "JIANG-AUTOPOIESIS-LIVE-POLICY-2026", "locator": "Section 6.2, Deployment and Online Serving"},
+        "process_continuity": {"status": "reported", "value": "Serving continuity is described; no process-ID/image lineage across two particular swaps is published.", "source_id": "JIANG-AUTOPOIESIS-LIVE-POLICY-2026", "locator": "Section 6.2 and Section 7"},
+        "two_distinct_active_revisions": {"status": "not_reported", "value": null, "source_id": "JIANG-AUTOPOIESIS-LIVE-POLICY-2026", "locator": "Sections 6.2 and 7; rescheduling counts are plan decisions, not versioned code-swap counts"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "Aggregate inference-serving outcomes are evaluated; remote-control tasks after each code version are not part of this study.", "source_id": "JIANG-AUTOPOIESIS-LIVE-POLICY-2026", "locator": "Section 7, System Evaluation"},
+        "defender_telemetry": {"status": "outside_scope", "value": "No endpoint defender configuration or alert outcome in this serving study.", "source_id": "JIANG-AUTOPOIESIS-LIVE-POLICY-2026", "locator": "Sections 6-7"}
+      },
+      "decisive_limit": "Online bounded-policy synthesis is reported, but two version-bound process and function records are not public."
+    },
+    {
+      "id": "SHIRUDO_LIVE_SHIELD",
+      "category": "benign model-associated defensive live shield",
+      "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "reported", "value": "Codex-assisted shield creation occurs in a security-operator control plane, not in the protected Elasticsearch process.", "source_id": "OPENAI-SHIRUDO-ANNOUNCEMENT-2026", "locator": "How Shirudo works and controlled-test account"},
+        "model_to_code_authorship": {"status": "reported", "value": "First-party accounts attribute the Java shield to Codex-assisted generation, without publishing exact model response bytes.", "source_id": "OPENAI-SHIRUDO-ANNOUNCEMENT-2026", "locator": "Opening controlled-test description"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "CISCO-ISOVALENT-SHIRUDO-DEMO-2026", "locator": "Demo description and logs; no exact model-response-to-bytecode digest chain"},
+        "code_activation": {"status": "documented", "value": "Published application logs show one guard installation followed by rejection of a malformed input.", "source_id": "CISCO-ISOVALENT-SHIRUDO-DEMO-2026", "locator": "Controlled-test Elasticsearch log excerpt"},
+        "process_continuity": {"status": "reported", "value": "The accounts say the service kept running; no published before/after PID and process-image trace is identified.", "source_id": "OPENAI-SHIRUDO-ANNOUNCEMENT-2026", "locator": "Opening controlled-test account and live-protection description"},
+        "two_distinct_active_revisions": {"status": "not_reported", "value": null, "source_id": "CISCO-ISOVALENT-SHIRUDO-DEMO-2026", "locator": "Demo logs show one guard installation and one rejection, not two accepted shield versions"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "Protective rejection and continued benign service are not remote-access task results after two revisions.", "source_id": "CISCO-ISOVALENT-SHIRUDO-DEMO-2026", "locator": "Controlled-test narrative and logs"},
+        "defender_telemetry": {"status": "outside_scope", "value": "Shirudo is the protective mechanism being demonstrated, not a tested endpoint defender for an implant.", "source_id": "OPENAI-SHIRUDO-ANNOUNCEMENT-2026", "locator": "How Shirudo works"}
+      },
+      "decisive_limit": "One protective live insertion and rejection do not establish serial model-caused remote-access revisions."
+    }
+  ]
+}

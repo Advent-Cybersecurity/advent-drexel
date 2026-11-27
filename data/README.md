@@ -8,6 +8,7 @@ This directory holds source registries, frozen task manifests, raw results, and 
 - [observations.json](observations.json): dated case observations and evidence labels.
 - [closest-case-claim-ledger-2026-11-26.json](closest-case-claim-ledger-2026-11-26.json): 31 selected component cases coded against the four links of the expanded Drexel hypothesis as of 26 November. The file defines its status codes; `not_shown` means public evidence is insufficient, not that an event was impossible or absent. Cases are selected for relevance and are not a prevalence denominator.
 - [selected-case-extraction-2026-11-27.json](selected-case-extraction-2026-11-27.json): nine purposively selected cases re-extracted on eight uniform fields with first-party source locators and explicit public-record unknowns. Read the [bounded case update](../docs/case-evidence-update-2026-11-27.md) for selection and search limits. This does not supersede the other 22 cases in the prior ledger.
+- [live-update-case-extraction-2026-11-27.json](live-update-case-extraction-2026-11-27.json): four further cases from that 31-case ledger, re-extracted on the same eight fields. Read the [accepted-version evidence note](../docs/live-update-evidence-chain-2026-11-27.md) for the source boundaries. Eleven of the 31 prior cases now have eight-field records; 18 do not. The two newly added cases in the nine-case pilot are outside the prior ledger.
 
 ## Model-efficiency records
 

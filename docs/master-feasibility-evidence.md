@@ -1,6 +1,6 @@
 # Master evidence: repeated AI-caused payload revision and retained access
 
-Evidence reviewed through 2026-11-26; local experiment status updated 2026-11-25. This is the central, source-linked synthesis for the *Drexel* research question. It aggregates the repository's case files and measured studies; those files retain the detailed source audits. This document is an evidence assessment, not an implementation guide. The [research guide](README.md) indexes the detailed notes.
+Evidence reviewed through 2026-11-27; local experiment status updated 2026-11-25. This is the central, source-linked synthesis for the *Drexel* research question. It aggregates the repository's case files and measured studies; those files retain the detailed source audits. This document is an evidence assessment, not an implementation guide. The [research guide](README.md) indexes the detailed notes.
 
 The [dated search and evidence protocol](source-search-and-evidence-protocol-2026-11-26.md) records the exploratory review's selection rules and limits. The source registry is broad and heterogeneous; it is not a census of independent AI-revising implants.
 
@@ -13,6 +13,8 @@ This review counts an added executable module as a code change only when it beco
 To establish the claim, a public record would need to tie together: the same continuing instance; a model output for each of two revisions; evidence each revision was applied; and an independent access/function check after each. The unit of analysis is the **revision chain**, not a count of model calls, candidate programs, or infected hosts.
 
 **Present assessment:** component behaviors are demonstrated, but the reviewed public sources do not document the full chain. This is a limit of the published evidence, not a finding that the chain is impossible or absent in private data.
+
+The [27 November accepted-version audit](live-update-evidence-chain-2026-11-27.md) adds four eight-field re-extractions from the prior 31-case ledger. Across Asiel Core, NexAgent, Autopoiesis, and Shirudo, it separates a proposed or integrated artifact from a loaded version, the selected call path, and a version-bound result. Eleven of the prior 31 cases now have comparable eight-field records; the other 18 remain to be re-extracted. This source-only audit does not change the full-chain judgment or produce a feasibility rate.
 
 **26 November engineering update:** [Live-revision feasibility](live-revision-feasibility-2026-11-26.md) verifies that supported runtimes can replace code inside a continuing program but impose version, state, update-timing, and supported-edit constraints. It separates same-process function from service reachability across restarted workers and identifies the provenance and telemetry needed to decide a two-revision case. These mechanisms do not change the integrated-case verdict.
 

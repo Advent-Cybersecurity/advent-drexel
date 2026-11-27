@@ -4163,5 +4163,21 @@
     "published": "undated; accessed 2026-11-27",
     "url": "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.cs.allow-jit.md",
     "note": "Hardened Runtime exception entitlement; a particular application's signing and entitlement state remains to be measured."
+  },
+  {
+    "id": "ZHU-RECONSTRUCTION-AWARE-2026",
+    "publisher": "Zhu et al.; arXiv",
+    "title": "From Approval to Execution: Reconstruction-Aware Repair Analysis for LLM-Agent Software",
+    "published": "2026-09-22",
+    "url": "https://arxiv.org/html/2609.26529v1",
+    "note": "Controlled authorization study showing that an approved representation can differ from the object version consumed after reconstruction. Used only as a methodological analogy for revision provenance, not a Drexel test."
+  },
+  {
+    "id": "MATTIS-LIVENESS-AGENTS-2026",
+    "publisher": "Mattis et al.; ACM Programming Companion",
+    "title": "Liveness in the Age of Agents: Are We Back to Compile-and-Run Cycles?",
+    "published": "2026-03",
+    "url": "https://www.hpi.uni-potsdam.de/hirschfeld/publications/media/MattisTaeumelBoehmeHirschfeld_2026_LivenessInTheAgeOfAgentsAreWeBackToCompileAndRunCycles_AcmDL.pdf",
+    "note": "Conceptual position paper on agent-generated changes and feedback latency; no measured same-process Drexel outcome. DOI 10.1145/3801119.3801131."
   }
 ]
