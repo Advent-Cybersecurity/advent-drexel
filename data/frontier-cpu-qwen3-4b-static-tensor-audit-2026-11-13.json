@@ -1,0 +1,45 @@
+{
+  "schema": "gguf-static-tensor-audit-v1",
+  "audited_utc": "2026-11-13T10:26:00Z",
+  "method": "GGUFReader metadata and tensor descriptors only; no tensor payload comparison or inference benchmark",
+  "gguf_path": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+  "gguf_file_bytes": 2497280736,
+  "gguf_sha256_reported_by_separate_quality_runner_not_recomputed_here": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+  "gguf_tensor_count": 398,
+  "gguf_tensor_payload_bytes": 2491323904,
+  "gguf_nonpayload_bytes": 5956832,
+  "types": {
+    "F32": {"tensors": 145, "payload_bytes": 784384},
+    "Q6_K": {"tensors": 37, "payload_bytes": 725491200},
+    "Q4_K": {"tensors": 216, "payload_bytes": 1765048320, "matrix_second_dimension_divisible_by_eight": 216}
+  },
+  "output_weight_present": false,
+  "token_embd_weight": {
+    "type": "Q6_K",
+    "shape_gguf_order": [2560, 151936],
+    "payload_bytes": 319065600,
+    "elements": 388956160,
+    "blocks_of_256": 1519360
+  },
+  "hypothetical_token_embd_q5_k": {
+    "q6_k_bytes_per_256": 210,
+    "q5_k_bytes_per_256": 176,
+    "q5_k_payload_bytes": 267407360,
+    "payload_saving_bytes": 51658240,
+    "payload_saving_as_percent_of_current_gguf": 2.06857960562108,
+    "conditional_gguf_bytes_if_all_other_bytes_and_alignment_unchanged": 2445622496,
+    "built_or_benchmarked": false
+  },
+  "source_checkpoint_config": {
+    "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/1b4199c4f36b0cef378bfb12390c18780c18af4c/config.json",
+    "tie_word_embeddings": true,
+    "note": "Source topology and current GGUF tensor map agree on a shared embedding/output matrix; GGUF representation was inspected independently."
+  },
+  "pinned_backend": {
+    "commit": "f3b407ca1bfeeecebf9e9ef19fcd6eed565bd70a",
+    "ggml_block_definition": "https://github.com/ggml-org/llama.cpp/blob/f3b407ca1/ggml/src/ggml-common.h#L341-L368",
+    "cpu_repack_selector": "https://github.com/ggml-org/llama.cpp/blob/f3b407ca1/ggml/src/ggml-cpu/repack.cpp#L5011-L5075",
+    "q5_k_x86_avx2_repack_selected": false,
+    "note": "Static selector observation, not a measured process-memory or CPU result."
+  }
+}

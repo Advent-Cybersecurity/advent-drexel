@@ -1,0 +1,264 @@
+{
+  "measured_at_utc": "2026-11-11T10:33:32+00:00",
+  "host": {
+    "platform": "Linux-6.18.12+kali-amd64-x86_64-with-glibc2.42",
+    "logical_cpu_count": 8,
+    "memory_bytes": 16856772608
+  },
+  "notes": "Source files were in /tmp tmpfs. Output and restore files were in --work-dir. CPU and wall times include file I/O. Peak RSS was sampled every ~20 ms and may miss short peaks.",
+  "models": [
+    {
+      "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "source_path": "/tmp/drexel-inference-study/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "original_bytes": 491400032,
+      "original_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+      "codecs": [
+        {
+          "codec": "zstd-3",
+          "compressed_bytes": 477420582,
+          "saved_bytes": 13979450,
+          "saved_percent": 2.8448,
+          "restored_bytes": 491400032,
+          "restored_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+          "byte_identical": true,
+          "compression": {
+            "command": [
+              "zstd",
+              "-3",
+              "-T1",
+              "-q",
+              "-f",
+              "/tmp/drexel-inference-study/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+              "-o",
+              "/var/tmp/drexel-inference-study/compression/qwen2.5-0.5b-instruct-q4_k_m.zstd-3.zst"
+            ],
+            "wall_seconds": 1.1019,
+            "cpu_seconds": 1.5322,
+            "sampled_peak_rss_bytes": 56766464,
+            "rss_samples": 54,
+            "exit_code": 0
+          },
+          "decompression": {
+            "command": [
+              "zstd",
+              "-d",
+              "-q",
+              "-c",
+              "/var/tmp/drexel-inference-study/compression/qwen2.5-0.5b-instruct-q4_k_m.zstd-3.zst"
+            ],
+            "wall_seconds": 0.3417,
+            "cpu_seconds": 0.569,
+            "sampled_peak_rss_bytes": 8081408,
+            "rss_samples": 17,
+            "exit_code": 0
+          }
+        },
+        {
+          "codec": "zstd-9",
+          "compressed_bytes": 476950402,
+          "saved_bytes": 14449630,
+          "saved_percent": 2.9405,
+          "restored_bytes": 491400032,
+          "restored_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+          "byte_identical": true,
+          "compression": {
+            "command": [
+              "zstd",
+              "-9",
+              "-T1",
+              "-q",
+              "-f",
+              "/tmp/drexel-inference-study/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+              "-o",
+              "/var/tmp/drexel-inference-study/compression/qwen2.5-0.5b-instruct-q4_k_m.zstd-9.zst"
+            ],
+            "wall_seconds": 1.5084,
+            "cpu_seconds": 1.925,
+            "sampled_peak_rss_bytes": 117518336,
+            "rss_samples": 74,
+            "exit_code": 0
+          },
+          "decompression": {
+            "command": [
+              "zstd",
+              "-d",
+              "-q",
+              "-c",
+              "/var/tmp/drexel-inference-study/compression/qwen2.5-0.5b-instruct-q4_k_m.zstd-9.zst"
+            ],
+            "wall_seconds": 0.282,
+            "cpu_seconds": 0.4907,
+            "sampled_peak_rss_bytes": 10104832,
+            "rss_samples": 14,
+            "exit_code": 0
+          }
+        },
+        {
+          "codec": "gzip-6",
+          "compressed_bytes": 476965740,
+          "saved_bytes": 14434292,
+          "saved_percent": 2.9374,
+          "restored_bytes": 491400032,
+          "restored_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+          "byte_identical": true,
+          "compression": {
+            "command": [
+              "gzip",
+              "-6",
+              "-n",
+              "-c",
+              "/tmp/drexel-inference-study/qwen2.5-0.5b-instruct-q4_k_m.gguf"
+            ],
+            "wall_seconds": 10.5817,
+            "cpu_seconds": 10.5989,
+            "sampled_peak_rss_bytes": 2117632,
+            "rss_samples": 512,
+            "exit_code": 0
+          },
+          "decompression": {
+            "command": [
+              "gzip",
+              "-d",
+              "-c",
+              "/var/tmp/drexel-inference-study/compression/qwen2.5-0.5b-instruct-q4_k_m.gzip-6.gz"
+            ],
+            "wall_seconds": 2.6046,
+            "cpu_seconds": 2.5814,
+            "sampled_peak_rss_bytes": 1925120,
+            "rss_samples": 126,
+            "exit_code": 0
+          }
+        }
+      ]
+    },
+    {
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "source_path": "/tmp/drexel-inference-study/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "original_bytes": 1117320736,
+      "original_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+      "codecs": [
+        {
+          "codec": "zstd-3",
+          "compressed_bytes": 1092102183,
+          "saved_bytes": 25218553,
+          "saved_percent": 2.2571,
+          "restored_bytes": 1117320736,
+          "restored_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+          "byte_identical": true,
+          "compression": {
+            "command": [
+              "zstd",
+              "-3",
+              "-T1",
+              "-q",
+              "-f",
+              "/tmp/drexel-inference-study/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+              "-o",
+              "/var/tmp/drexel-inference-study/compression/qwen2.5-1.5b-instruct-q4_k_m.zstd-3.zst"
+            ],
+            "wall_seconds": 2.6653,
+            "cpu_seconds": 3.5774,
+            "sampled_peak_rss_bytes": 57192448,
+            "rss_samples": 128,
+            "exit_code": 0
+          },
+          "decompression": {
+            "command": [
+              "zstd",
+              "-d",
+              "-q",
+              "-c",
+              "/var/tmp/drexel-inference-study/compression/qwen2.5-1.5b-instruct-q4_k_m.zstd-3.zst"
+            ],
+            "wall_seconds": 1.0033,
+            "cpu_seconds": 1.5709,
+            "sampled_peak_rss_bytes": 8138752,
+            "rss_samples": 46,
+            "exit_code": 0
+          }
+        },
+        {
+          "codec": "zstd-9",
+          "compressed_bytes": 1090861351,
+          "saved_bytes": 26459385,
+          "saved_percent": 2.3681,
+          "restored_bytes": 1117320736,
+          "restored_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+          "byte_identical": true,
+          "compression": {
+            "command": [
+              "zstd",
+              "-9",
+              "-T1",
+              "-q",
+              "-f",
+              "/tmp/drexel-inference-study/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+              "-o",
+              "/var/tmp/drexel-inference-study/compression/qwen2.5-1.5b-instruct-q4_k_m.zstd-9.zst"
+            ],
+            "wall_seconds": 3.2283,
+            "cpu_seconds": 4.126,
+            "sampled_peak_rss_bytes": 117645312,
+            "rss_samples": 155,
+            "exit_code": 0
+          },
+          "decompression": {
+            "command": [
+              "zstd",
+              "-d",
+              "-q",
+              "-c",
+              "/var/tmp/drexel-inference-study/compression/qwen2.5-1.5b-instruct-q4_k_m.zstd-9.zst"
+            ],
+            "wall_seconds": 1.0274,
+            "cpu_seconds": 1.6275,
+            "sampled_peak_rss_bytes": 10145792,
+            "rss_samples": 47,
+            "exit_code": 0
+          }
+        },
+        {
+          "codec": "gzip-6",
+          "compressed_bytes": 1091334207,
+          "saved_bytes": 25986529,
+          "saved_percent": 2.3258,
+          "restored_bytes": 1117320736,
+          "restored_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+          "byte_identical": true,
+          "compression": {
+            "command": [
+              "gzip",
+              "-6",
+              "-n",
+              "-c",
+              "/tmp/drexel-inference-study/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+            ],
+            "wall_seconds": 24.9314,
+            "cpu_seconds": 24.9344,
+            "sampled_peak_rss_bytes": 2113536,
+            "rss_samples": 1201,
+            "exit_code": 0
+          },
+          "decompression": {
+            "command": [
+              "gzip",
+              "-d",
+              "-c",
+              "/var/tmp/drexel-inference-study/compression/qwen2.5-1.5b-instruct-q4_k_m.gzip-6.gz"
+            ],
+            "wall_seconds": 6.0287,
+            "cpu_seconds": 5.9763,
+            "sampled_peak_rss_bytes": 1880064,
+            "rss_samples": 289,
+            "exit_code": 0
+          }
+        }
+      ]
+    }
+  ],
+  "software": {
+    "python": "3.13.12",
+    "zstd": "*** Zstandard CLI (64-bit) v1.5.7, by Yann Collet ***",
+    "gzip": "gzip 1.13"
+  }
+}

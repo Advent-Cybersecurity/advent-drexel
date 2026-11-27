@@ -1,0 +1,736 @@
+{
+  "schema": "gguf-tensor-topology-comparison-v1",
+  "created_utc": "2026-11-13T10:46:58+00:00",
+  "method": "GGUFReader descriptors only; no tensor payload comparison",
+  "reference": {
+    "file_bytes": 2497280736,
+    "tensor_count": 398,
+    "payload_bytes": 2491323904,
+    "by_type": {
+      "F32": {
+        "count": 145,
+        "payload_bytes": 784384
+      },
+      "Q4_K": {
+        "count": 216,
+        "payload_bytes": 1765048320
+      },
+      "Q6_K": {
+        "count": 37,
+        "payload_bytes": 725491200
+      }
+    }
+  },
+  "candidate": {
+    "file_bytes": 2383309536,
+    "tensor_count": 398,
+    "payload_bytes": 2377352704,
+    "by_type": {
+      "F32": {
+        "count": 145,
+        "payload_bytes": 784384
+      },
+      "Q4_K": {
+        "count": 244,
+        "payload_bytes": 1981808640
+      },
+      "Q5_K": {
+        "count": 8,
+        "payload_bytes": 75694080
+      },
+      "Q6_K": {
+        "count": 1,
+        "payload_bytes": 319065600
+      }
+    }
+  },
+  "file_byte_difference_candidate_minus_reference": -113971200,
+  "payload_byte_difference_candidate_minus_reference": -113971200,
+  "changed_descriptor_count": 36,
+  "changed_descriptors": [
+    {
+      "name": "blk.0.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q5_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1802240
+      }
+    },
+    {
+      "name": "blk.0.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q5_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 17121280
+      }
+    },
+    {
+      "name": "blk.1.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q5_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1802240
+      }
+    },
+    {
+      "name": "blk.1.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q5_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 17121280
+      }
+    },
+    {
+      "name": "blk.12.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.12.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.15.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.15.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.18.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.18.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.2.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q5_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1802240
+      }
+    },
+    {
+      "name": "blk.2.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q5_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 17121280
+      }
+    },
+    {
+      "name": "blk.21.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.21.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.24.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.24.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.27.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.27.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.3.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q5_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1802240
+      }
+    },
+    {
+      "name": "blk.3.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q5_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 17121280
+      }
+    },
+    {
+      "name": "blk.30.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.30.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.31.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.31.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.32.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.32.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.33.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.33.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.34.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.34.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.35.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.35.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.6.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.6.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    },
+    {
+      "name": "blk.9.attn_v.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 2150400
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          2560,
+          1024
+        ],
+        "payload_bytes": 1474560
+      }
+    },
+    {
+      "name": "blk.9.ffn_down.weight",
+      "reference": {
+        "type": "Q6_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 20428800
+      },
+      "candidate": {
+        "type": "Q4_K",
+        "shape": [
+          9728,
+          2560
+        ],
+        "payload_bytes": 14008320
+      }
+    }
+  ]
+}

@@ -1,0 +1,2849 @@
+{
+  "artifact": "qwen2.5-1.5b-instruct-q4_k_m-study.gguf",
+  "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "file_bytes": 1117320736,
+  "data_offset": 5950496,
+  "tensor_count": 339,
+  "tensor_bytes": 1111370240,
+  "by_type": {
+    "Q6_K": {
+      "bytes": 354009600,
+      "n_tensors": 29,
+      "h8_bits_per_byte_pooled": 7.933127,
+      "h8_ideal_bytes_pooled": 351050387,
+      "h8_ideal_bytes_per_tensor": 351013985,
+      "h8_headroom_pct_pooled": 0.8359,
+      "h8_headroom_pct_per_tensor": 0.8462
+    },
+    "Q4_K": {
+      "bytes": 756781056,
+      "n_tensors": 169,
+      "h8_bits_per_byte_pooled": 7.793822,
+      "h8_ideal_bytes_pooled": 737277089,
+      "h8_ideal_bytes_per_tensor": 736955544,
+      "h8_headroom_pct_pooled": 2.5772,
+      "h8_headroom_pct_per_tensor": 2.6197
+    },
+    "F32": {
+      "bytes": 579584,
+      "n_tensors": 141,
+      "h8_bits_per_byte_pooled": 4.735234,
+      "h8_ideal_bytes_pooled": 343058,
+      "h8_ideal_bytes_per_tensor": 310021,
+      "h8_headroom_pct_pooled": 40.8096,
+      "h8_headroom_pct_per_tensor": 46.5097
+    }
+  },
+  "tensors": [
+    {
+      "name": "output.weight",
+      "type": "Q6_K",
+      "bytes": 191439360,
+      "h8_bits_per_byte": 7.934023,
+      "h8_ideal_bytes": 189860541,
+      "offset": 5950496
+    },
+    {
+      "name": "token_embd.weight",
+      "type": "Q4_K",
+      "bytes": 131272704,
+      "h8_bits_per_byte": 7.791443,
+      "h8_ideal_bytes": 127850471,
+      "offset": 197389856
+    },
+    {
+      "name": "blk.0.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.672866,
+      "h8_ideal_bytes": 3589,
+      "offset": 328662560
+    },
+    {
+      "name": "blk.0.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.93233,
+      "h8_ideal_bytes": 11194104,
+      "offset": 328668704
+    },
+    {
+      "name": "blk.0.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.791519,
+      "h8_ideal_bytes": 7539697,
+      "offset": 339958304
+    },
+    {
+      "name": "blk.0.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.783214,
+      "h8_ideal_bytes": 7531661,
+      "offset": 347699744
+    },
+    {
+      "name": "blk.0.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.265654,
+      "h8_ideal_bytes": 3276,
+      "offset": 355441184
+    },
+    {
+      "name": "blk.0.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 4.070711,
+      "h8_ideal_bytes": 521,
+      "offset": 355447328
+    },
+    {
+      "name": "blk.0.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.771448,
+      "h8_ideal_bytes": 214865,
+      "offset": 355448352
+    },
+    {
+      "name": "blk.0.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.811888,
+      "h8_ideal_bytes": 1295898,
+      "offset": 355669536
+    },
+    {
+      "name": "blk.0.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.215134,
+      "h8_ideal_bytes": 3237,
+      "offset": 356996640
+    },
+    {
+      "name": "blk.0.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.78035,
+      "h8_ideal_bytes": 1290667,
+      "offset": 357002784
+    },
+    {
+      "name": "blk.0.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.89877,
+      "h8_ideal_bytes": 499,
+      "offset": 358329888
+    },
+    {
+      "name": "blk.0.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.916915,
+      "h8_ideal_bytes": 319210,
+      "offset": 358330912
+    },
+    {
+      "name": "blk.1.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.577768,
+      "h8_ideal_bytes": 3516,
+      "offset": 358653472
+    },
+    {
+      "name": "blk.1.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.899069,
+      "h8_ideal_bytes": 11147166,
+      "offset": 358659616
+    },
+    {
+      "name": "blk.1.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.800416,
+      "h8_ideal_bytes": 7548306,
+      "offset": 369949216
+    },
+    {
+      "name": "blk.1.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.812037,
+      "h8_ideal_bytes": 7559551,
+      "offset": 377690656
+    },
+    {
+      "name": "blk.1.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.013849,
+      "h8_ideal_bytes": 3083,
+      "offset": 385432096
+    },
+    {
+      "name": "blk.1.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 4.030054,
+      "h8_ideal_bytes": 516,
+      "offset": 385438240
+    },
+    {
+      "name": "blk.1.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.774747,
+      "h8_ideal_bytes": 214956,
+      "offset": 385439264
+    },
+    {
+      "name": "blk.1.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.812243,
+      "h8_ideal_bytes": 1295957,
+      "offset": 385660448
+    },
+    {
+      "name": "blk.1.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.153527,
+      "h8_ideal_bytes": 3190,
+      "offset": 386987552
+    },
+    {
+      "name": "blk.1.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.790915,
+      "h8_ideal_bytes": 1292419,
+      "offset": 386993696
+    },
+    {
+      "name": "blk.1.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.927044,
+      "h8_ideal_bytes": 503,
+      "offset": 388320800
+    },
+    {
+      "name": "blk.1.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.923996,
+      "h8_ideal_bytes": 319496,
+      "offset": 388321824
+    },
+    {
+      "name": "blk.10.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.517311,
+      "h8_ideal_bytes": 3469,
+      "offset": 388644384
+    },
+    {
+      "name": "blk.10.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.932671,
+      "h8_ideal_bytes": 11194586,
+      "offset": 388650528
+    },
+    {
+      "name": "blk.10.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.793268,
+      "h8_ideal_bytes": 7541390,
+      "offset": 399940128
+    },
+    {
+      "name": "blk.10.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.785459,
+      "h8_ideal_bytes": 7533833,
+      "offset": 407681568
+    },
+    {
+      "name": "blk.10.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.474786,
+      "h8_ideal_bytes": 3437,
+      "offset": 415423008
+    },
+    {
+      "name": "blk.10.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 4.013159,
+      "h8_ideal_bytes": 514,
+      "offset": 415429152
+    },
+    {
+      "name": "blk.10.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.77482,
+      "h8_ideal_bytes": 214958,
+      "offset": 415430176
+    },
+    {
+      "name": "blk.10.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.793267,
+      "h8_ideal_bytes": 1292809,
+      "offset": 415651360
+    },
+    {
+      "name": "blk.10.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.152376,
+      "h8_ideal_bytes": 3189,
+      "offset": 416978464
+    },
+    {
+      "name": "blk.10.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.788359,
+      "h8_ideal_bytes": 1291995,
+      "offset": 416984608
+    },
+    {
+      "name": "blk.10.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.961273,
+      "h8_ideal_bytes": 507,
+      "offset": 418311712
+    },
+    {
+      "name": "blk.10.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.920058,
+      "h8_ideal_bytes": 319337,
+      "offset": 418312736
+    },
+    {
+      "name": "blk.11.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.639026,
+      "h8_ideal_bytes": 3563,
+      "offset": 418635296
+    },
+    {
+      "name": "blk.11.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.786911,
+      "h8_ideal_bytes": 7535238,
+      "offset": 418641440
+    },
+    {
+      "name": "blk.11.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.790903,
+      "h8_ideal_bytes": 7539101,
+      "offset": 426382880
+    },
+    {
+      "name": "blk.11.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.784681,
+      "h8_ideal_bytes": 7533080,
+      "offset": 434124320
+    },
+    {
+      "name": "blk.11.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.612018,
+      "h8_ideal_bytes": 3542,
+      "offset": 441865760
+    },
+    {
+      "name": "blk.11.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 4.004537,
+      "h8_ideal_bytes": 513,
+      "offset": 441871904
+    },
+    {
+      "name": "blk.11.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.773261,
+      "h8_ideal_bytes": 214915,
+      "offset": 441872928
+    },
+    {
+      "name": "blk.11.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.798494,
+      "h8_ideal_bytes": 1293677,
+      "offset": 442094112
+    },
+    {
+      "name": "blk.11.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.187949,
+      "h8_ideal_bytes": 3216,
+      "offset": 443421216
+    },
+    {
+      "name": "blk.11.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.788527,
+      "h8_ideal_bytes": 1292023,
+      "offset": 443427360
+    },
+    {
+      "name": "blk.11.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.942211,
+      "h8_ideal_bytes": 505,
+      "offset": 444754464
+    },
+    {
+      "name": "blk.11.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.752204,
+      "h8_ideal_bytes": 214333,
+      "offset": 444755488
+    },
+    {
+      "name": "blk.12.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.622652,
+      "h8_ideal_bytes": 3550,
+      "offset": 444976672
+    },
+    {
+      "name": "blk.12.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.784402,
+      "h8_ideal_bytes": 7532811,
+      "offset": 444982816
+    },
+    {
+      "name": "blk.12.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.78988,
+      "h8_ideal_bytes": 7538111,
+      "offset": 452724256
+    },
+    {
+      "name": "blk.12.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.783207,
+      "h8_ideal_bytes": 7531654,
+      "offset": 460465696
+    },
+    {
+      "name": "blk.12.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.551295,
+      "h8_ideal_bytes": 3495,
+      "offset": 468207136
+    },
+    {
+      "name": "blk.12.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 4.004163,
+      "h8_ideal_bytes": 513,
+      "offset": 468213280
+    },
+    {
+      "name": "blk.12.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.778662,
+      "h8_ideal_bytes": 215064,
+      "offset": 468214304
+    },
+    {
+      "name": "blk.12.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.801527,
+      "h8_ideal_bytes": 1294180,
+      "offset": 468435488
+    },
+    {
+      "name": "blk.12.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.139065,
+      "h8_ideal_bytes": 3179,
+      "offset": 469762592
+    },
+    {
+      "name": "blk.12.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.787578,
+      "h8_ideal_bytes": 1291866,
+      "offset": 469768736
+    },
+    {
+      "name": "blk.12.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.944851,
+      "h8_ideal_bytes": 505,
+      "offset": 471095840
+    },
+    {
+      "name": "blk.12.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.777193,
+      "h8_ideal_bytes": 215024,
+      "offset": 471096864
+    },
+    {
+      "name": "blk.13.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.659377,
+      "h8_ideal_bytes": 3578,
+      "offset": 471318048
+    },
+    {
+      "name": "blk.13.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.933175,
+      "h8_ideal_bytes": 11195296,
+      "offset": 471324192
+    },
+    {
+      "name": "blk.13.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.791641,
+      "h8_ideal_bytes": 7539815,
+      "offset": 482613792
+    },
+    {
+      "name": "blk.13.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.784734,
+      "h8_ideal_bytes": 7533131,
+      "offset": 490355232
+    },
+    {
+      "name": "blk.13.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.571699,
+      "h8_ideal_bytes": 3511,
+      "offset": 498096672
+    },
+    {
+      "name": "blk.13.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.991164,
+      "h8_ideal_bytes": 511,
+      "offset": 498102816
+    },
+    {
+      "name": "blk.13.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.777991,
+      "h8_ideal_bytes": 215046,
+      "offset": 498103840
+    },
+    {
+      "name": "blk.13.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.801209,
+      "h8_ideal_bytes": 1294127,
+      "offset": 498325024
+    },
+    {
+      "name": "blk.13.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.178734,
+      "h8_ideal_bytes": 3209,
+      "offset": 499652128
+    },
+    {
+      "name": "blk.13.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.784423,
+      "h8_ideal_bytes": 1291342,
+      "offset": 499658272
+    },
+    {
+      "name": "blk.13.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.930641,
+      "h8_ideal_bytes": 503,
+      "offset": 500985376
+    },
+    {
+      "name": "blk.13.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.926847,
+      "h8_ideal_bytes": 319610,
+      "offset": 500986400
+    },
+    {
+      "name": "blk.14.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.664777,
+      "h8_ideal_bytes": 3583,
+      "offset": 501308960
+    },
+    {
+      "name": "blk.14.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.78016,
+      "h8_ideal_bytes": 7528705,
+      "offset": 501315104
+    },
+    {
+      "name": "blk.14.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.788356,
+      "h8_ideal_bytes": 7536636,
+      "offset": 509056544
+    },
+    {
+      "name": "blk.14.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.780243,
+      "h8_ideal_bytes": 7528785,
+      "offset": 516797984
+    },
+    {
+      "name": "blk.14.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.614037,
+      "h8_ideal_bytes": 3544,
+      "offset": 524539424
+    },
+    {
+      "name": "blk.14.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.936959,
+      "h8_ideal_bytes": 504,
+      "offset": 524545568
+    },
+    {
+      "name": "blk.14.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.780502,
+      "h8_ideal_bytes": 215115,
+      "offset": 524546592
+    },
+    {
+      "name": "blk.14.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.794062,
+      "h8_ideal_bytes": 1292941,
+      "offset": 524767776
+    },
+    {
+      "name": "blk.14.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.132268,
+      "h8_ideal_bytes": 3174,
+      "offset": 526094880
+    },
+    {
+      "name": "blk.14.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.799501,
+      "h8_ideal_bytes": 1293844,
+      "offset": 526101024
+    },
+    {
+      "name": "blk.14.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.956466,
+      "h8_ideal_bytes": 506,
+      "offset": 527428128
+    },
+    {
+      "name": "blk.14.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.750082,
+      "h8_ideal_bytes": 214274,
+      "offset": 527429152
+    },
+    {
+      "name": "blk.15.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.700583,
+      "h8_ideal_bytes": 3610,
+      "offset": 527650336
+    },
+    {
+      "name": "blk.15.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.787716,
+      "h8_ideal_bytes": 7536017,
+      "offset": 527656480
+    },
+    {
+      "name": "blk.15.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.784674,
+      "h8_ideal_bytes": 7533074,
+      "offset": 535397920
+    },
+    {
+      "name": "blk.15.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.781203,
+      "h8_ideal_bytes": 7529715,
+      "offset": 543139360
+    },
+    {
+      "name": "blk.15.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.632786,
+      "h8_ideal_bytes": 3558,
+      "offset": 550880800
+    },
+    {
+      "name": "blk.15.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.997478,
+      "h8_ideal_bytes": 512,
+      "offset": 550886944
+    },
+    {
+      "name": "blk.15.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.783872,
+      "h8_ideal_bytes": 215208,
+      "offset": 550887968
+    },
+    {
+      "name": "blk.15.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.787392,
+      "h8_ideal_bytes": 1291835,
+      "offset": 551109152
+    },
+    {
+      "name": "blk.15.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.186534,
+      "h8_ideal_bytes": 3215,
+      "offset": 552436256
+    },
+    {
+      "name": "blk.15.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.791221,
+      "h8_ideal_bytes": 1292470,
+      "offset": 552442400
+    },
+    {
+      "name": "blk.15.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.921514,
+      "h8_ideal_bytes": 502,
+      "offset": 553769504
+    },
+    {
+      "name": "blk.15.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.726952,
+      "h8_ideal_bytes": 213635,
+      "offset": 553770528
+    },
+    {
+      "name": "blk.16.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.716789,
+      "h8_ideal_bytes": 3622,
+      "offset": 553991712
+    },
+    {
+      "name": "blk.16.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.932669,
+      "h8_ideal_bytes": 11194582,
+      "offset": 553997856
+    },
+    {
+      "name": "blk.16.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.785044,
+      "h8_ideal_bytes": 7533432,
+      "offset": 565287456
+    },
+    {
+      "name": "blk.16.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.77878,
+      "h8_ideal_bytes": 7527370,
+      "offset": 573028896
+    },
+    {
+      "name": "blk.16.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.62731,
+      "h8_ideal_bytes": 3554,
+      "offset": 580770336
+    },
+    {
+      "name": "blk.16.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.944397,
+      "h8_ideal_bytes": 505,
+      "offset": 580776480
+    },
+    {
+      "name": "blk.16.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.781579,
+      "h8_ideal_bytes": 215145,
+      "offset": 580777504
+    },
+    {
+      "name": "blk.16.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.793688,
+      "h8_ideal_bytes": 1292879,
+      "offset": 580998688
+    },
+    {
+      "name": "blk.16.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.128991,
+      "h8_ideal_bytes": 3171,
+      "offset": 582325792
+    },
+    {
+      "name": "blk.16.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.776486,
+      "h8_ideal_bytes": 1290026,
+      "offset": 582331936
+    },
+    {
+      "name": "blk.16.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.945467,
+      "h8_ideal_bytes": 505,
+      "offset": 583659040
+    },
+    {
+      "name": "blk.16.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.925985,
+      "h8_ideal_bytes": 319576,
+      "offset": 583660064
+    },
+    {
+      "name": "blk.17.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.670577,
+      "h8_ideal_bytes": 3587,
+      "offset": 583982624
+    },
+    {
+      "name": "blk.17.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.783984,
+      "h8_ideal_bytes": 7532405,
+      "offset": 583988768
+    },
+    {
+      "name": "blk.17.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.78576,
+      "h8_ideal_bytes": 7534124,
+      "offset": 591730208
+    },
+    {
+      "name": "blk.17.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.780277,
+      "h8_ideal_bytes": 7528819,
+      "offset": 599471648
+    },
+    {
+      "name": "blk.17.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.562024,
+      "h8_ideal_bytes": 3504,
+      "offset": 607213088
+    },
+    {
+      "name": "blk.17.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.99469,
+      "h8_ideal_bytes": 511,
+      "offset": 607219232
+    },
+    {
+      "name": "blk.17.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.78943,
+      "h8_ideal_bytes": 215362,
+      "offset": 607220256
+    },
+    {
+      "name": "blk.17.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.796247,
+      "h8_ideal_bytes": 1293304,
+      "offset": 607441440
+    },
+    {
+      "name": "blk.17.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.149669,
+      "h8_ideal_bytes": 3187,
+      "offset": 608768544
+    },
+    {
+      "name": "blk.17.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.784544,
+      "h8_ideal_bytes": 1291362,
+      "offset": 608774688
+    },
+    {
+      "name": "blk.17.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.964715,
+      "h8_ideal_bytes": 507,
+      "offset": 610101792
+    },
+    {
+      "name": "blk.17.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.748286,
+      "h8_ideal_bytes": 214225,
+      "offset": 610102816
+    },
+    {
+      "name": "blk.18.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.669653,
+      "h8_ideal_bytes": 3586,
+      "offset": 610324000
+    },
+    {
+      "name": "blk.18.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.787651,
+      "h8_ideal_bytes": 7535954,
+      "offset": 610330144
+    },
+    {
+      "name": "blk.18.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.783402,
+      "h8_ideal_bytes": 7531843,
+      "offset": 618071584
+    },
+    {
+      "name": "blk.18.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.779926,
+      "h8_ideal_bytes": 7528479,
+      "offset": 625813024
+    },
+    {
+      "name": "blk.18.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.521229,
+      "h8_ideal_bytes": 3472,
+      "offset": 633554464
+    },
+    {
+      "name": "blk.18.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.996058,
+      "h8_ideal_bytes": 511,
+      "offset": 633560608
+    },
+    {
+      "name": "blk.18.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.784869,
+      "h8_ideal_bytes": 215236,
+      "offset": 633561632
+    },
+    {
+      "name": "blk.18.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.794691,
+      "h8_ideal_bytes": 1293046,
+      "offset": 633782816
+    },
+    {
+      "name": "blk.18.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.175972,
+      "h8_ideal_bytes": 3207,
+      "offset": 635109920
+    },
+    {
+      "name": "blk.18.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.781402,
+      "h8_ideal_bytes": 1290841,
+      "offset": 635116064
+    },
+    {
+      "name": "blk.18.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.943058,
+      "h8_ideal_bytes": 505,
+      "offset": 636443168
+    },
+    {
+      "name": "blk.18.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.776038,
+      "h8_ideal_bytes": 214992,
+      "offset": 636444192
+    },
+    {
+      "name": "blk.19.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.534619,
+      "h8_ideal_bytes": 3483,
+      "offset": 636665376
+    },
+    {
+      "name": "blk.19.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.931868,
+      "h8_ideal_bytes": 11193452,
+      "offset": 636671520
+    },
+    {
+      "name": "blk.19.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.784051,
+      "h8_ideal_bytes": 7532470,
+      "offset": 647961120
+    },
+    {
+      "name": "blk.19.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.786527,
+      "h8_ideal_bytes": 7534867,
+      "offset": 655702560
+    },
+    {
+      "name": "blk.19.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.544381,
+      "h8_ideal_bytes": 3490,
+      "offset": 663444000
+    },
+    {
+      "name": "blk.19.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.977216,
+      "h8_ideal_bytes": 509,
+      "offset": 663450144
+    },
+    {
+      "name": "blk.19.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.791671,
+      "h8_ideal_bytes": 215424,
+      "offset": 663451168
+    },
+    {
+      "name": "blk.19.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.783104,
+      "h8_ideal_bytes": 1291124,
+      "offset": 663672352
+    },
+    {
+      "name": "blk.19.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.14381,
+      "h8_ideal_bytes": 3182,
+      "offset": 664999456
+    },
+    {
+      "name": "blk.19.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.786888,
+      "h8_ideal_bytes": 1291751,
+      "offset": 665005600
+    },
+    {
+      "name": "blk.19.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.923446,
+      "h8_ideal_bytes": 502,
+      "offset": 666332704
+    },
+    {
+      "name": "blk.19.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.907308,
+      "h8_ideal_bytes": 318823,
+      "offset": 666333728
+    },
+    {
+      "name": "blk.2.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.343744,
+      "h8_ideal_bytes": 3336,
+      "offset": 666656288
+    },
+    {
+      "name": "blk.2.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.737702,
+      "h8_ideal_bytes": 7487619,
+      "offset": 666662432
+    },
+    {
+      "name": "blk.2.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.795776,
+      "h8_ideal_bytes": 7543816,
+      "offset": 674403872
+    },
+    {
+      "name": "blk.2.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.80838,
+      "h8_ideal_bytes": 7556013,
+      "offset": 682145312
+    },
+    {
+      "name": "blk.2.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.062621,
+      "h8_ideal_bytes": 3120,
+      "offset": 689886752
+    },
+    {
+      "name": "blk.2.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 4.000311,
+      "h8_ideal_bytes": 512,
+      "offset": 689892896
+    },
+    {
+      "name": "blk.2.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.782768,
+      "h8_ideal_bytes": 215178,
+      "offset": 689893920
+    },
+    {
+      "name": "blk.2.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.789344,
+      "h8_ideal_bytes": 1292159,
+      "offset": 690115104
+    },
+    {
+      "name": "blk.2.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.156823,
+      "h8_ideal_bytes": 3192,
+      "offset": 691442208
+    },
+    {
+      "name": "blk.2.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.797497,
+      "h8_ideal_bytes": 1293511,
+      "offset": 691448352
+    },
+    {
+      "name": "blk.2.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.915883,
+      "h8_ideal_bytes": 501,
+      "offset": 692775456
+    },
+    {
+      "name": "blk.2.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.768367,
+      "h8_ideal_bytes": 214780,
+      "offset": 692776480
+    },
+    {
+      "name": "blk.20.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.548126,
+      "h8_ideal_bytes": 3493,
+      "offset": 692997664
+    },
+    {
+      "name": "blk.20.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.793963,
+      "h8_ideal_bytes": 7542062,
+      "offset": 693003808
+    },
+    {
+      "name": "blk.20.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.786144,
+      "h8_ideal_bytes": 7534495,
+      "offset": 700745248
+    },
+    {
+      "name": "blk.20.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.7878,
+      "h8_ideal_bytes": 7536098,
+      "offset": 708486688
+    },
+    {
+      "name": "blk.20.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.452888,
+      "h8_ideal_bytes": 3420,
+      "offset": 716228128
+    },
+    {
+      "name": "blk.20.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 4.005358,
+      "h8_ideal_bytes": 513,
+      "offset": 716234272
+    },
+    {
+      "name": "blk.20.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.786969,
+      "h8_ideal_bytes": 215294,
+      "offset": 716235296
+    },
+    {
+      "name": "blk.20.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.785378,
+      "h8_ideal_bytes": 1291501,
+      "offset": 716456480
+    },
+    {
+      "name": "blk.20.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.123972,
+      "h8_ideal_bytes": 3167,
+      "offset": 717783584
+    },
+    {
+      "name": "blk.20.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.782213,
+      "h8_ideal_bytes": 1290976,
+      "offset": 717789728
+    },
+    {
+      "name": "blk.20.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.962912,
+      "h8_ideal_bytes": 507,
+      "offset": 719116832
+    },
+    {
+      "name": "blk.20.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.668087,
+      "h8_ideal_bytes": 212007,
+      "offset": 719117856
+    },
+    {
+      "name": "blk.21.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.408482,
+      "h8_ideal_bytes": 3386,
+      "offset": 719339040
+    },
+    {
+      "name": "blk.21.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.934575,
+      "h8_ideal_bytes": 11197273,
+      "offset": 719345184
+    },
+    {
+      "name": "blk.21.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.788319,
+      "h8_ideal_bytes": 7536600,
+      "offset": 730634784
+    },
+    {
+      "name": "blk.21.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.787509,
+      "h8_ideal_bytes": 7535817,
+      "offset": 738376224
+    },
+    {
+      "name": "blk.21.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.412088,
+      "h8_ideal_bytes": 3388,
+      "offset": 746117664
+    },
+    {
+      "name": "blk.21.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.923572,
+      "h8_ideal_bytes": 502,
+      "offset": 746123808
+    },
+    {
+      "name": "blk.21.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.778554,
+      "h8_ideal_bytes": 215061,
+      "offset": 746124832
+    },
+    {
+      "name": "blk.21.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.789223,
+      "h8_ideal_bytes": 1292139,
+      "offset": 746346016
+    },
+    {
+      "name": "blk.21.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.14301,
+      "h8_ideal_bytes": 3182,
+      "offset": 747673120
+    },
+    {
+      "name": "blk.21.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.784804,
+      "h8_ideal_bytes": 1291406,
+      "offset": 747679264
+    },
+    {
+      "name": "blk.21.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.959458,
+      "h8_ideal_bytes": 507,
+      "offset": 749006368
+    },
+    {
+      "name": "blk.21.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.915801,
+      "h8_ideal_bytes": 319165,
+      "offset": 749007392
+    },
+    {
+      "name": "blk.22.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.483361,
+      "h8_ideal_bytes": 3443,
+      "offset": 749329952
+    },
+    {
+      "name": "blk.22.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.798424,
+      "h8_ideal_bytes": 7546379,
+      "offset": 749336096
+    },
+    {
+      "name": "blk.22.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.784954,
+      "h8_ideal_bytes": 7533345,
+      "offset": 757077536
+    },
+    {
+      "name": "blk.22.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.788591,
+      "h8_ideal_bytes": 7536863,
+      "offset": 764818976
+    },
+    {
+      "name": "blk.22.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.392058,
+      "h8_ideal_bytes": 3373,
+      "offset": 772560416
+    },
+    {
+      "name": "blk.22.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.975059,
+      "h8_ideal_bytes": 509,
+      "offset": 772566560
+    },
+    {
+      "name": "blk.22.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.788708,
+      "h8_ideal_bytes": 215342,
+      "offset": 772567584
+    },
+    {
+      "name": "blk.22.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.786694,
+      "h8_ideal_bytes": 1291719,
+      "offset": 772788768
+    },
+    {
+      "name": "blk.22.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.161477,
+      "h8_ideal_bytes": 3196,
+      "offset": 774115872
+    },
+    {
+      "name": "blk.22.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.786926,
+      "h8_ideal_bytes": 1291758,
+      "offset": 774122016
+    },
+    {
+      "name": "blk.22.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.979588,
+      "h8_ideal_bytes": 509,
+      "offset": 775449120
+    },
+    {
+      "name": "blk.22.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.86352,
+      "h8_ideal_bytes": 217411,
+      "offset": 775450144
+    },
+    {
+      "name": "blk.23.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.447527,
+      "h8_ideal_bytes": 3416,
+      "offset": 775671328
+    },
+    {
+      "name": "blk.23.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.800214,
+      "h8_ideal_bytes": 7548111,
+      "offset": 775677472
+    },
+    {
+      "name": "blk.23.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.785109,
+      "h8_ideal_bytes": 7533494,
+      "offset": 783418912
+    },
+    {
+      "name": "blk.23.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.787854,
+      "h8_ideal_bytes": 7536151,
+      "offset": 791160352
+    },
+    {
+      "name": "blk.23.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.389697,
+      "h8_ideal_bytes": 3371,
+      "offset": 798901792
+    },
+    {
+      "name": "blk.23.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.915972,
+      "h8_ideal_bytes": 501,
+      "offset": 798907936
+    },
+    {
+      "name": "blk.23.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.774225,
+      "h8_ideal_bytes": 214942,
+      "offset": 798908960
+    },
+    {
+      "name": "blk.23.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.803766,
+      "h8_ideal_bytes": 1294551,
+      "offset": 799130144
+    },
+    {
+      "name": "blk.23.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.158615,
+      "h8_ideal_bytes": 3194,
+      "offset": 800457248
+    },
+    {
+      "name": "blk.23.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.784372,
+      "h8_ideal_bytes": 1291334,
+      "offset": 800463392
+    },
+    {
+      "name": "blk.23.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.961431,
+      "h8_ideal_bytes": 507,
+      "offset": 801790496
+    },
+    {
+      "name": "blk.23.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.911802,
+      "h8_ideal_bytes": 218745,
+      "offset": 801791520
+    },
+    {
+      "name": "blk.24.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.189639,
+      "h8_ideal_bytes": 3218,
+      "offset": 802012704
+    },
+    {
+      "name": "blk.24.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.93599,
+      "h8_ideal_bytes": 11199269,
+      "offset": 802018848
+    },
+    {
+      "name": "blk.24.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.790281,
+      "h8_ideal_bytes": 7538499,
+      "offset": 813308448
+    },
+    {
+      "name": "blk.24.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.794667,
+      "h8_ideal_bytes": 7542743,
+      "offset": 821049888
+    },
+    {
+      "name": "blk.24.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.322375,
+      "h8_ideal_bytes": 3320,
+      "offset": 828791328
+    },
+    {
+      "name": "blk.24.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.945323,
+      "h8_ideal_bytes": 505,
+      "offset": 828797472
+    },
+    {
+      "name": "blk.24.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.772787,
+      "h8_ideal_bytes": 214902,
+      "offset": 828798496
+    },
+    {
+      "name": "blk.24.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.79288,
+      "h8_ideal_bytes": 1292745,
+      "offset": 829019680
+    },
+    {
+      "name": "blk.24.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.142836,
+      "h8_ideal_bytes": 3182,
+      "offset": 830346784
+    },
+    {
+      "name": "blk.24.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.788365,
+      "h8_ideal_bytes": 1291996,
+      "offset": 830352928
+    },
+    {
+      "name": "blk.24.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.919378,
+      "h8_ideal_bytes": 502,
+      "offset": 831680032
+    },
+    {
+      "name": "blk.24.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.86165,
+      "h8_ideal_bytes": 316982,
+      "offset": 831681056
+    },
+    {
+      "name": "blk.25.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.216786,
+      "h8_ideal_bytes": 3238,
+      "offset": 832003616
+    },
+    {
+      "name": "blk.25.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.80366,
+      "h8_ideal_bytes": 7551446,
+      "offset": 832009760
+    },
+    {
+      "name": "blk.25.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.794415,
+      "h8_ideal_bytes": 7542499,
+      "offset": 839751200
+    },
+    {
+      "name": "blk.25.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.797447,
+      "h8_ideal_bytes": 7545434,
+      "offset": 847492640
+    },
+    {
+      "name": "blk.25.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.198705,
+      "h8_ideal_bytes": 3225,
+      "offset": 855234080
+    },
+    {
+      "name": "blk.25.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.9653,
+      "h8_ideal_bytes": 508,
+      "offset": 855240224
+    },
+    {
+      "name": "blk.25.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.775713,
+      "h8_ideal_bytes": 214983,
+      "offset": 855241248
+    },
+    {
+      "name": "blk.25.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.807458,
+      "h8_ideal_bytes": 1295164,
+      "offset": 855462432
+    },
+    {
+      "name": "blk.25.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.15189,
+      "h8_ideal_bytes": 3189,
+      "offset": 856789536
+    },
+    {
+      "name": "blk.25.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.771973,
+      "h8_ideal_bytes": 1289277,
+      "offset": 856795680
+    },
+    {
+      "name": "blk.25.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.937487,
+      "h8_ideal_bytes": 504,
+      "offset": 858122784
+    },
+    {
+      "name": "blk.25.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.900573,
+      "h8_ideal_bytes": 218435,
+      "offset": 858123808
+    },
+    {
+      "name": "blk.26.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.187885,
+      "h8_ideal_bytes": 3216,
+      "offset": 858344992
+    },
+    {
+      "name": "blk.26.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.790665,
+      "h8_ideal_bytes": 7538870,
+      "offset": 858351136
+    },
+    {
+      "name": "blk.26.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.794727,
+      "h8_ideal_bytes": 7542801,
+      "offset": 866092576
+    },
+    {
+      "name": "blk.26.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.799505,
+      "h8_ideal_bytes": 7547425,
+      "offset": 873834016
+    },
+    {
+      "name": "blk.26.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.046194,
+      "h8_ideal_bytes": 3107,
+      "offset": 881575456
+    },
+    {
+      "name": "blk.26.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.961882,
+      "h8_ideal_bytes": 507,
+      "offset": 881581600
+    },
+    {
+      "name": "blk.26.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.792739,
+      "h8_ideal_bytes": 215454,
+      "offset": 881582624
+    },
+    {
+      "name": "blk.26.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.810252,
+      "h8_ideal_bytes": 1295627,
+      "offset": 881803808
+    },
+    {
+      "name": "blk.26.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.165126,
+      "h8_ideal_bytes": 3199,
+      "offset": 883130912
+    },
+    {
+      "name": "blk.26.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.811867,
+      "h8_ideal_bytes": 1295895,
+      "offset": 883137056
+    },
+    {
+      "name": "blk.26.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 4.003967,
+      "h8_ideal_bytes": 513,
+      "offset": 884464160
+    },
+    {
+      "name": "blk.26.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.903986,
+      "h8_ideal_bytes": 218529,
+      "offset": 884465184
+    },
+    {
+      "name": "blk.27.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.155991,
+      "h8_ideal_bytes": 3192,
+      "offset": 884686368
+    },
+    {
+      "name": "blk.27.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.933036,
+      "h8_ideal_bytes": 11195100,
+      "offset": 884692512
+    },
+    {
+      "name": "blk.27.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.796237,
+      "h8_ideal_bytes": 7544263,
+      "offset": 895982112
+    },
+    {
+      "name": "blk.27.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.797358,
+      "h8_ideal_bytes": 7545348,
+      "offset": 903723552
+    },
+    {
+      "name": "blk.27.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 3.736302,
+      "h8_ideal_bytes": 2869,
+      "offset": 911464992
+    },
+    {
+      "name": "blk.27.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.913491,
+      "h8_ideal_bytes": 501,
+      "offset": 911471136
+    },
+    {
+      "name": "blk.27.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.768341,
+      "h8_ideal_bytes": 214779,
+      "offset": 911472160
+    },
+    {
+      "name": "blk.27.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.799323,
+      "h8_ideal_bytes": 1293814,
+      "offset": 911693344
+    },
+    {
+      "name": "blk.27.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.141419,
+      "h8_ideal_bytes": 3181,
+      "offset": 913020448
+    },
+    {
+      "name": "blk.27.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.787783,
+      "h8_ideal_bytes": 1291900,
+      "offset": 913026592
+    },
+    {
+      "name": "blk.27.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.932435,
+      "h8_ideal_bytes": 503,
+      "offset": 914353696
+    },
+    {
+      "name": "blk.27.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.81533,
+      "h8_ideal_bytes": 315114,
+      "offset": 914354720
+    },
+    {
+      "name": "blk.3.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.276016,
+      "h8_ideal_bytes": 3284,
+      "offset": 914677280
+    },
+    {
+      "name": "blk.3.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.789097,
+      "h8_ideal_bytes": 7537354,
+      "offset": 914683424
+    },
+    {
+      "name": "blk.3.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.803366,
+      "h8_ideal_bytes": 7551161,
+      "offset": 922424864
+    },
+    {
+      "name": "blk.3.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.801407,
+      "h8_ideal_bytes": 7549265,
+      "offset": 930166304
+    },
+    {
+      "name": "blk.3.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.275784,
+      "h8_ideal_bytes": 3284,
+      "offset": 937907744
+    },
+    {
+      "name": "blk.3.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.960044,
+      "h8_ideal_bytes": 507,
+      "offset": 937913888
+    },
+    {
+      "name": "blk.3.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.776053,
+      "h8_ideal_bytes": 214992,
+      "offset": 937914912
+    },
+    {
+      "name": "blk.3.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.798997,
+      "h8_ideal_bytes": 1293760,
+      "offset": 938136096
+    },
+    {
+      "name": "blk.3.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.134138,
+      "h8_ideal_bytes": 3175,
+      "offset": 939463200
+    },
+    {
+      "name": "blk.3.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.792563,
+      "h8_ideal_bytes": 1292693,
+      "offset": 939469344
+    },
+    {
+      "name": "blk.3.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.859051,
+      "h8_ideal_bytes": 494,
+      "offset": 940796448
+    },
+    {
+      "name": "blk.3.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.766275,
+      "h8_ideal_bytes": 214722,
+      "offset": 940797472
+    },
+    {
+      "name": "blk.4.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.274749,
+      "h8_ideal_bytes": 3283,
+      "offset": 941018656
+    },
+    {
+      "name": "blk.4.ffn_down.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.792601,
+      "h8_ideal_bytes": 7540744,
+      "offset": 941024800
+    },
+    {
+      "name": "blk.4.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.798497,
+      "h8_ideal_bytes": 7546450,
+      "offset": 948766240
+    },
+    {
+      "name": "blk.4.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.795841,
+      "h8_ideal_bytes": 7543880,
+      "offset": 956507680
+    },
+    {
+      "name": "blk.4.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.158598,
+      "h8_ideal_bytes": 3194,
+      "offset": 964249120
+    },
+    {
+      "name": "blk.4.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.918342,
+      "h8_ideal_bytes": 502,
+      "offset": 964255264
+    },
+    {
+      "name": "blk.4.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.773536,
+      "h8_ideal_bytes": 214923,
+      "offset": 964256288
+    },
+    {
+      "name": "blk.4.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.798629,
+      "h8_ideal_bytes": 1293699,
+      "offset": 964477472
+    },
+    {
+      "name": "blk.4.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.136305,
+      "h8_ideal_bytes": 3177,
+      "offset": 965804576
+    },
+    {
+      "name": "blk.4.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.79353,
+      "h8_ideal_bytes": 1292853,
+      "offset": 965810720
+    },
+    {
+      "name": "blk.4.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.959314,
+      "h8_ideal_bytes": 507,
+      "offset": 967137824
+    },
+    {
+      "name": "blk.4.attn_v.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.768835,
+      "h8_ideal_bytes": 214793,
+      "offset": 967138848
+    },
+    {
+      "name": "blk.5.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.262191,
+      "h8_ideal_bytes": 3273,
+      "offset": 967360032
+    },
+    {
+      "name": "blk.5.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.93265,
+      "h8_ideal_bytes": 11194555,
+      "offset": 967366176
+    },
+    {
+      "name": "blk.5.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.796717,
+      "h8_ideal_bytes": 7544727,
+      "offset": 978655776
+    },
+    {
+      "name": "blk.5.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.798911,
+      "h8_ideal_bytes": 7546851,
+      "offset": 986397216
+    },
+    {
+      "name": "blk.5.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.333377,
+      "h8_ideal_bytes": 3328,
+      "offset": 994138656
+    },
+    {
+      "name": "blk.5.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.974318,
+      "h8_ideal_bytes": 509,
+      "offset": 994144800
+    },
+    {
+      "name": "blk.5.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.777027,
+      "h8_ideal_bytes": 215019,
+      "offset": 994145824
+    },
+    {
+      "name": "blk.5.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.795932,
+      "h8_ideal_bytes": 1293252,
+      "offset": 994367008
+    },
+    {
+      "name": "blk.5.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.177835,
+      "h8_ideal_bytes": 3209,
+      "offset": 995694112
+    },
+    {
+      "name": "blk.5.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.791388,
+      "h8_ideal_bytes": 1292498,
+      "offset": 995700256
+    },
+    {
+      "name": "blk.5.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.919031,
+      "h8_ideal_bytes": 502,
+      "offset": 997027360
+    },
+    {
+      "name": "blk.5.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.923257,
+      "h8_ideal_bytes": 319466,
+      "offset": 997028384
+    },
+    {
+      "name": "blk.6.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.275369,
+      "h8_ideal_bytes": 3283,
+      "offset": 997350944
+    },
+    {
+      "name": "blk.6.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.934605,
+      "h8_ideal_bytes": 11197315,
+      "offset": 997357088
+    },
+    {
+      "name": "blk.6.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.795169,
+      "h8_ideal_bytes": 7543229,
+      "offset": 1008646688
+    },
+    {
+      "name": "blk.6.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.79069,
+      "h8_ideal_bytes": 7538895,
+      "offset": 1016388128
+    },
+    {
+      "name": "blk.6.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.383491,
+      "h8_ideal_bytes": 3367,
+      "offset": 1024129568
+    },
+    {
+      "name": "blk.6.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.964188,
+      "h8_ideal_bytes": 507,
+      "offset": 1024135712
+    },
+    {
+      "name": "blk.6.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.793177,
+      "h8_ideal_bytes": 215466,
+      "offset": 1024136736
+    },
+    {
+      "name": "blk.6.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.789517,
+      "h8_ideal_bytes": 1292187,
+      "offset": 1024357920
+    },
+    {
+      "name": "blk.6.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.202465,
+      "h8_ideal_bytes": 3227,
+      "offset": 1025685024
+    },
+    {
+      "name": "blk.6.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.794855,
+      "h8_ideal_bytes": 1293073,
+      "offset": 1025691168
+    },
+    {
+      "name": "blk.6.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.942918,
+      "h8_ideal_bytes": 505,
+      "offset": 1027018272
+    },
+    {
+      "name": "blk.6.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.925655,
+      "h8_ideal_bytes": 319562,
+      "offset": 1027019296
+    },
+    {
+      "name": "blk.7.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.36305,
+      "h8_ideal_bytes": 3351,
+      "offset": 1027341856
+    },
+    {
+      "name": "blk.7.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.931943,
+      "h8_ideal_bytes": 11193559,
+      "offset": 1027348000
+    },
+    {
+      "name": "blk.7.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.7951,
+      "h8_ideal_bytes": 7543163,
+      "offset": 1038637600
+    },
+    {
+      "name": "blk.7.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.791362,
+      "h8_ideal_bytes": 7539545,
+      "offset": 1046379040
+    },
+    {
+      "name": "blk.7.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.393283,
+      "h8_ideal_bytes": 3374,
+      "offset": 1054120480
+    },
+    {
+      "name": "blk.7.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 4.005209,
+      "h8_ideal_bytes": 513,
+      "offset": 1054126624
+    },
+    {
+      "name": "blk.7.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.777589,
+      "h8_ideal_bytes": 215035,
+      "offset": 1054127648
+    },
+    {
+      "name": "blk.7.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.787551,
+      "h8_ideal_bytes": 1291861,
+      "offset": 1054348832
+    },
+    {
+      "name": "blk.7.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.183022,
+      "h8_ideal_bytes": 3213,
+      "offset": 1055675936
+    },
+    {
+      "name": "blk.7.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.79373,
+      "h8_ideal_bytes": 1292886,
+      "offset": 1055682080
+    },
+    {
+      "name": "blk.7.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.902114,
+      "h8_ideal_bytes": 499,
+      "offset": 1057009184
+    },
+    {
+      "name": "blk.7.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.928655,
+      "h8_ideal_bytes": 319683,
+      "offset": 1057010208
+    },
+    {
+      "name": "blk.8.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.46069,
+      "h8_ideal_bytes": 3426,
+      "offset": 1057332768
+    },
+    {
+      "name": "blk.8.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.934255,
+      "h8_ideal_bytes": 11196821,
+      "offset": 1057338912
+    },
+    {
+      "name": "blk.8.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.792939,
+      "h8_ideal_bytes": 7541072,
+      "offset": 1068628512
+    },
+    {
+      "name": "blk.8.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.788365,
+      "h8_ideal_bytes": 7536645,
+      "offset": 1076369952
+    },
+    {
+      "name": "blk.8.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.352913,
+      "h8_ideal_bytes": 3343,
+      "offset": 1084111392
+    },
+    {
+      "name": "blk.8.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 4.013414,
+      "h8_ideal_bytes": 514,
+      "offset": 1084117536
+    },
+    {
+      "name": "blk.8.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.778726,
+      "h8_ideal_bytes": 215066,
+      "offset": 1084118560
+    },
+    {
+      "name": "blk.8.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.790446,
+      "h8_ideal_bytes": 1292341,
+      "offset": 1084339744
+    },
+    {
+      "name": "blk.8.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.156454,
+      "h8_ideal_bytes": 3192,
+      "offset": 1085666848
+    },
+    {
+      "name": "blk.8.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.791559,
+      "h8_ideal_bytes": 1292526,
+      "offset": 1085672992
+    },
+    {
+      "name": "blk.8.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.954113,
+      "h8_ideal_bytes": 506,
+      "offset": 1087000096
+    },
+    {
+      "name": "blk.8.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.928363,
+      "h8_ideal_bytes": 319672,
+      "offset": 1087001120
+    },
+    {
+      "name": "blk.9.attn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.429951,
+      "h8_ideal_bytes": 3402,
+      "offset": 1087323680
+    },
+    {
+      "name": "blk.9.ffn_down.weight",
+      "type": "Q6_K",
+      "bytes": 11289600,
+      "h8_bits_per_byte": 7.932922,
+      "h8_ideal_bytes": 11194940,
+      "offset": 1087329824
+    },
+    {
+      "name": "blk.9.ffn_gate.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.794916,
+      "h8_ideal_bytes": 7542985,
+      "offset": 1098619424
+    },
+    {
+      "name": "blk.9.ffn_up.weight",
+      "type": "Q4_K",
+      "bytes": 7741440,
+      "h8_bits_per_byte": 7.786616,
+      "h8_ideal_bytes": 7534953,
+      "offset": 1106360864
+    },
+    {
+      "name": "blk.9.ffn_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.43036,
+      "h8_ideal_bytes": 3403,
+      "offset": 1114102304
+    },
+    {
+      "name": "blk.9.attn_k.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 4.066996,
+      "h8_ideal_bytes": 521,
+      "offset": 1114108448
+    },
+    {
+      "name": "blk.9.attn_k.weight",
+      "type": "Q4_K",
+      "bytes": 221184,
+      "h8_bits_per_byte": 7.771296,
+      "h8_ideal_bytes": 214861,
+      "offset": 1114109472
+    },
+    {
+      "name": "blk.9.attn_output.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.799428,
+      "h8_ideal_bytes": 1293831,
+      "offset": 1114330656
+    },
+    {
+      "name": "blk.9.attn_q.bias",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 4.207618,
+      "h8_ideal_bytes": 3231,
+      "offset": 1115657760
+    },
+    {
+      "name": "blk.9.attn_q.weight",
+      "type": "Q4_K",
+      "bytes": 1327104,
+      "h8_bits_per_byte": 7.788842,
+      "h8_ideal_bytes": 1292075,
+      "offset": 1115663904
+    },
+    {
+      "name": "blk.9.attn_v.bias",
+      "type": "F32",
+      "bytes": 1024,
+      "h8_bits_per_byte": 3.916335,
+      "h8_ideal_bytes": 501,
+      "offset": 1116991008
+    },
+    {
+      "name": "blk.9.attn_v.weight",
+      "type": "Q6_K",
+      "bytes": 322560,
+      "h8_bits_per_byte": 7.929863,
+      "h8_ideal_bytes": 319732,
+      "offset": 1116992032
+    },
+    {
+      "name": "output_norm.weight",
+      "type": "F32",
+      "bytes": 6144,
+      "h8_bits_per_byte": 2.925992,
+      "h8_ideal_bytes": 2247,
+      "offset": 1117314592
+    }
+  ],
+  "method": "numpy.bincount over complete raw uint8 tensor bytes in 8 MiB chunks; Shannon zeroth-order entropy per tensor and pooled by type; includes quantization metadata within each tensor; no model execution",
+  "host": {
+    "platform": "Linux-6.18.12+kali-amd64-x86_64-with-glibc2.42",
+    "processor": "",
+    "python": "3.13.12"
+  },
+  "elapsed_sec": 6.183,
+  "source": {
+    "repository": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+    "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+    "filename": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+  },
+  "software": {
+    "gguf_python": "0.19.0",
+    "numpy": "2.3.5",
+    "zstd": "*** Zstandard CLI (64-bit) v1.5.7, by Yann Collet ***"
+  },
+  "zstd_level3_single_thread": {
+    "whole_gguf_bytes": 1092102183,
+    "Q4_K_concatenated_tensor_bytes": 738603599,
+    "Q6_K_concatenated_tensor_bytes": 351302247,
+    "F32_concatenated_tensor_bytes": 299712,
+    "note": "Each per-type archive is a concatenation of tensors in GGUF order and is not itself a loadable GGUF. Whole-file archive requires decompression before standard GGUF loading. Timings taken under shared VM load and are not inference benchmarks.",
+    "roundtrip_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "roundtrip_verified": true,
+    "roundtrip_command": "zstd -dc -q archive.zst | sha256sum"
+  },
+  "measurement_time_utc": "2026-11-12 22:51 UTC",
+  "interpretation_limits": "H8 estimates marginal byte entropy, not a bound on blockwise/higher-order coding. No inference, quality, process RAM, or CPU-seconds per request were measured.",
+  "field_entropy": {
+    "method": "Full census of byte frequency by fixed GGUF block-field offset; pooled across tensors of each type. H8 is zero-order marginal byte entropy per field. 16,384 blocks maximum per chunk. Field byte accounting exactly partitions all Q4_K and Q6_K tensor bytes. Does not model within-field/block context or coding overhead.",
+    "layout_source": "https://github.com/ggml-org/llama.cpp/blob/f3b407ca1/ggml/src/ggml-common.h",
+    "fields": {
+      "Q6_K/weight_low_nibbles_packed": {
+        "bytes": 215777280,
+        "h8_bits_per_byte": 7.967672,
+        "marginal_ideal_bytes": 214905331,
+        "marginal_headroom_bytes": 871949,
+        "marginal_headroom_percent": 0.4041
+      },
+      "Q6_K/weight_high_2bit_packed": {
+        "bytes": 107888640,
+        "h8_bits_per_byte": 7.52373,
+        "marginal_ideal_bytes": 101465629,
+        "marginal_headroom_bytes": 6423011,
+        "marginal_headroom_percent": 5.9534
+      },
+      "Q6_K/subblock_scales_i8": {
+        "bytes": 26972160,
+        "h8_bits_per_byte": 7.350254,
+        "marginal_ideal_bytes": 24781530,
+        "marginal_headroom_bytes": 2190630,
+        "marginal_headroom_percent": 8.1218
+      },
+      "Q6_K/superblock_scale_f16": {
+        "bytes": 3371520,
+        "h8_bits_per_byte": 5.968533,
+        "marginal_ideal_bytes": 2515378,
+        "marginal_headroom_bytes": 856142,
+        "marginal_headroom_percent": 25.3933
+      },
+      "Q4_K/scale_f16": {
+        "bytes": 21021696,
+        "h8_bits_per_byte": 6.903451,
+        "marginal_ideal_bytes": 18140281,
+        "marginal_headroom_bytes": 2881415,
+        "marginal_headroom_percent": 13.7069
+      },
+      "Q4_K/min_scale_6bit_packed": {
+        "bytes": 63065088,
+        "h8_bits_per_byte": 7.15717,
+        "marginal_ideal_bytes": 56420946,
+        "marginal_headroom_bytes": 6644142,
+        "marginal_headroom_percent": 10.5354
+      },
+      "Q4_K/weight_nibbles_packed": {
+        "bytes": 672694272,
+        "h8_bits_per_byte": 7.728729,
+        "marginal_ideal_bytes": 649883999,
+        "marginal_headroom_bytes": 22810273,
+        "marginal_headroom_percent": 3.3909
+      }
+    },
+    "by_type": {
+      "Q4_K": {
+        "bytes": 756781056,
+        "field_marginal_headroom_bytes": 32335830,
+        "field_marginal_headroom_percent": 4.2728
+      },
+      "Q6_K": {
+        "bytes": 354009600,
+        "field_marginal_headroom_bytes": 10341732,
+        "field_marginal_headroom_percent": 2.9213
+      }
+    },
+    "measurement_time_utc": "2026-11-12 23:04 UTC"
+  }
+}

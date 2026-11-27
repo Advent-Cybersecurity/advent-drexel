@@ -1,0 +1,287 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{needspace}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=blue,urlcolor=blue,
+  pdftitle={Project Drexel: Feasibility Boundaries for Locally Model-Driven Adaptive Malware},
+  pdfauthor={Jashid Sany, Advent Cybersecurity}}
+\urlstyle{same}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\setlength{\parskip}{0.35em}
+\setlength{\parindent}{1.2em}
+
+\title{Project Drexel: Feasibility Boundaries for Locally Model-Driven Adaptive Malware\\
+\large Polymorphism, Environmental Generalization, and Defender Observability}
+\author{Jashid Sany\\\small Advent Cybersecurity}
+\date{27 November 2026\\Version 0.3 --- working preprint}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Project Drexel investigates whether an endpoint-resident, task-specialized language model could support malware that responds to heterogeneous operating environments while retaining function and avoiding specified defender outcomes. The motivating ambitions---adaptation to any environment and invisibility to defenders---are universal claims that the current evidence cannot establish. We recast them as finite, falsifiable questions about environment coverage, local model capability and resource cost, serial active-code revision, and sensor-specific observability. This critical narrative review connects established polymorphic and metamorphic techniques to recent model-generated variants, benign dynamic software updating, agentic intrusion reports, and endpoint studies. A relevance-selected ledger of 31 cases evaluates the strict subclaim that two model-caused executable revisions become active in one continuing remote-access process with an independent task/result after each; no reviewed public record joins its four necessary links. Offline variant studies show substantial code variation and some detector-score reductions, but do not demonstrate a custom on-host model, live behavioral adaptation, or universal stealth. Local-model studies demonstrate narrow capabilities under specific hardware and tasks, not a complete Drexel architecture. We specify a staged, authorized benign research program with explicit environment strata, version provenance, independent function oracles, resource accounting, and separate telemetry, alert, and enforcement outcomes. This preprint is an evidence-bounded research framework, not a demonstration of adaptive malware.
+\end{abstract}
+
+\noindent\textbf{Keywords:} Project Drexel; polymorphic malware; local language models; environmental adaptation; dynamic software updating; defender observability.
+
+\section{Introduction}
+
+Polymorphic and metamorphic malware predate contemporary language models. They can change representation across executions while retaining an objective, challenging simple signature matching \cite{mitrepoly,waveatlas}. A language model might expand the space of candidate transformations and, if given local observations and a reliable acceptance mechanism, potentially condition changes on an environment rather than merely sample from a fixed mutation engine. That second step is a hypothesis about \emph{feedback-conditioned semantic adaptation}, not a consequence of syntactic diversity. More variants can also mean more broken code, resource use, or observable events.
+
+\emph{Project Drexel} names a research program about this possible transition. Its central architectural question is whether a custom, locally available language model can support a program that interprets environmental constraints, proposes or chooses bounded changes, retains required behavior across revisions, and remains operational under specified defensive policies. Here ``custom'' can mean a domain-adapted checkpoint, an adapter, or a constrained task-specific model; a custom prompt to a general model and a cloud API are different placements. We do not assume that training a new model from scratch is necessary or feasible on an endpoint. Nor do we assume that model inference must occur inside the same process as the changing code.
+
+The phrases \emph{any environment} and \emph{undetectable by defenders} are useful aspirational stress tests but poor empirical conclusions. Real environments differ in operating system, architecture, application runtime, privileges, network availability, execution policy, and monitoring configuration. A finite evaluation can establish coverage of a declared matrix and estimate generalization to held-out strata; it cannot prove success in every possible environment. A lack of named alerts within one product and time window cannot prove invisibility to every defender, particularly if raw telemetry exists or a different policy blocks the behavior. The paper therefore asks what can be demonstrated, under which conditions, and with which independent observations.
+
+Our contributions are fourfold. First, we distinguish classical representation mutation, offline model-generated variants, runtime action selection, and active code revision. Second, we audit the closest public evidence without combining unlike units into a synthetic success rate. Third, we define a demanding continuity subclaim: two model-caused code revisions active in one identified continuing remote-access process with function checked after each. Fourth, we propose a staged benign experimental program for local-model quality, environment coverage, version continuity, and defender visibility. This is an evidence review and research agenda; it does not present a new malware implementation or claim an achieved detection-evasion rate.
+
+\subsection{Research questions and prospective decision rules}
+
+\textbf{RQ1 (environment-conditioned adaptation):} Across a prespecified matrix of endpoint and policy conditions, can a locally executed model use a recorded environmental observation to select or propose a change in benign behavior that preserves a task better than unchanged and fixed-rule controls? Coverage and adaptation are separate outcomes: a fixed program may work across the matrix without adapting. One failed run refutes deterministic perfect coverage; a stochastic coverage claim needs a prespecified per-stratum success floor, repeat denominator, and uncertainty rule. Success in sampled strata does not imply universal adaptability.
+
+\textbf{RQ2 (local model):} Does a specified custom or adapted checkpoint meet a predeclared task-quality floor within complete storage, memory, latency, and energy budgets on named endpoint classes? A smaller model file or an isolated benchmark pass is insufficient if the full deployed request fails any gate. The values and uncertainty rules must be set before an empirical study; this review estimates none of them.
+
+\textbf{RQ3 (serial continuity):} Can two distinct model-caused executable changes become active in one identified continuing process and retain an independently checked task after each? The failure, restart, or unverified activation of either version defeats this stricter claim even if a service stays reachable.
+
+\textbf{RQ4 (defender outcomes):} Under a named sensor version, policy, and observation window, what raw events, alerts, enforcement actions, and valid task results follow? A single alert or block refutes an absolute invisibility claim for that configuration; a no-alert run supports only that configuration and window. We keep these outcomes separate instead of labeling an unblocked program ``undetectable.'' Future rate claims require prespecified alert definitions, observation windows, trial denominators, and uncertainty rules.
+
+\section{Conceptual model and scope}\label{sec:model}
+
+The primary Drexel architecture places the model's inference capability on the endpoint under examination. This is a narrower placement than an external operator-side model that sends fresh scripts or instructions. It is also different from a nearby local server on the same network. The model might be a domain-adapted open checkpoint rather than a newly pretrained foundation model, but the adaptation method and complete deployed artifact must be declared. The executable program and the model may occupy different processes; the research question is where inference happens, what output causes a code change, and which process continues afterward. This separation prevents a cloud-assisted build from being described as an on-device autonomous revision.
+
+At a high level, let $e=(o,a,r,p,n,h)$ describe an environment stratum: operating system $o$, architecture $a$, application runtime $r$, execution policy $p$, network condition $n$, and resource envelope $h$. Let $m$ identify the model and its placement and $d$ identify a defender configuration and observation window. A trial records a vector rather than one ``stealth'' bit:
+\begin{equation}
+Y_i(e,m,d)=(F_i,V_i,I_i,C_i,T_i,A_i,B_i),\label{eq:outcomes}
+\end{equation}
+where $F_i$ denotes independently checked benign task function, $V_i$ verified activation of the intended version, $I_i$ process-image continuity, $C_i$ exact model-to-version causation, $T_i$ raw telemetry observed by the named instrumentation, $A_i$ a named alert, and $B_i$ enforcement such as a block or termination. Each field has its own missingness and time origin. A run can have $F_i=1$ and $A_i=1$; function and alert are not mutually exclusive. Likewise $T_i=1$ need not entail a named alert, while $B_i=0$ does not imply absence of telemetry. The strict two-revision criterion in Section~\ref{sec:claim} requires an ordered sequence of version-bound $F_i=V_i=I_i=C_i=1$ checks, not merely one favorable terminal state.
+
+The research program is about \emph{feasibility boundaries}, not an assertion that a particular hostile artifact exists. It deliberately excludes claims about exploitation, persistence, lateral movement, exfiltration, or use against real systems. The proposed empirical analogue uses harmless tasks in an authorized lab. Its results would support software-engineering and defensive measurement conclusions for the specified settings; transferring them to operational malware would require separate evidence.
+
+An RQ1 adaptation claim requires more than a favorable $F_i$ across hosts. The record must connect a time-stamped environmental observation to a model-conditioned decision and a resulting change in invoked behavior, then compare retained function with unchanged and fixed-rule controls exposed to the same condition. A response that selects an existing capability may qualify as behavioral adaptation under RQ1 but does not, by itself, qualify as model-authored executable revision under RQ3.
+
+\section{Formal subclaim: serial active-code revision}\label{sec:claim}
+
+Let an \emph{instance} be one identified application process with a recorded start time and image lineage. A stable process identifier alone is insufficient: identifiers can be reused, and a Linux \texttt{execve} may retain the PID while replacing the program image. Service continuity across a worker replacement or re-execution is valuable, but it is a different claim from uninterrupted resident-image continuity. We require a version-specific record through the following states:
+\begin{equation}
+S_0 \longrightarrow S_1 \longrightarrow S_2 .\label{eq:states}
+\end{equation}
+$S_0$ is a baseline instance with independently verified benign remote function. At $S_1$, a particular model response must author or materially edit the executable code in a distinct accepted artifact through a documented transformation and acceptance path; the changed version is shown active in the same instance, and a new independently issued task succeeds afterward. $S_2$ repeats those requirements for a later, different model-caused artifact in that same lineage. The task after $S_2$ must not be an old response replayed from $S_1$. A newly added model-authored executable module can count, provided its behavior is invoked in the resident process; it should be labeled as an addition rather than replacement of an existing body. Human rewriting or selection of a pre-existing module is recorded separately and cannot satisfy this code-authorship rule.
+
+This is the stringent \emph{RQ3 subclaim}, not a definition of all possible adaptive malware. Four links must be joined in one time-ordered record: \textbf{instance continuity}, \textbf{model-to-artifact code provenance}, \textbf{two active changed versions}, and \textbf{a valid remote task/result after each}. Preserve the model response, any deterministic or automated transformation, exact accepted artifact, and rejection history so that model contribution is inspectable. A prompt, source-file edit, compilation success, loader acknowledgement, heartbeat, open socket, or product upgrade feature establishes at most part of this chain. A model-selected command, configuration change, or pre-existing module is not a model-authored executable-code version. Likewise, changing model weights or the model's prompt is a distinct intervention from changing the surrounding payload code. Action selection and service restart may still be operationally meaningful, but they answer different questions.
+
+The paper does not use ``recursive self-improvement'' as a synonym for two revisions. A fixed model can author successive code versions; recursive improvement would require evidence that the mechanism proposing subsequent changes was itself revised and used. That stronger condition is outside our hypothesis.
+
+\section{Review method}\label{sec:method}
+
+This is an exploratory narrative review of public sources examined through 27 November 2026. The underlying dated search protocol records the 26 November source-only pass; the present revision adds targeted primary-source checks on polymorphism, local-model constraints, environmental variability, and defender telemetry. Searches combined terms for language models, AI agents, polymorphism, metamorphism, self-update, remote-access tools, runtime loading, endpoint policy, and detection. Named reports and projects were followed to the investigating team's original publication, paper, official documentation, or pinned code snapshot. The dated protocol and source registry accompany the archived paper. The registry contains 512 heterogeneous records accumulated across earlier project questions; it is a bibliography, \emph{not} 512 independent Drexel-like incidents or trials.
+
+Thirty-one cases were selected because each approaches at least one necessary link of \emph{RQ3}. This is a relevance-selected serial-revision ledger, not a random sample, a census, a systematic-review denominator, or a sample for estimating cross-environment coverage. For each case, the archived ledger records source identifiers, setting, four link statuses, and an explanatory note. The underlying narrative review also considered the unit of observation, model and code placement, activation, continuity, function, and source type, but those attributes were not uniformly extracted as structured per-case fields. This limits independent cross-case reconstruction. Each RQ3 link received one of five statuses: documented, first-party reported, mechanism only, not shown, or outside evaluated scope. ``Not shown'' means the public record lacks the necessary evidence; it does not mean the event failed or could not occur. We treated code and transcript claims as leads whose asserted outcomes require independent checks. The wider RQ1, RQ2, and RQ4 discussions draw on targeted illustrative sources rather than separate systematically selected corpora.
+
+No model, agent, malware sample, or payload was run for this revision. Earlier exploratory local-inference measurements in the larger project are separate studies and are not entered as trials of the hypothesis in Eq.~\ref{eq:states}. We report source-specific results only at their original task, hardware, and denominator. A source can support a component mechanism even when it cannot support the full architecture.
+
+\section{Polymorphism, metamorphism, and adaptation}\label{sec:polymorphism}
+
+The terminology is frequently overextended. Classical polymorphism and metamorphism concern changes to the observable representation of a program while retaining a broad purpose; common instances include encoding, unpacking, and code-form mutation \cite{mitrepoly,wongstamp}. Calvet and colleagues' WaveAtlas study reconstructs waves of code revealed by packers during execution, showing that self-changing bytes long predate generative models \cite{waveatlas}. Neither a changed hash nor a new unpacked wave implies that a system interpreted its environment, generated a semantically useful revision, or preserved a remote-control session. Environmental response itself also predates LLMs: Avllazagaj and colleagues found behavior variation across 7.6 million execution traces from 5.4 million hosts, while studying detectable behavioral invariants \cite{avllazagaj}. The proposed novelty is therefore not ``malware changes,'' but a particular coupling of local model inference, environment feedback, constrained change selection, and independently verified continued function.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Distinct mechanisms often grouped under ``AI-polymorphic malware.''}\label{tab:taxonomy}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.22\linewidth}YY@{}}
+\toprule
+Mechanism & Object changed & Evidence needed for a stronger Drexel inference \\
+\midrule
+Packing or conventional polymorphism & Encoded appearance or runtime code wave, often with a fixed goal. & Show model-causal, environment-conditioned choice rather than an existing mutation routine. \\
+Offline LLM variants & Separate source files or builds prepared before execution. & Show a particular variant is applied and functions in an identified live instance. \\
+Runtime action selection & Command, configuration, or tool choice within fixed code. & Show whether executable behavior actually changes, and distinguish controller from endpoint model. \\
+Resident code revision & Active module or function in a continuing program. & Bind model output to exact accepted version and independent function after each change. \\
+Environment-responsive adaptation & Behavior or accepted version conditioned on observed host constraints. & Compare predeclared environment strata and held-out conditions, with retained function and failure counts. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Model-generated variants make the historical comparison concrete but do not settle it. Akil and colleagues' LLMalMorph study produced 618 offline variants from ten Windows malware source projects; 449/618 had a lower VirusTotal detection score than their respective baseline, in a semi-automated workflow that also involved manual effort \cite{llmalmorph}. The reported function-preservation proxy and scanner scores are specific to the selected codebases, checks, and products. They are not a rate of sustained live function, on-device inference, or invisibility across defenders. Madani's model-mutation experiment measured distinct correct solutions on 164 benign HumanEval tasks, not a deployed malware lineage \cite{madani}. Hortea and colleagues found that a single static n-gram rule covered all 100 samples in each of stages 3 and 4 under both prompting modes of their laboratory pipeline; their 1.5B local model produced 126 functional outputs from 2,480 heavily scaffolded attempts on one standalone task, and some apparent diversity represented broken code \cite{hortea}. These counterexamples show why structural difference, functional preservation, and detector outcome must be measured separately.
+
+More explicit environment-conditioned prototypes also need placement and scope checks. Raz and colleagues evaluated an LLM-orchestrated research prototype over three designed environments and 30 runs, but inference used a separate multi-GPU machine; the authors list persistence and advanced evasion among omitted functions \cite{raz}. This is evidence for a controlled model-directed workflow over a finite matrix, not an endpoint-resident custom model or adaptation to every environment. The distinction between local endpoint inference and nearby or remote model service is therefore integral to the research claim.
+
+\section{Mechanism feasibility and its boundaries}\label{sec:mechanism}
+
+\subsection{Live code and state}
+
+Dynamic software updating gives a concrete reason to regard an in-process code change as technically possible. Kitsune updated multiple C programs through explicit update points and state transformations; its evaluated Tor relay accepted successive versions while client TLS sessions continued without renegotiation \cite{kitsune}. That is strong evidence for engineered, benign update continuity, but the authors' programs were adapted for the updater. It does not establish that arbitrary model-written changes can be applied safely or that a remote-access payload survived two such changes. Other mechanisms preserve a service while replacing a process or image, which does not satisfy the stricter resident-image condition \cite{proteos}.
+
+State migration, safe update timing, mixed old/new calls, and rollback are substantive constraints. A newly loaded function can exist while an already-running handler still uses old code. A module may compile but not enter the active registry; an accepted version may then fail the function it was intended to preserve. Pinned source audits of Asiel Core and NexAgent expose model-facing edit or upgrade paths and in-process loaders, but their checked-in records do not provide a two-accepted-version, version-specific functional trace \cite{asielapp,asielproposals,nexagent}. Author-recorded RSInfer alternations add a different benign example of version-specific outputs in one reported worker; the public record lacks independent process telemetry and the model-to-patch lineage required here \cite{rsinfer}.
+
+\subsection{Model causation is separate from activation}
+
+A checked-in \texttt{cl-agent} conversation is a particularly close benign source: the model submits an extension, then a byte-distinct revision, and the tool reports two loads in one logical session. Calls after the second load exercise the revised tools. The first load has no intervening function check, however, and the transcript contains neither OS process identity nor remote-control tasks \cite{clagent}. This illustrates why two load acknowledgements cannot be promoted to two qualified $S_1$/$S_2$ transitions. Exact source bytes, loader behavior, and a task bound to each version are all necessary.
+
+These mechanisms show that a deliberately designed composition is plausible: a model may propose changed code and a suitable runtime may adopt it. They do not establish the reliability of that composition, its operation in a remote-access program, or its behavior under endpoint policy. Platform mitigations can restrict dynamic executable memory or unsigned image loading when configured, so feasibility is conditional on the actual runtime and policy \cite{msmitigations,applehardened,systemdexec}. A capability listed in documentation is neither a universal block nor a measured alert.
+
+\Needspace{16\baselineskip}
+\section{What the close cases establish}\label{sec:cases}
+
+Table~\ref{tab:examples} places several strong but noninterchangeable observations at their actual boundary. The selected-case ledger records all 31 cases and the source links behind their individual classifications.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Illustrative components and the missing link to the expanded hypothesis.}\label{tab:examples}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.20\linewidth}YY@{}}
+\toprule
+Source setting & What the public source supports & Why it does not establish $S_2$ \\
+\midrule
+Kitsune, benign updater \cite{kitsune} & Successive live versions with preserved Tor relay client sessions. & No model-caused payload revision or version-bound remote-control task. \\
+\texttt{cl-agent}, pinned transcript \cite{clagent} & Two model-submitted extension loads in one logical session; functions called after the second. & No after-first function check, OS process trace, or remote-access workload. \\
+PROMPTFLUX, analyzed sample \cite{gtig2025} & Experimental hosted-model rewrite design; model-response logging in the detailed sample analysis. & The examined self-update path was disabled; no applied, functional serial rewrite shown. \\
+C2Agent, field sample analysis \cite{c2agent} & Model-directed control loop, many recovered builds, and an upgrade capability. & Builds and capability do not show two model-authored upgrades applied to one resident instance. \\
+Cairn, first-party intrusion report \cite{aws} & Agent-directed creation of one functioning shell payload is reported. & A new Python process imported the file; no exact model-to-file transcript or two resident versions. \\
+BypassGym, controlled benchmark \cite{bypassgym} & Individual candidates receive endpoint function checks on restored systems. & Endpoint restoration separates candidates; there is no continuing two-version instance. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+PROMPTFLUX is instructive because a later shorthand description can sound stronger than the detailed technical account. Google's original investigation describes experimental model-requested script rewriting but says the self-update function in its examined sample was commented out and did not establish victim compromise \cite{gtig2025}. A requested rewrite is evidence of intended behavior, not an applied version. C2Agent presents the opposite conjunction: a live model-directed command loop, recovered build variation, and a future upgrade path coexist, yet the public analysis does not connect a model response to two upgrades of one running payload \cite{c2agent}. Separate observations cannot be spliced into the missing timeline.
+
+Amazon's Cairn report provides a stronger field connection between an agent-directed action and one working shell, but the reported path writes a Python file that a \emph{new} interpreter imports \cite{aws}. Gambit's recovered-controller investigation similarly reports external agent orchestration and a deterministic routine that reinserts a website skimmer after redeployment; its operator-side cost and repeated reinsertion do not measure resident model-authored revision \cite{gambit}. These cases support agent-enabled intrusion and payload delivery, not the narrower process-continuity claim.
+
+The ledger summary in Table~\ref{tab:ledger} shows why the gap cannot be described as a failure rate. Statuses are reviewer annotations on a selected set; a documented entry in one row does not certify the four-link chain. In particular, no selected case provides a version-bound remote-control result after \emph{both} active revisions.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Claim-link annotations for 31 relevance-selected cases (counts, not trial outcomes).}\label{tab:ledger}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Required link & Documented & Reported & Mechanism & Not shown & Outside scope \\
+\midrule
+Continuing process & 2 & 5 & 8 & 9 & 7 \\
+Model to executable revision & 5 & 10 & 5 & 5 & 6 \\
+Two active, functional revisions & 2 & 1 & 1 & 19 & 8 \\
+Remote result after each & 0 & 0 & 0 & 14 & 17 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The first three rows contain demonstrations of \emph{components}, often in benign systems without a remote-access workload. ``Outside scope'' denotes such a mismatch, while ``not shown'' denotes missing disclosure within a potentially relevant setting. Neither category may be entered as an observed experimental failure. The zero in the final documented column describes the reviewed public record; it is not a population estimate.
+
+\section{The four remaining feasibility gates}\label{sec:constraints}
+
+\subsection{Repeated-change reliability}
+
+Two successful revisions are a sequential outcome. Let $N_L$ be all eligible launch attempts, $N_0$ those that establish independently checked baseline function, $N_1$ those that reach $S_1$, and $N_2$ those that reach $S_2$ within a declared observation window. The conditional serial-revision rate is $N_2/N_0$; overall launch-to-$S_2$ feasibility is $N_2/N_L$. Report $N_0/N_L$, $N_1/N_0$, and $N_2/N_1$ separately. Only within the \emph{same nested cohort} do
+\begin{equation}
+\frac{N_2}{N_0}=\frac{N_1}{N_0}\frac{N_2}{N_1},\qquad
+\frac{N_2}{N_L}=\frac{N_0}{N_L}\frac{N_1}{N_0}\frac{N_2}{N_1}
+\end{equation}
+hold as interpretable decompositions. Multiplying a code-generation result from one benchmark by a connection result from another would ignore different tasks, runtimes, candidate-selection rules, and correlated failures. The present ledger has no launch cohort and therefore no empirical value for either rate.
+
+\subsection{Custom local-model capability and resource cost}
+
+Model placement creates another noninterchangeable boundary. A model hosted outside the endpoint can author code for a local program; a local model can merely classify data; and an endpoint-resident model can select commands without revising its own executable body. A \emph{custom local LLM} should be specified by base checkpoint, adaptation method, weights and tokenizer, quantization, runtime, hardware, task role, and update policy. Domain fine-tuning, a small adapter, prompt specialization, and training from scratch are not equivalent interventions. The model's location must also be distinguished from the location of its output code.
+
+Radovic and colleagues studied cloud-written programs assisted by a small local interpreter, rather than local code authorship; their models were served on A100/V100 GPUs \cite{radovic}. Normann and colleagues' post-trained 4B security agent reached 112/120 successes on held-out Linux privilege-escalation runs with shell and credential tools, but did not write or revise its own code. Its remaining eight failures at the primary budget all arose in a withheld Docker family; inference used an RTX 5090, and the quoted per-success cost is a serving-only estimate under explicit utilization and batching assumptions \cite{normann}. The result supports narrow task specialization while directly warning against unqualified environmental generalization. Neither result measures a CPU-only resident code reviser or transfers a success probability to the Drexel chain.
+
+Advent Cybersecurity's separate CPU-only pilot measured 570 MiB and 1,752 MiB median sampled peak resident memory for 0.5B and 1.5B quantized checkpoints on a synthetic workload of one 128-token prompt plus 64 generated tokens per run, with five process runs per configuration on one virtual machine \cite{adventpilot}. It measured neither generated-code quality nor endpoint alerts. Model file bytes alone omit the runtime, tokenizer, caches, transient allocations, verification, retries, and cold start. A viable local-model claim must meet a joint floor for quality, complete deployed bytes, high-water memory, whole-request latency or CPU time, and energy on the same model-task-hardware combination. No reviewed result yet establishes all of those gates for cross-environment live revision.
+
+ESET reported PromptLock samples that requested generated scripts from a locally accessible Ollama-served model. A later ESET update said an academic prototype closely resembled the samples, supporting its assessment that they were a proof of concept rather than an observed wild deployment; the resemblance does not prove exact provenance \cite{esetpromptlock}. This is an important distinction between a program \emph{calling} a local model service and carrying, installing, or efficiently executing its own custom checkpoint on a target endpoint. Anthropic's controlled hardware study reports that a 9B model established inference on eight of nine tested device types, while its end-to-end replication trial depended on a larger externally served agent; the authors describe a remaining capability-versus-device-size gap for their small-device scenario \cite{anthropicreplication}. These studies make model placement a measurable engineering question, not an attribute that follows from an ``AI-powered'' label.
+
+\subsection{Environment coverage}
+
+``Any environment'' has no finite experimental denominator. A testable substitute is a predeclared set $\mathcal{E}$ of environment strata, with each $e\in\mathcal{E}$ specifying operating system, architecture, runtime, privileges, resource envelope, network state, and relevant policy. The study should report success and failure separately by stratum and identify which strata were held out during model adaptation. It should also record a controlled environmental change and ask whether the observed constraint caused a different model decision and an independently useful behavior change compared with unchanged and fixed-rule controls. If a weighted summary is useful, the weights $w_e$ must be justified for a named deployment population; an unweighted macro-average is a descriptive summary of the chosen matrix, not a universal probability. This design avoids treating repeated variations of one host image as independent evidence of new-environment generalization.
+
+Some environment combinations may be infeasible for a particular update mechanism. Microsoft documents mitigations that can block dynamically generated executable memory when enabled; Apple documents hardened-runtime restrictions on JIT and library loading; and systemd documents a configurable executable-memory restriction with defined scope and exceptions \cite{msmitigations,applehardened,systemdexec}. These are conditional engineering constraints, not proof of universal prevention. A study must record the actual policy state and distinguish an unavailable update path from a model planning failure.
+
+\subsection{Defender observability}
+
+Endpoint observability must be assessed as its own measured outcome. Microsoft Sysmon, for example, documents configurable process, network, image-load, and file-event telemetry while expressly functioning as an event source rather than an analyzer \cite{sysmon}. MITRE ATT\&CK's polymorphic-code detection strategy names possible mutation and execution signals, not an efficacy rate \cite{mitrepoly}. Commercial EDR evaluation adds timing, attribution, and policy-state complexity: Prinos and Brush report that raw events, named detections, and enforcement can diverge, while autonomous state and delayed telemetry complicate action-level attribution \cite{prinos}. A 2026 Huntress note reports one local AI session with more than 90,000 process events in a minute, but does not establish that model inference itself caused the burst or that an alert occurred \cite{huntress}. These observations motivate measurement; none yields an invisibility probability for Drexel.
+
+The ordered outcomes are \emph{raw observable event}, \emph{named alert}, \emph{enforcement action}, and \emph{retained valid function}. Their ordering does not imply one always causes the next. A later study must state sensor and version, enabled policy, observation window, event-query method, alert definition, enforcement rule, and missing logs. It should report no-alert results as ``no named alert observed under configuration $d$ through window $W$,'' never as ``undetectable.'' Detector tests on uploaded files, sandbox analyses, and live endpoint monitoring have different denominators; an unblocked execution is not necessarily a no-alert execution. Resource reporting should include full-request latency, memory, CPU or GPU use, model storage, orchestration, failures, and cold-start cost rather than a selected per-token price.
+
+\section{Prospective research program}\label{sec:future}
+
+A future experiment can test the strict claim without creating or deploying malware. It would use an isolated, consented client-server application whose remote task is a harmless, deterministic computation. Its two requested code changes would alter benign functionality while retaining the task protocol. The experiment should preregister a time window, eligible-launch rule, task oracle, permitted update mechanism, model role and placement, hardware budget, quantitative task/resource thresholds, and failure conditions. No operational payload or evasion objective is needed to measure the software-continuity question.
+
+The work should proceed in stages rather than joining unrelated successes after the fact. Table~\ref{tab:program} specifies the evidence each stage could produce. A failure at one stage is informative and need not be hidden by advancing only successful candidates. The design should compare a custom local model with a non-adapted local baseline and a simple fixed-rule controller under the same benign task and resource budget. A remotely served reference may bound task quality but must be labeled as a different placement. These controls test whether model customization and locality actually add value beyond an engineered update mechanism.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Staged, authorized measurement program; each row has its own denominator.}\label{tab:program}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.22\linewidth}YY@{}}
+\toprule
+Stage & Primary measurement & Minimum reporting condition \\
+\midrule
+Model and resource screen & Benign dependent-task quality; complete installed bytes; peak memory; whole-request time and energy. & Pinned checkpoint, runtime, host, task set, failed requests, cold/warm state. \\
+Serial continuity & Two model-caused active code versions in one benign process, with valid after-each tasks. & Exact artifacts, process/image lineage, independent activation and function oracles, all proposals. \\
+Environment transfer & Retained task function over declared and held-out host/policy strata. & Per-stratum attempts, baseline controls, selection rules, failures, uncertainty by independent environment unit. \\
+Defender observation & Raw events, named alerts, blocks, and retained function under specified products and policies. & Sensor version, policy, window, attribution method, missing telemetry, unchanged comparison. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The harness should capture the model request and response, exact accepted artifact hashes, rejected candidates, compile/load/adoption events, process start and image lineage, version-specific invocation evidence, and a new independently issued task/result after each accepted activation. The oracle should run outside the candidate's editable success path. A check that merely sees a process, socket, or loader success flag must not count as preserved function. State left by a rejected proposal should remain in the record; silent resets would change the estimand.
+
+All eligible launches should remain in $N_L$, including failures to establish baseline function. All $S_0$ instances should remain in the serial-revision denominator despite later crashes, abstentions, timeouts, rejected proposals, or telemetry failures. The analysis should distinguish observed failure, missing evidence, and right-censoring. It should report candidate attempts per accepted version, $N_0/N_L$, $N_1/N_0$, $N_2/N_1$, $N_2/N_0$, and $N_2/N_L$, with uncertainty intervals appropriate to the design. It should separately report whether each revision actually changed the intended behavior and whether previously required behavior regressed. An unchanged continuation or matched pre-change branch can help identify baseline task fragility, while the primary result must preserve the same instance's full history.
+
+For environment coverage, the unit of generalization should be a distinct host/runtime/policy configuration or independently sampled environment family, not a repeated file set on one image. Predefine which strata are development data and which are held out. Report the full matrix and each stratum's outcomes before any macro-average. A matched or randomized change in a benign environmental constraint should test whether the model's observation and decision change with that constraint and whether the resulting task succeeds more often than fixed-rule and unchanged continuations. Preserve the sequence of observations, decisions, artifacts, and versions; otherwise apparent adaptation may be a post hoc selection artifact. The statistical analysis should account for clustered trials, repeated use of the same base image, and correlated failures. A pilot can estimate the variability needed for sample-size planning; the present review supplies no defensible sample size or effect estimate.
+
+For defender observation, use named, authorized lab configurations and predeclared windows. Collect application-side truth independently of security-product reports. Record whether a sensor emitted raw events, whether a named alert was produced, whether execution was blocked or terminated, and whether the benign task still completed. Repeat across policy modes only as separately labeled strata. The central result should remain functional adaptation under declared conditions; defensive outcomes are a distinct measured dimension, not an optimization target that would invite an unsupported blanket stealth claim.
+
+The first experiment would establish or refute feasibility \emph{for that benign runtime, model, task, and policy}. Additional endpoint classes and detection configurations would require separate cohorts; one result would not justify a universal claim about malware or operational stealth. The present paper provides a measurement target and an audit trail for those later studies, not their result.
+
+\section{Threats to validity}\label{sec:limits}
+
+\textbf{Selection and publication.} Public incident reporting rarely publishes complete model transcripts, exact applied artifacts, process-image telemetry, and after-each command results together. The review was exploratory rather than exhaustive, and the 31 close cases were selected for relevance to the \emph{serial subclaim}; they do not sample the larger environment or detector spaces. The archived ledger supplies source IDs, setting, four annotated statuses, and notes, but not uniform structured fields or source-page locators for every considered attribute. Sources that publish detailed failures and code paths may appear weaker than promotional summaries that omit denominators. The source registry's size and the ledger's row counts support neither a prevalence estimate nor a confidence interval for real-world success.
+
+\textbf{Construct validity.} ``Polymorphic,'' ``AI-powered,'' ``local,'' ``functional,'' and ``undetected'' are source-dependent labels. A changed hash may preserve or destroy useful function. A scanner-score reduction may coexist with behavioral alerts. An unblocked process may still generate named detections. Source-level capability, author-reported experiment, and independently instrumented observation therefore receive different evidentiary weight. The paper's narrow $S_2$ rule deliberately excludes action-only adaptation and service continuity across restart; those exclusions make the rule interpretable but do not say such designs are irrelevant to security.
+
+\textbf{Causal and external validity.} Model responses may be filtered, rewritten by a human, or rejected before activation; a code-style inference cannot identify the causal model. Repeated candidates are correlated by inherited state, common prompts, and selection feedback. A CPU pilot, GPU benchmark, field incident, and static repository audit have different populations. Scanner scores, sandbox behavior, synthetic inference, and field command results cannot be pooled into one rate. A controlled benign demonstration would show feasibility for its declared runtime and policy, while transfer to malicious deployment or unseen defenses would remain an inference requiring new evidence.
+
+\Needspace{6\baselineskip}\textbf{Ethical boundary.} This revision involved source reading and document production only. The archived materials contain citations, evidence classifications, and a benign study design; no malware sample or operational payload is included. Later work should remain isolated and authorized, preserve negative results, and separate responsible defensive publication from instructions that would increase operational misuse.
+
+\section{Conclusion}\label{sec:conclusion}
+
+Classical polymorphism and environmental variability are established; language models can generate diverse offline variants, and designed systems can combine model-written code with live-update mechanisms. A small local model can excel at a narrow security task under a particular training and GPU setup. These observations make bounded Project Drexel components technically plausible, but they do not establish a custom endpoint-resident model that generalizes across the declared environment space while preserving function and avoiding specified defender outcomes. No reviewed public record shows the stringent two-revision, same-process, after-each remote-task chain. The broader adaptation and observability claims remain unmeasured. Future versions should update these conclusions only with a joined primary timeline or an adequately instrumented benign cohort; neither ``any environment'' nor ``undetectable'' should be reported as a finding from finite trials.
+
+\section*{Data availability and versioning}
+
+The public \href{https://github.com/Advent-Cybersecurity/advent-drexel}{Advent Cybersecurity research repository} holds the evolving source audits and data. The evidence archive accompanying this version preserves the LaTeX source, compiled PDF, dated search protocol, source registry, 31-case claim ledger, related research notes, and local pilot records as a versioned snapshot. Source URLs and pinned upstream revisions are recorded in those files. This is version 0.3, a quality-assured revision written by Jashid Sany for Advent Cybersecurity; later research and benign tests should appear as clearly dated new versions rather than silently changing this evidence cutoff.
+
+\begingroup\small\raggedright
+\begin{thebibliography}{99}
+\bibitem{mitrepoly} MITRE ATT\&CK, ``Obfuscated Files or Information: Polymorphic Code (T1027.014),'' version 2.0, 2026. \url{https://attack.mitre.org/techniques/T1027/014/}.
+\bibitem{waveatlas} J. Calvet et al., ``WaveAtlas: Surfing Through the Landscape of Current Malware Packers,'' \emph{Virus Bulletin Conference}, 2015. \url{https://virusbulletin.com/uploads/pdf/conference/vb2015/Calvet-etal-VB2015.pdf}.
+\bibitem{wongstamp} W. Wong and M. Stamp, ``Hunting for Metamorphic Engines,'' \emph{Journal in Computer Virology}, 2006. \url{https://ptolemy.berkeley.edu/projects/truststc/pubs/237/hunting.pdf}.
+\bibitem{avllazagaj} E. Avllazagaj et al., ``When Malware Changed Its Mind: An Empirical Study of Variable Program Behaviors in the Real World,'' \emph{USENIX Security}, 2021. \url{https://www.usenix.org/conference/usenixsecurity21/presentation/avllazagaj}.
+\bibitem{llmalmorph} M. A. Akil et al., ``LLMalMorph: On the Feasibility of Generating Variant Malware Using Large-Language-Models,'' arXiv:2507.09411v2, 2025. \url{https://arxiv.org/html/2507.09411v2}.
+\bibitem{madani} P. Madani, ``Metamorphic Malware Evolution: The Potential and Peril of Large Language Models,'' arXiv:2410.23894v1, 2024. \url{https://arxiv.org/html/2410.23894}.
+\bibitem{hortea} G. Hortea et al., ``The Infinite Mutation Engine? Measuring Polymorphism in LLM-Generated Offensive Code,'' arXiv:2605.03619v3, 2026. \url{https://arxiv.org/html/2605.03619v3}.
+\bibitem{raz} M. Raz et al., ``Ransomware 3.0: Self-Composing and LLM-Orchestrated,'' arXiv:2508.20444v1, 2025. \url{https://arxiv.org/html/2508.20444v1}.
+\bibitem{kitsune} C. M. Hayden et al., ``Kitsune: Efficient, General-purpose Dynamic Software Updating for C,'' \emph{ACM Transactions on Programming Languages and Systems}, 2014. \url{https://www.cs.tufts.edu/~jfoster/papers/toplas-kitsune.pdf}.
+\bibitem{proteos} C. Giuffrida, A. Kuijsten, and A. S. Tanenbaum, ``Safe and Automatic Live Update for Operating Systems,'' \emph{ASPLOS}, 2013. \url{https://download.vusec.net/papers/asplos-2013.pdf}.
+\bibitem{asielapp} asieltechlab, ``Asiel Core application and plugin loader,'' pinned commit \texttt{9ccdcce}, 2026. \url{https://github.com/asieltechlab/asiel-core/tree/9ccdcce55211b1cd9a11eb1ac2e8414443df2b96}.
+\bibitem{asielproposals} asieltechlab, ``Asiel Core committed self-edit proposal registry,'' pinned commit \texttt{9ccdcce}, 2026. \url{https://github.com/asieltechlab/asiel-core/blob/9ccdcce55211b1cd9a11eb1ac2e8414443df2b96/asiel_core/asiel_core/self_edit/proposals.json}.
+\bibitem{nexagent} gofenix, ``NexAgent code upgrade and hot reload,'' pinned commit \texttt{8ec412f}, 2026. \url{https://github.com/gofenix/nex-agent/tree/8ec412fefac75dee3d739cb2e7f9beb911eaeb18}.
+\bibitem{rsinfer} open-agent-infra, ``Real-kernel hot apply and follow-up experiments,'' pinned commit \texttt{bd26c7e}, 2026. \url{https://github.com/open-agent-infra/RSInfer/blob/bd26c7e1554211a578e733f7e2fc59feb3a21452/doc/rsi/2026-11-11-real-kernels-hot-apply.md}.
+\bibitem{clagent} echawk, ``cl-agent persistent-memory extension conversation trace,'' pinned commit \texttt{e6aa53d}, 2026. \url{https://github.com/echawk/cl-agent/blob/e6aa53d2b868c9e3fe7b2bfe88bcae3fe0c997be/successful-runs/memory-proposal-chat.txt}.
+\bibitem{msmitigations} Microsoft, ``Exploit protection reference,'' Microsoft Learn. \url{https://learn.microsoft.com/en-us/defender-endpoint/exploit-protection-reference}.
+\bibitem{applehardened} Apple, ``Configuring the hardened runtime,'' Apple Developer Documentation. \url{https://developer.apple.com/documentation/xcode/configuring-the-hardened-runtime.md}.
+\bibitem{systemdexec} systemd project, ``systemd.exec,'' systemd manual. \url{https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html}.
+\bibitem{gtig2025} Google Threat Intelligence Group, ``GTIG AI Threat Tracker: Advances in Threat Actor Usage of AI Tools,'' 5 November 2025. \url{https://cloud.google.com/blog/topics/threat-intelligence/threat-actor-usage-of-ai-tools}.
+\bibitem{c2agent} Palo Alto Networks Unit 42, ``C2Agent: LLM-Operated Windows Malware With MCP, Skills and Living-off-the-AI,'' pinned analyst note, 9 October 2026. \url{https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/d74de078d0cf3227a97076dbc7b7fc504c49fe7e/2026-10-09-C2Agent-malware.txt}.
+\bibitem{aws} Amazon Threat Intelligence, ``Chinese-nexus actor's Cairn AI agents found a zero-day on their own,'' 20 November 2026. \url{https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/}.
+\bibitem{bypassgym} W. Yuan et al., ``BypassGym: A Benchmark for Evaluating AI Agents' Endpoint Defense Evasion Capabilities,'' arXiv:2611.13684v1, 2026. \url{https://arxiv.org/html/2611.13684}.
+\bibitem{gambit} Gambit Security Threat Intelligence, ``Autonomous AI Agents are breaking into hundreds of Online Retailers for \$25 a target in an ongoing campaign,'' 22 September 2026. \url{https://gambit.security/blog-posts/autonomous-ai-agents-online-retailers-25-a-company}.
+\bibitem{radovic} B. Radovi\v{c}, M. Canini, and V. Pejovi\'c, ``Should SLMs be in the Driver's Seat? A Study of Local Models as Interpreters in Cloud-Written Agent Programs,'' arXiv:2610.14209v1, 2026. \url{https://arxiv.org/html/2610.14209v1}.
+\bibitem{normann} P. Normann et al., ``Towards Reliable Local Security Agents: Verifiable Post-Training for Linux Privilege Escalation,'' arXiv:2603.17673v3, 2026. \url{https://arxiv.org/html/2603.17673v3}.
+\bibitem{adventpilot} Advent Cybersecurity, ``Benign local inference resource study,'' research record with raw data and pinned artifacts, 11 November 2026. Included with this version's evidence archive; \url{https://github.com/Advent-Cybersecurity/advent-drexel/blob/main/docs/inference-resource-study-2026-11-11.md}.
+\bibitem{esetpromptlock} A. Cherepanov and P. Str\'y\v{c}ek, ``First known AI-powered ransomware uncovered by ESET Research,'' ESET Research, updated 3 September 2025. \url{https://www.eset.com/blog/en/research/first-known-ai-powered-ransomware-uncovered-eset-research/}.
+\bibitem{anthropicreplication} Anthropic Frontier Red Team, ``AI models may be capable of self-replicating without access to a datacenter,'' 12 October 2026. \url{https://www.anthropic.com/research/self-replicating-ai}.
+\bibitem{sysmon} Microsoft Sysinternals, ``Sysmon,'' Microsoft Learn. \url{https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon}.
+\bibitem{prinos} K. Prinos and L. Brush, ``Closing the Sim-to-Real Gap: An Evaluation Framework for Autonomous Cyber Defense Configuration of Commercial EDR,'' arXiv:2606.08168v2, 2026. \url{https://arxiv.org/html/2606.08168v2}.
+\bibitem{huntress} Huntress, ``Local LLM AI and Huntress,'' support note, 25 November 2026. \url{https://support.huntress.io/hc/en-us/articles/57931855382291-Local-LLM-AI-and-Huntress}.
+\end{thebibliography}
+\endgroup
+
+\end{document}

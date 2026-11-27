@@ -1,0 +1,11 @@
+12701c767180eb90725b71cdd3a5ea4e227bafb0f9f977ba8d7bed133f081b9b  paper/drexel-feasibility-v0.2.pdf
+d89f69cf133e2aa59b1799a244b39615402549118ad4cd20ad2b37b49bc75421  paper/drexel-feasibility-v0.2.tex
+f35171cf8d5aab9b8eb077af317622df3a5dd77195c6ad9b74006930de015925  paper/README.md
+fc44d43f565a70d6b8468ffdf45cd636c45c61aeddd773eabf6e64fe3d79b3dc  paper/make_zenodo_bundle.py
+96ea684d27978ceb7b33c3bfe9dcaa3fca0b2fad014d254696d673e28ec63404  data/sources.json
+de2095cf1c9fe625089864bb8db30bb8053ae4702ce8fa58cd8d7e0d33ba8c86  data/closest-case-claim-ledger-2026-11-26.json
+ec96f17cc4dce26643c6ce44ad73e2aff838436e78e7f93317323ec3e16d8274  docs/source-search-and-evidence-protocol-2026-11-26.md
+66060a57b79e50b557aa47d1a8ebd077bdb3117cc4fc0763de1925c1b9ee9c80  docs/claim-ledger-cross-case-synthesis-2026-11-26.md
+eb122d787aeda9b741d629b68880317c60774d204c33bb60950cf859e5e3479c  docs/source-review-decision-brief-2026-11-26.md
+a4cf3333c93cc457cfb1b9c65fa9eccd5fa51a3107c47c3897d31a37bf7c0273  docs/research-log-2026-11-26.md
+d8ae42b9ab1327c480178548d26e23e317030ba4ef03a380beaaded9733502c3  docs/paper-revision-source-log-2026-11-27.md

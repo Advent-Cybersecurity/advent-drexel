@@ -1,0 +1,28 @@
+{
+  "candidate_sha256": null,
+  "families": {
+    "arithmetic": {
+      "n": 16,
+      "reference_completion_tokens": 3119,
+      "reference_correct": 16,
+      "reference_errors": 0,
+      "reference_format": 16,
+      "reference_request_cpu_seconds": 1283.8100000000004,
+      "reference_truncations": 0
+    },
+    "state": {
+      "n": 16,
+      "reference_completion_tokens": 7326,
+      "reference_correct": 16,
+      "reference_errors": 0,
+      "reference_format": 16,
+      "reference_request_cpu_seconds": 3052.7400000000007,
+      "reference_truncations": 0
+    }
+  },
+  "manifest_sha256": "d2c2fae19d498ed688d1ad0582343c973cabf7a62fdd3c45c31de15c0f50a3f7",
+  "reference_peak_rss_bytes": 4936323072,
+  "reference_server_cpu_seconds": 4341.710008,
+  "reference_sha256": "ee1ffc85088cb28f49ae0456aa3f624b5e5baf0e9e1223d5982c35ac19f70ba6",
+  "structures": {}
+}

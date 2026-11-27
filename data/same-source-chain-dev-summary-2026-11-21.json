@@ -1,0 +1,21 @@
+{
+  "candidate_sha256": null,
+  "families": {
+    "arithmetic": {
+      "n": 16,
+      "reference_correct": 4,
+      "reference_format": 1,
+      "reference_request_cpu_seconds": 300.9100000000001
+    },
+    "state": {
+      "n": 16,
+      "reference_correct": 0,
+      "reference_format": 0,
+      "reference_request_cpu_seconds": 312.8299999999999
+    }
+  },
+  "manifest_sha256": "933ac1907f510a653895e2434e63cd33a6877635b726a44c971142cd40fe85bb",
+  "reference_peak_rss_bytes": 1411616768,
+  "reference_server_cpu_seconds": 614.4828819999999,
+  "reference_sha256": "8244f13306d377027e7cf8191dea6b45e340b6984652bd533ff9f93dce19d663"
+}

@@ -1,0 +1,42 @@
+# Comparative findings
+
+## Dated evidence
+
+| Period observed | Case | Reported change | Classification |
+| --- | --- | --- | --- |
+| April 8, 2022 | Sandworm | Industroyer2 reused code from Industroyer but narrowed to one industrial protocol and embedded a target-specific configuration. | Target-specific build; not runtime learning. |
+| First half of 2023 | APT29 | Mandiant identified at least six second-stage downloaders across diplomatic-focused operations. | Component portfolio; operator or build control. |
+| Early March 2023 | APT29 | A ROOTSAW delivery variant checked the client environment before follow-on delivery. | Delivery revision; conditional selection, not AI. |
+| Later March 2023 | APT29 | Two further variants shifted newly added delivery guardrails server side. | Delivery revision; operator-controlled campaign change. |
+| July 2023 | APT29 | A campaign used a PDF-based initial delivery and the ICEBEAT downloader. | Delivery revision; operator-controlled campaign change. |
+| June 2025 | [PROMPTFLUX](promptflux-case-file.md) (unattributed) | Google examined experimental samples designed around LLM-based code regeneration; its self-update function was commented out in the analyzed sample. | Attempted runtime mutation; not demonstrated operational compromise. |
+| June 2025 | APT28 / LAMEHUG (PROMPTSTEAL) | Google reported model-generated commands during live operations against Ukraine; CERT-UA identified the same malware campaign. | Runtime command generation; no reported self-rewriting. |
+| July 2025–June 2026 sightings | UAC-0099 / MATCHBOIL | ESET compared downloader versions seen in separated periods; the core task persisted while obfuscation, persistence, environment checks, and cadence changed. | Revisions across builds; AI involvement unreported. |
+| August 2025 | APT41 | Google observed actor-associated use of Gemini for code-development assistance. | Development AI assistance; not AI running inside malware. |
+| September 2025 | HONESTCUE (unattributed) | Google examined samples that requested code from Gemini for a later execution stage. | Runtime AI generation in samples; operational use not established by that report. |
+| Around October 2025 | SilkParasite (China-nexus, medium confidence) | Bitdefender uncovered seven tool families and assessed AI-assisted development from indirect clues. | Component portfolio; AI assessment medium confidence. |
+| Late 2025–February 2026 variants | APT36 (medium-confidence attribution) | Bitdefender described parallel implants and AI-integrated editor metadata, alongside defects in some tools. | AI-assisted development and component portfolio; not runtime self-rewriting. |
+| December 29, 2025 | DynoWiper (actor unresolved across reports) | ESET reported three deployed samples. CERT Polska analyzed four files across sites, grouped into two functional versions; a revised attempt followed EDR blocking. | Sample variation; origin of the revision unproven. |
+| February 2026 sample upload | PromptSpy (unattributed) | ESET analyzed an Android sample with a model-guided interface action loop; it had not seen the malware in production telemetry. | Runtime action selection in an analyzed sample; deployment unverified. |
+| October 2026 sample first seen | VOLTA (unattributed) | Talos analyzed a stealer sample with an optional model-based victim assessment stage. | Runtime AI triage in the sampled design; field execution unverified. |
+
+The exact intervals, source links, and attribution qualifiers are in [observations.json](../data/observations.json) and [sources.json](../data/sources.json). See the [independent-source cross-check](corroboration.md) for the limits of each corroborating report, the [2026 evidence update](2026-evidence-update.md) for newer AI-related research, the [red-team case study](red-team-case-study.md) for three decision loops, and the [cross-actor comparison](cross-actor-patterns.md) for broader patterns.
+
+## Comparison
+
+**APT29: repeated delivery engineering.** Mandiant described a relatively stable first-stage concept paired with changes in hosting, filtering, and later-stage components. The shift from client-side checks to server-side checks across March campaigns is a reported design revision. Separate Polish investigators observed broader tool changes. EclecticIQ independently analyzed the same July malicious PDF and later binary by digest; it calls the binary a Duke variant while Mandiant calls it ICEBEAT. The other sources do not verify Mandiant's exact six-downloader count or March ROOTSAW guardrail shift. The evidence supports iteration across campaigns; it does not show a payload rewriting itself on a victim host. [Mandiant, 2023](https://cloud.google.com/blog/topics/threat-intelligence/apt29-evolving-diplomatic-phishing); [Polish investigators, 2023](https://www.gov.pl/web/baza-wiedzy/espionage-campaign-linked-to-russian-intelligence-services); [EclecticIQ, 2023](https://blog.eclecticiq.com/german-embassy-lure-likely-part-of-campaign-against-nato-aligned-ministries-of-foreign-affairs)
+
+**Industroyer2 and DynoWiper: different attribution strength.** ESET assessed with high confidence that Industroyer2 reused source code from Industroyer and reported a target configuration embedded in the executable. Dragos separately described the Industroyer2 lineage and reconfiguration. The later DynoWiper incident must be treated separately: ESET assigned medium-confidence Sandworm attribution to the data-wiping component, while CERT Polska found Static Tundra infrastructure overlap and could not conclusively determine Sandworm involvement. ESET reconstructed three same-day deployments with build revisions; CERT Polska grouped four related files across sites into two functional versions. Neither report establishes AI involvement in the revision. [ESET, 2022](https://www.welivesecurity.com/2022/04/12/industroyer2-industroyer-reloaded/); [Dragos, 2023](https://www.dragos.com/blog/2022-ics-ot-threat-landscape-recap-what-to-watch-for-this-year); [ESET, 2026](https://www.welivesecurity.com/en/eset-research/dynowiper-update-technical-analysis-attribution/); [CERT Polska, 2026](https://cert.pl/en/uploads/docs/CERT_Polska_Energy_Sector_Incident_Report_2025.pdf)
+
+**AI cases: separate development assistance, runtime commands, and sampled designs.** Google's APT41 observation concerns assistance to developers. Google and CERT-UA describe APT28's LAMEHUG/PROMPTSTEAL in operations using a model to generate commands for fixed collection tasks. PROMPTFLUX and HONESTCUE show different sample designs; PROMPTFLUX, as analyzed, did not demonstrate compromise capability. ESET's PromptSpy and Talos's VOLTA add model-guided behavior in analyzed samples, with field use unverified in those reports. None of these observations establishes repeated self-rewriting by deployed malware. [GTIG, 2025](https://cloud.google.com/blog/topics/threat-intelligence/threat-actor-usage-of-ai-tools); [CERT-UA, 2025](https://csirt.csi.cip.gov.ua/en/posts/apt28-targets-security-and-defence-sector-with-ai-powered-software); [GTIG, February 2026](https://cloud.google.com/blog/topics/threat-intelligence/distillation-experimentation-integration-ai-adversarial-use); [ESET, 2026](https://www.welivesecurity.com/en/eset-research/promptspy-ushers-in-era-android-threats-using-genai/); [Talos, 2026](https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/)
+
+## Working conclusion
+
+The documented cases span operator-directed engineering, AI-assisted development, model-generated commands in a live malware campaign, model-directed choices in analyzed samples, and agentic tools used in real intrusions. A 2026 preprint reports an adaptive worm in a contained research network. The public incident evidence reviewed here does not establish reliable, repeated, autonomous code rewriting by deployed malware under the Project Drexel research criteria.
+
+## Questions for the next review
+
+- Can another original investigation verify Mandiant's exact ROOTSAW guardrail shift or six-downloader count?
+- Can further incident evidence resolve DynoWiper attribution and explain who or what made the revised version?
+- For AI-integrated samples, what was actually executed and observed, compared with what the code appears intended to do?
+- Have later reports documented successful repeated runtime mutation with retained functionality and verified deployment?

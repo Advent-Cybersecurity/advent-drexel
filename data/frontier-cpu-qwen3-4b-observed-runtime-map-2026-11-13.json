@@ -1,0 +1,57 @@
+{
+  "schema": "observed-local-runtime-map-v1",
+  "observed_utc": "2026-11-13T11:18:37Z",
+  "pid": 3687398,
+  "cmdline": "/tmp/drexel-inference-study/llama-b12283/llama-server -m /home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf -ngl 0 -t 4 -tb 4 -c 2048 -b 512 -ub 512 -np 1 -lm mmap --no-repack --offline --no-ui --host 127.0.0.1 --port 8094 ",
+  "local_directory": "/tmp/drexel-inference-study/llama-b12283",
+  "scope": "regular files mapped into a live reference llama-server serving one request; host OS shared libraries excluded; this is a mapping observation, not proof that all server features work when other files are absent",
+  "mapped_regular_files": [
+    {
+      "path": "libggml-base.so.0.29.0",
+      "bytes": 946176,
+      "sha256": "5fa1be0ca572a94f23cac2a15c8997f0fcfceee5f7816975d9273e31237c427f"
+    },
+    {
+      "path": "libggml-cpu-haswell.so",
+      "bytes": 1459872,
+      "sha256": "5d3009e057cde0180d65fdf53d7e021fb32985fa0e3322f25d9b384891f9c485"
+    },
+    {
+      "path": "libggml-rpc.so",
+      "bytes": 328712,
+      "sha256": "03c9619577dccf1be16d63f2ea0f9e4ebca4ef24a72eae9362f920323f18217d"
+    },
+    {
+      "path": "libggml.so.0.29.0",
+      "bytes": 51040,
+      "sha256": "246fb50e2042c311b7186d2836e186d2257ebe9fe05554ddc35a399660cbb74c"
+    },
+    {
+      "path": "libllama-common.so.0.9.0",
+      "bytes": 6799112,
+      "sha256": "bd365e15d618eaf39fa94a60decf885ce125ea7b95449a7d3caa1705522daccc"
+    },
+    {
+      "path": "libllama-server-impl.so",
+      "bytes": 8462184,
+      "sha256": "9dfb0c68584e92652fb94e1f55c8975a727743a2cf60cd9377656b6018a676ae"
+    },
+    {
+      "path": "libllama.so.0.9.0",
+      "bytes": 5527456,
+      "sha256": "3e4beee2681e5372a0db9734d3e58cef8aef83f80e4349193e04a21058bdda57"
+    },
+    {
+      "path": "libmtmd.so.0.9.0",
+      "bytes": 2341720,
+      "sha256": "97fa89e54374227873cb27caac4f7bd3ca613a0137cd706c480d1a2c926eb968"
+    },
+    {
+      "path": "llama-server",
+      "bytes": 17864,
+      "sha256": "64da0db0262aa9a201b27eccc8fdac336bc42ae990c652d31125c6967665187c"
+    }
+  ],
+  "mapped_regular_file_bytes": 25934136,
+  "ldd_server": "\tlinux-vdso.so.1 (0x00007f7c466b2000)\n\tlibllama-server-impl.so => /tmp/drexel-inference-study/llama-b12283/libllama-server-impl.so (0x00007f7c45f6a000)\n\tlibstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f7c45c00000)\n\tlibgcc_s.so.1 => /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f7c45f1b000)\n\tlibc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007f7c45a08000)\n\tlibllama-common.so.0 => /tmp/drexel-inference-study/llama-b12283/libllama-common.so.0 (0x00007f7c454bd000)\n\tlibmtmd.so.0 => /tmp/drexel-inference-study/llama-b12283/libmtmd.so.0 (0x00007f7c452b5000)\n\tlibllama.so.0 => /tmp/drexel-inference-study/llama-b12283/libllama.so.0 (0x00007f7c44e29000)\n\tlibggml.so.0 => /tmp/drexel-inference-study/llama-b12283/libggml.so.0 (0x00007f7c45f0d000)\n\tlibggml-base.so.0 => /tmp/drexel-inference-study/llama-b12283/libggml-base.so.0 (0x00007f7c44d55000)\n\tlibssl.so.3 => /usr/lib/x86_64-linux-gnu/libssl.so.3 (0x00007f7c44c47000)\n\tlibcrypto.so.3 => /usr/lib/x86_64-linux-gnu/libcrypto.so.3 (0x00007f7c44600000)\n\tlibm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x00007f7c4450a000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f7c466b4000)\n\tlibgomp.so.1 => /usr/lib/x86_64-linux-gnu/libgomp.so.1 (0x00007f7c444ad000)\n\tlibz.so.1 => /usr/lib/x86_64-linux-gnu/libz.so.1 (0x00007f7c45eec000)\n\tlibzstd.so.1 => /usr/lib/x86_64-linux-gnu/libzstd.so.1 (0x00007f7c443e3000)\n"
+}

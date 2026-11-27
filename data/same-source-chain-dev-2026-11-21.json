@@ -1,0 +1,312 @@
+{
+  "cases": [
+    {
+      "family": "arithmetic",
+      "gold": 122,
+      "id": "arithmetic-0000",
+      "question": "A club starts with 84 badges. It makes 6 trays of 8 badges each and then hands out 10. How many badges does it have now?",
+      "question_sha256": "2e521607cb63ff29102d5979c9be3552abe47d35c5912ed889eaacbae66a4b98",
+      "structure": "start+packs*each-taken",
+      "variant": 1
+    },
+    {
+      "family": "arithmetic",
+      "gold": 50,
+      "id": "arithmetic-0001",
+      "question": "A library has 46 bookmarks. It receives 3 packs of 5 bookmarks each, then gives away 11. How many bookmarks remain?",
+      "question_sha256": "33d3aa5b477e14deeefd570c218ca9f8e7932ba0ac9aaeefec4e7ad369eb212d",
+      "structure": "start+packs*each-taken",
+      "variant": 0
+    },
+    {
+      "family": "arithmetic",
+      "gold": 73,
+      "id": "arithmetic-0002",
+      "question": "A library has 30 bookmarks. It receives 6 packs of 8 bookmarks each, then gives away 5. How many bookmarks remain?",
+      "question_sha256": "5bfdc5c2e7354b25c2286ace3f027df94890394e5a91b8b27d49ea4d4ac9b763",
+      "structure": "start+packs*each-taken",
+      "variant": 0
+    },
+    {
+      "family": "arithmetic",
+      "gold": 63,
+      "id": "arithmetic-0003",
+      "question": "A shop has 71 pencils. It adds 2 boxes with 4 pencils per box and sells 16. How many pencils are left?",
+      "question_sha256": "7939c0c395ca78233bf0a3847d739a0641bac52810d1836b398b7ff7e6718c93",
+      "structure": "start+packs*each-taken",
+      "variant": 2
+    },
+    {
+      "family": "arithmetic",
+      "gold": 49,
+      "id": "arithmetic-0004",
+      "question": "A library has 51 bookmarks. It receives 2 packs of 3 bookmarks each, then gives away 8. How many bookmarks remain?",
+      "question_sha256": "72c0f3919e636f5787ff7bd9a71e4a0440031dc50a8aec272e9fe2ddfea26134",
+      "structure": "start+packs*each-taken",
+      "variant": 0
+    },
+    {
+      "family": "arithmetic",
+      "gold": 43,
+      "id": "arithmetic-0005",
+      "question": "A desk begins with 40 tickets. It prints 3 sheets of 5 tickets each, then discards 12. How many tickets remain?",
+      "question_sha256": "2e7ec14bd16c40fc6143d1d58af766dfe56d44f54653121600979f9ea29a1863",
+      "structure": "start+packs*each-taken",
+      "variant": 3
+    },
+    {
+      "family": "arithmetic",
+      "gold": 69,
+      "id": "arithmetic-0006",
+      "question": "A club starts with 69 badges. It makes 4 trays of 3 badges each and then hands out 12. How many badges does it have now?",
+      "question_sha256": "e5d463964b66442f75ff0315aafa2fa9f74b7b39e3592eff26f05d5ae4453805",
+      "structure": "start+packs*each-taken",
+      "variant": 1
+    },
+    {
+      "family": "arithmetic",
+      "gold": 55,
+      "id": "arithmetic-0007",
+      "question": "A desk begins with 35 tickets. It prints 5 sheets of 6 tickets each, then discards 10. How many tickets remain?",
+      "question_sha256": "26e96859f70eb76fdb98c9b3c31f185576905659eff8ea1ec6bd6b3765d9fee1",
+      "structure": "start+packs*each-taken",
+      "variant": 3
+    },
+    {
+      "family": "arithmetic",
+      "gold": 76,
+      "id": "arithmetic-0008",
+      "question": "A desk begins with 60 tickets. It prints 4 sheets of 5 tickets each, then discards 4. How many tickets remain?",
+      "question_sha256": "8b16181434386a3af66d4736ac43329b8051590b6a57227823a5416bc6144e50",
+      "structure": "start+packs*each-taken",
+      "variant": 3
+    },
+    {
+      "family": "arithmetic",
+      "gold": 20,
+      "id": "arithmetic-0009",
+      "question": "A library has 30 bookmarks. It receives 2 packs of 3 bookmarks each, then gives away 16. How many bookmarks remain?",
+      "question_sha256": "d4bb694741fefc2565068bf308788f1f955c45bc9b72ec11bd20dfaaaef61ffe",
+      "structure": "start+packs*each-taken",
+      "variant": 0
+    },
+    {
+      "family": "arithmetic",
+      "gold": 109,
+      "id": "arithmetic-0010",
+      "question": "A library has 71 bookmarks. It receives 6 packs of 7 bookmarks each, then gives away 4. How many bookmarks remain?",
+      "question_sha256": "3914ec93bca2993857e0f412b397540b086a63fa1e65c9cfe64048c08f8a1f25",
+      "structure": "start+packs*each-taken",
+      "variant": 0
+    },
+    {
+      "family": "arithmetic",
+      "gold": 74,
+      "id": "arithmetic-0011",
+      "question": "A club starts with 72 badges. It makes 4 trays of 4 badges each and then hands out 14. How many badges does it have now?",
+      "question_sha256": "20104cd4678a0626d408bdb02311093a41e85b659db6da1026429e2467ab34f8",
+      "structure": "start+packs*each-taken",
+      "variant": 1
+    },
+    {
+      "family": "arithmetic",
+      "gold": 63,
+      "id": "arithmetic-0012",
+      "question": "A shop has 57 pencils. It adds 5 boxes with 4 pencils per box and sells 14. How many pencils are left?",
+      "question_sha256": "6eefe38e4c11bcfa72dee0f8d03c3317c59953b9a017f2bbfb06982aca062ef1",
+      "structure": "start+packs*each-taken",
+      "variant": 2
+    },
+    {
+      "family": "arithmetic",
+      "gold": 31,
+      "id": "arithmetic-0013",
+      "question": "A library has 29 bookmarks. It receives 2 packs of 3 bookmarks each, then gives away 4. How many bookmarks remain?",
+      "question_sha256": "1ad8c8013f87037869c1cac30fa096ac68e0b383c1cb70284d7076cbc5dfb7d9",
+      "structure": "start+packs*each-taken",
+      "variant": 0
+    },
+    {
+      "family": "arithmetic",
+      "gold": 24,
+      "id": "arithmetic-0014",
+      "question": "A desk begins with 29 tickets. It prints 3 sheets of 3 tickets each, then discards 14. How many tickets remain?",
+      "question_sha256": "ae5ebf942d5e028f2f75be4ee7a76d82ea8241984db2a03dae1d8a80b4fc2891",
+      "structure": "start+packs*each-taken",
+      "variant": 3
+    },
+    {
+      "family": "arithmetic",
+      "gold": 78,
+      "id": "arithmetic-0015",
+      "question": "A shop has 67 pencils. It adds 6 boxes with 4 pencils per box and sells 13. How many pencils are left?",
+      "question_sha256": "7dd6a3b4846b42d2056bfd7b68a8b160f81f69e418e2fe96eed4903104d74cbb",
+      "structure": "start+packs*each-taken",
+      "variant": 2
+    },
+    {
+      "family": "state",
+      "gold": 71,
+      "id": "state-0000",
+      "question": "Jar A starts with 45 beads and jar B with 56. Transfer 4 beads from A to B. Then transfer half of B's current beads back to A. How many beads finish in A?",
+      "question_sha256": "2556266ce8d0af944f469e666538d2df654657ca2cc0d1e74e6594ecec6636d8",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 3
+    },
+    {
+      "family": "state",
+      "gold": 64,
+      "id": "state-0001",
+      "question": "Jar A starts with 34 beads and jar B with 66. Transfer 6 beads from A to B. Then transfer half of B's current beads back to A. How many beads finish in A?",
+      "question_sha256": "0a225f45ae1f8a6a914ffa8edb1ab04f046a951abec0b82ff7ff8769f2a169ed",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 3
+    },
+    {
+      "family": "state",
+      "gold": 63,
+      "id": "state-0002",
+      "question": "Room A has 46 books and Room B has 46. First A sends 12 books to B. Then B sends half of its current books to A. How many books are in A now?",
+      "question_sha256": "df513609e496014a975a98004e46b28f3eddf2caefa68972b30a2d03ec009504",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 0
+    },
+    {
+      "family": "state",
+      "gold": 104,
+      "id": "state-0003",
+      "question": "Box A contains 70 cards and Box B contains 72. A moves 4 cards to B; after that, B moves half of what it now contains to A. How many cards does A contain?",
+      "question_sha256": "ab98409c97c63c64c0eed13a029ea410a8f243bc0fe0f20477e9d3f7fc0eb40d",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 1
+    },
+    {
+      "family": "state",
+      "gold": 72,
+      "id": "state-0004",
+      "question": "Jar A starts with 59 beads and jar B with 42. Transfer 16 beads from A to B. Then transfer half of B's current beads back to A. How many beads finish in A?",
+      "question_sha256": "941b7064cc2a20632e632f26d97e6748c2fbf6b91f164fb14c831f7773b0bf7e",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 3
+    },
+    {
+      "family": "state",
+      "gold": 83,
+      "id": "state-0005",
+      "question": "There are 58 tokens at station A and 58 at station B. Move 8 from A to B. Next, move half of B's new total to A. What is A's final token count?",
+      "question_sha256": "f36276232bd094fce171264f96ee3a9d96f3e0c4feebca769223d7e50c45e906",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 2
+    },
+    {
+      "family": "state",
+      "gold": 70,
+      "id": "state-0006",
+      "question": "There are 49 tokens at station A and 52 at station B. Move 10 from A to B. Next, move half of B's new total to A. What is A's final token count?",
+      "question_sha256": "e17ba299fb02f70a44c90d1012cc2d6beb7a07764821a2ea5b49708fe839b32f",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 2
+    },
+    {
+      "family": "state",
+      "gold": 66,
+      "id": "state-0007",
+      "question": "There are 48 tokens at station A and 54 at station B. Move 18 from A to B. Next, move half of B's new total to A. What is A's final token count?",
+      "question_sha256": "0e74874bb6288770c76de5c2a34f2512d06b1b151e29a34a439ee716eee37b8d",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 2
+    },
+    {
+      "family": "state",
+      "gold": 74,
+      "id": "state-0008",
+      "question": "Jar A starts with 54 beads and jar B with 58. Transfer 18 beads from A to B. Then transfer half of B's current beads back to A. How many beads finish in A?",
+      "question_sha256": "0a3b123694cf7b8f1caba8580868f834d50b6479c0cf5840dcf220ec12ad13bb",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 3
+    },
+    {
+      "family": "state",
+      "gold": 69,
+      "id": "state-0009",
+      "question": "Jar A starts with 41 beads and jar B with 60. Transfer 4 beads from A to B. Then transfer half of B's current beads back to A. How many beads finish in A?",
+      "question_sha256": "656c964626d2ffd6a916d3a336e393a7156cf8b5e6dc1a1dddd234e42ce58c23",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 3
+    },
+    {
+      "family": "state",
+      "gold": 60,
+      "id": "state-0010",
+      "question": "Box A contains 47 cards and Box B contains 36. A moves 10 cards to B; after that, B moves half of what it now contains to A. How many cards does A contain?",
+      "question_sha256": "c1b1f879f0367b58192b245cf0d8520b1964e98a553822ae197c34f49af025ce",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 1
+    },
+    {
+      "family": "state",
+      "gold": 81,
+      "id": "state-0011",
+      "question": "Box A contains 62 cards and Box B contains 46. A moves 8 cards to B; after that, B moves half of what it now contains to A. How many cards does A contain?",
+      "question_sha256": "f4b2967cec5914b72ae514b64f1b8c22b988ba8536ef7e8210ad76ad0184022b",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 1
+    },
+    {
+      "family": "state",
+      "gold": 57,
+      "id": "state-0012",
+      "question": "There are 29 tokens at station A and 72 at station B. Move 16 from A to B. Next, move half of B's new total to A. What is A's final token count?",
+      "question_sha256": "d4d6874ef9d6232529f493616b3b752b119ecc95540be5ce3b1289a17deebb55",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 2
+    },
+    {
+      "family": "state",
+      "gold": 41,
+      "id": "state-0013",
+      "question": "Room A has 31 books and Room B has 36. First A sends 16 books to B. Then B sends half of its current books to A. How many books are in A now?",
+      "question_sha256": "e1b27581cff76e00ea66cabd45ceb9e807c6bab74aa9740f05d37a11192f4ed7",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 0
+    },
+    {
+      "family": "state",
+      "gold": 69,
+      "id": "state-0014",
+      "question": "There are 39 tokens at station A and 76 at station B. Move 16 from A to B. Next, move half of B's new total to A. What is A's final token count?",
+      "question_sha256": "3ae77aebad626955005ae2bc22411054ab63cf353eedf18569f4de7867754f05",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 2
+    },
+    {
+      "family": "state",
+      "gold": 59,
+      "id": "state-0015",
+      "question": "Room A has 28 books and Room B has 66. First A sends 4 books to B. Then B sends half of its current books to A. How many books are in A now?",
+      "question_sha256": "2df3ebdd3de29ee561139b20f09ab242bdf6f0b6035756515a37a49e4f878204",
+      "structure": "A-=m;B+=m;A+=B/2",
+      "variant": 0
+    }
+  ],
+  "created_utc": "2026-11-21T10:54:29Z",
+  "floor": 0.6,
+  "format_secondary": "final Answer: integer line",
+  "joint_alpha": 0.05,
+  "kind": "development",
+  "margin": 0.05,
+  "max_tokens": 128,
+  "model_sha256": {
+    "candidate": "eee0176b86f95aff2e794f88c13b613a47c13380131ccdf926de8d650e6402d2",
+    "reference": "b66e0350b994a95e26e9c41f05410c39f1ec84838b96144f494f87a5aaee8bf5"
+  },
+  "per_bound_alpha": 0.008333333333333333,
+  "per_family": 16,
+  "prompt": "Follow each step in order. Work out the intermediate amounts. Finish with one line in the form Answer: N, where N is an integer.",
+  "prompt_sha256": "ed21fa230b3c6421866500547ea931a04638c1946f18443761294cbee3ca669e",
+  "quality_rule": "last integer after normal stop; errors and truncation wrong",
+  "schema": "same-source-chain-assay-v1",
+  "seed": 2026112101,
+  "server_policy": "b12283, CPU 4 threads, --no-repack, mmap, 1024 context",
+  "temperature": 0
+}

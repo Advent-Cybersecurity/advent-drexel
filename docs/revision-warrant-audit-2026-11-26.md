@@ -1,0 +1,15 @@
+# Is a proposed self-revision warranted?
+
+26 November 2026. Source-only audit of [Wang et al., *Phantom Guardrails*, arXiv v1](https://arxiv.org/html/2607.13083). No model or software was run for Advent Cybersecurity. The authors use a deterministic board-game micro-lab with abstract guard selection, not a live executable-code replacement or remote-access workload.
+
+## What the experiment isolates
+
+The lab gives a model a small menu of guardrails and records of short games. A deterministic oracle marks every actual violation. One candidate guard addresses a “special-rule” violation that is absent from the all-legal evaluation pool. Thus selecting it after citing a violation is a verifiable *unwarranted change*, rather than an ambiguous judgment about software quality.
+
+Across five proposers, four sub-pools, and three seeds, the planted benign pattern yielded the unwarranted guard in 15/60 single-shot proposals, compared with 0/60 on featureless legal input. This is a **micro-lab proposal rate**, not a general likelihood of model hallucination or a Drexel revision probability. The effect was concentrated in a rule-shaped pattern and in one proposer. A completeness statement about the rules or a neutral instruction that did not presuppose failures each removed the observed effect in their tested arms. The authors caution that the finding has one task genre, an abstract edit menu, and no unconstrained code proposer.
+
+The authors also put proposals through a four-round, add-only acceptance loop. Because the phantom guard changes no true outcome, a rule that accepts anything no worse cannot distinguish it from an empty change. The guard persisted once admitted by the loop's add-only design, reaching 11/60 trajectories by round four. A strict-improvement rule still accepted it in 2/60 trajectories as part of a batch with genuinely useful guards. A warrant-aware rule, requiring an oracle-confirmed failure that the specific guard suppresses, accepted the genuine fixes and excluded the phantom in these runs. The inability to remove a guard is **built into this loop**, not an empirical claim that all revision systems retain no-ops. In a separate pruning analysis, an accurate payoff ledger often removed the surplus; a deliberately mislabeled ledger also led the proposer to delete useful fixes.
+
+## Implication for Drexel's evidence standard
+
+The study adds a measurement before proposal and acceptance: establish that the triggering failure existed and that the proposed change addressed it. A change that passes a task score may be irrelevant, and a beneficial batch may conceal an unnecessary component. In a prospective benign analogue, log the observed failure, independent failure oracle, candidate's exact delta, reason for acceptance, and marginal effect of the delta. Count unchanged or unwarranted accepted revisions separately from active, functional code changes. The paper itself supplies no deployed-program process lineage, model-to-payload artifact, or after-each access result.

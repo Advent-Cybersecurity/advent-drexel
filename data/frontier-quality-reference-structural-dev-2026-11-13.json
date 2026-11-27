@@ -1,0 +1,1243 @@
+{
+  "cases": [
+    {
+      "family": "arithmetic",
+      "gold": 40,
+      "id": "arithmetic-01-01",
+      "parameters": {
+        "a": 5,
+        "b": 6,
+        "c": 4,
+        "d": 7,
+        "k": 2,
+        "x": 3,
+        "y": 5
+      },
+      "question": "A print shop starts with 5 cartons of 6 cards each. It uses 3 cards. It then prints one extra card for every 2 cards still on hand, discarding any incomplete group. How many cards are on hand now?",
+      "question_sha256": "ddf4c6611738b750d322fb424ef058d403b0db5e4b992deb6eebf7bfcde0bc1d",
+      "structure_id": "development-arithmetic-01",
+      "trace": [
+        30,
+        27,
+        13,
+        40
+      ]
+    },
+    {
+      "family": "arithmetic",
+      "gold": 58,
+      "id": "arithmetic-01-02",
+      "parameters": {
+        "a": 8,
+        "b": 7,
+        "c": 3,
+        "d": 5,
+        "k": 4,
+        "x": 9,
+        "y": 2
+      },
+      "question": "A print shop starts with 8 cartons of 7 cards each. It uses 9 cards. It then prints one extra card for every 4 cards still on hand, discarding any incomplete group. How many cards are on hand now?",
+      "question_sha256": "64d5b234ebfcfe96c1029ea280c8d13e0a3a598da553ea18331deda9ca666300",
+      "structure_id": "development-arithmetic-01",
+      "trace": [
+        56,
+        47,
+        11,
+        58
+      ]
+    },
+    {
+      "family": "arithmetic",
+      "gold": 46,
+      "id": "arithmetic-02-01",
+      "parameters": {
+        "a": 4,
+        "b": 10,
+        "c": 5,
+        "d": 5,
+        "k": 2,
+        "x": 7,
+        "y": 5
+      },
+      "question": "A school receives 4 packs of 10 pencils and then 5 packs of 5 pencils. In the second delivery, one pencil from each complete group of 2 is damaged. The school gives out another 7 good pencils. How many good pencils remain?",
+      "question_sha256": "7c02f771bda831e33c67c595c7f850320642c8a59f7f0d5f63d1af524b831f49",
+      "structure_id": "development-arithmetic-02",
+      "trace": [
+        40,
+        25,
+        12,
+        46
+      ]
+    },
+    {
+      "family": "arithmetic",
+      "gold": 158,
+      "id": "arithmetic-02-02",
+      "parameters": {
+        "a": 9,
+        "b": 11,
+        "c": 8,
+        "d": 11,
+        "k": 4,
+        "x": 7,
+        "y": 6
+      },
+      "question": "A school receives 9 packs of 11 pencils and then 8 packs of 11 pencils. In the second delivery, one pencil from each complete group of 4 is damaged. The school gives out another 7 good pencils. How many good pencils remain?",
+      "question_sha256": "c904507838a41c11db2e08da98effffe2b144de9494c72f329fee67d3ffb28b3",
+      "structure_id": "development-arithmetic-02",
+      "trace": [
+        99,
+        88,
+        22,
+        158
+      ]
+    },
+    {
+      "family": "arithmetic",
+      "gold": 60,
+      "id": "arithmetic-03-01",
+      "parameters": {
+        "a": 7,
+        "b": 8,
+        "c": 3,
+        "d": 8,
+        "k": 4,
+        "x": 9,
+        "y": 4
+      },
+      "question": "A bakery makes 7 trays of 8 rolls each. It sells 9 rolls, then reserves one roll from each complete group of 4 remaining rolls. It later makes 3 more trays of 8 rolls each. How many rolls are available for sale, excluding those reserved?",
+      "question_sha256": "dc5e27cd3cf1bc95cff10396bf109ffe415ec963dce0937b5ea3c77044266e40",
+      "structure_id": "development-arithmetic-03",
+      "trace": [
+        56,
+        47,
+        11,
+        24,
+        60
+      ]
+    },
+    {
+      "family": "arithmetic",
+      "gold": 89,
+      "id": "arithmetic-03-02",
+      "parameters": {
+        "a": 9,
+        "b": 8,
+        "c": 4,
+        "d": 11,
+        "k": 3,
+        "x": 5,
+        "y": 2
+      },
+      "question": "A bakery makes 9 trays of 8 rolls each. It sells 5 rolls, then reserves one roll from each complete group of 3 remaining rolls. It later makes 4 more trays of 11 rolls each. How many rolls are available for sale, excluding those reserved?",
+      "question_sha256": "f49877dd3441a4c1a388dc7a2f0fbda9110bfff5673926011879f748d9dda61f",
+      "structure_id": "development-arithmetic-03",
+      "trace": [
+        72,
+        67,
+        22,
+        44,
+        89
+      ]
+    },
+    {
+      "family": "arithmetic",
+      "gold": 131,
+      "id": "arithmetic-04-01",
+      "parameters": {
+        "a": 7,
+        "b": 12,
+        "c": 6,
+        "d": 7,
+        "k": 4,
+        "x": 9,
+        "y": 4
+      },
+      "question": "A museum has 7 boxes of 12 cards each and receives 9 returned cards. If it then has at least 90 cards, it orders 6 bundles of 7 cards each; otherwise it orders exactly 4 cards. After the order arrives, it gives away 4 cards. How many cards remain?",
+      "question_sha256": "342b03ceded855aa715427ca40c2ba651986733d3a2fc44fbe8354f9667436df",
+      "structure_id": "development-arithmetic-04-high",
+      "trace": [
+        84,
+        93,
+        90,
+        42,
+        131
+      ]
+    },
+    {
+      "family": "arithmetic",
+      "gold": 49,
+      "id": "arithmetic-04-02",
+      "parameters": {
+        "a": 4,
+        "b": 10,
+        "c": 6,
+        "d": 10,
+        "k": 4,
+        "x": 9,
+        "y": 4
+      },
+      "question": "A museum has 4 boxes of 10 cards each and receives 9 returned cards. If it then has at least 52 cards, it orders 6 bundles of 10 cards each; otherwise it orders exactly 4 cards. After the order arrives, it gives away 4 cards. How many cards remain?",
+      "question_sha256": "27655a1f4d27afbeb38be003b436549f26444fcfe1f722f431477e1210c31189",
+      "structure_id": "development-arithmetic-04-low",
+      "trace": [
+        40,
+        49,
+        52,
+        4,
+        49
+      ]
+    },
+    {
+      "family": "arithmetic",
+      "gold": 24,
+      "id": "arithmetic-05-01",
+      "parameters": {
+        "a": 7,
+        "b": 6,
+        "c": 5,
+        "d": 11,
+        "k": 2,
+        "x": 7,
+        "y": 2
+      },
+      "question": "A warehouse has 7 crates of 6 labels each. It moves one label from each complete group of 2 labels into reserve. It uses 7 labels from the active stock, then returns half of the reserve to active stock, rounding down. How many labels are in active stock now?",
+      "question_sha256": "b784118bc6126813c14245e2a15e85bbca64092c425cd5b4db1553991705babc",
+      "structure_id": "development-arithmetic-05",
+      "trace": [
+        42,
+        21,
+        21,
+        10,
+        24
+      ]
+    },
+    {
+      "family": "arithmetic",
+      "gold": 47,
+      "id": "arithmetic-05-02",
+      "parameters": {
+        "a": 9,
+        "b": 7,
+        "c": 8,
+        "d": 6,
+        "k": 3,
+        "x": 5,
+        "y": 2
+      },
+      "question": "A warehouse has 9 crates of 7 labels each. It moves one label from each complete group of 3 labels into reserve. It uses 5 labels from the active stock, then returns half of the reserve to active stock, rounding down. How many labels are in active stock now?",
+      "question_sha256": "954c6c028505b15947078b591a278aecad153fb8de06a26c48be3afcfb6a195e",
+      "structure_id": "development-arithmetic-05",
+      "trace": [
+        63,
+        21,
+        42,
+        10,
+        47
+      ]
+    },
+    {
+      "family": "arithmetic",
+      "gold": 54,
+      "id": "arithmetic-06-01",
+      "parameters": {
+        "a": 6,
+        "b": 7,
+        "c": 7,
+        "d": 6,
+        "k": 4,
+        "x": 9,
+        "y": 4
+      },
+      "question": "A workshop has 6 bins of 7 parts each and 7 bins of 6 parts each. It removes 9 defective parts from the first set and 4 from the second. It then sets aside one part from every complete group of 4 usable parts. How many usable parts are not set aside?",
+      "question_sha256": "1ba255c8039f3ebcfc2a7ba7e5d32a722224913fae1020d2f0ec41f6e4129d85",
+      "structure_id": "development-arithmetic-06",
+      "trace": [
+        42,
+        42,
+        33,
+        38,
+        71,
+        17,
+        54
+      ]
+    },
+    {
+      "family": "arithmetic",
+      "gold": 34,
+      "id": "arithmetic-06-02",
+      "parameters": {
+        "a": 5,
+        "b": 7,
+        "c": 6,
+        "d": 7,
+        "k": 2,
+        "x": 4,
+        "y": 6
+      },
+      "question": "A workshop has 5 bins of 7 parts each and 6 bins of 7 parts each. It removes 4 defective parts from the first set and 6 from the second. It then sets aside one part from every complete group of 2 usable parts. How many usable parts are not set aside?",
+      "question_sha256": "05f8457d02453ff737c4a7c7c797eedb96fd0b5d0cb2186ff6f158d6794a76bc",
+      "structure_id": "development-arithmetic-06",
+      "trace": [
+        35,
+        42,
+        31,
+        36,
+        67,
+        33,
+        34
+      ]
+    },
+    {
+      "family": "state",
+      "final": {
+        "A": 152,
+        "B": 49,
+        "C": 81,
+        "D": 114
+      },
+      "gold": 152,
+      "id": "state-01-01",
+      "initial": {
+        "A": 108,
+        "B": 85,
+        "C": 113,
+        "D": 90
+      },
+      "ledger": [
+        {
+          "amount": 12,
+          "balances": {
+            "A": 96,
+            "B": 97,
+            "C": 113,
+            "D": 90
+          },
+          "destination": "B",
+          "source": "A"
+        },
+        {
+          "amount": 48,
+          "balances": {
+            "A": 96,
+            "B": 49,
+            "C": 161,
+            "D": 90
+          },
+          "destination": "C",
+          "source": "B"
+        },
+        {
+          "amount": 80,
+          "balances": {
+            "A": 96,
+            "B": 49,
+            "C": 81,
+            "D": 170
+          },
+          "destination": "D",
+          "source": "C"
+        },
+        {
+          "amount": 56,
+          "balances": {
+            "A": 152,
+            "B": 49,
+            "C": 81,
+            "D": 114
+          },
+          "destination": "A",
+          "source": "D"
+        }
+      ],
+      "parameters": {
+        "threshold": 94,
+        "x": 12,
+        "y": 10,
+        "z": 5
+      },
+      "question": "Four storage rooms A, B, C, and D start with 108 tokens in A, 85 tokens in B, 113 tokens in C, 90 tokens in D. In order, A sends 12 tokens to B; then B sends half of its then-current tokens to C, rounding down; then C sends half of its then-current tokens to D, rounding down; then D sends one third of its then-current tokens to A, rounding down. How many tokens are in room A at the end?",
+      "question_sha256": "9600093a8a05be08424a495910ef4ca39cd784d1fb2a93e1945bb2a2efa838d4",
+      "structure_id": "development-state-01",
+      "target": "A"
+    },
+    {
+      "family": "state",
+      "final": {
+        "A": 139,
+        "B": 44,
+        "C": 85,
+        "D": 136
+      },
+      "gold": 139,
+      "id": "state-01-02",
+      "initial": {
+        "A": 83,
+        "B": 76,
+        "C": 125,
+        "D": 120
+      },
+      "ledger": [
+        {
+          "amount": 12,
+          "balances": {
+            "A": 71,
+            "B": 88,
+            "C": 125,
+            "D": 120
+          },
+          "destination": "B",
+          "source": "A"
+        },
+        {
+          "amount": 44,
+          "balances": {
+            "A": 71,
+            "B": 44,
+            "C": 169,
+            "D": 120
+          },
+          "destination": "C",
+          "source": "B"
+        },
+        {
+          "amount": 84,
+          "balances": {
+            "A": 71,
+            "B": 44,
+            "C": 85,
+            "D": 204
+          },
+          "destination": "D",
+          "source": "C"
+        },
+        {
+          "amount": 68,
+          "balances": {
+            "A": 139,
+            "B": 44,
+            "C": 85,
+            "D": 136
+          },
+          "destination": "A",
+          "source": "D"
+        }
+      ],
+      "parameters": {
+        "threshold": 91,
+        "x": 12,
+        "y": 4,
+        "z": 6
+      },
+      "question": "Four storage rooms A, B, C, and D start with 83 tokens in A, 76 tokens in B, 125 tokens in C, 120 tokens in D. In order, A sends 12 tokens to B; then B sends half of its then-current tokens to C, rounding down; then C sends half of its then-current tokens to D, rounding down; then D sends one third of its then-current tokens to A, rounding down. How many tokens are in room A at the end?",
+      "question_sha256": "54ab631c7902c20f6909599841abcd10bc0381e159f611497e8dffe35de60ac1",
+      "structure_id": "development-state-01",
+      "target": "A"
+    },
+    {
+      "family": "state",
+      "final": {
+        "A": 171,
+        "B": 71,
+        "C": 75,
+        "D": 98
+      },
+      "gold": 171,
+      "id": "state-02-01",
+      "initial": {
+        "A": 101,
+        "B": 114,
+        "C": 117,
+        "D": 83
+      },
+      "ledger": [
+        {
+          "amount": 33,
+          "balances": {
+            "A": 68,
+            "B": 114,
+            "C": 150,
+            "D": 83
+          },
+          "destination": "C",
+          "source": "A"
+        },
+        {
+          "amount": 75,
+          "balances": {
+            "A": 68,
+            "B": 189,
+            "C": 75,
+            "D": 83
+          },
+          "destination": "B",
+          "source": "C"
+        },
+        {
+          "amount": 47,
+          "balances": {
+            "A": 68,
+            "B": 142,
+            "C": 75,
+            "D": 130
+          },
+          "destination": "D",
+          "source": "B"
+        },
+        {
+          "amount": 71,
+          "balances": {
+            "A": 139,
+            "B": 71,
+            "C": 75,
+            "D": 130
+          },
+          "destination": "A",
+          "source": "B"
+        },
+        {
+          "amount": 32,
+          "balances": {
+            "A": 171,
+            "B": 71,
+            "C": 75,
+            "D": 98
+          },
+          "destination": "A",
+          "source": "D"
+        }
+      ],
+      "parameters": {
+        "threshold": 123,
+        "x": 12,
+        "y": 7,
+        "z": 11
+      },
+      "question": "Four storage rooms A, B, C, and D start with 101 tokens in A, 114 tokens in B, 117 tokens in C, 83 tokens in D. In order, A sends one third of its then-current tokens to C, rounding down; then C sends half of its then-current tokens to B, rounding down; then B sends one quarter of its then-current tokens to D, rounding down; then B sends half of its then-current tokens to A, rounding down; then D sends one quarter of its then-current tokens to A, rounding down. How many tokens are in room A at the end?",
+      "question_sha256": "0a2c2ca7bc9fea0d4867495970d42db73d406c2e23c8cba131797cb68098719e",
+      "structure_id": "development-state-02",
+      "target": "A"
+    },
+    {
+      "family": "state",
+      "final": {
+        "A": 166,
+        "B": 64,
+        "C": 55,
+        "D": 119
+      },
+      "gold": 166,
+      "id": "state-02-02",
+      "initial": {
+        "A": 94,
+        "B": 116,
+        "C": 78,
+        "D": 116
+      },
+      "ledger": [
+        {
+          "amount": 31,
+          "balances": {
+            "A": 63,
+            "B": 116,
+            "C": 109,
+            "D": 116
+          },
+          "destination": "C",
+          "source": "A"
+        },
+        {
+          "amount": 54,
+          "balances": {
+            "A": 63,
+            "B": 170,
+            "C": 55,
+            "D": 116
+          },
+          "destination": "B",
+          "source": "C"
+        },
+        {
+          "amount": 42,
+          "balances": {
+            "A": 63,
+            "B": 128,
+            "C": 55,
+            "D": 158
+          },
+          "destination": "D",
+          "source": "B"
+        },
+        {
+          "amount": 64,
+          "balances": {
+            "A": 127,
+            "B": 64,
+            "C": 55,
+            "D": 158
+          },
+          "destination": "A",
+          "source": "B"
+        },
+        {
+          "amount": 39,
+          "balances": {
+            "A": 166,
+            "B": 64,
+            "C": 55,
+            "D": 119
+          },
+          "destination": "A",
+          "source": "D"
+        }
+      ],
+      "parameters": {
+        "threshold": 131,
+        "x": 12,
+        "y": 8,
+        "z": 4
+      },
+      "question": "Four storage rooms A, B, C, and D start with 94 tokens in A, 116 tokens in B, 78 tokens in C, 116 tokens in D. In order, A sends one third of its then-current tokens to C, rounding down; then C sends half of its then-current tokens to B, rounding down; then B sends one quarter of its then-current tokens to D, rounding down; then B sends half of its then-current tokens to A, rounding down; then D sends one quarter of its then-current tokens to A, rounding down. How many tokens are in room A at the end?",
+      "question_sha256": "6495523c1ed87c535de3be58493ddaedaf12ed41532a1c5b6358e225662455a3",
+      "structure_id": "development-state-02",
+      "target": "A"
+    },
+    {
+      "family": "state",
+      "final": {
+        "A": 110,
+        "B": 99,
+        "C": 156,
+        "D": 77
+      },
+      "gold": 156,
+      "id": "state-03-01",
+      "initial": {
+        "A": 120,
+        "B": 112,
+        "C": 88,
+        "D": 122
+      },
+      "ledger": [
+        {
+          "amount": 10,
+          "balances": {
+            "A": 110,
+            "B": 122,
+            "C": 88,
+            "D": 122
+          },
+          "destination": "B",
+          "source": "A"
+        },
+        {
+          "amount": 9,
+          "balances": {
+            "A": 110,
+            "B": 131,
+            "C": 79,
+            "D": 122
+          },
+          "destination": "B",
+          "source": "C"
+        },
+        {
+          "amount": 32,
+          "balances": {
+            "A": 110,
+            "B": 99,
+            "C": 79,
+            "D": 154
+          },
+          "destination": "D",
+          "source": "B"
+        },
+        {
+          "amount": 77,
+          "balances": {
+            "A": 110,
+            "B": 99,
+            "C": 156,
+            "D": 77
+          },
+          "destination": "C",
+          "source": "D"
+        }
+      ],
+      "parameters": {
+        "threshold": 119,
+        "x": 10,
+        "y": 9,
+        "z": 12
+      },
+      "question": "Four storage rooms A, B, C, and D start with 120 tokens in A, 112 tokens in B, 88 tokens in C, 122 tokens in D. In order, A sends 10 tokens to B; then C sends 9 tokens to B; then B sends one quarter of its then-current tokens to D, rounding down; then D sends half of its then-current tokens to C, rounding down. How many tokens are in room C at the end?",
+      "question_sha256": "cb77ae11e3581f2ede958ef42aa98534fab504f04ec5058e36fcf02343b91dc5",
+      "structure_id": "development-state-03",
+      "target": "C"
+    },
+    {
+      "family": "state",
+      "final": {
+        "A": 90,
+        "B": 69,
+        "C": 181,
+        "D": 73
+      },
+      "gold": 181,
+      "id": "state-03-02",
+      "initial": {
+        "A": 98,
+        "B": 78,
+        "C": 114,
+        "D": 123
+      },
+      "ledger": [
+        {
+          "amount": 8,
+          "balances": {
+            "A": 90,
+            "B": 86,
+            "C": 114,
+            "D": 123
+          },
+          "destination": "B",
+          "source": "A"
+        },
+        {
+          "amount": 5,
+          "balances": {
+            "A": 90,
+            "B": 91,
+            "C": 109,
+            "D": 123
+          },
+          "destination": "B",
+          "source": "C"
+        },
+        {
+          "amount": 22,
+          "balances": {
+            "A": 90,
+            "B": 69,
+            "C": 109,
+            "D": 145
+          },
+          "destination": "D",
+          "source": "B"
+        },
+        {
+          "amount": 72,
+          "balances": {
+            "A": 90,
+            "B": 69,
+            "C": 181,
+            "D": 73
+          },
+          "destination": "C",
+          "source": "D"
+        }
+      ],
+      "parameters": {
+        "threshold": 89,
+        "x": 8,
+        "y": 5,
+        "z": 10
+      },
+      "question": "Four storage rooms A, B, C, and D start with 98 tokens in A, 78 tokens in B, 114 tokens in C, 123 tokens in D. In order, A sends 8 tokens to B; then C sends 5 tokens to B; then B sends one quarter of its then-current tokens to D, rounding down; then D sends half of its then-current tokens to C, rounding down. How many tokens are in room C at the end?",
+      "question_sha256": "397bc84c4812fd418bb90272bb7b1420d6bee9753a4cc25c8f3d235cfc4a32d1",
+      "structure_id": "development-state-03",
+      "target": "C"
+    },
+    {
+      "family": "state",
+      "final": {
+        "A": 36,
+        "B": 86,
+        "C": 140,
+        "D": 160
+      },
+      "gold": 160,
+      "id": "state-04-01",
+      "initial": {
+        "A": 89,
+        "B": 124,
+        "C": 124,
+        "D": 85
+      },
+      "ledger": [
+        {
+          "amount": 6,
+          "balances": {
+            "A": 95,
+            "B": 124,
+            "C": 124,
+            "D": 79
+          },
+          "destination": "A",
+          "source": "D"
+        },
+        {
+          "amount": 47,
+          "balances": {
+            "A": 48,
+            "B": 171,
+            "C": 124,
+            "D": 79
+          },
+          "destination": "B",
+          "source": "A"
+        },
+        {
+          "amount": 85,
+          "balances": {
+            "A": 48,
+            "B": 86,
+            "C": 209,
+            "D": 79
+          },
+          "destination": "C",
+          "source": "B"
+        },
+        {
+          "amount": 69,
+          "balances": {
+            "A": 48,
+            "B": 86,
+            "C": 140,
+            "D": 148
+          },
+          "destination": "D",
+          "source": "C"
+        },
+        {
+          "amount": 12,
+          "balances": {
+            "A": 36,
+            "B": 86,
+            "C": 140,
+            "D": 160
+          },
+          "destination": "D",
+          "source": "A"
+        }
+      ],
+      "parameters": {
+        "threshold": 127,
+        "x": 6,
+        "y": 12,
+        "z": 9
+      },
+      "question": "Four storage rooms A, B, C, and D start with 89 tokens in A, 124 tokens in B, 124 tokens in C, 85 tokens in D. In order, D sends 6 tokens to A; then A sends half of its then-current tokens to B, rounding down; then B sends half of its then-current tokens to C, rounding down; then C sends one third of its then-current tokens to D, rounding down; then A sends one quarter of its then-current tokens to D, rounding down. How many tokens are in room D at the end?",
+      "question_sha256": "7f33015515f6492bd9db5f2904cdde91bf9c909f15666969ecfe31500d42d2a9",
+      "structure_id": "development-state-04",
+      "target": "D"
+    },
+    {
+      "family": "state",
+      "final": {
+        "A": 37,
+        "B": 86,
+        "C": 109,
+        "D": 173
+      },
+      "gold": 173,
+      "id": "state-04-02",
+      "initial": {
+        "A": 90,
+        "B": 124,
+        "C": 77,
+        "D": 114
+      },
+      "ledger": [
+        {
+          "amount": 7,
+          "balances": {
+            "A": 97,
+            "B": 124,
+            "C": 77,
+            "D": 107
+          },
+          "destination": "A",
+          "source": "D"
+        },
+        {
+          "amount": 48,
+          "balances": {
+            "A": 49,
+            "B": 172,
+            "C": 77,
+            "D": 107
+          },
+          "destination": "B",
+          "source": "A"
+        },
+        {
+          "amount": 86,
+          "balances": {
+            "A": 49,
+            "B": 86,
+            "C": 163,
+            "D": 107
+          },
+          "destination": "C",
+          "source": "B"
+        },
+        {
+          "amount": 54,
+          "balances": {
+            "A": 49,
+            "B": 86,
+            "C": 109,
+            "D": 161
+          },
+          "destination": "D",
+          "source": "C"
+        },
+        {
+          "amount": 12,
+          "balances": {
+            "A": 37,
+            "B": 86,
+            "C": 109,
+            "D": 173
+          },
+          "destination": "D",
+          "source": "A"
+        }
+      ],
+      "parameters": {
+        "threshold": 134,
+        "x": 7,
+        "y": 5,
+        "z": 9
+      },
+      "question": "Four storage rooms A, B, C, and D start with 90 tokens in A, 124 tokens in B, 77 tokens in C, 114 tokens in D. In order, D sends 7 tokens to A; then A sends half of its then-current tokens to B, rounding down; then B sends half of its then-current tokens to C, rounding down; then C sends one third of its then-current tokens to D, rounding down; then A sends one quarter of its then-current tokens to D, rounding down. How many tokens are in room D at the end?",
+      "question_sha256": "dcd721f5eafe5e170579ab1dbe7edf82fe31d150696e671338cc473a43f39a59",
+      "structure_id": "development-state-04",
+      "target": "D"
+    },
+    {
+      "family": "state",
+      "final": {
+        "A": 140,
+        "B": 140,
+        "C": 73,
+        "D": 47
+      },
+      "gold": 140,
+      "id": "state-05-01",
+      "initial": {
+        "A": 119,
+        "B": 88,
+        "C": 110,
+        "D": 83
+      },
+      "ledger": [
+        {
+          "amount": 10,
+          "balances": {
+            "A": 119,
+            "B": 88,
+            "C": 100,
+            "D": 93
+          },
+          "destination": "D",
+          "source": "C"
+        },
+        {
+          "amount": 46,
+          "balances": {
+            "A": 119,
+            "B": 134,
+            "C": 100,
+            "D": 47
+          },
+          "destination": "B",
+          "source": "D"
+        },
+        {
+          "amount": 67,
+          "balances": {
+            "A": 186,
+            "B": 67,
+            "C": 100,
+            "D": 47
+          },
+          "destination": "A",
+          "source": "B"
+        },
+        {
+          "amount": 46,
+          "balances": {
+            "A": 140,
+            "B": 67,
+            "C": 146,
+            "D": 47
+          },
+          "destination": "C",
+          "source": "A"
+        },
+        {
+          "amount": 73,
+          "balances": {
+            "A": 140,
+            "B": 140,
+            "C": 73,
+            "D": 47
+          },
+          "destination": "B",
+          "source": "C"
+        }
+      ],
+      "parameters": {
+        "threshold": 95,
+        "x": 10,
+        "y": 6,
+        "z": 12
+      },
+      "question": "Four storage rooms A, B, C, and D start with 119 tokens in A, 88 tokens in B, 110 tokens in C, 83 tokens in D. In order, C sends 10 tokens to D; then D sends half of its then-current tokens to B, rounding down; then B sends half of its then-current tokens to A, rounding down; then A sends one quarter of its then-current tokens to C, rounding down; then C sends half of its then-current tokens to B, rounding down. How many tokens are in room B at the end?",
+      "question_sha256": "7ecb23e6732d57cf1c13b721c7c3d6762113fd852d4aa63a697865f2952212c8",
+      "structure_id": "development-state-05",
+      "target": "B"
+    },
+    {
+      "family": "state",
+      "final": {
+        "A": 120,
+        "B": 130,
+        "C": 68,
+        "D": 47
+      },
+      "gold": 130,
+      "id": "state-05-02",
+      "initial": {
+        "A": 96,
+        "B": 79,
+        "C": 100,
+        "D": 90
+      },
+      "ledger": [
+        {
+          "amount": 4,
+          "balances": {
+            "A": 96,
+            "B": 79,
+            "C": 96,
+            "D": 94
+          },
+          "destination": "D",
+          "source": "C"
+        },
+        {
+          "amount": 47,
+          "balances": {
+            "A": 96,
+            "B": 126,
+            "C": 96,
+            "D": 47
+          },
+          "destination": "B",
+          "source": "D"
+        },
+        {
+          "amount": 63,
+          "balances": {
+            "A": 159,
+            "B": 63,
+            "C": 96,
+            "D": 47
+          },
+          "destination": "A",
+          "source": "B"
+        },
+        {
+          "amount": 39,
+          "balances": {
+            "A": 120,
+            "B": 63,
+            "C": 135,
+            "D": 47
+          },
+          "destination": "C",
+          "source": "A"
+        },
+        {
+          "amount": 67,
+          "balances": {
+            "A": 120,
+            "B": 130,
+            "C": 68,
+            "D": 47
+          },
+          "destination": "B",
+          "source": "C"
+        }
+      ],
+      "parameters": {
+        "threshold": 86,
+        "x": 4,
+        "y": 8,
+        "z": 5
+      },
+      "question": "Four storage rooms A, B, C, and D start with 96 tokens in A, 79 tokens in B, 100 tokens in C, 90 tokens in D. In order, C sends 4 tokens to D; then D sends half of its then-current tokens to B, rounding down; then B sends half of its then-current tokens to A, rounding down; then A sends one quarter of its then-current tokens to C, rounding down; then C sends half of its then-current tokens to B, rounding down. How many tokens are in room B at the end?",
+      "question_sha256": "d849be8f35ef8229a0a3dcd00d46ea413000a892e9347d84a8ebc442618809c1",
+      "structure_id": "development-state-05",
+      "target": "B"
+    },
+    {
+      "family": "state",
+      "final": {
+        "A": 144,
+        "B": 86,
+        "C": 52,
+        "D": 126
+      },
+      "gold": 144,
+      "id": "state-06-01",
+      "initial": {
+        "A": 111,
+        "B": 88,
+        "C": 93,
+        "D": 116
+      },
+      "ledger": [
+        {
+          "amount": 9,
+          "balances": {
+            "A": 102,
+            "B": 97,
+            "C": 93,
+            "D": 116
+          },
+          "destination": "B",
+          "source": "A"
+        },
+        {
+          "amount": 11,
+          "balances": {
+            "A": 102,
+            "B": 86,
+            "C": 104,
+            "D": 116
+          },
+          "destination": "C",
+          "source": "B"
+        },
+        {
+          "amount": 52,
+          "balances": {
+            "A": 102,
+            "B": 86,
+            "C": 52,
+            "D": 168
+          },
+          "destination": "D",
+          "source": "C"
+        },
+        {
+          "amount": 42,
+          "balances": {
+            "A": 144,
+            "B": 86,
+            "C": 52,
+            "D": 126
+          },
+          "destination": "A",
+          "source": "D"
+        }
+      ],
+      "parameters": {
+        "threshold": 94,
+        "x": 9,
+        "y": 11,
+        "z": 8
+      },
+      "question": "Four storage rooms A, B, C, and D start with 111 tokens in A, 88 tokens in B, 93 tokens in C, 116 tokens in D. In order, A sends 9 tokens to B; then if B holds at least 94 tokens at that point, B sends 11 tokens to C; otherwise C sends 11 tokens to B; then C sends half of its then-current tokens to D, rounding down; then D sends one quarter of its then-current tokens to A, rounding down. How many tokens are in room A at the end?",
+      "question_sha256": "49af9da11b98a047f6911d801af83eb5968f189ab62657840e15140856255c8d",
+      "structure_id": "development-state-06-high",
+      "target": "A"
+    },
+    {
+      "family": "state",
+      "final": {
+        "A": 125,
+        "B": 125,
+        "C": 49,
+        "D": 126
+      },
+      "gold": 125,
+      "id": "state-06-02",
+      "initial": {
+        "A": 89,
+        "B": 109,
+        "C": 108,
+        "D": 119
+      },
+      "ledger": [
+        {
+          "amount": 6,
+          "balances": {
+            "A": 83,
+            "B": 115,
+            "C": 108,
+            "D": 119
+          },
+          "destination": "B",
+          "source": "A"
+        },
+        {
+          "amount": 10,
+          "balances": {
+            "A": 83,
+            "B": 125,
+            "C": 98,
+            "D": 119
+          },
+          "destination": "B",
+          "source": "C"
+        },
+        {
+          "amount": 49,
+          "balances": {
+            "A": 83,
+            "B": 125,
+            "C": 49,
+            "D": 168
+          },
+          "destination": "D",
+          "source": "C"
+        },
+        {
+          "amount": 42,
+          "balances": {
+            "A": 125,
+            "B": 125,
+            "C": 49,
+            "D": 126
+          },
+          "destination": "A",
+          "source": "D"
+        }
+      ],
+      "parameters": {
+        "threshold": 118,
+        "x": 6,
+        "y": 10,
+        "z": 4
+      },
+      "question": "Four storage rooms A, B, C, and D start with 89 tokens in A, 109 tokens in B, 108 tokens in C, 119 tokens in D. In order, A sends 6 tokens to B; then if B holds at least 118 tokens at that point, B sends 10 tokens to C; otherwise C sends 10 tokens to B; then C sends half of its then-current tokens to D, rounding down; then D sends one quarter of its then-current tokens to A, rounding down. How many tokens are in room A at the end?",
+      "question_sha256": "44a7e180840d499afbdce4152b03c744a11e895cf5f6f99bcb3f902a9cbd25db",
+      "structure_id": "development-state-06-low",
+      "target": "A"
+    }
+  ],
+  "kind": "reference_only_development",
+  "max_tokens": 512,
+  "notice": "Public development structures; exclude these and equivalents from sealed holdout",
+  "parser": "last-numeric-token-on-normal-stop-v1",
+  "reference_sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+  "schema_version": 1,
+  "seed": 20261113,
+  "system_prompt": "Solve the problem step by step. Show the intermediate quantities and check the arithmetic. Finish with one separate line: The final answer is N. Replace N with the integer answer. Do not write anything after that line.",
+  "temperature": 0
+}

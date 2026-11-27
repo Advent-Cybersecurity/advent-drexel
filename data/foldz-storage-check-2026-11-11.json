@@ -1,0 +1,130 @@
+{
+  "study_date": "2026-11-11",
+  "scope": "One-run-per-file lossless storage check of two already quantized public GGUF files. No inference or quality test.",
+  "tool": {
+    "name": "foldz",
+    "version": "0.9 (file format 9)",
+    "source_url": "https://github.com/nsiddiqui248/foldz",
+    "source_commit": "c1b69d5672a2b44440e3487c3d6dd3980837665f",
+    "build_command": "gcc -O2 -pthread -ffp-contract=off -o foldz foldz.c -lm",
+    "execution": "Four threads inside bubblewrap with network unshared, a read-only root filesystem, and only the temporary output directory writable. The segment-size option was omitted, so foldz used its 48 MiB default.",
+    "invocation_templates": [
+      "foldz c INPUT.gguf OUTPUT.foldz -t 4",
+      "foldz d OUTPUT.foldz RESTORED.gguf -t 4",
+      "foldz t INPUT.gguf -t 4 (1.5B input only, in-memory round-trip check)"
+    ]
+  },
+  "host_and_measurement": {
+    "host": "Kali Linux VMware CPU-only guest; lscpu reported eight logical CPUs with Intel Core i7-12700K model string. Physical host allocation and contention unknown. See data/inference-resource-study-2026-11-11.json for the earlier host record.",
+    "software_versions_queried_after_runs": "Linux 6.18.12+kali-amd64 x86_64; GCC 15.2.0 (Debian 15.2.0-14); Python 3.13.12; bubblewrap 0.11.0; Zstandard CLI 1.5.7.",
+    "timing": "One run per file and codec. Wall time was measured around child execution; user/system CPU seconds and maximum RSS came from Linux child-process resource accounting. The 0.5B foldz and zstd compression runs used Python time.monotonic and resource.getrusage; zstd restoration used os.wait4. The exact wrapper source for the 1.5B foldz run was not retained.",
+    "memory": "maxrss_kib is the Linux child-accounting high-water RSS for the launched archive command, not inference RAM, total system memory, or persistent weight residency. The command ran inside bubblewrap, so this field does not separate wrapper and codec processes."
+  },
+  "input": {
+    "model": "Qwen2.5-1.5B-Instruct-GGUF Q4_K_M",
+    "source_path": "/tmp/drexel-inference-study/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "sandbox_input_alias": "/input.gguf",
+    "original_bytes": 1117320736,
+    "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e"
+  },
+  "compression": {
+    "archive_bytes": 1031986988,
+    "saved_bytes": 85333748,
+    "saved_percent_of_original": 7.637354722825085,
+    "wall_seconds": 15.403,
+    "user_cpu_seconds": 61.323,
+    "system_cpu_seconds": 0.41,
+    "maxrss_kib": 1158872,
+    "exit_code": 0
+  },
+  "restoration": {
+    "restored_bytes": 1117320736,
+    "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "hash_and_size_match": true,
+    "wall_seconds": 17.863,
+    "user_cpu_seconds": 70.592,
+    "system_cpu_seconds": 0.749,
+    "maxrss_kib": 1069432,
+    "exit_code": 0
+  },
+  "comparison": {
+    "existing_zstd_level_9_archive_bytes": 1090861351,
+    "existing_zstd_level_9_saved_percent_of_original": 2.3681100822244114,
+    "foldz_fewer_bytes_than_zstd_level_9": 58874363,
+    "zstd_source": "data/lossless-compression-study-2026-11-11.json",
+    "zstd_19_long27_t4": {
+      "command_template": "zstd -19 --long=27 -T4 -f -o OUTPUT.zst INPUT.gguf",
+      "archive_bytes": 1089521127,
+      "saved_percent_of_original": 2.488059883281357,
+      "foldz_fewer_bytes": 57534139,
+      "compression_wall_seconds": 93.827,
+      "compression_user_cpu_seconds": 346.978,
+      "compression_system_cpu_seconds": 0.638,
+      "compression_maxrss_kib": 1193832,
+      "restoration_command_template": "zstd -d -f -o RESTORED.gguf OUTPUT.zst",
+      "restoration_wall_seconds": 1.213,
+      "restoration_user_cpu_seconds": 1.557,
+      "restoration_system_cpu_seconds": 0.234,
+      "restoration_maxrss_kib": 136856,
+      "restored_sha256_and_size_match": true
+    }
+  },
+  "second_run": {
+    "input": {
+      "model": "Qwen2.5-0.5B-Instruct-GGUF Q4_K_M",
+      "source_path": "/tmp/drexel-inference-study/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "original_bytes": 491400032,
+      "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db"
+    },
+    "compression": {
+      "archive_bytes": 466043596,
+      "saved_bytes": 25356436,
+      "saved_percent_of_original": 5.160039550017775,
+      "wall_seconds": 49.804,
+      "user_cpu_seconds": 198.113,
+      "system_cpu_seconds": 0.916,
+      "maxrss_kib": 863924,
+      "exit_code": 0,
+      "tool_reported_segment_breakdown": "28.1 MiB Q4_K, 40.9 MiB Q6_K, 139.3 MiB Q8_0, 0.3 MiB F32, and 260.1 MiB other. The tool reported 247 segments and a largest segment of 64 MiB despite its 48 MiB default target. It attributed most work to an other segment; these labels are tool output, not an independent GGUF tensor audit."
+    },
+    "restoration": {
+      "restored_bytes": 491400032,
+      "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+      "hash_and_size_match": true,
+      "wall_seconds": 47.279,
+      "user_cpu_seconds": 132.469,
+      "system_cpu_seconds": 0.624,
+      "maxrss_kib": 814576,
+      "exit_code": 0
+    },
+    "comparison": {
+      "existing_zstd_level_9_archive_bytes": 476950402,
+      "existing_zstd_level_9_saved_percent_of_original": 2.940502454016934,
+      "foldz_fewer_bytes_than_zstd_level_9": 10906806,
+      "zstd_source": "data/lossless-compression-study-2026-11-11.json",
+      "zstd_19_long27_t4": {
+        "command_template": "zstd -19 --long=27 -T4 -f -o OUTPUT.zst INPUT.gguf",
+        "archive_bytes": 476500491,
+        "saved_percent_of_original": 3.032059428111718,
+        "foldz_fewer_bytes": 10456895,
+        "compression_wall_seconds": 43.635,
+        "compression_user_cpu_seconds": 149.852,
+        "compression_system_cpu_seconds": 0.339,
+        "compression_maxrss_kib": 1194004,
+        "restoration_command_template": "zstd -d -f -o RESTORED.gguf OUTPUT.zst",
+        "restoration_wall_seconds": 0.275,
+        "restoration_user_cpu_seconds": 0.387,
+        "restoration_system_cpu_seconds": 0.108,
+        "restoration_maxrss_kib": 136884,
+        "restored_sha256_and_size_match": true
+      }
+    }
+  },
+  "limitations": [
+    "Two models and one run each; timings can vary with host load and filesystem cache.",
+    "The high-setting zstd comparison used the same input files and four threads but a different codec; no claim is made that compression settings have equal effort or that one run defines a stable speed ratio.",
+    "Compression and restoration process RSS are not inference memory measurements.",
+    "The tested llama.cpp loader cannot infer directly from a foldz archive.",
+    "The archive and restored model were removed after verification; model weights are not committed."
+  ]
+}

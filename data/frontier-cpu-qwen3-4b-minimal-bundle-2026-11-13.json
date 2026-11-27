@@ -1,0 +1,474 @@
+{
+  "schema": "minimal-host-dependent-bundle-pilot-v1",
+  "created_utc": "2026-11-13T12:14:33Z",
+  "platform": "Linux-6.18.12+kali-amd64-x86_64-with-glibc2.42",
+  "cpu_model": "12th Gen Intel(R) Core(TM) i7-12700K",
+  "allowed_cpu_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "source_runtime_dir": "/tmp/drexel-inference-study/llama-b12283",
+  "scope": "tested CPU-only offline no-repack chat endpoint on this host; host system shared libraries are external",
+  "model_materialization": "same-filesystem hardlink to pinned source GGUF for each arm; no second model data copy during test",
+  "runtime_materialization": "copy2 of ten named regular files and recreation of ten relative symlinks",
+  "model_sha256": {
+    "reference": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+    "candidate": "952af947c6aabf7b72f7d8e279e76f7bf4b0d12431eb3abb588ef312865622d8"
+  },
+  "runs": [
+    {
+      "arm": "reference",
+      "argv": [
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/llama-server",
+        "-m",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/reference.gguf",
+        "-ngl",
+        "0",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-c",
+        "512",
+        "-b",
+        "512",
+        "-ub",
+        "512",
+        "-np",
+        "1",
+        "-lm",
+        "mmap",
+        "--no-repack",
+        "--offline",
+        "--no-ui",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8095"
+      ],
+      "started_utc": "2026-11-13T12:14:33Z",
+      "launch_ld_library_path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr",
+      "ready_wall_seconds": 1.010711484006606,
+      "served_model_ids": [
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/reference.gguf"
+      ],
+      "response_finish_reason": "stop",
+      "response_usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 14,
+        "total_tokens": 16,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "response_content": "ready",
+      "response_content_sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6",
+      "mapped_regular_files": [
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml-base.so.0.29.0",
+          "bytes": 946176
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml-cpu-haswell.so",
+          "bytes": 1459872
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml-rpc.so",
+          "bytes": 328712
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml.so.0.29.0",
+          "bytes": 51040
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libllama-common.so.0.9.0",
+          "bytes": 6799112
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libllama-server-impl.so",
+          "bytes": 8462184
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libllama.so.0.9.0",
+          "bytes": 5527456
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libmtmd.so.0.9.0",
+          "bytes": 2341720
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/llama-server",
+          "bytes": 17864
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/reference.gguf",
+          "bytes": 2497280736
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+          "bytes": 230200
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "bytes": 2022664
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+          "bytes": 6475120
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+          "bytes": 182856
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0",
+          "bytes": 380952
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+          "bytes": 1001688
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libssl.so.3",
+          "bytes": 1105856
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.35",
+          "bytes": 2797096
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libz.so.1.3.2",
+          "bytes": 121328
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libzstd.so.1.5.7",
+          "bytes": 821240
+        }
+      ],
+      "mapped_file_count": 20,
+      "expected_runtime_files_mapped": [
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml-base.so.0.29.0",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml-cpu-haswell.so",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml-rpc.so",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml.so.0.29.0",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libllama-common.so.0.9.0",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libllama-server-impl.so",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libllama.so.0.9.0",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libmtmd.so.0.9.0",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/llama-server"
+      ],
+      "expected_runtime_files_missing": [],
+      "mapped_host_regular_files": [
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+          "bytes": 230200
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "bytes": 2022664
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+          "bytes": 6475120
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+          "bytes": 182856
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0",
+          "bytes": 380952
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+          "bytes": 1001688
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libssl.so.3",
+          "bytes": 1105856
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.35",
+          "bytes": 2797096
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libz.so.1.3.2",
+          "bytes": 121328
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libzstd.so.1.5.7",
+          "bytes": 821240
+        }
+      ],
+      "mapped_host_regular_file_bytes": 15139000,
+      "bundle_model_mapped": true,
+      "bundle_server_mapped": true,
+      "server_log_tail": "0.00.002.901 I srv  llama_server: initializing ...\n0.00.002.921 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)\n0.00.002.981 I srv  init_listene: The UI is disabled\n0.00.002.991 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable\n0.00.003.045 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)\n0.00.004.609 I srv    load_model: loading model '/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/reference.gguf'\n0.00.217.730 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\n0.00.312.921 I cmn          init: llama threadpool init, n_threads = 4\n0.00.589.724 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 512, kv_unified = 'false'\n0.00.595.966 I srv  server_run_i: model loaded\n0.00.595.981 I srv  server_on_li: listening on http://127.0.0.1:8095\n0.01.007.666 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1\n0.01.007.739 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0\n0.01.438.624 I slot print_timing: id  0 | task 0 | prompt eval time =     313.69 ms /    14 tokens (   22.41 ms per token,    44.63 tokens per second)\n0.01.438.632 I slot print_timing: id  0 | task 0 |        eval time =     117.14 ms /     2 tokens (  117.14 ms per token,     8.54 tokens per second)\n0.01.438.633 I slot print_timing: id  0 | task 0 |       total time =     430.82 ms /    16 tokens\n0.01.438.640 I slot print_timing: id  0 | task 0 |    graphs reused =          1\n0.01.438.640 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)\n0.01.438.674 I slot      release: id  0 | task 0 | stop processing: n_tokens = 15, truncated = 0\n0.01.444.294 I srv    operator(): operator(): cleaning up before exit...\n",
+      "exit_code": 0,
+      "mapped_files_from_original_runtime_dir": []
+    },
+    {
+      "arm": "candidate",
+      "argv": [
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/llama-server",
+        "-m",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/candidate.gguf",
+        "-ngl",
+        "0",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-c",
+        "512",
+        "-b",
+        "512",
+        "-ub",
+        "512",
+        "-np",
+        "1",
+        "-lm",
+        "mmap",
+        "--no-repack",
+        "--offline",
+        "--no-ui",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8095"
+      ],
+      "started_utc": "2026-11-13T12:14:35Z",
+      "launch_ld_library_path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr",
+      "ready_wall_seconds": 1.0033637409796938,
+      "served_model_ids": [
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/candidate.gguf"
+      ],
+      "response_finish_reason": "stop",
+      "response_usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 14,
+        "total_tokens": 16,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "response_content": "ready",
+      "response_content_sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6",
+      "mapped_regular_files": [
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/candidate.gguf",
+          "bytes": 2383309536
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml-base.so.0.29.0",
+          "bytes": 946176
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml-cpu-haswell.so",
+          "bytes": 1459872
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml-rpc.so",
+          "bytes": 328712
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml.so.0.29.0",
+          "bytes": 51040
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libllama-common.so.0.9.0",
+          "bytes": 6799112
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libllama-server-impl.so",
+          "bytes": 8462184
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libllama.so.0.9.0",
+          "bytes": 5527456
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libmtmd.so.0.9.0",
+          "bytes": 2341720
+        },
+        {
+          "path": "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/llama-server",
+          "bytes": 17864
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+          "bytes": 230200
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "bytes": 2022664
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+          "bytes": 6475120
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+          "bytes": 182856
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0",
+          "bytes": 380952
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+          "bytes": 1001688
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libssl.so.3",
+          "bytes": 1105856
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.35",
+          "bytes": 2797096
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libz.so.1.3.2",
+          "bytes": 121328
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libzstd.so.1.5.7",
+          "bytes": 821240
+        }
+      ],
+      "mapped_file_count": 20,
+      "expected_runtime_files_mapped": [
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml-base.so.0.29.0",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml-cpu-haswell.so",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml-rpc.so",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libggml.so.0.29.0",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libllama-common.so.0.9.0",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libllama-server-impl.so",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libllama.so.0.9.0",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/libmtmd.so.0.9.0",
+        "/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/llama-server"
+      ],
+      "expected_runtime_files_missing": [],
+      "mapped_host_regular_files": [
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+          "bytes": 230200
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "bytes": 2022664
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+          "bytes": 6475120
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+          "bytes": 182856
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0",
+          "bytes": 380952
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+          "bytes": 1001688
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libssl.so.3",
+          "bytes": 1105856
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.35",
+          "bytes": 2797096
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libz.so.1.3.2",
+          "bytes": 121328
+        },
+        {
+          "path": "/usr/lib/x86_64-linux-gnu/libzstd.so.1.5.7",
+          "bytes": 821240
+        }
+      ],
+      "mapped_host_regular_file_bytes": 15139000,
+      "bundle_model_mapped": true,
+      "bundle_server_mapped": true,
+      "server_log_tail": "0.00.003.363 I srv  llama_server: initializing ...\n0.00.003.401 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)\n0.00.003.487 I srv  init_listene: The UI is disabled\n0.00.003.502 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable\n0.00.003.581 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)\n0.00.005.439 I srv    load_model: loading model '/home/kali/Desktop/MalDev/.research-cache/minimal-bundle-tests/frontier-minimal-bundle-kctjkovr/candidate.gguf'\n0.00.247.424 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\n0.00.331.864 I cmn          init: llama threadpool init, n_threads = 4\n0.00.560.016 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 512, kv_unified = 'false'\n0.00.566.196 I srv  server_run_i: model loaded\n0.00.566.222 I srv  server_on_li: listening on http://127.0.0.1:8095\n0.01.000.510 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1\n0.01.000.572 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0\n0.01.391.975 I slot print_timing: id  0 | task 0 | prompt eval time =     293.12 ms /    14 tokens (   20.94 ms per token,    47.76 tokens per second)\n0.01.391.990 I slot print_timing: id  0 | task 0 |        eval time =      98.25 ms /     2 tokens (   98.25 ms per token,    10.18 tokens per second)\n0.01.391.991 I slot print_timing: id  0 | task 0 |       total time =     391.37 ms /    16 tokens\n0.01.391.996 I slot print_timing: id  0 | task 0 |    graphs reused =          1\n0.01.391.996 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)\n0.01.392.034 I slot      release: id  0 | task 0 | stop processing: n_tokens = 15, truncated = 0\n0.01.395.030 I srv    operator(): operator(): cleaning up before exit...\n",
+      "exit_code": 0,
+      "mapped_files_from_original_runtime_dir": []
+    }
+  ],
+  "runtime_files": [
+    {
+      "name": "LICENSE",
+      "bytes": 1078,
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+    },
+    {
+      "name": "libggml-base.so.0.29.0",
+      "bytes": 946176,
+      "sha256": "5fa1be0ca572a94f23cac2a15c8997f0fcfceee5f7816975d9273e31237c427f"
+    },
+    {
+      "name": "libggml-cpu-haswell.so",
+      "bytes": 1459872,
+      "sha256": "5d3009e057cde0180d65fdf53d7e021fb32985fa0e3322f25d9b384891f9c485"
+    },
+    {
+      "name": "libggml-rpc.so",
+      "bytes": 328712,
+      "sha256": "03c9619577dccf1be16d63f2ea0f9e4ebca4ef24a72eae9362f920323f18217d"
+    },
+    {
+      "name": "libggml.so.0.29.0",
+      "bytes": 51040,
+      "sha256": "246fb50e2042c311b7186d2836e186d2257ebe9fe05554ddc35a399660cbb74c"
+    },
+    {
+      "name": "libllama-common.so.0.9.0",
+      "bytes": 6799112,
+      "sha256": "bd365e15d618eaf39fa94a60decf885ce125ea7b95449a7d3caa1705522daccc"
+    },
+    {
+      "name": "libllama-server-impl.so",
+      "bytes": 8462184,
+      "sha256": "9dfb0c68584e92652fb94e1f55c8975a727743a2cf60cd9377656b6018a676ae"
+    },
+    {
+      "name": "libllama.so.0.9.0",
+      "bytes": 5527456,
+      "sha256": "3e4beee2681e5372a0db9734d3e58cef8aef83f80e4349193e04a21058bdda57"
+    },
+    {
+      "name": "libmtmd.so.0.9.0",
+      "bytes": 2341720,
+      "sha256": "97fa89e54374227873cb27caac4f7bd3ca613a0137cd706c480d1a2c926eb968"
+    },
+    {
+      "name": "llama-server",
+      "bytes": 17864,
+      "sha256": "64da0db0262aa9a201b27eccc8fdac336bc42ae990c652d31125c6967665187c"
+    }
+  ],
+  "runtime_regular_file_bytes": 25935214,
+  "runtime_symbolic_link_count": 10,
+  "models": {
+    "reference": {
+      "bytes": 2497280736,
+      "sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+      "bundle_regular_file_bytes": 2523215950
+    },
+    "candidate": {
+      "bytes": 2383309536,
+      "sha256": "952af947c6aabf7b72f7d8e279e76f7bf4b0d12431eb3abb588ef312865622d8",
+      "bundle_regular_file_bytes": 2409244750
+    }
+  }
+}

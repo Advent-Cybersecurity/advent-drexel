@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-11-21T11:07:00+00:00",
+  "model_file_saving_bytes": 113971200,
+  "model_file_saving_fraction": 0.045638118500394675,
+  "quantization": {
+    "candidate": {
+      "bytes": 2383309664,
+      "log_sha256": "25413a3fbf0d2e20a94e5d39af81e012807077d341e3c41fe6bc3846efbd6917",
+      "path": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-local-q4_k_s.gguf",
+      "sha256": "e32195c0201ba73ad22308fcf89d43b78ff4fc586390044b96b064177c8508e5",
+      "type": "Q4_K_S"
+    },
+    "imatrix": null,
+    "max_buffer_size_mib": 512,
+    "reference": {
+      "bytes": 2497280864,
+      "log_sha256": "cac4e238da4a15864f55cf3fd72c5933d5b5ea05c2d9e02c63b89159f5be9f37",
+      "path": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-local-q4_k_m.gguf",
+      "sha256": "dd29f7886c328cc950543bbc88198f25aec04e256cf1b978b14384c19e37e2ec",
+      "type": "Q4_K_M"
+    },
+    "threads": 4
+  },
+  "runtime": {
+    "quantizer_sha256": "3cb6b1ea8dceca57ae32287b2c91229ff83df127d263becb498d6ee9dd6bdaf1",
+    "release_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12283",
+    "server_sha256": "64da0db0262aa9a201b27eccc8fdac336bc42ae990c652d31125c6967665187c",
+    "version": "b12283"
+  },
+  "schema": "same-source-artifact-provenance-v1",
+  "source": {
+    "bytes": 8051285344,
+    "caveat": "The community F16 GGUF has not been independently checked tensor by tensor against the official Qwen BF16 checkpoint.",
+    "filename": "Qwen3-4B-Instruct-2507-F16.gguf",
+    "local_path": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-unsloth-f16.gguf",
+    "repository": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+    "revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+    "sha256": "336228a2810f17724ecd6e9e2e40e8381eee81e886316fee311ade2899c31030",
+    "upstream_digest_method": "Hugging Face LFS SHA-256 checked against local file",
+    "url": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF/blob/a06e946bb6b655725eafa393f4a9745d460374c9/Qwen3-4B-Instruct-2507-F16.gguf"
+  }
+}

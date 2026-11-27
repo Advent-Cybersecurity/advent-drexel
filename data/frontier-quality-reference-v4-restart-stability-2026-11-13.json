@@ -1,0 +1,226 @@
+{
+  "kind": "public_reference_only_restart_sensitivity",
+  "created_utc": "2026-11-13T14:56:31Z",
+  "notice": "Exposed V4 development cases only; no candidate or sealed holdout was queried.",
+  "server_sha256": "64da0db0262aa9a201b27eccc8fdac336bc42ae990c652d31125c6967665187c",
+  "model_sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+  "manifest_sha256": "c565270b75737774d20becd3db623400d747ea3082a74f43850900c4fcff9676",
+  "baseline_sha256": "39f8f80ce74184027a8ac5ec4c787a4e7bcf7f1ad452c4ca24a48f4918a05f8a",
+  "selected_ids": [
+    "state-01",
+    "state-06"
+  ],
+  "selection": "one previously correct and one previously wrong case",
+  "baseline": {
+    "state-01": {
+      "content_sha256": "7221eaad89a3836e9811660cfb196d7f183b49f5b70d63be682179c1c5170071",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 732,
+        "prompt_tokens": 287,
+        "total_tokens": 1019,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    "state-06": {
+      "content_sha256": "fadf425e38c10158f156c5255d7098650f0c90e0cf3d3521361ace8a2425da52",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 661,
+        "prompt_tokens": 273,
+        "total_tokens": 934,
+        "prompt_tokens_details": {
+          "cached_tokens": 55
+        }
+      }
+    }
+  },
+  "blocks": [
+    {
+      "block": 1,
+      "command": [
+        "/tmp/drexel-inference-study/llama-b12283/llama-server",
+        "-m",
+        "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+        "-ngl",
+        "0",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-c",
+        "4096",
+        "-b",
+        "512",
+        "-ub",
+        "512",
+        "-np",
+        "1",
+        "-lm",
+        "mmap",
+        "--no-repack",
+        "--offline",
+        "--no-ui",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8101"
+      ],
+      "block_wall_seconds": 129.9091125529958,
+      "log_path": "data/frontier-quality-reference-v4-restart-server-1-2026-11-13.log",
+      "responses": [
+        {
+          "id": "state-01",
+          "gold": 186,
+          "content": "We start with:\n\n- Room A: 145  \n- Room B: 98  \n- Room C: 103  \n- Room D: 138  \n\nWe go step by step through the sequence of transfers.\n\n---\n\n**Step 1: Room A sends one item for every complete group of 4 items it holds to room C (rounding down)**\n\nA has 145.  \nNumber of groups of 4: floor(145 / 4) = 36  \nSo A sends 36 items to C.\n\n- A: 145 - 36 = 109  \n- C: 103 + 36 = 139  \n\n---\n\n**Step 2: Room C sends one item for every complete group of 2 items it holds to room B (rounding down)**\n\nC has 139.  \nGroups of 2: floor(139 / 2) = 69  \nSo C sends 69 items to B.\n\n- C: 139 - 69 = 70  \n- B: 98 + 69 = 167  \n\n---\n\n**Step 3: Room B sends 11 items to room A**\n\nB has 167 \u2192 sends 11 to A\n\n- B: 167 - 11 = 156  \n- A: 109 + 11 = 120  \n\n---\n\n**Step 4: If room B holds at least 161 items, then B sends 9 items to D; otherwise D sends 9 items to B**\n\nB has 156 \u2192 less than 161 \u2192 **D sends 9 items to B**\n\n- D: 138 - 9 = 129  \n- B: 156 + 9 = 165  \n\n---\n\n**Step 5: Room B sends one item for every complete group of 2 items it holds to room A (rounding down)**\n\nB has 165  \nGroups of 2: floor(165 / 2) = 82  \nSo B sends 82 items to A\n\n- B: 165 - 82 = 83  \n- A: 120 + 82 = 202  \n\n---\n\n**Step 6: Room A sends one item for every complete group of 2 items it holds to room C (rounding down)**\n\nA has 202  \nGroups of 2: floor(202 / 2) = 101  \nSo A sends 101 items to C\n\n- A: 202 - 101 = 101  \n- C: 70 + 101 = 171  \n\n---\n\n**Step 7: Room C sends one item for every complete group of 3 items it holds to room D (rounding down)**\n\nC has 171  \nGroups of 3: floor(171 / 3) = 57  \nSo C sends 57 items to D\n\n- C: 171 - 57 = 114  \n- D: 129 + 57 = 186  \n\n---\n\nFinal count in room D: **186**\n\nThe final answer is 186.",
+          "content_sha256": "7221eaad89a3836e9811660cfb196d7f183b49f5b70d63be682179c1c5170071",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 732,
+            "prompt_tokens": 287,
+            "total_tokens": 1019,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 287,
+            "prompt_ms": 3396.706,
+            "prompt_per_token_ms": 11.835212543554007,
+            "prompt_per_second": 84.49362411701219,
+            "predicted_n": 732,
+            "predicted_ms": 64953.898,
+            "predicted_per_token_ms": 88.85622161422708,
+            "predicted_per_second": 11.254135971947365
+          }
+        },
+        {
+          "id": "state-06",
+          "gold": 160,
+          "content": "We start with:\n\n- Room A: 121  \n- Room B: 127  \n- Room C: 110  \n- Room D: 115  \n\nWe go step by step through the sequence of transfers.\n\n---\n\n**Step 1: Room D sends 5 items to room B**\n\n- D: 115 - 5 = 110  \n- B: 127 + 5 = 132  \n\n---\n\n**Step 2: Room B sends 11 items to room D**\n\n- B: 132 - 11 = 121  \n- D: 110 + 11 = 121  \n\n---\n\n**Step 3: Room D sends one item for every complete group of 4 items it holds to room A (rounding down)**\n\nD has 121 items.\n\nNumber of groups of 4: floor(121 / 4) = 30 groups \u2192 sends 30 items to A.\n\n- D: 121 - 30 = 91  \n- A: 121 + 30 = 151  \n\n---\n\n**Step 4: If room A holds at least 156 items, then A sends 7 to D; otherwise D sends 7 to A**\n\nA has 151 \u2192 151 < 156 \u2192 **so D sends 7 to A**\n\n- D: 91 + 7 = 98  \n- A: 151 + 7 = 158  \n\n---\n\n**Step 5: Room A sends one item for every complete group of 4 items it holds to room B (rounding down)**\n\nA has 158 items.\n\nGroups of 4: floor(158 / 4) = 39 groups \u2192 sends 39 items to B\n\n- A: 158 - 39 = 119  \n- B: 121 + 39 = 160  \n\n---\n\n**Step 6: Room B sends one item for every complete group of 2 items it holds to room D (rounding down)**\n\nB has 160 items.\n\nGroups of 2: floor(160 / 2) = 80 groups \u2192 sends 80 items to D\n\n- B: 160 - 80 = 80  \n- D: 98 + 80 = 178  \n\n---\n\n**Step 7: Room D sends one item for every complete group of 4 items it holds to room A (rounding down)**\n\nD has 178 items.\n\nGroups of 4: floor(178 / 4) = 44 groups \u2192 sends 44 items to A\n\n- D: 178 - 44 = 134  \n- A: 119 + 44 = 163  \n\n---\n\nFinal count in room A: **163**\n\nThe final answer is 163.",
+          "content_sha256": "fadf425e38c10158f156c5255d7098650f0c90e0cf3d3521361ace8a2425da52",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 661,
+            "prompt_tokens": 273,
+            "total_tokens": 934,
+            "prompt_tokens_details": {
+              "cached_tokens": 55
+            }
+          },
+          "timings": {
+            "cache_n": 55,
+            "prompt_n": 218,
+            "prompt_ms": 2647.423,
+            "prompt_per_token_ms": 12.144142201834862,
+            "prompt_per_second": 82.34422681981687,
+            "predicted_n": 661,
+            "predicted_ms": 57867.818,
+            "predicted_per_token_ms": 87.67851212121212,
+            "predicted_per_second": 11.405303030433945
+          }
+        }
+      ]
+    },
+    {
+      "block": 2,
+      "command": [
+        "/tmp/drexel-inference-study/llama-b12283/llama-server",
+        "-m",
+        "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+        "-ngl",
+        "0",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-c",
+        "4096",
+        "-b",
+        "512",
+        "-ub",
+        "512",
+        "-np",
+        "1",
+        "-lm",
+        "mmap",
+        "--no-repack",
+        "--offline",
+        "--no-ui",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8101"
+      ],
+      "block_wall_seconds": 130.74801618198399,
+      "log_path": "data/frontier-quality-reference-v4-restart-server-2-2026-11-13.log",
+      "responses": [
+        {
+          "id": "state-01",
+          "gold": 186,
+          "content": "We start with:\n\n- Room A: 145  \n- Room B: 98  \n- Room C: 103  \n- Room D: 138  \n\nWe go step by step through the sequence of transfers.\n\n---\n\n**Step 1: Room A sends one item for every complete group of 4 items it holds to room C (rounding down)**\n\nA has 145.  \nNumber of groups of 4: floor(145 / 4) = 36  \nSo A sends 36 items to C.\n\n- A: 145 - 36 = 109  \n- C: 103 + 36 = 139  \n\n---\n\n**Step 2: Room C sends one item for every complete group of 2 items it holds to room B (rounding down)**\n\nC has 139.  \nGroups of 2: floor(139 / 2) = 69  \nSo C sends 69 items to B.\n\n- C: 139 - 69 = 70  \n- B: 98 + 69 = 167  \n\n---\n\n**Step 3: Room B sends 11 items to room A**\n\nB has 167 \u2192 sends 11 to A\n\n- B: 167 - 11 = 156  \n- A: 109 + 11 = 120  \n\n---\n\n**Step 4: If room B holds at least 161 items, then B sends 9 items to D; otherwise D sends 9 items to B**\n\nB has 156 \u2192 less than 161 \u2192 **D sends 9 items to B**\n\n- D: 138 - 9 = 129  \n- B: 156 + 9 = 165  \n\n---\n\n**Step 5: Room B sends one item for every complete group of 2 items it holds to room A (rounding down)**\n\nB has 165  \nGroups of 2: floor(165 / 2) = 82  \nSo B sends 82 items to A\n\n- B: 165 - 82 = 83  \n- A: 120 + 82 = 202  \n\n---\n\n**Step 6: Room A sends one item for every complete group of 2 items it holds to room C (rounding down)**\n\nA has 202  \nGroups of 2: floor(202 / 2) = 101  \nSo A sends 101 items to C\n\n- A: 202 - 101 = 101  \n- C: 70 + 101 = 171  \n\n---\n\n**Step 7: Room C sends one item for every complete group of 3 items it holds to room D (rounding down)**\n\nC has 171  \nGroups of 3: floor(171 / 3) = 57  \nSo C sends 57 items to D\n\n- C: 171 - 57 = 114  \n- D: 129 + 57 = 186  \n\n---\n\nFinal count in room D: **186**\n\nThe final answer is 186.",
+          "content_sha256": "7221eaad89a3836e9811660cfb196d7f183b49f5b70d63be682179c1c5170071",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 732,
+            "prompt_tokens": 287,
+            "total_tokens": 1019,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 287,
+            "prompt_ms": 3389.151,
+            "prompt_per_token_ms": 11.80888850174216,
+            "prompt_per_second": 84.68197492528365,
+            "predicted_n": 732,
+            "predicted_ms": 65149.89,
+            "predicted_per_token_ms": 89.1243365253078,
+            "predicted_per_second": 11.22027988074884
+          }
+        },
+        {
+          "id": "state-06",
+          "gold": 160,
+          "content": "We start with:\n\n- Room A: 121  \n- Room B: 127  \n- Room C: 110  \n- Room D: 115  \n\nWe go step by step through the sequence of transfers.\n\n---\n\n**Step 1: Room D sends 5 items to room B**\n\n- D: 115 - 5 = 110  \n- B: 127 + 5 = 132  \n\n---\n\n**Step 2: Room B sends 11 items to room D**\n\n- B: 132 - 11 = 121  \n- D: 110 + 11 = 121  \n\n---\n\n**Step 3: Room D sends one item for every complete group of 4 items it holds to room A (rounding down)**\n\nD has 121 items.\n\nNumber of groups of 4: floor(121 / 4) = 30 groups \u2192 sends 30 items to A.\n\n- D: 121 - 30 = 91  \n- A: 121 + 30 = 151  \n\n---\n\n**Step 4: If room A holds at least 156 items, then A sends 7 to D; otherwise D sends 7 to A**\n\nA has 151 \u2192 151 < 156 \u2192 **so D sends 7 to A**\n\n- D: 91 + 7 = 98  \n- A: 151 + 7 = 158  \n\n---\n\n**Step 5: Room A sends one item for every complete group of 4 items it holds to room B (rounding down)**\n\nA has 158 items.\n\nGroups of 4: floor(158 / 4) = 39 groups \u2192 sends 39 items to B\n\n- A: 158 - 39 = 119  \n- B: 121 + 39 = 160  \n\n---\n\n**Step 6: Room B sends one item for every complete group of 2 items it holds to room D (rounding down)**\n\nB has 160 items.\n\nGroups of 2: floor(160 / 2) = 80 groups \u2192 sends 80 items to D\n\n- B: 160 - 80 = 80  \n- D: 98 + 80 = 178  \n\n---\n\n**Step 7: Room D sends one item for every complete group of 4 items it holds to room A (rounding down)**\n\nD has 178 items.\n\nGroups of 4: floor(178 / 4) = 44 groups \u2192 sends 44 items to A\n\n- D: 178 - 44 = 134  \n- A: 119 + 44 = 163  \n\n---\n\nFinal count in room A: **163**\n\nThe final answer is 163.",
+          "content_sha256": "fadf425e38c10158f156c5255d7098650f0c90e0cf3d3521361ace8a2425da52",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 661,
+            "prompt_tokens": 273,
+            "total_tokens": 934,
+            "prompt_tokens_details": {
+              "cached_tokens": 55
+            }
+          },
+          "timings": {
+            "cache_n": 55,
+            "prompt_n": 218,
+            "prompt_ms": 2658.899,
+            "prompt_per_token_ms": 12.196784403669724,
+            "prompt_per_second": 81.98882319335935,
+            "predicted_n": 661,
+            "predicted_ms": 58512.139,
+            "predicted_per_token_ms": 88.65475606060606,
+            "predicted_per_second": 11.279710693878409
+          }
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "state-01": {
+      "replay_texts_identical": true,
+      "both_replays_match_original": true
+    },
+    "state-06": {
+      "replay_texts_identical": true,
+      "both_replays_match_original": true
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "local-research-cache-reclamation-v1",
+  "created_utc": "2026-11-21T10:59:38Z",
+  "reason": "Free local disk for a same-source 4B full-precision quantization experiment; these are reproducible cached artifacts.",
+  "files": [
+    {
+      "cache_file": "qwen2.5-1.5b-instruct-fp16.gguf",
+      "bytes": 3560416288,
+      "sha256": "fc89e330deb3fd8fa560f1c0f35a1e2b8da96d59e13445559ed190307a6f5649"
+    },
+    {
+      "cache_file": "qwen2.5-1.5b-instruct-down-q4.gguf",
+      "bytes": 1088935456,
+      "sha256": "4986cb4db669ae343b527e4b2736db13be2e41d183c3a199f46b880c24ffcb77"
+    },
+    {
+      "cache_file": "qwen2.5-1.5b-instruct-output-head-q5-pinned.gguf",
+      "bytes": 1086325792,
+      "sha256": "df706338ea8bfa4008fafa9aa27f38060981cbe012939ce4ebb5892cedf76f6f"
+    },
+    {
+      "cache_file": "qwen2.5-1.5b-instruct-down-q4-pinned.gguf",
+      "bytes": 1067646496,
+      "sha256": "6c7476ad9ab6f108f0d28f31601d761ec40e9981a8dd13baa60ac3f66b8077b2"
+    },
+    {
+      "cache_file": "qwen2.5-1.5b-instruct-output-head-q4-pinned.gguf",
+      "bytes": 1057154080,
+      "sha256": "8efa8dfacf9e7dab4f5cfa16a26a1468d44eea70ac79f8b90e49a15d7806ceee"
+    },
+    {
+      "cache_file": "qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+      "bytes": 2497280736,
+      "sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e"
+    },
+    {
+      "cache_file": "qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+      "bytes": 2383309536,
+      "sha256": "952af947c6aabf7b72f7d8e279e76f7bf4b0d12431eb3abb588ef312865622d8"
+    }
+  ]
+}

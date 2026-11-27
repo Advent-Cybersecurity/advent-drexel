@@ -1,0 +1,17 @@
+# AgentWorm: persistent instructions and remote tasking are not serial code revision
+
+Advent Cybersecurity source audit, 26 November 2026. This is a reading of published research, not a reproduction. The source is [Zhang et al., *AgentWorm*, arXiv v3 (16 July 2026)](https://arxiv.org/html/2603.15727v3). The [initial v1](https://arxiv.org/abs/2603.15727v1) used the name *ClawWorm*; the current version changes the title and study details. Version-specific results must not be mixed.
+
+## What was evaluated
+
+The authors ran unmodified OpenClaw v2026.3.12 agents in a controlled, isolated multi-agent testbed. Each CLI invocation was a **single-turn session**; the test explicitly restarted a fresh session before checking execution. The change retained across restarts was an instruction/configuration payload in an agent workspace file, not revised source code or a replacement executable module. The initial infected agent, hosted material, and routine test prompts were scripted. After delivery, target agents made the measured decisions about whether to adopt and relay the material. [Methods and verification](https://arxiv.org/html/2603.15727v3).
+
+Version 3 crosses three delivery vectors, three payload categories, and five model backends, with 50 independent trials per cell: **2,250 trials**. Its overall 63% is the conjunction of (1) a configuration-content check, (2) a marker from a freshly restarted session's payload action, and (3) propagation in a fresh channel. The command-and-control category fetches operator-served instructions; its verification uses a beacon file indicating URL retrieval and task execution. This is stronger than a mere self-report of action, but it does **not** test two different served instructions or two active versions of a resident program. The operator can change hosted instructions without changing the agent's executable code. [Metrics and results](https://arxiv.org/html/2603.15727v3).
+
+A separate longevity panel ran **90 trials**, ten per delivery-vector/payload combination, over **five session restarts**. The paper reports the configuration still present at restart five in all 90 and mean re-execution rates of 0.82, 0.90, and 0.78 across the three vectors. These are retention and repeated *execution of the same adopted instruction*, not two model-authored executable-code revisions. The paper also reports multi-hop transmission, which creates new agent instances rather than a continuing process changing itself. [Longevity panel](https://arxiv.org/html/2603.15727v3).
+
+## Claim boundary and research value
+
+The case establishes that model-mediated configuration adoption can persist and trigger remote task retrieval in a controlled agent ecosystem. It does not establish one continuing remote-access process, model-to-executable-code deltas, two active code versions, or independent remote-control results after each such version. A *session restart* is a particularly clear break from the same-process requirement, even though user-visible service behavior may persist.
+
+Its useful measurement lesson is to separate **configuration presence**, **execution of the present instruction**, **propagation to another instance**, and **functional outcome after an actual code change**. Its 63% trial outcome and five-restart retention cannot be used as a Drexel feasibility probability. The paper's version change is also consequential: older summaries of *ClawWorm* may refer to a different model panel, denominator, or aggregate rate; cite a pinned version when quoting results.

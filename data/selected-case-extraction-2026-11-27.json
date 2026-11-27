@@ -1,0 +1,163 @@
+{
+  "as_of": "2026-11-27",
+  "review_type": "Bounded, targeted primary-source update; relevance-selected extraction, not a systematic review or prevalence sample.",
+  "claim_tested": "Two distinct model-caused executable-code revisions become active in one continuing remote-access process, followed by an independent remote-control result after each revision.",
+  "companion_note": "docs/case-evidence-update-2026-11-27.md",
+  "status_codes": {
+    "documented": "A case-specific source artifact, run record, or measurement supports this field, subject to the stated locator and limit.",
+    "reported": "A first-party author or investigator states this occurred, but the underlying trace is not fully public.",
+    "mechanism": "The described code or design provides a capability, without a case-specific demonstrated use.",
+    "not_reported": "The inspected public source does not supply this field; value is null. This is not proof that it never happened.",
+    "outside_scope": "The case design or observed sequence does not have the required event or workload."
+  },
+  "field_definitions": {
+    "model_placement": "Where inference ran relative to the target endpoint, distinguishing a local API from a model proven resident on that endpoint.",
+    "model_to_code_authorship": "Whether the source reports or documents model generation of executable content, as distinct from choosing tools or directing an action; this field alone does not prove exact artifact lineage.",
+    "response_to_artifact_lineage": "Whether a particular model response is linked to the accepted executable artifact's content or bytes in the public record.",
+    "code_activation": "Whether changed executable bytes became callable in the relevant running program, as opposed to only being written or compiled.",
+    "process_continuity": "Whether the same target process and program image continued across revisions; a logical session alone is weaker evidence.",
+    "two_distinct_active_revisions": "Whether two byte- or version-distinct revisions were each shown active in that continuing instance.",
+    "remote_result_after_each_revision": "Whether an independent remote-control task succeeded after each of the two active revisions in that instance.",
+    "defender_telemetry": "What the source actually measured about defender visibility; execution success is not equivalent to absence of alerts."
+  },
+  "sources": {
+    "GTIG_2025": {"url": "https://cloud.google.com/blog/topics/threat-intelligence/threat-actor-usage-of-ai-tools", "type": "first-party threat analysis"},
+    "ESET_PROMPTLOCK": {"url": "https://www.eset.com/us/about/newsroom/research/eset-discovers-promptlock-the-first-ai-powered-ransomware/", "type": "first-party researcher announcement"},
+    "UNIT42_C2AGENT": {"url": "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/d74de078d0cf3227a97076dbc7b7fc504c49fe7e/2026-10-09-C2Agent-malware.txt", "type": "pinned first-party malware analysis"},
+    "AWS_CAIRN": {"url": "https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/", "type": "first-party field investigation"},
+    "BYPASSGYM": {"url": "https://arxiv.org/html/2611.13684", "type": "author research preprint"},
+    "KITSUNE": {"url": "https://www.cs.tufts.edu/~jfoster/papers/toplas-kitsune.pdf", "type": "author research paper"},
+    "RSINFER": {"url": "https://github.com/open-agent-infra/RSInfer/blob/bd26c7e1554211a578e733f7e2fc59feb3a21452/doc/rsi/2026-11-11-real-kernels-hot-apply.md", "type": "pinned author experiment record"},
+    "CL_AGENT_TRACE": {"url": "https://github.com/echawk/cl-agent/blob/e6aa53d2b868c9e3fe7b2bfe88bcae3fe0c997be/successful-runs/memory-proposal-chat.txt", "type": "pinned author conversation trace"},
+    "CL_AGENT_LOADER": {"url": "https://github.com/echawk/cl-agent/blob/e6aa53d2b868c9e3fe7b2bfe88bcae3fe0c997be/src/extensions.lisp", "type": "pinned implementation"},
+    "GTIG_2026_NOV": {"url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold", "type": "first-party field analysis"}
+  },
+  "cases": [
+    {
+      "id": "PROMPTFLUX", "category": "field sample; proposed self-rewrite", "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "documented", "value": "Hosted Gemini API queried by the sample; no endpoint-resident model shown.", "source_id": "GTIG_2025", "locator": "Experimental Malware Using Gemini for Self-Modification, paragraphs 1-3"},
+        "model_to_code_authorship": {"status": "mechanism", "value": "The sample requests rewritten script code and logs model responses; the inspected self-update function was commented out.", "source_id": "GTIG_2025", "locator": "Experimental Malware Using Gemini for Self-Modification, paragraphs 1-5"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "GTIG_2025", "locator": "Experimental Malware Using Gemini for Self-Modification; response logging does not identify an accepted executable artifact"},
+        "code_activation": {"status": "outside_scope", "value": "The examined sample's self-update function was commented out; other variants were not assessed for this extraction.", "source_id": "GTIG_2025", "locator": "Experimental Malware Using Gemini for Self-Modification; disabled self-update path"},
+        "process_continuity": {"status": "not_reported", "value": null, "source_id": "GTIG_2025", "locator": "Experimental Malware Using Gemini for Self-Modification; no process lineage published"},
+        "two_distinct_active_revisions": {"status": "not_reported", "value": null, "source_id": "GTIG_2025", "locator": "Experimental Malware Using Gemini for Self-Modification; no active-version sequence"},
+        "remote_result_after_each_revision": {"status": "not_reported", "value": null, "source_id": "GTIG_2025", "locator": "Experimental Malware Using Gemini for Self-Modification; GTIG says current sample cannot compromise a device or network"},
+        "defender_telemetry": {"status": "not_reported", "value": null, "source_id": "GTIG_2025", "locator": "Table 1 and Experimental Malware Using Gemini for Self-Modification; investigator discovery is not endpoint defender telemetry"}
+      },
+      "decisive_limit": "Requested or logged replacement code is not an activated replacement."
+    },
+    {
+      "id": "PROMPTLOCK", "category": "analyzed proof-of-concept sample; generated task scripts", "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "reported", "value": "A locally accessible model is reached through an API; this announcement does not locate the inference server on the infected endpoint.", "source_id": "ESET_PROMPTLOCK", "locator": "Opening bullets and paragraph beginning 'PromptLock uses'"},
+        "model_to_code_authorship": {"status": "reported", "value": "Model-generated Lua task scripts are served to the device; no model-authored revision of the resident Go program is reported.", "source_id": "ESET_PROMPTLOCK", "locator": "Opening bullets and paragraphs beginning 'PromptLock creates' and 'PromptLock uses'"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "ESET_PROMPTLOCK", "locator": "Entire announcement; generated script bytes are not paired with a particular model response"},
+        "code_activation": {"status": "reported", "value": "ESET reports generated scripts used during sample operation, without an activation trace for successive resident program versions.", "source_id": "ESET_PROMPTLOCK", "locator": "Opening bullets and paragraph beginning 'PromptLock creates'"},
+        "process_continuity": {"status": "not_reported", "value": null, "source_id": "ESET_PROMPTLOCK", "locator": "Entire announcement; no target process identity or image-boundary trace"},
+        "two_distinct_active_revisions": {"status": "not_reported", "value": null, "source_id": "ESET_PROMPTLOCK", "locator": "Entire announcement; no serial resident-code versions"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "Ransomware task scripting is described, not a two-revision remote-access session.", "source_id": "ESET_PROMPTLOCK", "locator": "Opening bullets and body"},
+        "defender_telemetry": {"status": "not_reported", "value": null, "source_id": "ESET_PROMPTLOCK", "locator": "Paragraph beginning 'The ransomware uses'; investigator discovery is not endpoint defender telemetry"}
+      },
+      "decisive_limit": "Local API accessibility does not prove on-endpoint inference, and generated task scripts are not a serial resident-code revision trace."
+    },
+    {
+      "id": "C2AGENT", "category": "field malware; model-directed control", "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "not_reported", "value": null, "source_id": "UNIT42_C2AGENT", "locator": "AI CAPABILITIES and LLM TOOL LOOP; model serving location not established"},
+        "model_to_code_authorship": {"status": "not_reported", "value": null, "source_id": "UNIT42_C2AGENT", "locator": "AI CAPABILITIES and TIMELINE; model-directed tools and changed builds are described separately"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "UNIT42_C2AGENT", "locator": "AI CAPABILITIES and TIMELINE; no response-to-upgrade artifact link"},
+        "code_activation": {"status": "mechanism", "value": "Version 2.4 adds an in-memory upgrade capability; a case-specific successful model-caused upgrade is not traced.", "source_id": "UNIT42_C2AGENT", "locator": "Version 2.4 description and IMPACT"},
+        "process_continuity": {"status": "not_reported", "value": null, "source_id": "UNIT42_C2AGENT", "locator": "TIMELINE and IMPACT; no identified process across successive upgrades"},
+        "two_distinct_active_revisions": {"status": "not_reported", "value": null, "source_id": "UNIT42_C2AGENT", "locator": "TIMELINE; recovered builds are not an in-instance activation sequence"},
+        "remote_result_after_each_revision": {"status": "not_reported", "value": null, "source_id": "UNIT42_C2AGENT", "locator": "AI CAPABILITIES, TIMELINE, and IMPACT; no after-each-upgrade result trace"},
+        "defender_telemetry": {"status": "not_reported", "value": null, "source_id": "UNIT42_C2AGENT", "locator": "Entire pinned report; no comparable per-version alert outcomes"}
+      },
+      "decisive_limit": "Build chronology, runtime skills, and an upgrade capability are not linked to two model-authored active revisions in one process."
+    },
+    {
+      "id": "AWS_CAIRN_NEW_PROCESS_SHELL", "category": "field agent operation; new process", "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "reported", "value": "The operator's publicly hosted Cairn server coordinated agents; endpoint-resident inference is not reported.", "source_id": "AWS_CAIRN", "locator": "Discovery and Cairn overview"},
+        "model_to_code_authorship": {"status": "reported", "value": "AWS attributes payload creation and placement to agents, but publishes no response-to-file-byte lineage.", "source_id": "AWS_CAIRN", "locator": "Zero-day discovery"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "AWS_CAIRN", "locator": "Zero-day discovery; no exact model response paired with placed file bytes"},
+        "code_activation": {"status": "reported", "value": "A newly spawned Python process imported the placed payload and established a remote shell.", "source_id": "AWS_CAIRN", "locator": "Zero-day discovery, paragraph beginning 'In a later session'"},
+        "process_continuity": {"status": "outside_scope", "value": "The payload ran in a new process, not as a revision of the prior resident process.", "source_id": "AWS_CAIRN", "locator": "Zero-day discovery, paragraph beginning 'In a later session'"},
+        "two_distinct_active_revisions": {"status": "not_reported", "value": null, "source_id": "AWS_CAIRN", "locator": "Zero-day discovery; one payload activation, no two-version sequence"},
+        "remote_result_after_each_revision": {"status": "not_reported", "value": null, "source_id": "AWS_CAIRN", "locator": "Zero-day discovery; one remote shell result, not after each of two revisions"},
+        "defender_telemetry": {"status": "not_reported", "value": null, "source_id": "AWS_CAIRN", "locator": "Discovery and Zero-day discovery; no endpoint alert series"}
+      },
+      "decisive_limit": "One agent-associated payload and one new-process remote shell do not demonstrate continuing-process mutation."
+    },
+    {
+      "id": "BYPASSGYM", "category": "controlled benchmark; fresh candidate per VM", "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "documented", "value": "Agent/model backends run in a development container separate from the endpoint evaluation VMs.", "source_id": "BYPASSGYM", "locator": "Sections 4.2 and 4.3"},
+        "model_to_code_authorship": {"status": "documented", "value": "Agents construct and revise submitted candidate loader code across iterations.", "source_id": "BYPASSGYM", "locator": "Section 4.2, Runs and iterations"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "BYPASSGYM", "locator": "Sections 4.2-4.3; no particular model response paired with accepted candidate bytes in the inspected paper"},
+        "code_activation": {"status": "documented", "value": "Candidate execution is checked on the endpoint, but each candidate is a fresh submission.", "source_id": "BYPASSGYM", "locator": "Section 4.3, Evaluation oracle"},
+        "process_continuity": {"status": "outside_scope", "value": "The VM controller restores a clean snapshot before every candidate test.", "source_id": "BYPASSGYM", "locator": "Section 4.3, final sentence of evaluation check description"},
+        "two_distinct_active_revisions": {"status": "outside_scope", "value": "Iterations are separate endpoint instances, not two versions in one resident process.", "source_id": "BYPASSGYM", "locator": "Sections 4.2-4.3"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "The server verifies command and file results for a passing fresh candidate, not after each revision of one process.", "source_id": "BYPASSGYM", "locator": "Section 4.3, C2 Functionality Check"},
+        "defender_telemetry": {"status": "not_reported", "value": null, "source_id": "BYPASSGYM", "locator": "Section 4.3, Evaluation oracle; alerts deliberately excluded from the pass verdict, so no per-candidate alert outcome is reported"}
+      },
+      "decisive_limit": "Fresh-VM function checks cannot establish in-process serial adaptation or undetectability."
+    },
+    {
+      "id": "KITSUNE", "category": "benign dynamic software update", "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "outside_scope", "value": "No model drives the developer-prepared updates.", "source_id": "KITSUNE", "locator": "Abstract and Sections 5-6"},
+        "model_to_code_authorship": {"status": "outside_scope", "value": "Versions are developer-prepared, not tied to model responses.", "source_id": "KITSUNE", "locator": "Abstract and Section 5.2"},
+        "response_to_artifact_lineage": {"status": "outside_scope", "value": "No model response is part of this developer-prepared update study.", "source_id": "KITSUNE", "locator": "Abstract and Sections 5-6"},
+        "code_activation": {"status": "documented", "value": "The authors dynamically updated a live Tor relay through a 13-version streak.", "source_id": "KITSUNE", "locator": "Section 6.1, Tor relay experiment, PDF page 28"},
+        "process_continuity": {"status": "reported", "value": "The continuing relay carried traffic through updates without disrupted client TLS connections; no OS PID trace is published in this passage.", "source_id": "KITSUNE", "locator": "Section 6.1, Tor relay experiment, PDF page 28"},
+        "two_distinct_active_revisions": {"status": "documented", "value": "Multiple successive Tor versions were applied while the relay carried traffic.", "source_id": "KITSUNE", "locator": "Section 6.1, Tor relay experiment, PDF page 28"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "Continuity of client traffic was checked, not remote-access task execution after every version.", "source_id": "KITSUNE", "locator": "Section 6.1, Tor relay experiment, PDF page 28"},
+        "defender_telemetry": {"status": "outside_scope", "value": "Benign relay update study; no endpoint defender measurement.", "source_id": "KITSUNE", "locator": "Sections 5-6"}
+      },
+      "decisive_limit": "Strong live-update and connection-continuity evidence is independent of model authorship and remote access. This extraction uses a stricter OS PID/image criterion than the prior ledger's functional same-instance label, so continuity is coded reported rather than documented."
+    },
+    {
+      "id": "RSINFER", "category": "benign live inference-worker update", "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "outside_scope", "value": "The model is the inference workload served by the worker, not a demonstrated author of the updates.", "source_id": "RSINFER", "locator": "Sections 'Actual use' and 'Supplementary experiment'"},
+        "model_to_code_authorship": {"status": "not_reported", "value": null, "source_id": "RSINFER", "locator": "Supplementary hot-apply experiment; no response-to-patch record"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "RSINFER", "locator": "Supplementary hot-apply experiment; no response-to-patch record"},
+        "code_activation": {"status": "documented", "value": "The author records committed hot applies and outputs that differ between old and new code trees.", "source_id": "RSINFER", "locator": "Supplementary experiment, change table and hot-versus-cold comparison"},
+        "process_continuity": {"status": "reported", "value": "The author states nine applies on the same worker without a process restart; independent PID telemetry is not included.", "source_id": "RSINFER", "locator": "Supplementary experiment, paragraph after change table"},
+        "two_distinct_active_revisions": {"status": "documented", "value": "Old and new code trees alternated with version-specific inference outputs across repeated applies.", "source_id": "RSINFER", "locator": "Supplementary experiment, change table and hot-versus-cold comparison"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "The checked function was inference service output, not remote-access control after each change.", "source_id": "RSINFER", "locator": "Supplementary experiment, hot-versus-cold comparison"},
+        "defender_telemetry": {"status": "outside_scope", "value": "Benign inference service study; no endpoint defender result.", "source_id": "RSINFER", "locator": "Entire author experiment record"}
+      },
+      "decisive_limit": "Same-worker repeated functional updates do not establish model-authored malware or remote-control results."
+    },
+    {
+      "id": "CL_AGENT_LIVE_EXTENSION_TRACE", "category": "benign model-mediated code extension", "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "not_reported", "value": null, "source_id": "CL_AGENT_TRACE", "locator": "Entire pinned conversation; provider placement is not established"},
+        "model_to_code_authorship": {"status": "documented", "value": "Two distinct model-submitted source strings for the same extension appear in one checked-in conversation.", "source_id": "CL_AGENT_TRACE", "locator": "Two write-extension calls for memory.lisp"},
+        "response_to_artifact_lineage": {"status": "documented", "value": "The checked-in conversation pairs model-submitted source text with two write-extension calls; it does not include an independent byte hash of the loaded file.", "source_id": "CL_AGENT_TRACE", "locator": "Two write-extension calls for memory.lisp"},
+        "code_activation": {"status": "documented", "value": "Both calls report successful loading; the pinned loader executes Lisp load in the running image.", "source_id": "CL_AGENT_LOADER", "locator": "load-extension-file definition; corroborate with two write-extension results in CL_AGENT_TRACE"},
+        "process_continuity": {"status": "reported", "value": "The logical chat continues through both loads; no OS PID or image-boundary trace is published.", "source_id": "CL_AGENT_TRACE", "locator": "Two write-extension calls in one conversation"},
+        "two_distinct_active_revisions": {"status": "not_reported", "value": null, "source_id": "CL_AGENT_TRACE", "locator": "No version-specific function invocation between first and second load; only second version is functionally exercised"},
+        "remote_result_after_each_revision": {"status": "outside_scope", "value": "The post-second-load checks use local memory tools, not a remote-access workload.", "source_id": "CL_AGENT_TRACE", "locator": "eval-lisp checks after second write-extension result"},
+        "defender_telemetry": {"status": "outside_scope", "value": "Benign agent extension trace; no endpoint defender observation.", "source_id": "CL_AGENT_TRACE", "locator": "Entire pinned conversation"}
+      },
+      "decisive_limit": "Two load acknowledgements are stronger than file writes, but the first loaded version lacks a recorded function result."
+    },
+    {
+      "id": "GTIG_EXPLOIT_AGENT_2026_NOV", "category": "newly reported field framework; operator-side local-model option", "strict_claim": "not_established",
+      "fields": {
+        "model_placement": {"status": "reported", "value": "A staging server hosted the framework, which integrated frontier and local LLMs; no endpoint-resident model is shown.", "source_id": "GTIG_2026_NOV", "locator": "Agentic exploitation section, exploit_agent paragraph"},
+        "model_to_code_authorship": {"status": "reported", "value": "The framework is described as drafting and executing exploit candidates, not revising a resident payload in a traced process.", "source_id": "GTIG_2026_NOV", "locator": "Agentic exploitation section, exploit_agent paragraph"},
+        "response_to_artifact_lineage": {"status": "not_reported", "value": null, "source_id": "GTIG_2026_NOV", "locator": "Agentic exploitation section; no particular model response paired with an executed candidate artifact"},
+        "code_activation": {"status": "not_reported", "value": null, "source_id": "GTIG_2026_NOV", "locator": "Agentic exploitation section; no in-process revised-payload activation trace"},
+        "process_continuity": {"status": "not_reported", "value": null, "source_id": "GTIG_2026_NOV", "locator": "Agentic exploitation section; no target process lineage"},
+        "two_distinct_active_revisions": {"status": "not_reported", "value": null, "source_id": "GTIG_2026_NOV", "locator": "Agentic exploitation section; no two-version target process sequence"},
+        "remote_result_after_each_revision": {"status": "not_reported", "value": null, "source_id": "GTIG_2026_NOV", "locator": "Agentic exploitation section; no after-each-revision remote task results"},
+        "defender_telemetry": {"status": "not_reported", "value": null, "source_id": "GTIG_2026_NOV", "locator": "Agentic exploitation section; no per-revision endpoint alert measurements"}
+      },
+      "decisive_limit": "An operator-side local model and autonomous exploitation pipeline are not evidence of an endpoint-resident model or two active revisions."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+samples/
+quarantine/
+
+# Local agent handoffs and chat exports must stay outside the public repository.
+CODEX_SESSION.md
+codex-session*
+codex-chat*
+chatgpt-session*
+chatgpt-chat*
+chat-export*
+chat-transcript*
+conversation-export*
+.codex/

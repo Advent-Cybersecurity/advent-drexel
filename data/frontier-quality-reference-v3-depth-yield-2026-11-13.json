@@ -1,0 +1,62 @@
+{
+  "caveat": "Monte Carlo estimates of the public V3 grammar only; IDs encode full programs, not query-ancestor functional-equivalence classes. No candidate or sealed case was generated or queried.",
+  "cells": {
+    "4": {
+      "acceptance_fraction": 0.8269,
+      "accepted": 8269,
+      "accepted_all_events_relevant": 6795,
+      "accepted_full_length_depth": 5613,
+      "depth_histogram": {
+        "1": 818,
+        "2": 913,
+        "3": 2656,
+        "4": 5613
+      },
+      "draws": 10000,
+      "matching_full_program_signature_pairs_among_accepted": 6642,
+      "maximum_signature_frequency_among_accepted": 10,
+      "relevant_event_histogram": {
+        "1": 818,
+        "2": 837,
+        "3": 1550,
+        "4": 6795
+      },
+      "rule": "depth >= 3 and relevant events >= 3",
+      "unique_full_program_signatures_among_accepted": 5101
+    },
+    "7": {
+      "acceptance_fraction": 0.8272,
+      "accepted": 8272,
+      "accepted_all_events_relevant": 6166,
+      "accepted_full_length_depth": 3120,
+      "depth_histogram": {
+        "1": 167,
+        "2": 249,
+        "3": 471,
+        "4": 841,
+        "5": 1985,
+        "6": 3167,
+        "7": 3120
+      },
+      "draws": 10000,
+      "matching_full_program_signature_pairs_among_accepted": 0,
+      "maximum_signature_frequency_among_accepted": 1,
+      "relevant_event_histogram": {
+        "1": 167,
+        "2": 243,
+        "3": 411,
+        "4": 519,
+        "5": 957,
+        "6": 1491,
+        "7": 6212
+      },
+      "rule": "depth >= 5 and relevant events >= 5",
+      "unique_full_program_signatures_among_accepted": 8272
+    }
+  },
+  "depth_audit_sha256": "0fdcf690f107600b7cc830383de6a4bbcc24feafcbd76311be7b1d36fa9aba3e",
+  "generator_sha256": "97ee41f34a26bf17faa87c7dc689e69688c5939d600d329f6b48624557ea1d6a",
+  "kind": "public_reference_v3_state_depth_yield_audit",
+  "query_ancestor_audit_sha256": "641b7133e01f88261ee944af4783e2a0958e5ff04373f7c5b8341c88c43b49e0",
+  "seed": 83792
+}

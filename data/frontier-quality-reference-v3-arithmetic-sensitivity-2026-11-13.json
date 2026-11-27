@@ -1,0 +1,494 @@
+{
+  "cases": [
+    {
+      "checks": [
+        {
+          "active": 101,
+          "changes_answer": true,
+          "position": 1,
+          "reserve": 19
+        },
+        {
+          "active": 124,
+          "changes_answer": true,
+          "position": 2,
+          "reserve": 0
+        },
+        {
+          "active": 92,
+          "changes_answer": true,
+          "position": 3,
+          "reserve": 18
+        },
+        {
+          "active": 89,
+          "changes_answer": true,
+          "position": 4,
+          "reserve": 27
+        }
+      ],
+      "gold": 98,
+      "id": "arithmetic-01",
+      "length": 4
+    },
+    {
+      "checks": [
+        {
+          "active": 112,
+          "changes_answer": true,
+          "position": 1,
+          "reserve": 32
+        },
+        {
+          "active": 82,
+          "changes_answer": true,
+          "position": 2,
+          "reserve": 24
+        },
+        {
+          "active": 112,
+          "changes_answer": true,
+          "position": 3,
+          "reserve": 0
+        },
+        {
+          "active": 75,
+          "changes_answer": true,
+          "position": 4,
+          "reserve": 37
+        }
+      ],
+      "gold": 87,
+      "id": "arithmetic-02",
+      "length": 4
+    },
+    {
+      "checks": [
+        {
+          "active": 60,
+          "changes_answer": true,
+          "position": 1,
+          "reserve": 35
+        },
+        {
+          "active": 135,
+          "changes_answer": true,
+          "position": 2,
+          "reserve": 0
+        },
+        {
+          "active": 63,
+          "changes_answer": true,
+          "position": 3,
+          "reserve": 72
+        },
+        {
+          "active": 97,
+          "changes_answer": true,
+          "position": 4,
+          "reserve": 48
+        }
+      ],
+      "gold": 87,
+      "id": "arithmetic-03",
+      "length": 4
+    },
+    {
+      "checks": [
+        {
+          "active": 82,
+          "changes_answer": true,
+          "position": 1,
+          "reserve": 16
+        },
+        {
+          "active": 95,
+          "changes_answer": true,
+          "position": 2,
+          "reserve": 19
+        },
+        {
+          "active": 104,
+          "changes_answer": true,
+          "position": 3,
+          "reserve": 0
+        },
+        {
+          "active": 78,
+          "changes_answer": true,
+          "position": 4,
+          "reserve": 26
+        }
+      ],
+      "gold": 86,
+      "id": "arithmetic-04",
+      "length": 4
+    },
+    {
+      "checks": [
+        {
+          "active": 104,
+          "changes_answer": true,
+          "position": 1,
+          "reserve": 0
+        },
+        {
+          "active": 58,
+          "changes_answer": true,
+          "position": 2,
+          "reserve": 26
+        },
+        {
+          "active": 69,
+          "changes_answer": true,
+          "position": 3,
+          "reserve": 18
+        },
+        {
+          "active": 59,
+          "changes_answer": true,
+          "position": 4,
+          "reserve": 18
+        }
+      ],
+      "gold": 66,
+      "id": "arithmetic-05",
+      "length": 4
+    },
+    {
+      "checks": [
+        {
+          "active": 125,
+          "changes_answer": true,
+          "position": 1,
+          "reserve": 0
+        },
+        {
+          "active": 67,
+          "changes_answer": true,
+          "position": 2,
+          "reserve": 24
+        },
+        {
+          "active": 73,
+          "changes_answer": true,
+          "position": 3,
+          "reserve": 12
+        },
+        {
+          "active": 90,
+          "changes_answer": true,
+          "position": 4,
+          "reserve": 12
+        }
+      ],
+      "gold": 79,
+      "id": "arithmetic-06",
+      "length": 4
+    },
+    {
+      "checks": [
+        {
+          "active": 72,
+          "changes_answer": true,
+          "position": 1,
+          "reserve": 9
+        },
+        {
+          "active": 84,
+          "changes_answer": true,
+          "position": 2,
+          "reserve": 10
+        },
+        {
+          "active": 55,
+          "changes_answer": true,
+          "position": 3,
+          "reserve": 6
+        },
+        {
+          "active": 88,
+          "changes_answer": true,
+          "position": 4,
+          "reserve": 0
+        },
+        {
+          "active": 70,
+          "changes_answer": true,
+          "position": 5,
+          "reserve": 18
+        },
+        {
+          "active": 85,
+          "changes_answer": true,
+          "position": 6,
+          "reserve": 9
+        },
+        {
+          "active": 76,
+          "changes_answer": true,
+          "position": 7,
+          "reserve": 12
+        }
+      ],
+      "gold": 79,
+      "id": "arithmetic-07",
+      "length": 7
+    },
+    {
+      "checks": [
+        {
+          "active": 110,
+          "changes_answer": true,
+          "position": 1,
+          "reserve": 30
+        },
+        {
+          "active": 112,
+          "changes_answer": true,
+          "position": 2,
+          "reserve": 36
+        },
+        {
+          "active": 83,
+          "changes_answer": true,
+          "position": 3,
+          "reserve": 29
+        },
+        {
+          "active": 93,
+          "changes_answer": true,
+          "position": 4,
+          "reserve": 27
+        },
+        {
+          "active": 100,
+          "changes_answer": true,
+          "position": 5,
+          "reserve": 20
+        },
+        {
+          "active": 60,
+          "changes_answer": true,
+          "position": 6,
+          "reserve": 60
+        },
+        {
+          "active": 75,
+          "changes_answer": true,
+          "position": 7,
+          "reserve": 45
+        }
+      ],
+      "gold": 90,
+      "id": "arithmetic-08",
+      "length": 7
+    },
+    {
+      "checks": [
+        {
+          "active": 37,
+          "changes_answer": true,
+          "position": 1,
+          "reserve": 21
+        },
+        {
+          "active": 56,
+          "changes_answer": true,
+          "position": 2,
+          "reserve": 20
+        },
+        {
+          "active": 53,
+          "changes_answer": true,
+          "position": 3,
+          "reserve": 28
+        },
+        {
+          "active": 62,
+          "changes_answer": true,
+          "position": 4,
+          "reserve": 14
+        },
+        {
+          "active": 37,
+          "changes_answer": true,
+          "position": 5,
+          "reserve": 39
+        },
+        {
+          "active": 37,
+          "changes_answer": true,
+          "position": 6,
+          "reserve": 39
+        },
+        {
+          "active": 61,
+          "changes_answer": true,
+          "position": 7,
+          "reserve": 26
+        }
+      ],
+      "gold": 50,
+      "id": "arithmetic-09",
+      "length": 7
+    },
+    {
+      "checks": [
+        {
+          "active": 106,
+          "changes_answer": true,
+          "position": 1,
+          "reserve": 19
+        },
+        {
+          "active": 161,
+          "changes_answer": true,
+          "position": 2,
+          "reserve": 28
+        },
+        {
+          "active": 186,
+          "changes_answer": true,
+          "position": 3,
+          "reserve": 0
+        },
+        {
+          "active": 139,
+          "changes_answer": true,
+          "position": 4,
+          "reserve": 27
+        },
+        {
+          "active": 167,
+          "changes_answer": true,
+          "position": 5,
+          "reserve": 27
+        },
+        {
+          "active": 132,
+          "changes_answer": true,
+          "position": 6,
+          "reserve": 27
+        },
+        {
+          "active": 150,
+          "changes_answer": true,
+          "position": 7,
+          "reserve": 36
+        }
+      ],
+      "gold": 159,
+      "id": "arithmetic-10",
+      "length": 7
+    },
+    {
+      "checks": [
+        {
+          "active": 172,
+          "changes_answer": true,
+          "position": 1,
+          "reserve": 24
+        },
+        {
+          "active": 161,
+          "changes_answer": true,
+          "position": 2,
+          "reserve": 39
+        },
+        {
+          "active": 115,
+          "changes_answer": true,
+          "position": 3,
+          "reserve": 33
+        },
+        {
+          "active": 177,
+          "changes_answer": true,
+          "position": 4,
+          "reserve": 19
+        },
+        {
+          "active": 134,
+          "changes_answer": true,
+          "position": 5,
+          "reserve": 38
+        },
+        {
+          "active": 146,
+          "changes_answer": true,
+          "position": 6,
+          "reserve": 50
+        },
+        {
+          "active": 113,
+          "changes_answer": true,
+          "position": 7,
+          "reserve": 38
+        }
+      ],
+      "gold": 158,
+      "id": "arithmetic-11",
+      "length": 7
+    },
+    {
+      "checks": [
+        {
+          "active": 18,
+          "changes_answer": true,
+          "position": 1,
+          "reserve": 75
+        },
+        {
+          "active": 9,
+          "changes_answer": true,
+          "position": 2,
+          "reserve": 56
+        },
+        {
+          "active": 9,
+          "changes_answer": true,
+          "position": 3,
+          "reserve": 62
+        },
+        {
+          "active": 12,
+          "changes_answer": true,
+          "position": 4,
+          "reserve": 68
+        },
+        {
+          "active": 21,
+          "changes_answer": true,
+          "position": 5,
+          "reserve": 50
+        },
+        {
+          "active": 21,
+          "changes_answer": true,
+          "position": 6,
+          "reserve": 50
+        },
+        {
+          "active": 14,
+          "changes_answer": true,
+          "position": 7,
+          "reserve": 57
+        }
+      ],
+      "gold": 11,
+      "id": "arithmetic-12",
+      "length": 7
+    }
+  ],
+  "caveat": "A sampled numeric difference is weaker than proving global functional irreducibility or ruling out an alternative shortcut program. Event deletion also changes the generated-task distribution. No model or sealed case was queried.",
+  "generator_sha256": "97ee41f34a26bf17faa87c7dc689e69688c5939d600d329f6b48624557ea1d6a",
+  "kind": "public_v3_arithmetic_numeric_sensitivity_audit",
+  "manifest_sha256": "7b6db8127f63beb1c0a4779b8232d1d64cfc54cc8c207e69f34d845c94330943",
+  "rule": "Delete one event and replay later events from the original initial stock; compare final active stock with frozen gold.",
+  "totals": {
+    "changed": 66,
+    "invalid": 0,
+    "unchanged": 0
+  }
+}

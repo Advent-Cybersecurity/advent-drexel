@@ -1,0 +1,12 @@
+0.00.007.775 I srv  llama_server: initializing ...
+0.00.007.800 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.007.938 I srv  init_listene: The UI is disabled
+0.00.007.947 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.007.999 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.009.442 I srv    load_model: loading model '/home/kali/Desktop/MalDev/.research-cache/qwen2.5-1.5b-instruct-output-head-q4-pinned.gguf'
+0.00.218.357 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.274.613 I cmn          init: llama threadpool init, n_threads = 4
+0.00.352.592 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'
+0.00.355.600 I srv  server_run_i: model loaded
+0.00.355.626 I srv  server_on_li: listening on http://127.0.0.1:8080
+0.15.129.142 I srv    operator(): operator(): cleaning up before exit...

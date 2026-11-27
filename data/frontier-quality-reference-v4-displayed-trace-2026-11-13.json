@@ -1,0 +1,294 @@
+{
+  "cases": [
+    {
+      "expected_steps": 7,
+      "faults": [],
+      "finish_reason": "stop",
+      "first_fault_step": null,
+      "id": "state-01",
+      "length": 7,
+      "parsed_steps": 7
+    },
+    {
+      "expected_steps": 7,
+      "faults": [],
+      "finish_reason": "stop",
+      "first_fault_step": null,
+      "id": "state-02",
+      "length": 7,
+      "parsed_steps": 7
+    },
+    {
+      "expected_steps": 7,
+      "faults": [],
+      "finish_reason": "stop",
+      "first_fault_step": null,
+      "id": "state-03",
+      "length": 7,
+      "parsed_steps": 7
+    },
+    {
+      "expected_steps": 7,
+      "faults": [],
+      "finish_reason": "stop",
+      "first_fault_step": null,
+      "id": "state-04",
+      "length": 7,
+      "parsed_steps": 7
+    },
+    {
+      "expected_steps": 7,
+      "faults": [
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            171,
+            160
+          ],
+          "room": "D",
+          "shown": [
+            171,
+            182
+          ],
+          "step": 4
+        }
+      ],
+      "finish_reason": "stop",
+      "first_fault_step": 4,
+      "id": "state-05",
+      "length": 7,
+      "parsed_steps": 7
+    },
+    {
+      "expected_steps": 7,
+      "faults": [
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            91,
+            84
+          ],
+          "room": "D",
+          "shown": [
+            91,
+            98
+          ],
+          "step": 4
+        },
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            84,
+            164
+          ],
+          "room": "D",
+          "shown": [
+            98,
+            178
+          ],
+          "step": 6
+        },
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            164,
+            123
+          ],
+          "room": "D",
+          "shown": [
+            178,
+            134
+          ],
+          "step": 7
+        },
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            119,
+            160
+          ],
+          "room": "A",
+          "shown": [
+            119,
+            163
+          ],
+          "step": 7
+        }
+      ],
+      "finish_reason": "stop",
+      "first_fault_step": 4,
+      "id": "state-06",
+      "length": 7,
+      "parsed_steps": 7
+    },
+    {
+      "expected_steps": 9,
+      "faults": [
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            46,
+            37
+          ],
+          "room": "D",
+          "shown": [
+            46,
+            55
+          ],
+          "step": 5
+        },
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            37,
+            48
+          ],
+          "room": "D",
+          "shown": [
+            55,
+            66
+          ],
+          "step": 6
+        },
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            48,
+            24
+          ],
+          "room": "D",
+          "shown": [
+            66,
+            33
+          ],
+          "step": 7
+        },
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            146,
+            170
+          ],
+          "room": "B",
+          "shown": [
+            146,
+            179
+          ],
+          "step": 7
+        },
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            170,
+            85
+          ],
+          "room": "B",
+          "shown": [
+            179,
+            90
+          ],
+          "step": 8
+        },
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            177,
+            262
+          ],
+          "room": "A",
+          "shown": [
+            177,
+            266
+          ],
+          "step": 8
+        },
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            262,
+            131
+          ],
+          "room": "A",
+          "shown": [
+            266,
+            133
+          ],
+          "step": 9
+        },
+        {
+          "kind": "oracle_trace_mismatch",
+          "oracle": [
+            85,
+            216
+          ],
+          "room": "B",
+          "shown": [
+            90,
+            223
+          ],
+          "step": 9
+        }
+      ],
+      "finish_reason": "stop",
+      "first_fault_step": 5,
+      "id": "state-07",
+      "length": 9,
+      "parsed_steps": 9
+    },
+    {
+      "expected_steps": 9,
+      "faults": [],
+      "finish_reason": "stop",
+      "first_fault_step": null,
+      "id": "state-08",
+      "length": 9,
+      "parsed_steps": 9
+    },
+    {
+      "expected_steps": 9,
+      "faults": [],
+      "finish_reason": "stop",
+      "first_fault_step": null,
+      "id": "state-09",
+      "length": 9,
+      "parsed_steps": 9
+    },
+    {
+      "expected_steps": 9,
+      "faults": [],
+      "finish_reason": "stop",
+      "first_fault_step": null,
+      "id": "state-10",
+      "length": 9,
+      "parsed_steps": 9
+    },
+    {
+      "expected_steps": 9,
+      "faults": [],
+      "finish_reason": "stop",
+      "first_fault_step": null,
+      "id": "state-11",
+      "length": 9,
+      "parsed_steps": 9
+    },
+    {
+      "expected_steps": 9,
+      "faults": [],
+      "finish_reason": "stop",
+      "first_fault_step": null,
+      "id": "state-12",
+      "length": 9,
+      "parsed_steps": 9
+    }
+  ],
+  "kind": "public_reference_only_displayed_trace_audit",
+  "manifest_sha256": "c565270b75737774d20becd3db623400d747ea3082a74f43850900c4fcff9676",
+  "run_sha256": "39f8f80ce74184027a8ac5ec4c787a4e7bcf7f1ad452c4ca24a48f4918a05f8a",
+  "scope": "Visible per-step room assignment lines only; not a model-reasoning audit.",
+  "summary": {
+    "cases": 12,
+    "fully_parsed": 12,
+    "with_oracle_trace_mismatch": 3,
+    "with_written_arithmetic_identity_error": 0
+  }
+}

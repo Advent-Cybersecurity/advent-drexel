@@ -1,0 +1,471 @@
+{
+  "as_of": "2026-11-26",
+  "scope": "Selected closest component cases in a narrative feasibility review; not a census or prevalence denominator.",
+  "claim": "Two distinct model-caused executable payload-code revisions become active in one identified continuing remote-access process, with independent remote-control results after each.",
+  "status_codes": {
+    "documented": "Primary source supplies case-specific measurements, artifacts, code, or a time-ordered run record for this link; see the case note for the exact strength.",
+    "reported": "First-party source says the link occurred but does not publish enough of the chain to check it independently.",
+    "mechanism": "Source establishes an implementation path or capability, without a measured use of this link.",
+    "not_shown": "The reviewed public source does not establish the link; this is not evidence that it never occurred.",
+    "outside_scope": "This source's evaluated system does not include the required model, executable payload revision, or remote-control workload."
+  },
+  "cases": [
+    {
+      "id": "PROMPTFLUX",
+      "source_ids": [
+        "GTIG-AI-2025"
+      ],
+      "setting": "analyzed malware sample",
+      "links": {
+        "continuing_process": "not_shown",
+        "model_to_executable_revision": "mechanism",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "The sample requests rewritten script code from a hosted model, but the examined self-update path was disabled. A generated response is not an applied active version."
+    },
+    {
+      "id": "EYESPY",
+      "source_ids": [
+        "HYAS-EYESPY-WHITEPAPER-2023"
+      ],
+      "setting": "author proof of concept",
+      "links": {
+        "continuing_process": "reported",
+        "model_to_executable_revision": "reported",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "The author describes an in-process generated-module compile/repair loop; corrections chiefly precede a successful module execution. The intentionally curtailed demonstrator did not implement a remote-control workload."
+    },
+    {
+      "id": "LLMALMORPH",
+      "source_ids": [
+        "AKIL-LLMALMORPH-2025"
+      ],
+      "setting": "offline research variants",
+      "links": {
+        "continuing_process": "outside_scope",
+        "model_to_executable_revision": "documented",
+        "two_active_revisions": "outside_scope",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "Model-directed cumulative source edits produced compiled variants, with manual debugging in the pipeline. Function-preservation checks were proxies; no continuing implant or post-revision control session was tested."
+    },
+    {
+      "id": "YUAN_ENDPOINT_STUDY",
+      "source_ids": [
+        "YUAN-AUTOBYPASS-2026"
+      ],
+      "setting": "isolated fresh-VM candidates",
+      "links": {
+        "continuing_process": "outside_scope",
+        "model_to_executable_revision": "documented",
+        "two_active_revisions": "outside_scope",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "External model-guided candidate refinement and individual control-channel checks are measured. Each candidate starts from a fresh VM, so the connection result is not after a revision of the same resident instance."
+    },
+    {
+      "id": "BYPASSGYM",
+      "source_ids": [
+        "YUAN-BYPASSGYM-2026"
+      ],
+      "setting": "restored-endpoint candidate benchmark",
+      "links": {
+        "continuing_process": "outside_scope",
+        "model_to_executable_revision": "documented",
+        "two_active_revisions": "outside_scope",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "A passing fresh candidate requires session/traffic evidence plus server-side command and file-transfer checks. The endpoint snapshot is restored before every candidate, and unblocked alerts do not fail the pass rule."
+    },
+    {
+      "id": "GODEL_AGENT",
+      "source_ids": [
+        "YIN-GODEL-AGENT-2025",
+        "YIN-GODEL-AGENT-PINNED-CODE-2026-AUDIT"
+      ],
+      "setting": "benign reasoning-agent optimization",
+      "links": {
+        "continuing_process": "mechanism",
+        "model_to_executable_revision": "reported",
+        "two_active_revisions": "reported",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "Pinned code supports in-interpreter function/method replacement and the paper reports repeated optimization, but does not publish a stable process-ID/version sequence. It evaluates reasoning tasks, not remote access."
+    },
+    {
+      "id": "KITSUNE",
+      "source_ids": [
+        "HAYDEN-KITSUNE-TOPLAS-2014"
+      ],
+      "setting": "benign dynamic software update study",
+      "links": {
+        "continuing_process": "documented",
+        "model_to_executable_revision": "outside_scope",
+        "two_active_revisions": "documented",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "A continuing driver loaded successive Tor versions at explicit update points; several under load preserved observed TLS continuity. Revisions were developer-prepared, and no remote-command result was checked after each version."
+    },
+    {
+      "id": "RIGAKI_GARCIA",
+      "source_ids": [
+        "RIGAKI-GAN-RAT-2018"
+      ],
+      "setting": "controlled RAT network-behavior study",
+      "links": {
+        "continuing_process": "documented",
+        "model_to_executable_revision": "outside_scope",
+        "two_active_revisions": "outside_scope",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "A lab RAT kept communicating with its control server while a separate GAN adapted traffic parameters. Parameters are not executable payload code, and the paper does not give after-each-change command results."
+    },
+    {
+      "id": "GTG_20006",
+      "source_ids": [
+        "ANTHROPIC-GTG-20006-2026"
+      ],
+      "setting": "first-party field account",
+      "links": {
+        "continuing_process": "not_shown",
+        "model_to_executable_revision": "reported",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "Anthropic says actor-side agents identified, modified, and redeployed detected artifacts; repeated iteration until undetected is partly described as workflow design. No two-version process or after-each access trace is published."
+    },
+    {
+      "id": "C2AGENT",
+      "source_ids": [
+        "UNIT42-C2AGENT-2026"
+      ],
+      "setting": "recovered malware family",
+      "links": {
+        "continuing_process": "not_shown",
+        "model_to_executable_revision": "not_shown",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "A resident model action loop, changing author-side builds, and a later upgrade capability coexist; no published trace joins model output to a live code upgrade or checks control after two upgrades."
+    },
+    {
+      "id": "RSINFER",
+      "source_ids": [
+        "RSINFER-LIVE-ENGINE-2026"
+      ],
+      "setting": "author-recorded benign inference-worker experiment",
+      "links": {
+        "continuing_process": "reported",
+        "model_to_executable_revision": "not_shown",
+        "two_active_revisions": "documented",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "One worker is reported to have alternated two code trees nine times, with version-specific inference outputs. Exact model-response-to-patch provenance and independent process telemetry are absent; checked function was inference service."
+    },
+    {
+      "id": "RSIBOX_CODEX_MEGATRON",
+      "source_ids": [
+        "RSIBOX-CODEX-MEGATRON-HILLCLIMB-2026"
+      ],
+      "setting": "author-recorded benign warm training experiment",
+      "links": {
+        "continuing_process": "not_shown",
+        "model_to_executable_revision": "reported",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "Two retained code edits are attributed to Codex and training checks attest execution. Three poisoned-lab respawns interrupt the 82-iteration session; the third retained edit was human/orchestrator-set. No one-process two-change lineage or remote-control test is published."
+    },
+    {
+      "id": "MI_AGENT",
+      "source_ids": [
+        "MI-AGENT-RELOAD-SOURCE-2026",
+        "MI-AGENT-SELF-EXTENSION-2026"
+      ],
+      "setting": "pinned benign agent source code",
+      "links": {
+        "continuing_process": "mechanism",
+        "model_to_executable_revision": "mechanism",
+        "two_active_revisions": "mechanism",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "Static code supports reimporting a model-writable tool module into a continuing interpreter at the next model-call boundary. No observed two-version generated-tool trace or remote-control outcome is published."
+    },
+    {
+      "id": "ATTACKGPT",
+      "source_ids": [
+        "NETSKOPE-ATTACKGPT-README-2026",
+        "NETSKOPE-ATTACKGPT-ENGINE-2026",
+        "NETSKOPE-ATTACKGPT-SERVER-2026",
+        "NETSKOPE-ATTACKGPT-STUB-2026",
+        "NETSKOPE-ATTACKGPT-VALIDATOR-2026"
+      ],
+      "setting": "pinned post-exploitation prototype source",
+      "links": {
+        "continuing_process": "mechanism",
+        "model_to_executable_revision": "outside_scope",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "Controller-side model repair addresses local pre-delivery validation failures; endpoint executes transient scripts through a continuing stub. No resident stub-code replacement or two-version access trace is published."
+    },
+    {
+      "id": "CL_SM_HARNESS",
+      "source_ids": [
+        "BROWEP-CL-SM-HARNESS-DOC-2026",
+        "BROWEP-CL-SM-HARNESS-CODE-2026",
+        "BROWEP-CL-SM-HARNESS-TEST-2026"
+      ],
+      "setting": "pinned benign self-modifying agent harness",
+      "links": {
+        "continuing_process": "mechanism",
+        "model_to_executable_revision": "mechanism",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "Published test source checks one fixture revision from v1 to v2 in a running Lisp image. Author notes demonstrate that nominal reload success can leave stale handlers or catalogs and that some live structure changes require restart. No model-to-two-edit trace or remote-control outcome."
+    },
+    {
+      "id": "ARC_TWO_REVISION_HARNESS",
+      "source_ids": [
+        "LEHMANN-VAHDATI-HARNESS-2026"
+      ],
+      "setting": "controlled benign agent-harness benchmark",
+      "links": {
+        "continuing_process": "outside_scope",
+        "model_to_executable_revision": "documented",
+        "two_active_revisions": "outside_scope",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "All 27 lineages produced two changed Python harness snapshots, but each qualified and evaluated version was run as a separate task harness. Held-out game score and a post hoc version selector do not measure same-process activation or remote-control survival."
+    },
+    {
+      "id": "ARCTICRAT",
+      "source_ids": [
+        "ZIMPERIUM-ARCTICRAT-2026-11"
+      ],
+      "setting": "malware sample analysis",
+      "links": {
+        "continuing_process": "not_shown",
+        "model_to_executable_revision": "outside_scope",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "A RAT queried a hosted model for classification of harvested data while separate preexisting functions handled remote control. Distinct recovered builds do not show model-caused live revision or access after it."
+    },
+    {
+      "id": "HYPERSPACE",
+      "source_ids": [
+        "HYPERSPACE-README-2026",
+        "HYPERSPACE-LOOP-2026",
+        "HYPERSPACE-EVAL-2026",
+        "HYPERSPACE-TRANSFER-2026"
+      ],
+      "setting": "pinned benign self-modifying agent research repository",
+      "links": {
+        "continuing_process": "mechanism",
+        "model_to_executable_revision": "reported",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "The outer evaluator can import changed meta/task-agent classes across generations, but each candidate forks an archive member and each task row instantiates a new TaskAgent object. Author-reported peer-code adoption and score changes do not identify one resident task agent receiving two active revisions; no remote-control workload."
+    },
+    {
+      "id": "AUTOPOIESIS",
+      "source_ids": [
+        "JIANG-AUTOPOIESIS-LIVE-POLICY-2026"
+      ],
+      "setting": "benign LLM serving policy evolution",
+      "links": {
+        "continuing_process": "reported",
+        "model_to_executable_revision": "reported",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "A separate control plane synthesizes two pure scheduling-policy functions and stages selected code; the data plane is described as loading it at a monitoring boundary while serving continues. The public paper does not publish a process-ID and two-version activation trace or per-version request outcomes. Rescheduling counts are plan changes, not code-swap counts; no remote-control workload."
+    },
+    {
+      "id": "ZQAGENT_ARTEX",
+      "source_ids": [
+        "NVISO-ZQAGENT-ARTEX-2026"
+      ],
+      "setting": "first-party incident-response account of ARTEX-assisted persistent backdoor deployment",
+      "links": {
+        "continuing_process": "not_shown",
+        "model_to_executable_revision": "outside_scope",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "NVISO reports an ARTEX-assisted intrusion deploying a persistent Linux backdoor. The implant's existing binary relocates to memfd and restarts as a detached process. The public account does not show model authorship of the code or any revision, two active code versions in one process, or independent remote-control results after each."
+    },
+    {
+      "id": "JFROG_ARTEX_HF_MODELS",
+      "source_ids": [
+        "JFROG-ARTEX-HF-MODELS-2026"
+      ],
+      "setting": "external malicious model-repository artifacts and operator-side self-test",
+      "links": {
+        "continuing_process": "outside_scope",
+        "model_to_executable_revision": "reported",
+        "two_active_revisions": "outside_scope",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "JFrog ties artifact creation, upload, and a self-test to an ARTEX agent task with high confidence from leaked operator environment and commit history; exact LLM response-to-edit provenance and human choice are unresolved. Repository versions are not active versions in one resident process, and the self-test is collection from the operator's own container, not after-change remote control."
+    },
+    {
+      "id": "AGENTWORM_V3",
+      "source_ids": [
+        "ZHANG-AGENTWORM-V3-2026"
+      ],
+      "setting": "controlled agent-ecosystem configuration infection and remote task retrieval",
+      "links": {
+        "continuing_process": "outside_scope",
+        "model_to_executable_revision": "outside_scope",
+        "two_active_revisions": "outside_scope",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "The model-mediated change is an instruction/configuration file reloaded on new single-turn sessions, not executable payload-code revision in one process. A marker checks C2-category URL retrieval and task execution, while a separate five-restart panel checks retention of the same instruction. No two active code revisions or after-each-version remote-control results."
+    },
+    {
+      "id": "SAFEDEP_HERMES_LEADSTACK",
+      "source_ids": [
+        "SAFEDEP-HERMES-LEADSTACK-2026"
+      ],
+      "setting": "first-party static analysis of malicious package installing a general AI agent for remote tasking",
+      "links": {
+        "continuing_process": "not_shown",
+        "model_to_executable_revision": "not_shown",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "Early publisher releases contain code to install and remotely task Hermes Agent as a service; later releases switch package delivery paths. SafeDep did not observe installation on a victim or recover later downloads. There is no model-to-code revision trace, one-process activation sequence, or independent remote task result after each version."
+    },
+    {
+      "id": "ASIEL_CORE_HOT_RELOAD",
+      "source_ids": [
+        "ASIEL-CORE-APP-9CCDCCE-2026",
+        "ASIEL-CORE-LOADER-9CCDCCE-2026",
+        "ASIEL-CORE-EXECUTOR-9CCDCCE-2026",
+        "ASIEL-CORE-PROPOSALS-9CCDCCE-2026"
+      ],
+      "setting": "pinned benign agent code and committed self-edit proposal registry",
+      "links": {
+        "continuing_process": "mechanism",
+        "model_to_executable_revision": "mechanism",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "LLM-directed Python plugin evolution and in-process reload are implemented in one codebase. The committed proposal registry has 11 integrations of distinct plugin targets, 12 validation failures, and no evolution_loop proposal. Integration only proves a compiled/copied file; no two-version load and hook-result trace or remote-control workload is published."
+    },
+    {
+      "id": "NEXAGENT_BEAM_HOT_UPGRADE",
+      "source_ids": [
+        "NEXAGENT-UPGRADE-TOOL-8EC412F-2026",
+        "NEXAGENT-CODE-UPGRADE-8EC412F-2026",
+        "NEXAGENT-HOT-RELOAD-8EC412F-2026",
+        "NEXAGENT-EVOLUTION-TEST-8EC412F-2026"
+      ],
+      "setting": "pinned benign long-running Elixir agent implementation",
+      "links": {
+        "continuing_process": "mechanism",
+        "model_to_executable_revision": "mechanism",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "Agent-facing upgrade_code accepts new module source, and BEAM HotReload compiles/loads it in the running VM. Successful compile status can coexist with absent or failed tool-registry swap; health check is metadata-only. No published model-to-two-version invocation trace or remote-control workload."
+    },
+    {
+      "id": "COGENT_ENDPOINT_ABSTRACTS",
+      "source_ids": [
+        "KANSO-COGENT-IEEE-ABSTRACT-2026",
+        "KANSO-THESIS-ABSTRACT-2026"
+      ],
+      "setting": "IEEE conference abstract and related author's restricted-thesis repository abstract",
+      "links": {
+        "continuing_process": "not_shown",
+        "model_to_executable_revision": "reported",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "IEEE abstract reports model-generated code variants over mutation cycles; accessible text does not identify active-version or process lineage. Related thesis abstract reports 45 bidirectional C2 workflows across 15 products, but not per-revision checks; PDF is restricted and the thesis matrix cannot be assumed identical to the IEEE experiment. Claims are abstract-level only."
+    },
+    {
+      "id": "SHIRUDO_LIVE_SHIELD",
+      "source_ids": [
+        "OPENAI-SHIRUDO-ANNOUNCEMENT-2026",
+        "CISCO-ISOVALENT-SHIRUDO-DEMO-2026",
+        "SHIRUDO-JAVA-AGENT-DOC-2026",
+        "SHIRUDO-REPO-README-2026"
+      ],
+      "setting": "controlled benign defensive shield demonstration and project implementation documents",
+      "links": {
+        "continuing_process": "reported",
+        "model_to_executable_revision": "reported",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "First-party account reports one Codex-generated Java guard attached to running Elasticsearch, with install/reject log entries and continued service operation. Public record lacks exact model-to-bytecode/PID trace. Standard documented Java-agent path reaches JVMs at startup, not already-running JVMs; live-demo attach path is not reconciled. No second accepted code version or remote-control workload."
+    },
+    {
+      "id": "SILKPARASITE_MODULAR_RATS",
+      "source_ids": [
+        "BITDEFENDER-SILKPARASITE-FULL-REPORT-08FC949-2026"
+      ],
+      "setting": "field investigation with full technical report and analyzed modular RAT families",
+      "links": {
+        "continuing_process": "mechanism",
+        "model_to_executable_revision": "not_shown",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "DriveSilkRAT implements in-memory task plugins and C2 result upload; CookiETagRAT reports load success before mapping/initialization, while NomadRAT reports it after initialization. These are distinct RAT families and no model-response-to-plugin lineage is published. Medium-confidence AI-assisted development inference concerns indirect code clues; no two active versions in an identified process or command/result after each."
+    },
+    {
+      "id": "UNIT42_AGENTIC_WEBSHELL_VARIANTS",
+      "source_ids": [
+        "UNIT42-AGENTIC-CAMPAIGNS-2026-11"
+      ],
+      "setting": "first-party investigation of selected 2026 agentic web-shell intrusions",
+      "links": {
+        "continuing_process": "not_shown",
+        "model_to_executable_revision": "not_shown",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "An agent rotated five ASPX web-shell variants across more than 40 paths in one case; separate observations include 40–100 encoded one-use payloads in a session and Python/PHP/Bash executions in the same process chain. Two WMI-backdoor versions differ in comment language. These are script/artifact changes, not a two-version active-code lineage in one identified process; exact model provenance and post-each-version results are absent."
+    },
+    {
+      "id": "CL_AGENT_LIVE_EXTENSION_TRACE",
+      "source_ids": [
+        "CL-AGENT-LIVE-TRANSCRIPT-E6AA53D-2026",
+        "CL-AGENT-EXTENSION-TOOL-E6AA53D-2026",
+        "CL-AGENT-EXTENSION-LOADER-E6AA53D-2026"
+      ],
+      "setting": "author-committed benign model conversation and pinned in-image Lisp extension loader",
+      "links": {
+        "continuing_process": "reported",
+        "model_to_executable_revision": "documented",
+        "two_active_revisions": "not_shown",
+        "access_result_after_each": "outside_scope"
+      },
+      "note": "The trace contains two byte-distinct model-submitted memory.lisp versions and two successful load reports in one conversation; historical code calls Common Lisp load in the running image. The first adds an extension, the second revises it. In-image tool/hook results are logged only after the second load, so the first does not meet the ledger's active-and-functional revision rule. No OS PID/image record, after-first functional check, or remote-control workload. Documented status applies to model submission and the second load, not the full Drexel chain."
+    },
+    {
+      "id": "AWS_CAIRN_NEW_PROCESS_SHELL",
+      "source_ids": [
+        "AWS-CAIRN-ZERODAY-SHELL-2026"
+      ],
+      "setting": "first-party report of exposed agent controller and field shell outcome",
+      "links": {
+        "continuing_process": "outside_scope",
+        "model_to_executable_revision": "reported",
+        "two_active_revisions": "outside_scope",
+        "access_result_after_each": "not_shown"
+      },
+      "note": "Amazon inspected controller prompts and AI output and reports Cairn agents wrote one Python reverse-shell payload via a file-write flaw. A training endpoint then spawned a new interpreter that imported the payload and established a root shell. The public report does not publish exact output-to-artifact bytes, and the new process is not a revised continuing implant. There is no two-version serial chain or after-each task/result."
+    }
+  ]
+}

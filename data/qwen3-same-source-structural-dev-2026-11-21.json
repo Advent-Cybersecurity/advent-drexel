@@ -1,0 +1,792 @@
+{
+  "cases": [
+    {
+      "family": "arithmetic",
+      "gold": 31,
+      "id": "arithmetic-0001",
+      "question": "A museum has 3 boxes of cards with 9 cards in each box. It receives 8 bundles with 3 cards in each bundle, then gives away 20 cards. How many cards does it have now?",
+      "question_sha256": "230109b2b5ec8b8857861b04f3a89a7cabcb26990472c1980070e0bb10a687f2",
+      "trace": {
+        "a": 3,
+        "b": 9,
+        "c": 8,
+        "d": 3,
+        "defective_parts": null,
+        "template": 0,
+        "x": 20
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 77,
+      "id": "arithmetic-0002",
+      "question": "A bakery makes 9 trays with 7 rolls on each tray. It makes another 5 trays with 5 rolls on each. It sells 11 rolls before closing. How many rolls remain?",
+      "question_sha256": "12ad0caa8ceec4569ae745a568993197699eb35879504356d2dcb94a51bb5f5c",
+      "trace": {
+        "a": 9,
+        "b": 7,
+        "c": 5,
+        "d": 5,
+        "defective_parts": null,
+        "template": 2,
+        "x": 11
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 103,
+      "id": "arithmetic-0003",
+      "question": "A workshop makes 13 parts per hour for 9 hours. It marks 2 as defective and completes 3 orders of 4 parts each. How many usable parts are left after the orders?",
+      "question_sha256": "e7a0f53938e168f7a03afdee774d566228c2c0deae2c8fa55c392fdf70ffed98",
+      "trace": {
+        "a": 9,
+        "b": 13,
+        "c": 3,
+        "d": 4,
+        "defective_parts": 2,
+        "template": 3,
+        "x": 12
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 21,
+      "id": "arithmetic-0004",
+      "question": "A workshop makes 6 parts per hour for 5 hours. It marks 3 as defective and completes 2 orders of 3 parts each. How many usable parts are left after the orders?",
+      "question_sha256": "c63f006d0f1fbe1978d01dbeeaeec1ee4435b1534afc16ef06eb94bcaf044740",
+      "trace": {
+        "a": 5,
+        "b": 6,
+        "c": 2,
+        "d": 3,
+        "defective_parts": 3,
+        "template": 3,
+        "x": 2
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 90,
+      "id": "arithmetic-0005",
+      "question": "A museum has 4 boxes of cards with 10 cards in each box. It receives 6 bundles with 11 cards in each bundle, then gives away 16 cards. How many cards does it have now?",
+      "question_sha256": "a5e8ebead440cc6b2485b8775a908e2b0655d3a625ba86222b99e009634cd091",
+      "trace": {
+        "a": 4,
+        "b": 10,
+        "c": 6,
+        "d": 11,
+        "defective_parts": null,
+        "template": 0,
+        "x": 16
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 5,
+      "id": "arithmetic-0006",
+      "question": "A workshop makes 9 parts per hour for 3 hours. It marks 8 as defective and completes 2 orders of 7 parts each. How many usable parts are left after the orders?",
+      "question_sha256": "6ca82c78fc68b5c76df802b69101cbf7c1c486500bbbc5fd90b25dfc72db627c",
+      "trace": {
+        "a": 3,
+        "b": 9,
+        "c": 2,
+        "d": 7,
+        "defective_parts": 8,
+        "template": 3,
+        "x": 16
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 122,
+      "id": "arithmetic-0007",
+      "question": "A school buys 8 packs of 11 pencils each. It uses 16 pencils, then buys 5 more packs of 10 pencils each. How many unused pencils does it have?",
+      "question_sha256": "3f5f5d557c894f8402b9ef0c370d259749d66046896d683eefcd01b2dbf5e3cd",
+      "trace": {
+        "a": 8,
+        "b": 11,
+        "c": 5,
+        "d": 10,
+        "defective_parts": null,
+        "template": 1,
+        "x": 16
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 37,
+      "id": "arithmetic-0008",
+      "question": "A workshop makes 4 parts per hour for 11 hours. It marks 1 as defective and completes 2 orders of 3 parts each. How many usable parts are left after the orders?",
+      "question_sha256": "de08c11f274aaaa7ceb4068ef742df52afcd0fa5f30c4fbf4292ed7e9db54898",
+      "trace": {
+        "a": 11,
+        "b": 4,
+        "c": 2,
+        "d": 3,
+        "defective_parts": 1,
+        "template": 3,
+        "x": 17
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 58,
+      "id": "arithmetic-0009",
+      "question": "A workshop makes 12 parts per hour for 11 hours. It marks 2 as defective and completes 8 orders of 9 parts each. How many usable parts are left after the orders?",
+      "question_sha256": "1c6cf5018075f93911e21e65edcb2d803e94a658429204b4cc918e05cfd2900f",
+      "trace": {
+        "a": 11,
+        "b": 12,
+        "c": 8,
+        "d": 9,
+        "defective_parts": 2,
+        "template": 3,
+        "x": 3
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 81,
+      "id": "arithmetic-0010",
+      "question": "A bakery makes 3 trays with 15 rolls on each tray. It makes another 4 trays with 10 rolls on each. It sells 4 rolls before closing. How many rolls remain?",
+      "question_sha256": "156e8b680e17628a98e8ce3b5148a00f4be5144daadd15c6457a30a42f37e712",
+      "trace": {
+        "a": 3,
+        "b": 15,
+        "c": 4,
+        "d": 10,
+        "defective_parts": null,
+        "template": 2,
+        "x": 4
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 70,
+      "id": "arithmetic-0011",
+      "question": "A bakery makes 4 trays with 7 rolls on each tray. It makes another 5 trays with 11 rolls on each. It sells 13 rolls before closing. How many rolls remain?",
+      "question_sha256": "cc197c2c0005efaca545376851a0d6405c778c579e91e7a18cc1e744b315f17d",
+      "trace": {
+        "a": 4,
+        "b": 7,
+        "c": 5,
+        "d": 11,
+        "defective_parts": null,
+        "template": 2,
+        "x": 13
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 66,
+      "id": "arithmetic-0012",
+      "question": "A bakery makes 8 trays with 7 rolls on each tray. It makes another 2 trays with 10 rolls on each. It sells 10 rolls before closing. How many rolls remain?",
+      "question_sha256": "c63a8543304f41e76019866609dcc2b6848edef03d02ce435265691eec4eaaa6",
+      "trace": {
+        "a": 8,
+        "b": 7,
+        "c": 2,
+        "d": 10,
+        "defective_parts": null,
+        "template": 2,
+        "x": 10
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 73,
+      "id": "arithmetic-0013",
+      "question": "A museum has 4 boxes of cards with 15 cards in each box. It receives 3 bundles with 8 cards in each bundle, then gives away 11 cards. How many cards does it have now?",
+      "question_sha256": "3d51b5ff78cb0f8d712cbf56096381ab46af8eaa0f6be5a2864764f6bc68f61b",
+      "trace": {
+        "a": 4,
+        "b": 15,
+        "c": 3,
+        "d": 8,
+        "defective_parts": null,
+        "template": 0,
+        "x": 11
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 23,
+      "id": "arithmetic-0014",
+      "question": "A workshop makes 6 parts per hour for 8 hours. It marks 9 as defective and completes 4 orders of 4 parts each. How many usable parts are left after the orders?",
+      "question_sha256": "736afad86673950a64acd4bb2952c617ebd04e4254dee04b1f7de7278f1d1133",
+      "trace": {
+        "a": 8,
+        "b": 6,
+        "c": 4,
+        "d": 4,
+        "defective_parts": 9,
+        "template": 3,
+        "x": 2
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 47,
+      "id": "arithmetic-0015",
+      "question": "A workshop makes 11 parts per hour for 10 hours. It marks 3 as defective and completes 6 orders of 10 parts each. How many usable parts are left after the orders?",
+      "question_sha256": "4b8f5e0ef6caf30c86d1d0d70e3f1d18141fd6ae641e5fb3b8946669b3487276",
+      "trace": {
+        "a": 10,
+        "b": 11,
+        "c": 6,
+        "d": 10,
+        "defective_parts": 3,
+        "template": 3,
+        "x": 11
+      }
+    },
+    {
+      "family": "arithmetic",
+      "gold": 65,
+      "id": "arithmetic-0016",
+      "question": "A workshop makes 13 parts per hour for 9 hours. It marks 7 as defective and completes 9 orders of 5 parts each. How many usable parts are left after the orders?",
+      "question_sha256": "909930cfe18096e193a14f7bbcf656a25fe69750351e1247311ed060a3d1cc27",
+      "trace": {
+        "a": 9,
+        "b": 13,
+        "c": 9,
+        "d": 5,
+        "defective_parts": 7,
+        "template": 3,
+        "x": 8
+      }
+    },
+    {
+      "family": "state",
+      "gold": 69,
+      "id": "state-0001",
+      "question": "Three reading rooms start with 33, 36, and 59 books in Maple, Pine, and Birch, respectively. In order, Birch sends 3 books to Maple; Maple sends half of its then-current books to Pine; Pine sends one third of its then-current books to Birch; Birch lends out 2 books; Birch sends 3 books to Pine. How many books are in Birch at the end?",
+      "question_sha256": "b64957c83375ef3850c13760f008f43563266e9191ae64b44477b30d5ecfbc37",
+      "trace": {
+        "final": [
+          18,
+          39,
+          69
+        ],
+        "first_transfer": 3,
+        "initial": [
+          33,
+          36,
+          59
+        ],
+        "room_names": [
+          "Maple",
+          "Pine",
+          "Birch"
+        ],
+        "second_half_transfer": 18,
+        "target": 2,
+        "target_final_transfer": 3,
+        "target_lends": 2,
+        "template": 2,
+        "third_fraction": 3,
+        "third_fraction_transfer": 18
+      }
+    },
+    {
+      "family": "state",
+      "gold": 56,
+      "id": "state-0002",
+      "question": "Three reading rooms start with 26, 48, and 28 books in Oak, Pine, and Maple, respectively. In order, Pine sends 4 books to Maple; Maple sends half of its then-current books to Oak; Oak sends half of its then-current books to Pine; Pine lends out 2 books; Pine sends 7 books to Oak. How many books are in Pine at the end?",
+      "question_sha256": "72101d015a1196c4fe057b680494ef774522178b764dcd570aa333a534b8a05d",
+      "trace": {
+        "final": [
+          28,
+          56,
+          16
+        ],
+        "first_transfer": 4,
+        "initial": [
+          26,
+          48,
+          28
+        ],
+        "room_names": [
+          "Oak",
+          "Pine",
+          "Maple"
+        ],
+        "second_half_transfer": 16,
+        "target": 1,
+        "target_final_transfer": 7,
+        "target_lends": 2,
+        "template": 1,
+        "third_fraction": 2,
+        "third_fraction_transfer": 21
+      }
+    },
+    {
+      "family": "state",
+      "gold": 60,
+      "id": "state-0003",
+      "question": "Three reading rooms start with 51, 29, and 44 books in Cedar, Oak, and Pine, respectively. In order, Cedar sends 3 books to Oak; Oak sends half of its then-current books to Pine; Pine sends one third of its then-current books to Cedar; Cedar lends out 2 books; Cedar sends 6 books to Pine. How many books are in Cedar at the end?",
+      "question_sha256": "85b189096e758bb7d9ce0fea214e1d78eab66a8dec450af4fd0b88e9a0b4b2ca",
+      "trace": {
+        "final": [
+          60,
+          16,
+          46
+        ],
+        "first_transfer": 3,
+        "initial": [
+          51,
+          29,
+          44
+        ],
+        "room_names": [
+          "Cedar",
+          "Oak",
+          "Pine"
+        ],
+        "second_half_transfer": 16,
+        "target": 0,
+        "target_final_transfer": 6,
+        "target_lends": 2,
+        "template": 3,
+        "third_fraction": 3,
+        "third_fraction_transfer": 20
+      }
+    },
+    {
+      "family": "state",
+      "gold": 57,
+      "id": "state-0004",
+      "question": "Three reading rooms start with 32, 34, and 54 books in Oak, Cedar, and Pine, respectively. In order, Pine sends 2 books to Oak; Oak sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Pine; Pine lends out 6 books; Pine sends 6 books to Cedar. How many books are in Pine at the end?",
+      "question_sha256": "d763ca9d54fa948191a28cf7152615bbaf1c43f9f383423a5a8dcaa73459613d",
+      "trace": {
+        "final": [
+          17,
+          40,
+          57
+        ],
+        "first_transfer": 2,
+        "initial": [
+          32,
+          34,
+          54
+        ],
+        "room_names": [
+          "Oak",
+          "Cedar",
+          "Pine"
+        ],
+        "second_half_transfer": 17,
+        "target": 2,
+        "target_final_transfer": 6,
+        "target_lends": 6,
+        "template": 2,
+        "third_fraction": 3,
+        "third_fraction_transfer": 17
+      }
+    },
+    {
+      "family": "state",
+      "gold": 48,
+      "id": "state-0005",
+      "question": "Three reading rooms start with 54, 19, and 11 books in Maple, Birch, and Pine, respectively. In order, Maple sends 7 books to Birch; Birch sends half of its then-current books to Pine; Pine sends half of its then-current books to Maple; Maple lends out 7 books; Maple sends 4 books to Pine. How many books are in Maple at the end?",
+      "question_sha256": "aa84b8a5c092223b991da9040241f47fd8493514a124f6f6b981de0c31f763cd",
+      "trace": {
+        "final": [
+          48,
+          13,
+          16
+        ],
+        "first_transfer": 7,
+        "initial": [
+          54,
+          19,
+          11
+        ],
+        "room_names": [
+          "Maple",
+          "Birch",
+          "Pine"
+        ],
+        "second_half_transfer": 13,
+        "target": 0,
+        "target_final_transfer": 4,
+        "target_lends": 7,
+        "template": 0,
+        "third_fraction": 2,
+        "third_fraction_transfer": 12
+      }
+    },
+    {
+      "family": "state",
+      "gold": 71,
+      "id": "state-0006",
+      "question": "Three reading rooms start with 57, 22, and 48 books in Oak, Pine, and Cedar, respectively. In order, Oak sends 2 books to Pine; Pine sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Oak; Oak lends out 2 books; Oak sends 2 books to Cedar. How many books are in Oak at the end?",
+      "question_sha256": "8664f7e0892c05b0fd1cac155f3bd4b29c1f1d51a93d8801477caeb68e24bbed",
+      "trace": {
+        "final": [
+          71,
+          12,
+          42
+        ],
+        "first_transfer": 2,
+        "initial": [
+          57,
+          22,
+          48
+        ],
+        "room_names": [
+          "Oak",
+          "Pine",
+          "Cedar"
+        ],
+        "second_half_transfer": 12,
+        "target": 0,
+        "target_final_transfer": 2,
+        "target_lends": 2,
+        "template": 3,
+        "third_fraction": 3,
+        "third_fraction_transfer": 20
+      }
+    },
+    {
+      "family": "state",
+      "gold": 52,
+      "id": "state-0007",
+      "question": "Three reading rooms start with 13, 52, and 32 books in Oak, Pine, and Birch, respectively. In order, Pine sends 2 books to Birch; Birch sends half of its then-current books to Oak; Oak sends half of its then-current books to Pine; Pine lends out 6 books; Pine sends 7 books to Oak. How many books are in Pine at the end?",
+      "question_sha256": "e5329236957494cf051f7f0d4a7f3b0d9a3c4d76fe271698f7e7c44356f51c51",
+      "trace": {
+        "final": [
+          22,
+          52,
+          17
+        ],
+        "first_transfer": 2,
+        "initial": [
+          13,
+          52,
+          32
+        ],
+        "room_names": [
+          "Oak",
+          "Pine",
+          "Birch"
+        ],
+        "second_half_transfer": 17,
+        "target": 1,
+        "target_final_transfer": 7,
+        "target_lends": 6,
+        "template": 1,
+        "third_fraction": 2,
+        "third_fraction_transfer": 15
+      }
+    },
+    {
+      "family": "state",
+      "gold": 65,
+      "id": "state-0008",
+      "question": "Three reading rooms start with 27, 54, and 24 books in Maple, Cedar, and Pine, respectively. In order, Cedar sends 2 books to Pine; Pine sends half of its then-current books to Maple; Maple sends half of its then-current books to Cedar; Cedar lends out 2 books; Cedar sends 5 books to Maple. How many books are in Cedar at the end?",
+      "question_sha256": "e8f5faca58405bbff00af65d1e90d23874938a9d010e85b46f5ce0189fa49647",
+      "trace": {
+        "final": [
+          25,
+          65,
+          13
+        ],
+        "first_transfer": 2,
+        "initial": [
+          27,
+          54,
+          24
+        ],
+        "room_names": [
+          "Maple",
+          "Cedar",
+          "Pine"
+        ],
+        "second_half_transfer": 13,
+        "target": 1,
+        "target_final_transfer": 5,
+        "target_lends": 2,
+        "template": 1,
+        "third_fraction": 2,
+        "third_fraction_transfer": 20
+      }
+    },
+    {
+      "family": "state",
+      "gold": 47,
+      "id": "state-0009",
+      "question": "Three reading rooms start with 28, 22, and 48 books in Oak, Pine, and Cedar, respectively. In order, Cedar sends 6 books to Oak; Oak sends half of its then-current books to Pine; Pine sends one third of its then-current books to Cedar; Cedar lends out 6 books; Cedar sends 2 books to Pine. How many books are in Cedar at the end?",
+      "question_sha256": "8cec4ec61183755aad5ec3ca5d1f932980a0e0dc30f856963658675ceef7de37",
+      "trace": {
+        "final": [
+          17,
+          28,
+          47
+        ],
+        "first_transfer": 6,
+        "initial": [
+          28,
+          22,
+          48
+        ],
+        "room_names": [
+          "Oak",
+          "Pine",
+          "Cedar"
+        ],
+        "second_half_transfer": 17,
+        "target": 2,
+        "target_final_transfer": 2,
+        "target_lends": 6,
+        "template": 2,
+        "third_fraction": 3,
+        "third_fraction_transfer": 13
+      }
+    },
+    {
+      "family": "state",
+      "gold": 65,
+      "id": "state-0010",
+      "question": "Three reading rooms start with 61, 24, and 34 books in Maple, Cedar, and Birch, respectively. In order, Maple sends 4 books to Cedar; Cedar sends half of its then-current books to Birch; Birch sends one third of its then-current books to Maple; Maple lends out 4 books; Maple sends 4 books to Birch. How many books are in Maple at the end?",
+      "question_sha256": "60b54a8ba2acd07f07bac41e99f7d27882b705b6ad5fa28abf67a4683304198c",
+      "trace": {
+        "final": [
+          65,
+          14,
+          36
+        ],
+        "first_transfer": 4,
+        "initial": [
+          61,
+          24,
+          34
+        ],
+        "room_names": [
+          "Maple",
+          "Cedar",
+          "Birch"
+        ],
+        "second_half_transfer": 14,
+        "target": 0,
+        "target_final_transfer": 4,
+        "target_lends": 4,
+        "template": 3,
+        "third_fraction": 3,
+        "third_fraction_transfer": 16
+      }
+    },
+    {
+      "family": "state",
+      "gold": 62,
+      "id": "state-0011",
+      "question": "Three reading rooms start with 54, 30, and 22 books in Maple, Birch, and Pine, respectively. In order, Maple sends 2 books to Birch; Birch sends half of its then-current books to Pine; Pine sends half of its then-current books to Maple; Maple lends out 2 books; Maple sends 7 books to Pine. How many books are in Maple at the end?",
+      "question_sha256": "3d9cd1d7afd0fb6d1316df1b6f61a7d2ddd7188e05302c1caf6a4dad7ff17994",
+      "trace": {
+        "final": [
+          62,
+          16,
+          26
+        ],
+        "first_transfer": 2,
+        "initial": [
+          54,
+          30,
+          22
+        ],
+        "room_names": [
+          "Maple",
+          "Birch",
+          "Pine"
+        ],
+        "second_half_transfer": 16,
+        "target": 0,
+        "target_final_transfer": 7,
+        "target_lends": 2,
+        "template": 0,
+        "third_fraction": 2,
+        "third_fraction_transfer": 19
+      }
+    },
+    {
+      "family": "state",
+      "gold": 61,
+      "id": "state-0012",
+      "question": "Three reading rooms start with 25, 59, and 16 books in Cedar, Birch, and Maple, respectively. In order, Birch sends 6 books to Maple; Maple sends half of its then-current books to Cedar; Cedar sends half of its then-current books to Birch; Birch lends out 6 books; Birch sends 4 books to Cedar. How many books are in Birch at the end?",
+      "question_sha256": "87a4179c8b98c584458001023581e4ec07f77a7e93f159abf97aa92a01aa8d38",
+      "trace": {
+        "final": [
+          22,
+          61,
+          11
+        ],
+        "first_transfer": 6,
+        "initial": [
+          25,
+          59,
+          16
+        ],
+        "room_names": [
+          "Cedar",
+          "Birch",
+          "Maple"
+        ],
+        "second_half_transfer": 11,
+        "target": 1,
+        "target_final_transfer": 4,
+        "target_lends": 6,
+        "template": 1,
+        "third_fraction": 2,
+        "third_fraction_transfer": 18
+      }
+    },
+    {
+      "family": "state",
+      "gold": 69,
+      "id": "state-0013",
+      "question": "Three reading rooms start with 68, 18, and 39 books in Maple, Cedar, and Pine, respectively. In order, Maple sends 6 books to Cedar; Cedar sends half of its then-current books to Pine; Pine sends one third of its then-current books to Maple; Maple lends out 3 books; Maple sends 7 books to Pine. How many books are in Maple at the end?",
+      "question_sha256": "976439aff5a28e797a7168b0978d8e4d11eefa3e0f7328267589aeacbc91713b",
+      "trace": {
+        "final": [
+          69,
+          12,
+          41
+        ],
+        "first_transfer": 6,
+        "initial": [
+          68,
+          18,
+          39
+        ],
+        "room_names": [
+          "Maple",
+          "Cedar",
+          "Pine"
+        ],
+        "second_half_transfer": 12,
+        "target": 0,
+        "target_final_transfer": 7,
+        "target_lends": 3,
+        "template": 3,
+        "third_fraction": 3,
+        "third_fraction_transfer": 17
+      }
+    },
+    {
+      "family": "state",
+      "gold": 49,
+      "id": "state-0014",
+      "question": "Three reading rooms start with 28, 50, and 43 books in Birch, Cedar, and Oak, respectively. In order, Oak sends 4 books to Birch; Birch sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Oak; Oak lends out 5 books; Oak sends 7 books to Cedar. How many books are in Oak at the end?",
+      "question_sha256": "5018c92bb1c9b6a93bd0a50f8f4b06ecb8ec4308ee65da1b1fea5e4b69fb26cd",
+      "trace": {
+        "final": [
+          16,
+          51,
+          49
+        ],
+        "first_transfer": 4,
+        "initial": [
+          28,
+          50,
+          43
+        ],
+        "room_names": [
+          "Birch",
+          "Cedar",
+          "Oak"
+        ],
+        "second_half_transfer": 16,
+        "target": 2,
+        "target_final_transfer": 7,
+        "target_lends": 5,
+        "template": 2,
+        "third_fraction": 3,
+        "third_fraction_transfer": 22
+      }
+    },
+    {
+      "family": "state",
+      "gold": 76,
+      "id": "state-0015",
+      "question": "Three reading rooms start with 68, 25, and 24 books in Pine, Birch, and Oak, respectively. In order, Pine sends 7 books to Birch; Birch sends half of its then-current books to Oak; Oak sends half of its then-current books to Pine; Pine lends out 2 books; Pine sends 3 books to Oak. How many books are in Pine at the end?",
+      "question_sha256": "6d98cb96b8b68b2a532edf739cfb7ac3cbc05fa7abd4051afb0b90beecfc864f",
+      "trace": {
+        "final": [
+          76,
+          16,
+          23
+        ],
+        "first_transfer": 7,
+        "initial": [
+          68,
+          25,
+          24
+        ],
+        "room_names": [
+          "Pine",
+          "Birch",
+          "Oak"
+        ],
+        "second_half_transfer": 16,
+        "target": 0,
+        "target_final_transfer": 3,
+        "target_lends": 2,
+        "template": 0,
+        "third_fraction": 2,
+        "third_fraction_transfer": 20
+      }
+    },
+    {
+      "family": "state",
+      "gold": 58,
+      "id": "state-0016",
+      "question": "Three reading rooms start with 27, 56, and 10 books in Pine, Oak, and Maple, respectively. In order, Oak sends 8 books to Maple; Maple sends half of its then-current books to Pine; Pine sends half of its then-current books to Oak; Oak lends out 3 books; Oak sends 5 books to Pine. How many books are in Oak at the end?",
+      "question_sha256": "9963bd6182590c926111f60929ae49cc80e7c80d12e99d4549472b3dc841e3a5",
+      "trace": {
+        "final": [
+          23,
+          58,
+          9
+        ],
+        "first_transfer": 8,
+        "initial": [
+          27,
+          56,
+          10
+        ],
+        "room_names": [
+          "Pine",
+          "Oak",
+          "Maple"
+        ],
+        "second_half_transfer": 9,
+        "target": 1,
+        "target_final_transfer": 5,
+        "target_lends": 3,
+        "template": 1,
+        "third_fraction": 2,
+        "third_fraction_transfer": 18
+      }
+    }
+  ],
+  "created_utc": "2026-11-21T11:04:12Z",
+  "floor": 0.6,
+  "format_secondary": "final The final answer is integer line",
+  "joint_alpha": 0.05,
+  "kind": "development",
+  "margin": 0.05,
+  "max_tokens": 512,
+  "model_sha256": {
+    "candidate": "e32195c0201ba73ad22308fcf89d43b78ff4fc586390044b96b064177c8508e5",
+    "reference": "dd29f7886c328cc950543bbc88198f25aec04e256cf1b978b14384c19e37e2ec"
+  },
+  "per_bound_alpha": 0.008333333333333333,
+  "per_family": 16,
+  "prompt": "Solve the problem step by step. Show the intermediate quantities and check the arithmetic. Finish with one separate line: The final answer is N. Replace N with the integer answer. Do not write anything after that line.",
+  "prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+  "quality_rule": "last integer after normal stop; errors and truncation wrong",
+  "schema": "qwen3-structural-assay-v1",
+  "seed": 2026112103,
+  "server_policy": "b12283, CPU 4 threads, --no-repack, mmap, 2048 context",
+  "temperature": 0
+}

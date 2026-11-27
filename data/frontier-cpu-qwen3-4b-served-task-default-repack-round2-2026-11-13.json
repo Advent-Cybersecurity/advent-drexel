@@ -1,0 +1,1770 @@
+{
+  "schema": "frontier-cpu-served-task-pilot-v2",
+  "created_utc": "2026-11-13T12:22:45Z",
+  "host": {
+    "platform": "Linux-6.18.12+kali-amd64-x86_64-with-glibc2.42",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12700K",
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "logical_cpu_count": 8,
+    "clock_ticks_per_second": 100,
+    "root_cgroup_controls": {
+      "cpuset.cpus.effective": "0-7"
+    }
+  },
+  "method": {
+    "blocks": 3,
+    "arms": "reference then candidate on odd blocks, reverse on even blocks",
+    "task_order": "arithmetic then state on odd blocks, reverse on even blocks",
+    "warm_state": "fresh server process per arm; host model file cache not evicted",
+    "repack": "default",
+    "server_warmup": "default enabled",
+    "cpu": "Linux /proc/PID/stat thread-group utime+stime delta surrounding complete HTTP request; wait4 whole server CPU",
+    "peak_rss": "wait4 ru_maxrss for whole server lifetime; Linux KiB converted to bytes",
+    "excluded": "client Python CPU, OS baseline, and model download",
+    "manifest_sha256": "55bd65706fc9a907f7e469cf2a675ba62e5474d44f3a810a23c69ef94de1c44b"
+  },
+  "server": {
+    "path": "/tmp/drexel-inference-study/llama-b12283/llama-server",
+    "sha256": "64da0db0262aa9a201b27eccc8fdac336bc42ae990c652d31125c6967665187c"
+  },
+  "models": {
+    "reference": {
+      "path": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+      "bytes": 2497280736,
+      "sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e"
+    },
+    "candidate": {
+      "path": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+      "bytes": 2383309536,
+      "sha256": "952af947c6aabf7b72f7d8e279e76f7bf4b0d12431eb3abb588ef312865622d8"
+    }
+  },
+  "runtime_dir_census": {
+    "regular_file_count": 51,
+    "regular_file_bytes": 58674830,
+    "symbolic_link_count": 10,
+    "regular_files": [
+      {
+        "path": "LICENSE",
+        "bytes": 1078
+      },
+      {
+        "path": "llama-server",
+        "bytes": 17864
+      },
+      {
+        "path": "libllama-batched-bench-impl.so",
+        "bytes": 48904
+      },
+      {
+        "path": "libggml-cpu-sse42.so",
+        "bytes": 980624
+      },
+      {
+        "path": "libggml-rpc.so",
+        "bytes": 328712
+      },
+      {
+        "path": "llama-completion",
+        "bytes": 15968
+      },
+      {
+        "path": "libggml-cpu-cooperlake.so",
+        "bytes": 1630864
+      },
+      {
+        "path": "libggml-cpu-x64.so",
+        "bytes": 976608
+      },
+      {
+        "path": "libggml-cpu-piledriver.so",
+        "bytes": 1391432
+      },
+      {
+        "path": "libggml-cpu-sapphirerapids.so",
+        "bytes": 1897192
+      },
+      {
+        "path": "llama-batched-bench",
+        "bytes": 15976
+      },
+      {
+        "path": "libllama-server-impl.so",
+        "bytes": 8462184
+      },
+      {
+        "path": "libggml-cpu-sandybridge.so",
+        "bytes": 1372976
+      },
+      {
+        "path": "llama-quantize",
+        "bytes": 17864
+      },
+      {
+        "path": "llama-fit-params",
+        "bytes": 15968
+      },
+      {
+        "path": "libggml-cpu-ivybridge.so",
+        "bytes": 1399624
+      },
+      {
+        "path": "llama-mtmd-debug",
+        "bytes": 58472
+      },
+      {
+        "path": "libggml.so.0.29.0",
+        "bytes": 51040
+      },
+      {
+        "path": "llama-mtmd-cli",
+        "bytes": 101376
+      },
+      {
+        "path": "libggml-base.so.0.29.0",
+        "bytes": 946176
+      },
+      {
+        "path": "libggml-cpu-haswell.so",
+        "bytes": 1459872
+      },
+      {
+        "path": "libllama-completion-impl.so",
+        "bytes": 144976
+      },
+      {
+        "path": "libggml-cpu-cascadelake.so",
+        "bytes": 1630792
+      },
+      {
+        "path": "libmtmd.so.0.9.0",
+        "bytes": 2341720
+      },
+      {
+        "path": "libllama-bench-impl.so",
+        "bytes": 490856
+      },
+      {
+        "path": "llama-results",
+        "bytes": 54360
+      },
+      {
+        "path": "llama-cli",
+        "bytes": 1511440
+      },
+      {
+        "path": "llama-perplexity",
+        "bytes": 15968
+      },
+      {
+        "path": "llama-llava-cli",
+        "bytes": 16952
+      },
+      {
+        "path": "libllama-common.so.0.9.0",
+        "bytes": 6799112
+      },
+      {
+        "path": "libggml-cpu-icelake.so",
+        "bytes": 1630792
+      },
+      {
+        "path": "ggml-rpc-server",
+        "bytes": 195536
+      },
+      {
+        "path": "llama-imatrix",
+        "bytes": 221240
+      },
+      {
+        "path": "llama-gemma3-cli",
+        "bytes": 16952
+      },
+      {
+        "path": "llama-tts",
+        "bytes": 49928
+      },
+      {
+        "path": "llama-qwen2vl-cli",
+        "bytes": 16952
+      },
+      {
+        "path": "libggml-cpu-skylakex.so",
+        "bytes": 1618800
+      },
+      {
+        "path": "llama",
+        "bytes": 62376
+      },
+      {
+        "path": "libggml-cpu-zen4.so",
+        "bytes": 1630864
+      },
+      {
+        "path": "llama-connect",
+        "bytes": 9729072
+      },
+      {
+        "path": "libllama-cli-impl.so",
+        "bytes": 277032
+      },
+      {
+        "path": "libggml-cpu-alderlake.so",
+        "bytes": 1455776
+      },
+      {
+        "path": "llama-bench",
+        "bytes": 17864
+      },
+      {
+        "path": "libllama-quantize-impl.so",
+        "bytes": 81840
+      },
+      {
+        "path": "libllama-fit-params-impl.so",
+        "bytes": 44304
+      },
+      {
+        "path": "llama-tokenize",
+        "bytes": 45168
+      },
+      {
+        "path": "libllama.so.0.9.0",
+        "bytes": 5527456
+      },
+      {
+        "path": "llama-minicpmv-cli",
+        "bytes": 16952
+      },
+      {
+        "path": "llama-gguf-split",
+        "bytes": 48264
+      },
+      {
+        "path": "libllama-perplexity-impl.so",
+        "bytes": 171912
+      },
+      {
+        "path": "libggml-cpu-cannonlake.so",
+        "bytes": 1618800
+      }
+    ],
+    "symbolic_links": [
+      {
+        "path": "libggml.so",
+        "target": "libggml.so.0"
+      },
+      {
+        "path": "libggml-base.so",
+        "target": "libggml-base.so.0"
+      },
+      {
+        "path": "libmtmd.so.0",
+        "target": "libmtmd.so.0.9.0"
+      },
+      {
+        "path": "libllama-common.so",
+        "target": "libllama-common.so.0"
+      },
+      {
+        "path": "libllama.so",
+        "target": "libllama.so.0"
+      },
+      {
+        "path": "libggml.so.0",
+        "target": "libggml.so.0.29.0"
+      },
+      {
+        "path": "libllama-common.so.0",
+        "target": "libllama-common.so.0.9.0"
+      },
+      {
+        "path": "libggml-base.so.0",
+        "target": "libggml-base.so.0.29.0"
+      },
+      {
+        "path": "libmtmd.so",
+        "target": "libmtmd.so.0"
+      },
+      {
+        "path": "libllama.so.0",
+        "target": "libllama.so.0.9.0"
+      }
+    ]
+  },
+  "runs": [
+    {
+      "arm": "reference",
+      "model": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+      "started_utc": "2026-11-13T12:22:45Z",
+      "argv": [
+        "/tmp/drexel-inference-study/llama-b12283/llama-server",
+        "-m",
+        "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+        "-ngl",
+        "0",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-c",
+        "2048",
+        "-b",
+        "512",
+        "-ub",
+        "512",
+        "-np",
+        "1",
+        "-lm",
+        "mmap",
+        "--offline",
+        "--no-ui",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8094"
+      ],
+      "task_order": [
+        "arithmetic-0001",
+        "state-0001"
+      ],
+      "requests": [
+        {
+          "id": "arithmetic-0001",
+          "family": "arithmetic",
+          "question_sha256": "9cd6c290450568a77b46109fdef79c2564b63a42b977583d4d9e4ed8f1b97e82",
+          "system_prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+          "gold": 23,
+          "content": "Let's solve the problem step by step.\n\n**Step 1: Calculate the number of pencils in the first purchase.**  \nThe school buys 3 packs of 6 pencils each:  \n$ 3 \\times 6 = 18 $ pencils.\n\n**Step 2: Subtract the pencils used.**  \nIt uses 16 pencils:  \n$ 18 - 16 = 2 $ pencils remain unused after the first purchase.\n\n**Step 3: Calculate the number of pencils in the second purchase.**  \nIt buys 7 packs of 3 pencils each:  \n$ 7 \\times 3 = 21 $ pencils.\n\n**Step 4: Add the unused pencils from the first purchase to the new pencils.**  \nAll 21 pencils from the second purchase are unused (since no pencils are mentioned as being used from this batch).  \nSo total unused pencils = unused from first batch + new pencils:  \n$ 2 + 21 = 23 $\n\nThe final answer is 23.  \nThe final answer is 23.",
+          "content_sha256": "aee3b1f302a72976196ad3b4723970dfb57eadefe0fe80ece31b54d4ea5deeaa",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 225,
+            "prompt_tokens": 96,
+            "total_tokens": 321,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 96,
+            "prompt_ms": 1345.074,
+            "prompt_per_token_ms": 14.0111875,
+            "prompt_per_second": 71.37153792282061,
+            "predicted_n": 225,
+            "predicted_ms": 24989.026,
+            "predicted_per_token_ms": 111.55815178571429,
+            "predicted_per_second": 8.96393480882368
+          },
+          "wall_seconds": 26.336587151046842,
+          "cpu_before": {
+            "user_seconds": 2.05,
+            "system_seconds": 0.45,
+            "total_seconds": 2.5
+          },
+          "cpu_after": {
+            "user_seconds": 107.1,
+            "system_seconds": 0.53,
+            "total_seconds": 107.63
+          },
+          "cpu_delta_seconds": 105.13,
+          "status_before": {
+            "VmSize": "5186116 kB",
+            "VmHWM": "4513136 kB",
+            "VmRSS": "4513136 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          },
+          "status_after": {
+            "VmSize": "5320336 kB",
+            "VmHWM": "4530860 kB",
+            "VmRSS": "4530860 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          }
+        },
+        {
+          "id": "state-0001",
+          "family": "state",
+          "question_sha256": "1291d488c5a88397ecc616be6230b607dada31f88250410cdc23adac3bed7b4c",
+          "system_prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+          "gold": 53,
+          "content": "We are given the initial number of books in three reading rooms:\n\n- Oak: 15 books  \n- Birch: 57 books  \n- Maple: 15 books  \n\nWe go step by step through the sequence of events.\n\n---\n\n**Step 1: Birch sends 7 books to Maple**\n\n- Birch gives 7 books to Maple.\n- Birch: 57 - 7 = **50**\n- Maple: 15 + 7 = **22**\n\n---\n\n**Step 2: Maple sends half of its then-current books to Oak**\n\n- Maple currently has 22 books.\n- Half of 22 = 11 books sent to Oak.\n- Maple: 22 - 11 = **11**\n- Oak: 15 + 11 = **26**\n\n---\n\n**Step 3: Oak sends half of its then-current books to Birch**\n\n- Oak currently has 26 books.\n- Half of 26 = 13 books sent to Birch.\n- Oak: 26 - 13 = **13**\n- Birch: 50 + 13 = **63**\n\n---\n\n**Step 4: Birch lends out 3 books**\n\n- Birch lends out 3 books \u2014 this means it **loses 3 books**.\n- Birch: 63 - 3 = **60**\n\n---\n\n**Step 5: Birch sends 7 books to Oak**\n\n- Birch sends 7 books to Oak.\n- Birch: 60 - 7 = **53**\n- Oak: 13 + 7 = 20\n\n---\n\nNow, the question is: **How many books are in Birch at the end?**\n\nAfter all steps, Birch has **53** books.\n\nThe final answer is 53.  \nThe final answer is 53.",
+          "content_sha256": "30bcfe1dbdf2876c7f7e35fce233c1846cc3dceb583277438ede3c027406ca4d",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 386,
+            "prompt_tokens": 143,
+            "total_tokens": 529,
+            "prompt_tokens_details": {
+              "cached_tokens": 52
+            }
+          },
+          "timings": {
+            "cache_n": 52,
+            "prompt_n": 91,
+            "prompt_ms": 1380.633,
+            "prompt_per_token_ms": 15.171791208791209,
+            "prompt_per_second": 65.91179553146998,
+            "predicted_n": 386,
+            "predicted_ms": 43686.934,
+            "predicted_per_token_ms": 113.47255584415585,
+            "predicted_per_second": 8.812703587759213
+          },
+          "wall_seconds": 45.092847925028764,
+          "cpu_before": {
+            "user_seconds": 107.1,
+            "system_seconds": 0.53,
+            "total_seconds": 107.63
+          },
+          "cpu_after": {
+            "user_seconds": 287.32,
+            "system_seconds": 0.64,
+            "total_seconds": 287.96
+          },
+          "cpu_delta_seconds": 180.33,
+          "status_before": {
+            "VmSize": "5320336 kB",
+            "VmHWM": "4530860 kB",
+            "VmRSS": "4530860 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          },
+          "status_after": {
+            "VmSize": "5431960 kB",
+            "VmHWM": "4577168 kB",
+            "VmRSS": "4577168 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          }
+        }
+      ],
+      "ready_wall_seconds": 2.0155505529837683,
+      "ready_process_cpu": {
+        "user_seconds": 2.05,
+        "system_seconds": 0.45,
+        "total_seconds": 2.5
+      },
+      "ready_status": {
+        "VmSize": "5120580 kB",
+        "VmHWM": "4513096 kB",
+        "VmRSS": "4513096 kB",
+        "VmSwap": "0 kB",
+        "Threads": "15"
+      },
+      "served_models": {
+        "models": [
+          {
+            "name": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+            "model": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+            "aliases": [
+              "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1794572567,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 151936,
+              "n_ctx": 2048,
+              "n_ctx_train": 262144,
+              "n_embd": 2560,
+              "n_params": 4022468096,
+              "size": 2491323904,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "after_requests_cpu": {
+        "user_seconds": 287.32,
+        "system_seconds": 0.64,
+        "total_seconds": 287.96
+      },
+      "after_requests_status": {
+        "VmSize": "5431960 kB",
+        "VmHWM": "4577168 kB",
+        "VmRSS": "4577168 kB",
+        "VmSwap": "0 kB",
+        "Threads": "15"
+      },
+      "wait_status": 0,
+      "whole_server_wall_seconds": 73.52548140694853,
+      "whole_server_cpu_seconds": 288.08606100000003,
+      "whole_server_user_cpu_seconds": 287.377476,
+      "whole_server_system_cpu_seconds": 0.708585,
+      "whole_server_peak_rss_bytes": 4686372864,
+      "whole_server_major_faults": 0,
+      "whole_server_minor_faults": 176458,
+      "server_log_tail": "0.00.008.418 I srv  llama_server: initializing ...\n0.00.008.448 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)\n0.00.008.561 I srv  init_listene: The UI is disabled\n0.00.008.571 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable\n0.00.008.650 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)\n0.00.010.349 I srv    load_model: loading model '/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf'\n0.00.247.566 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\n0.01.373.349 I cmn          init: llama threadpool init, n_threads = 4\n0.01.661.952 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'\n0.01.667.257 I srv  server_run_i: model loaded\n0.01.667.284 I srv  server_on_li: listening on http://127.0.0.1:8094\n0.02.013.054 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1\n0.02.013.128 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0\n0.14.452.691 I slot print_timing: id  0 | task 0 | n_gen =    100, tg =   8.92 t/s, tg_3s =   9.01 t/s\n0.17.547.349 I slot print_timing: id  0 | task 0 | n_gen =    128, tg =   8.95 t/s, tg_3s =   9.05 t/s\n0.20.635.853 I slot print_timing: id  0 | task 0 | n_gen =    156, tg =   8.97 t/s, tg_3s =   9.07 t/s\n0.23.738.083 I slot print_timing: id  0 | task 0 | n_gen =    184, tg =   8.98 t/s, tg_3s =   9.03 t/s\n0.26.790.016 I slot print_timing: id  0 | task 0 | n_gen =    211, tg =   8.96 t/s, tg_3s =   8.85 t/s\n0.28.347.265 I slot print_timing: id  0 | task 0 | prompt eval time =    1345.07 ms /    96 tokens (   14.01 ms per token,    71.37 tokens per second)\n0.28.347.280 I slot print_timing: id  0 | task 0 |        eval time =   24989.03 ms /   225 tokens (  111.56 ms per token,     8.96 tokens per second)\n0.28.347.281 I slot print_timing: id  0 | task 0 |       total time =   26334.10 ms /   321 tokens\n0.28.347.287 I slot print_timing: id  0 | task 0 |    graphs reused =        223\n0.28.347.287 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)\n0.28.347.330 I slot      release: id  0 | task 0 | stop processing: n_tokens = 320, truncated = 0\n0.28.352.406 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.364 (> 0.100 thold), f_keep = 0.162\n0.28.372.773 I slot launch_slot_: id  0 | task 226 | processing task, is_child = 0\n0.40.676.645 I slot print_timing: id  0 | task 226 | n_gen =    100, tg =   9.06 t/s, tg_3s =   9.15 t/s\n0.43.725.300 I slot print_timing: id  0 | task 226 | n_gen =    128, tg =   9.09 t/s, tg_3s =   9.18 t/s\n0.46.765.020 I slot print_timing: id  0 | task 226 | n_gen =    155, tg =   9.05 t/s, tg_3s =   8.88 t/s\n0.49.848.170 I slot print_timing: id  0 | task 226 | n_gen =    183, tg =   9.06 t/s, tg_3s =   9.08 t/s\n0.52.862.590 I slot print_timing: id  0 | task 226 | n_gen =    209, tg =   9.00 t/s, tg_3s =   8.63 t/s\n0.55.941.974 I slot print_timing: id  0 | task 226 | n_gen =    235, tg =   8.94 t/s, tg_3s =   8.44 t/s\n0.58.976.946 I slot print_timing: id  0 | task 226 | n_gen =    262, tg =   8.93 t/s, tg_3s =   8.90 t/s\n1.02.028.023 I slot print_timing: id  0 | task 226 | n_gen =    288, tg =   8.89 t/s, tg_3s =   8.52 t/s\n1.05.048.646 I slot print_timing: id  0 | task 226 | n_gen =    315, tg =   8.90 t/s, tg_3s =   8.94 t/s\n1.08.148.410 I slot print_timing: id  0 | task 226 | n_gen =    341, tg =   8.86 t/s, tg_3s =   8.39 t/s\n1.11.216.176 I slot print_timing: id  0 | task 226 | n_gen =    368, tg =   8.85 t/s, tg_3s =   8.80 t/s\n1.13.440.396 I slot print_timing: id  0 | task 226 | prompt eval time =    1380.63 ms /    91 tokens (   15.17 ms per token,    65.91 tokens per second)\n1.13.440.412 I slot print_timing: id  0 | task 226 |        eval time =   43686.93 ms /   386 tokens (  113.47 ms per token,     8.81 tokens per second)\n1.13.440.412 I slot print_timing: id  0 | task 226 |       total time =   45067.57 ms /   477 tokens\n1.13.440.414 I slot print_timing: id  0 | task 226 |    graphs reused =        605\n1.13.440.414 I slot print_timing: id  0 | task 226 |   graph reallocs =          0    /     0        (same size) / (changed size)\n1.13.440.444 I slot      release: id  0 | task 226 | stop processing: n_tokens = 528, truncated = 0\n1.13.441.552 I srv    operator(): operator(): cleaning up before exit...\n",
+      "block": 1
+    },
+    {
+      "arm": "candidate",
+      "model": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+      "started_utc": "2026-11-13T12:23:58Z",
+      "argv": [
+        "/tmp/drexel-inference-study/llama-b12283/llama-server",
+        "-m",
+        "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+        "-ngl",
+        "0",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-c",
+        "2048",
+        "-b",
+        "512",
+        "-ub",
+        "512",
+        "-np",
+        "1",
+        "-lm",
+        "mmap",
+        "--offline",
+        "--no-ui",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8094"
+      ],
+      "task_order": [
+        "arithmetic-0001",
+        "state-0001"
+      ],
+      "requests": [
+        {
+          "id": "arithmetic-0001",
+          "family": "arithmetic",
+          "question_sha256": "9cd6c290450568a77b46109fdef79c2564b63a42b977583d4d9e4ed8f1b97e82",
+          "system_prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+          "gold": 23,
+          "content": "Let's solve the problem step by step.\n\n**Step 1: Find how many pencils the school initially buys.**\n\nIt buys 3 packs of 6 pencils each:\n\n$$\n3 \\times 6 = 18 \\text{ pencils}\n$$\n\n**Step 2: Subtract the pencils used.**\n\nIt uses 16 pencils:\n\n$$\n18 - 16 = 2 \\text{ pencils remaining}\n$$\n\n**Step 3: Buy 7 more packs of 3 pencils each.**\n\n$$\n7 \\times 3 = 21 \\text{ pencils}\n$$\n\n**Step 4: Add the new pencils to the remaining ones.**\n\nThe school now has:\n\n$$\n2 + 21 = 23 \\text{ pencils}\n$$\n\nThese are all unused (since no pencils were used from the new pack yet).\n\n**Final Answer:**\n\nThe final answer is 23.",
+          "content_sha256": "9ad2168f625df439ac66f7ea6229a2d64468e13789ce47129c79643d0bb5144e",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 193,
+            "prompt_tokens": 96,
+            "total_tokens": 289,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 96,
+            "prompt_ms": 1434.858,
+            "prompt_per_token_ms": 14.9464375,
+            "prompt_per_second": 66.90557532522382,
+            "predicted_n": 193,
+            "predicted_ms": 20895.476,
+            "predicted_per_token_ms": 108.83060416666666,
+            "predicted_per_second": 9.188591827245286
+          },
+          "wall_seconds": 22.332523702061735,
+          "cpu_before": {
+            "user_seconds": 2.31,
+            "system_seconds": 0.39,
+            "total_seconds": 2.7
+          },
+          "cpu_after": {
+            "user_seconds": 91.46,
+            "system_seconds": 0.45,
+            "total_seconds": 91.91
+          },
+          "cpu_delta_seconds": 89.21,
+          "status_before": {
+            "VmSize": "5286496 kB",
+            "VmHWM": "4613184 kB",
+            "VmRSS": "4613184 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          },
+          "status_after": {
+            "VmSize": "5420712 kB",
+            "VmHWM": "4630972 kB",
+            "VmRSS": "4630972 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          }
+        },
+        {
+          "id": "state-0001",
+          "family": "state",
+          "question_sha256": "1291d488c5a88397ecc616be6230b607dada31f88250410cdc23adac3bed7b4c",
+          "system_prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+          "gold": 53,
+          "content": "Let's go step by step through the sequence of events and track the number of books in each reading room: Oak, Birch, and Maple.\n\n**Initial books:**\n- Oak: 15\n- Birch: 57\n- Maple: 15\n\n---\n\n**Step 1: Birch sends 7 books to Maple**\n\n- Birch gives 7 books to Maple.\n- Birch: 57 - 7 = 50\n- Maple: 15 + 7 = 22\n\nNow:\n- Oak: 15\n- Birch: 50\n- Maple: 22\n\n---\n\n**Step 2: Maple sends half of its then-current books to Oak**\n\nMaple currently has 22 books \u2192 half is 11.\n\n- Maple sends 11 books to Oak.\n- Maple: 22 - 11 = 11\n- Oak: 15 + 11 = 26\n\nNow:\n- Oak: 26\n- Birch: 50\n- Maple: 11\n\n---\n\n**Step 3: Oak sends half of its then-current books to Birch**\n\nOak currently has 26 books \u2192 half is 13.\n\n- Oak sends 13 books to Birch.\n- Oak: 26 - 13 = 13\n- Birch: 50 + 13 = 63\n\nNow:\n- Oak: 13\n- Birch: 63\n- Maple: 11\n\n---\n\n**Step 4: Birch lends out 3 books**\n\nThis means Birch gives away 3 books (not sending to anyone, just lending out \u2014 so books are removed from Birch).\n\n- Birch: 63 - 3 = 60\n\nNow:\n- Oak: 13\n- Birch: 60\n- Maple: 11\n\n---\n\n**Step 5: Birch sends 7 books to Oak**\n\n- Birch gives 7 books to Oak.\n- Birch: 60 - 7 = 53\n- Oak: 13 + 7 = 20\n\nNow:\n- Oak: 20\n- Birch: 53\n- Maple: 11\n\n---\n\n**Final question: How many books are in Birch at the end?**\n\nAnswer: 53\n\nThe final answer is 53.",
+          "content_sha256": "887655e71c8e63e41bea5cb6fbefda1c0b7c809db662e26c7bc1717e4ac8e237",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 498,
+            "prompt_tokens": 143,
+            "total_tokens": 641,
+            "prompt_tokens_details": {
+              "cached_tokens": 52
+            }
+          },
+          "timings": {
+            "cache_n": 52,
+            "prompt_n": 91,
+            "prompt_ms": 1402.32,
+            "prompt_per_token_ms": 15.41010989010989,
+            "prompt_per_second": 64.89246391693764,
+            "predicted_n": 498,
+            "predicted_ms": 54203.086,
+            "predicted_per_token_ms": 109.0605352112676,
+            "predicted_per_second": 9.169219627089129
+          },
+          "wall_seconds": 55.62556645798031,
+          "cpu_before": {
+            "user_seconds": 91.46,
+            "system_seconds": 0.45,
+            "total_seconds": 91.91
+          },
+          "cpu_after": {
+            "user_seconds": 313.62,
+            "system_seconds": 0.64,
+            "total_seconds": 314.26
+          },
+          "cpu_delta_seconds": 222.35,
+          "status_before": {
+            "VmSize": "5420712 kB",
+            "VmHWM": "4630972 kB",
+            "VmRSS": "4630972 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          },
+          "status_after": {
+            "VmSize": "5527728 kB",
+            "VmHWM": "4672676 kB",
+            "VmRSS": "4672676 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          }
+        }
+      ],
+      "ready_wall_seconds": 2.0112610610667616,
+      "ready_process_cpu": {
+        "user_seconds": 2.31,
+        "system_seconds": 0.39,
+        "total_seconds": 2.7
+      },
+      "ready_status": {
+        "VmSize": "5220960 kB",
+        "VmHWM": "4613144 kB",
+        "VmRSS": "4613144 kB",
+        "VmSwap": "0 kB",
+        "Threads": "15"
+      },
+      "served_models": {
+        "models": [
+          {
+            "name": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+            "model": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+            "aliases": [
+              "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1794572640,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 151936,
+              "n_ctx": 2048,
+              "n_ctx_train": 262144,
+              "n_embd": 2560,
+              "n_params": 4022468096,
+              "size": 2377352704,
+              "ftype": "Q4_K - Small"
+            }
+          }
+        ]
+      },
+      "after_requests_cpu": {
+        "user_seconds": 313.64,
+        "system_seconds": 0.64,
+        "total_seconds": 314.28
+      },
+      "after_requests_status": {
+        "VmSize": "5527728 kB",
+        "VmHWM": "4672676 kB",
+        "VmRSS": "4672676 kB",
+        "VmSwap": "0 kB",
+        "Threads": "15"
+      },
+      "wait_status": 0,
+      "whole_server_wall_seconds": 80.03739637299441,
+      "whole_server_cpu_seconds": 314.385894,
+      "whole_server_user_cpu_seconds": 313.693344,
+      "whole_server_system_cpu_seconds": 0.69255,
+      "whole_server_peak_rss_bytes": 4784087040,
+      "whole_server_major_faults": 19,
+      "whole_server_minor_faults": 211263,
+      "server_log_tail": "0.00.011.644 I srv  llama_server: initializing ...\n0.00.011.674 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)\n0.00.011.790 I srv  init_listene: The UI is disabled\n0.00.011.801 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable\n0.00.011.881 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)\n0.00.013.358 I srv    load_model: loading model '/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf'\n0.00.224.698 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\n0.01.435.401 I cmn          init: llama threadpool init, n_threads = 4\n0.01.762.974 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'\n0.01.768.258 I srv  server_run_i: model loaded\n0.01.768.286 I srv  server_on_li: listening on http://127.0.0.1:8094\n0.02.008.627 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1\n0.02.008.705 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0\n0.14.176.988 I slot print_timing: id  0 | task 0 | n_gen =    100, tg =   9.22 t/s, tg_3s =   9.32 t/s\n0.17.267.614 I slot print_timing: id  0 | task 0 | n_gen =    129, tg =   9.26 t/s, tg_3s =   9.38 t/s\n0.20.358.244 I slot print_timing: id  0 | task 0 | n_gen =    157, tg =   9.22 t/s, tg_3s =   9.06 t/s\n0.23.366.676 I slot print_timing: id  0 | task 0 | n_gen =    185, tg =   9.24 t/s, tg_3s =   9.31 t/s\n0.24.339.081 I slot print_timing: id  0 | task 0 | prompt eval time =    1434.86 ms /    96 tokens (   14.95 ms per token,    66.91 tokens per second)\n0.24.339.097 I slot print_timing: id  0 | task 0 |        eval time =   20895.48 ms /   193 tokens (  108.83 ms per token,     9.19 tokens per second)\n0.24.339.098 I slot print_timing: id  0 | task 0 |       total time =   22330.33 ms /   289 tokens\n0.24.339.104 I slot print_timing: id  0 | task 0 |    graphs reused =        191\n0.24.339.104 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)\n0.24.339.150 I slot      release: id  0 | task 0 | stop processing: n_tokens = 288, truncated = 0\n0.24.341.395 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.364 (> 0.100 thold), f_keep = 0.181\n0.24.359.459 I slot launch_slot_: id  0 | task 194 | processing task, is_child = 0\n0.36.326.320 I slot print_timing: id  0 | task 194 | n_gen =    100, tg =   9.37 t/s, tg_3s =   9.47 t/s\n0.39.343.086 I slot print_timing: id  0 | task 194 | n_gen =    127, tg =   9.28 t/s, tg_3s =   8.95 t/s\n0.42.367.979 I slot print_timing: id  0 | task 194 | n_gen =    155, tg =   9.27 t/s, tg_3s =   9.26 t/s\n0.45.436.173 I slot print_timing: id  0 | task 194 | n_gen =    183, tg =   9.25 t/s, tg_3s =   9.13 t/s\n0.48.472.713 I slot print_timing: id  0 | task 194 | n_gen =    212, tg =   9.29 t/s, tg_3s =   9.55 t/s\n0.51.551.903 I slot print_timing: id  0 | task 194 | n_gen =    240, tg =   9.27 t/s, tg_3s =   9.09 t/s\n0.54.577.214 I slot print_timing: id  0 | task 194 | n_gen =    269, tg =   9.30 t/s, tg_3s =   9.59 t/s\n0.57.654.791 I slot print_timing: id  0 | task 194 | n_gen =    297, tg =   9.28 t/s, tg_3s =   9.10 t/s\n1.00.680.135 I slot print_timing: id  0 | task 194 | n_gen =    324, tg =   9.25 t/s, tg_3s =   8.92 t/s\n1.03.727.331 I slot print_timing: id  0 | task 194 | n_gen =    352, tg =   9.25 t/s, tg_3s =   9.19 t/s\n1.06.775.454 I slot print_timing: id  0 | task 194 | n_gen =    379, tg =   9.22 t/s, tg_3s =   8.86 t/s\n1.09.806.374 I slot print_timing: id  0 | task 194 | n_gen =    407, tg =   9.22 t/s, tg_3s =   9.24 t/s\n1.12.908.833 I slot print_timing: id  0 | task 194 | n_gen =    434, tg =   9.18 t/s, tg_3s =   8.70 t/s\n1.15.971.935 I slot print_timing: id  0 | task 194 | n_gen =    462, tg =   9.18 t/s, tg_3s =   9.14 t/s\n1.18.993.610 I slot print_timing: id  0 | task 194 | n_gen =    489, tg =   9.17 t/s, tg_3s =   8.94 t/s\n1.19.964.911 I slot print_timing: id  0 | task 194 | prompt eval time =    1402.32 ms /    91 tokens (   15.41 ms per token,    64.89 tokens per second)\n1.19.964.926 I slot print_timing: id  0 | task 194 |        eval time =   54203.09 ms /   498 tokens (  109.06 ms per token,     9.17 tokens per second)\n1.19.964.926 I slot print_timing: id  0 | task 194 |       total time =   55605.41 ms /   589 tokens\n1.19.964.927 I slot print_timing: id  0 | task 194 |    graphs reused =        685\n1.19.964.928 I slot print_timing: id  0 | task 194 |   graph reallocs =          0    /     0        (same size) / (changed size)\n1.19.964.958 I slot      release: id  0 | task 194 | stop processing: n_tokens = 640, truncated = 0\n1.19.966.024 I srv    operator(): operator(): cleaning up before exit...\n",
+      "block": 1
+    },
+    {
+      "arm": "candidate",
+      "model": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+      "started_utc": "2026-11-13T12:25:18Z",
+      "argv": [
+        "/tmp/drexel-inference-study/llama-b12283/llama-server",
+        "-m",
+        "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+        "-ngl",
+        "0",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-c",
+        "2048",
+        "-b",
+        "512",
+        "-ub",
+        "512",
+        "-np",
+        "1",
+        "-lm",
+        "mmap",
+        "--offline",
+        "--no-ui",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8094"
+      ],
+      "task_order": [
+        "state-0001",
+        "arithmetic-0001"
+      ],
+      "requests": [
+        {
+          "id": "state-0001",
+          "family": "state",
+          "question_sha256": "1291d488c5a88397ecc616be6230b607dada31f88250410cdc23adac3bed7b4c",
+          "system_prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+          "gold": 53,
+          "content": "Let's go step by step through the sequence of events and track the number of books in each reading room: Oak, Birch, and Maple.\n\n**Initial books:**\n- Oak: 15\n- Birch: 57\n- Maple: 15\n\n---\n\n**Step 1: Birch sends 7 books to Maple**\n\n- Birch gives 7 books to Maple.\n- Birch: 57 - 7 = 50\n- Maple: 15 + 7 = 22\n\nNow:\n- Oak: 15\n- Birch: 50\n- Maple: 22\n\n---\n\n**Step 2: Maple sends half of its then-current books to Oak**\n\nMaple currently has 22 books \u2192 half is 11.\n\n- Maple sends 11 books to Oak.\n- Maple: 22 - 11 = 11\n- Oak: 15 + 11 = 26\n\nNow:\n- Oak: 26\n- Birch: 50\n- Maple: 11\n\n---\n\n**Step 3: Oak sends half of its then-current books to Birch**\n\nOak currently has 26 books \u2192 half is 13.\n\n- Oak sends 13 books to Birch.\n- Oak: 26 - 13 = 13\n- Birch: 50 + 13 = 63\n\nNow:\n- Oak: 13\n- Birch: 63\n- Maple: 11\n\n---\n\n**Step 4: Birch lends out 3 books**\n\nThis means Birch gives away 3 books (not sending to anyone, just lending out \u2014 so books are removed from Birch).\n\n- Birch: 63 - 3 = 60\n\nNow:\n- Oak: 13\n- Birch: 60\n- Maple: 11\n\n---\n\n**Step 5: Birch sends 7 books to Oak**\n\n- Birch gives 7 books to Oak.\n- Birch: 60 - 7 = 53\n- Oak: 13 + 7 = 20\n\nNow:\n- Oak: 20\n- Birch: 53\n- Maple: 11\n\n---\n\n**Final question: How many books are in Birch at the end?**\n\nAnswer: 53\n\nThe final answer is 53.",
+          "content_sha256": "887655e71c8e63e41bea5cb6fbefda1c0b7c809db662e26c7bc1717e4ac8e237",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 498,
+            "prompt_tokens": 143,
+            "total_tokens": 641,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 143,
+            "prompt_ms": 2208.046,
+            "prompt_per_token_ms": 15.440881118881117,
+            "prompt_per_second": 64.7631435214665,
+            "predicted_n": 498,
+            "predicted_ms": 55654.803,
+            "predicted_per_token_ms": 111.98149496981891,
+            "predicted_per_second": 8.930046882027415
+          },
+          "wall_seconds": 57.865660359035246,
+          "cpu_before": {
+            "user_seconds": 2.3,
+            "system_seconds": 0.36,
+            "total_seconds": 2.66
+          },
+          "cpu_after": {
+            "user_seconds": 233.43,
+            "system_seconds": 0.63,
+            "total_seconds": 234.06
+          },
+          "cpu_delta_seconds": 231.4,
+          "status_before": {
+            "VmSize": "5286492 kB",
+            "VmHWM": "4613336 kB",
+            "VmRSS": "4613336 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          },
+          "status_after": {
+            "VmSize": "5421220 kB",
+            "VmHWM": "4638696 kB",
+            "VmRSS": "4638696 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          }
+        },
+        {
+          "id": "arithmetic-0001",
+          "family": "arithmetic",
+          "question_sha256": "9cd6c290450568a77b46109fdef79c2564b63a42b977583d4d9e4ed8f1b97e82",
+          "system_prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+          "gold": 23,
+          "content": "Let's solve the problem step by step.\n\n**Step 1: Find how many pencils the school initially buys.**\n\nIt buys 3 packs of 6 pencils each:\n\n$$\n3 \\times 6 = 18 \\text{ pencils}\n$$\n\n**Step 2: Subtract the pencils used.**\n\nIt uses 16 pencils:\n\n$$\n18 - 16 = 2 \\text{ pencils remaining}\n$$\n\n**Step 3: Buy 7 more packs of 3 pencils each.**\n\n$$\n7 \\times 3 = 21 \\text{ pencils}\n$$\n\n**Step 4: Add the new pencils to the remaining ones.**\n\nThe school now has:\n\n$$\n2 + 21 = 23 \\text{ pencils}\n$$\n\nThese are all unused (since no pencils were used from the new pack yet).\n\n**Final Answer:**\n\nThe final answer is 23.",
+          "content_sha256": "9ad2168f625df439ac66f7ea6229a2d64468e13789ce47129c79643d0bb5144e",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 193,
+            "prompt_tokens": 96,
+            "total_tokens": 289,
+            "prompt_tokens_details": {
+              "cached_tokens": 52
+            }
+          },
+          "timings": {
+            "cache_n": 52,
+            "prompt_n": 44,
+            "prompt_ms": 721.209,
+            "prompt_per_token_ms": 16.391113636363634,
+            "prompt_per_second": 61.008667390451315,
+            "predicted_n": 193,
+            "predicted_ms": 20662.824,
+            "predicted_per_token_ms": 107.618875,
+            "predicted_per_second": 9.292050302514312
+          },
+          "wall_seconds": 21.428289750940166,
+          "cpu_before": {
+            "user_seconds": 233.43,
+            "system_seconds": 0.63,
+            "total_seconds": 234.06
+          },
+          "cpu_after": {
+            "user_seconds": 318.93,
+            "system_seconds": 0.69,
+            "total_seconds": 319.62
+          },
+          "cpu_delta_seconds": 85.56,
+          "status_before": {
+            "VmSize": "5421220 kB",
+            "VmHWM": "4638696 kB",
+            "VmRSS": "4638696 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          },
+          "status_after": {
+            "VmSize": "5578928 kB",
+            "VmHWM": "4731032 kB",
+            "VmRSS": "4731032 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          }
+        }
+      ],
+      "ready_wall_seconds": 2.0087014089804143,
+      "ready_process_cpu": {
+        "user_seconds": 2.3,
+        "system_seconds": 0.36,
+        "total_seconds": 2.66
+      },
+      "ready_status": {
+        "VmSize": "5220956 kB",
+        "VmHWM": "4613296 kB",
+        "VmRSS": "4613296 kB",
+        "VmSwap": "0 kB",
+        "Threads": "15"
+      },
+      "served_models": {
+        "models": [
+          {
+            "name": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+            "model": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+            "aliases": [
+              "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1794572720,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 151936,
+              "n_ctx": 2048,
+              "n_ctx_train": 262144,
+              "n_embd": 2560,
+              "n_params": 4022468096,
+              "size": 2377352704,
+              "ftype": "Q4_K - Small"
+            }
+          }
+        ]
+      },
+      "after_requests_cpu": {
+        "user_seconds": 318.93,
+        "system_seconds": 0.69,
+        "total_seconds": 319.62
+      },
+      "after_requests_status": {
+        "VmSize": "5578928 kB",
+        "VmHWM": "4731032 kB",
+        "VmRSS": "4731032 kB",
+        "VmSwap": "0 kB",
+        "Threads": "15"
+      },
+      "wait_status": 0,
+      "whole_server_wall_seconds": 81.37577275105286,
+      "whole_server_cpu_seconds": 319.738076,
+      "whole_server_user_cpu_seconds": 318.996764,
+      "whole_server_system_cpu_seconds": 0.741312,
+      "whole_server_peak_rss_bytes": 4843896832,
+      "whole_server_major_faults": 0,
+      "whole_server_minor_faults": 227437,
+      "server_log_tail": "0.00.007.978 I srv  llama_server: initializing ...\n0.00.008.005 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)\n0.00.008.095 I srv  init_listene: The UI is disabled\n0.00.008.105 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable\n0.00.008.172 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)\n0.00.010.074 I srv    load_model: loading model '/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf'\n0.00.224.060 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\n0.01.419.362 I cmn          init: llama threadpool init, n_threads = 4\n0.01.744.352 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'\n0.01.749.944 I srv  server_run_i: model loaded\n0.01.749.968 I srv  server_on_li: listening on http://127.0.0.1:8094\n0.02.007.168 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1\n0.02.007.235 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0\n0.14.899.982 I slot print_timing: id  0 | task 0 | n_gen =    100, tg =   9.27 t/s, tg_3s =   9.36 t/s\n0.17.991.201 I slot print_timing: id  0 | task 0 | n_gen =    127, tg =   9.15 t/s, tg_3s =   8.73 t/s\n0.21.094.449 I slot print_timing: id  0 | task 0 | n_gen =    156, tg =   9.18 t/s, tg_3s =   9.35 t/s\n0.24.095.512 I slot print_timing: id  0 | task 0 | n_gen =    183, tg =   9.15 t/s, tg_3s =   9.00 t/s\n0.27.140.452 I slot print_timing: id  0 | task 0 | n_gen =    211, tg =   9.16 t/s, tg_3s =   9.20 t/s\n0.30.208.920 I slot print_timing: id  0 | task 0 | n_gen =    238, tg =   9.12 t/s, tg_3s =   8.80 t/s\n0.33.293.663 I slot print_timing: id  0 | task 0 | n_gen =    265, tg =   9.08 t/s, tg_3s =   8.75 t/s\n0.36.363.212 I slot print_timing: id  0 | task 0 | n_gen =    294, tg =   9.11 t/s, tg_3s =   9.45 t/s\n0.39.405.925 I slot print_timing: id  0 | task 0 | n_gen =    320, tg =   9.06 t/s, tg_3s =   8.55 t/s\n0.42.462.507 I slot print_timing: id  0 | task 0 | n_gen =    347, tg =   9.05 t/s, tg_3s =   8.83 t/s\n0.45.531.855 I slot print_timing: id  0 | task 0 | n_gen =    374, tg =   9.03 t/s, tg_3s =   8.80 t/s\n0.48.585.629 I slot print_timing: id  0 | task 0 | n_gen =    401, tg =   9.02 t/s, tg_3s =   8.84 t/s\n0.51.604.365 I slot print_timing: id  0 | task 0 | n_gen =    427, tg =   8.99 t/s, tg_3s =   8.61 t/s\n0.54.639.449 I slot print_timing: id  0 | task 0 | n_gen =    453, tg =   8.96 t/s, tg_3s =   8.57 t/s\n0.57.725.664 I slot print_timing: id  0 | task 0 | n_gen =    480, tg =   8.95 t/s, tg_3s =   8.75 t/s\n0.59.870.156 I slot print_timing: id  0 | task 0 | prompt eval time =    2208.05 ms /   143 tokens (   15.44 ms per token,    64.76 tokens per second)\n0.59.870.173 I slot print_timing: id  0 | task 0 |        eval time =   55654.80 ms /   498 tokens (  111.98 ms per token,     8.93 tokens per second)\n0.59.870.174 I slot print_timing: id  0 | task 0 |       total time =   57862.85 ms /   641 tokens\n0.59.870.180 I slot print_timing: id  0 | task 0 |    graphs reused =        495\n0.59.870.181 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)\n0.59.870.235 I slot      release: id  0 | task 0 | stop processing: n_tokens = 640, truncated = 0\n0.59.872.490 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.542 (> 0.100 thold), f_keep = 0.081\n0.59.914.576 I slot launch_slot_: id  0 | task 499 | processing task, is_child = 0\n1.11.088.265 I slot print_timing: id  0 | task 499 | n_gen =    100, tg =   9.47 t/s, tg_3s =   9.57 t/s\n1.14.088.625 I slot print_timing: id  0 | task 499 | n_gen =    126, tg =   9.29 t/s, tg_3s =   8.67 t/s\n1.17.116.421 I slot print_timing: id  0 | task 499 | n_gen =    154, tg =   9.28 t/s, tg_3s =   9.25 t/s\n1.20.228.436 I slot print_timing: id  0 | task 499 | n_gen =    183, tg =   9.29 t/s, tg_3s =   9.32 t/s\n1.21.298.655 I slot print_timing: id  0 | task 499 | prompt eval time =     721.21 ms /    44 tokens (   16.39 ms per token,    61.01 tokens per second)\n1.21.298.670 I slot print_timing: id  0 | task 499 |        eval time =   20662.82 ms /   193 tokens (  107.62 ms per token,     9.29 tokens per second)\n1.21.298.670 I slot print_timing: id  0 | task 499 |       total time =   21384.03 ms /   237 tokens\n1.21.298.671 I slot print_timing: id  0 | task 499 |    graphs reused =        685\n1.21.298.672 I slot print_timing: id  0 | task 499 |   graph reallocs =          0    /     0        (same size) / (changed size)\n1.21.298.701 I slot      release: id  0 | task 499 | stop processing: n_tokens = 288, truncated = 0\n1.21.300.022 I srv    operator(): operator(): cleaning up before exit...\n",
+      "block": 2
+    },
+    {
+      "arm": "reference",
+      "model": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+      "started_utc": "2026-11-13T12:26:40Z",
+      "argv": [
+        "/tmp/drexel-inference-study/llama-b12283/llama-server",
+        "-m",
+        "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+        "-ngl",
+        "0",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-c",
+        "2048",
+        "-b",
+        "512",
+        "-ub",
+        "512",
+        "-np",
+        "1",
+        "-lm",
+        "mmap",
+        "--offline",
+        "--no-ui",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8094"
+      ],
+      "task_order": [
+        "state-0001",
+        "arithmetic-0001"
+      ],
+      "requests": [
+        {
+          "id": "state-0001",
+          "family": "state",
+          "question_sha256": "1291d488c5a88397ecc616be6230b607dada31f88250410cdc23adac3bed7b4c",
+          "system_prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+          "gold": 53,
+          "content": "We are given the initial number of books in three reading rooms:\n\n- Oak: 15 books  \n- Birch: 57 books  \n- Maple: 15 books  \n\nWe go step by step through the sequence of events.\n\n---\n\n**Step 1: Birch sends 7 books to Maple**\n\n- Birch gives 7 books to Maple.\n- Birch: 57 - 7 = **50**\n- Maple: 15 + 7 = **22**\n\n---\n\n**Step 2: Maple sends half of its then-current books to Oak**\n\n- Maple currently has 22 books.\n- Half of 22 = 11 books sent to Oak.\n- Maple: 22 - 11 = **11**\n- Oak: 15 + 11 = **26**\n\n---\n\n**Step 3: Oak sends half of its then-current books to Birch**\n\n- Oak currently has 26 books.\n- Half of 26 = 13 books sent to Birch.\n- Oak: 26 - 13 = **13**\n- Birch: 50 + 13 = **63**\n\n---\n\n**Step 4: Birch lends out 3 books**\n\n- Birch lends out 3 books \u2014 this means it **loses 3 books**.\n- Birch: 63 - 3 = **60**\n\n---\n\n**Step 5: Birch sends 7 books to Oak**\n\n- Birch sends 7 books to Oak.\n- Birch: 60 - 7 = **53**\n- Oak: 13 + 7 = 20\n\n---\n\nNow, the question is: **How many books are in Birch at the end?**\n\nAfter all steps, Birch has **53** books.\n\nThe final answer is 53.  \nThe final answer is 53.",
+          "content_sha256": "30bcfe1dbdf2876c7f7e35fce233c1846cc3dceb583277438ede3c027406ca4d",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 386,
+            "prompt_tokens": 143,
+            "total_tokens": 529,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 143,
+            "prompt_ms": 1997.473,
+            "prompt_per_token_ms": 13.968342657342657,
+            "prompt_per_second": 71.59045453931043,
+            "predicted_n": 386,
+            "predicted_ms": 43352.383,
+            "predicted_per_token_ms": 112.60359220779222,
+            "predicted_per_second": 8.880711355590302
+          },
+          "wall_seconds": 45.353050097008236,
+          "cpu_before": {
+            "user_seconds": 2.03,
+            "system_seconds": 0.34,
+            "total_seconds": 2.37
+          },
+          "cpu_after": {
+            "user_seconds": 183.01,
+            "system_seconds": 0.58,
+            "total_seconds": 183.59
+          },
+          "cpu_delta_seconds": 181.22,
+          "status_before": {
+            "VmSize": "5186108 kB",
+            "VmHWM": "4513044 kB",
+            "VmRSS": "4513044 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          },
+          "status_after": {
+            "VmSize": "5320836 kB",
+            "VmHWM": "4538368 kB",
+            "VmRSS": "4538368 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          }
+        },
+        {
+          "id": "arithmetic-0001",
+          "family": "arithmetic",
+          "question_sha256": "9cd6c290450568a77b46109fdef79c2564b63a42b977583d4d9e4ed8f1b97e82",
+          "system_prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+          "gold": 23,
+          "content": "Let's solve the problem step by step.\n\n**Step 1: Calculate the number of pencils in the first purchase.**  \nThe school buys 3 packs of 6 pencils each:  \n$ 3 \\times 6 = 18 $ pencils.\n\n**Step 2: Subtract the pencils used.**  \nIt uses 16 pencils:  \n$ 18 - 16 = 2 $ pencils remain unused after the first purchase.\n\n**Step 3: Calculate the number of pencils in the second purchase.**  \nIt buys 7 packs of 3 pencils each:  \n$ 7 \\times 3 = 21 $ pencils.\n\n**Step 4: Add the unused pencils from the first purchase to the new pencils.**  \nTotal unused pencils = unused from first batch + pencils bought in second batch:  \n$ 2 + 21 = 23 $\n\n**Final Answer:**  \nThe final answer is 23.",
+          "content_sha256": "ba069dde3182339a901d812b4591d9b2b2341a4baf925d36392e12b779baacf0",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 198,
+            "prompt_tokens": 96,
+            "total_tokens": 294,
+            "prompt_tokens_details": {
+              "cached_tokens": 52
+            }
+          },
+          "timings": {
+            "cache_n": 52,
+            "prompt_n": 44,
+            "prompt_ms": 706.933,
+            "prompt_per_token_ms": 16.06665909090909,
+            "prompt_per_second": 62.24069324815789,
+            "predicted_n": 198,
+            "predicted_ms": 22269.931,
+            "predicted_per_token_ms": 113.04533502538071,
+            "predicted_per_second": 8.846008548477316
+          },
+          "wall_seconds": 23.011850166949444,
+          "cpu_before": {
+            "user_seconds": 183.01,
+            "system_seconds": 0.58,
+            "total_seconds": 183.59
+          },
+          "cpu_after": {
+            "user_seconds": 274.68,
+            "system_seconds": 0.76,
+            "total_seconds": 275.44
+          },
+          "cpu_delta_seconds": 91.85,
+          "status_before": {
+            "VmSize": "5320836 kB",
+            "VmHWM": "4538368 kB",
+            "VmRSS": "4538368 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          },
+          "status_after": {
+            "VmSize": "5462412 kB",
+            "VmHWM": "4614568 kB",
+            "VmRSS": "4614568 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          }
+        }
+      ],
+      "ready_wall_seconds": 2.0069572860375047,
+      "ready_process_cpu": {
+        "user_seconds": 2.03,
+        "system_seconds": 0.34,
+        "total_seconds": 2.37
+      },
+      "ready_status": {
+        "VmSize": "5120572 kB",
+        "VmHWM": "4513004 kB",
+        "VmRSS": "4513004 kB",
+        "VmSwap": "0 kB",
+        "Threads": "15"
+      },
+      "served_models": {
+        "models": [
+          {
+            "name": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+            "model": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+            "aliases": [
+              "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1794572802,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 151936,
+              "n_ctx": 2048,
+              "n_ctx_train": 262144,
+              "n_embd": 2560,
+              "n_params": 4022468096,
+              "size": 2491323904,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "after_requests_cpu": {
+        "user_seconds": 274.68,
+        "system_seconds": 0.76,
+        "total_seconds": 275.44
+      },
+      "after_requests_status": {
+        "VmSize": "5462412 kB",
+        "VmHWM": "4614568 kB",
+        "VmRSS": "4614568 kB",
+        "VmSwap": "0 kB",
+        "Threads": "15"
+      },
+      "wait_status": 0,
+      "whole_server_wall_seconds": 70.45132749399636,
+      "whole_server_cpu_seconds": 275.56187,
+      "whole_server_user_cpu_seconds": 274.74957,
+      "whole_server_system_cpu_seconds": 0.8122999999999999,
+      "whole_server_peak_rss_bytes": 4724367360,
+      "whole_server_major_faults": 0,
+      "whole_server_minor_faults": 184381,
+      "server_log_tail": "0.00.008.137 I srv  llama_server: initializing ...\n0.00.008.162 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)\n0.00.008.249 I srv  init_listene: The UI is disabled\n0.00.008.257 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable\n0.00.008.322 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)\n0.00.009.903 I srv    load_model: loading model '/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf'\n0.00.225.857 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\n0.01.268.793 I cmn          init: llama threadpool init, n_threads = 4\n0.01.553.150 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'\n0.01.558.269 I srv  server_run_i: model loaded\n0.01.558.293 I srv  server_on_li: listening on http://127.0.0.1:8094\n0.02.005.919 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1\n0.02.006.066 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0\n0.15.006.350 I slot print_timing: id  0 | task 0 | n_gen =    100, tg =   9.00 t/s, tg_3s =   9.09 t/s\n0.18.021.191 I slot print_timing: id  0 | task 0 | n_gen =    128, tg =   9.06 t/s, tg_3s =   9.29 t/s\n0.21.031.160 I slot print_timing: id  0 | task 0 | n_gen =    155, tg =   9.04 t/s, tg_3s =   8.97 t/s\n0.24.129.811 I slot print_timing: id  0 | task 0 | n_gen =    183, tg =   9.04 t/s, tg_3s =   9.04 t/s\n0.27.173.349 I slot print_timing: id  0 | task 0 | n_gen =    210, tg =   9.02 t/s, tg_3s =   8.87 t/s\n0.30.216.097 I slot print_timing: id  0 | task 0 | n_gen =    236, tg =   8.97 t/s, tg_3s =   8.54 t/s\n0.33.329.332 I slot print_timing: id  0 | task 0 | n_gen =    264, tg =   8.97 t/s, tg_3s =   8.99 t/s\n0.36.344.457 I slot print_timing: id  0 | task 0 | n_gen =    290, tg =   8.94 t/s, tg_3s =   8.62 t/s\n0.39.438.275 I slot print_timing: id  0 | task 0 | n_gen =    318, tg =   8.95 t/s, tg_3s =   9.05 t/s\n0.42.487.616 I slot print_timing: id  0 | task 0 | n_gen =    345, tg =   8.94 t/s, tg_3s =   8.85 t/s\n0.45.511.522 I slot print_timing: id  0 | task 0 | n_gen =    371, tg =   8.91 t/s, tg_3s =   8.60 t/s\n0.47.355.982 I slot print_timing: id  0 | task 0 | prompt eval time =    1997.47 ms /   143 tokens (   13.97 ms per token,    71.59 tokens per second)\n0.47.356.001 I slot print_timing: id  0 | task 0 |        eval time =   43352.38 ms /   386 tokens (  112.60 ms per token,     8.88 tokens per second)\n0.47.356.002 I slot print_timing: id  0 | task 0 |       total time =   45349.86 ms /   529 tokens\n0.47.356.011 I slot print_timing: id  0 | task 0 |    graphs reused =        383\n0.47.356.011 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)\n0.47.356.087 I slot      release: id  0 | task 0 | stop processing: n_tokens = 528, truncated = 0\n0.47.359.180 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.542 (> 0.100 thold), f_keep = 0.098\n0.47.391.743 I slot launch_slot_: id  0 | task 387 | processing task, is_child = 0\n0.59.368.836 I slot print_timing: id  0 | task 387 | n_gen =    100, tg =   8.78 t/s, tg_3s =   8.87 t/s\n1.02.396.035 I slot print_timing: id  0 | task 387 | n_gen =    127, tg =   8.81 t/s, tg_3s =   8.92 t/s\n1.05.414.692 I slot print_timing: id  0 | task 387 | n_gen =    154, tg =   8.84 t/s, tg_3s =   8.94 t/s\n1.08.460.090 I slot print_timing: id  0 | task 387 | n_gen =    181, tg =   8.84 t/s, tg_3s =   8.87 t/s\n1.10.368.659 I slot print_timing: id  0 | task 387 | prompt eval time =     706.93 ms /    44 tokens (   16.07 ms per token,    62.24 tokens per second)\n1.10.368.696 I slot print_timing: id  0 | task 387 |        eval time =   22269.93 ms /   198 tokens (  113.05 ms per token,     8.85 tokens per second)\n1.10.368.697 I slot print_timing: id  0 | task 387 |       total time =   22976.86 ms /   242 tokens\n1.10.368.698 I slot print_timing: id  0 | task 387 |    graphs reused =        578\n1.10.368.699 I slot print_timing: id  0 | task 387 |   graph reallocs =          0    /     0        (same size) / (changed size)\n1.10.368.763 I slot      release: id  0 | task 387 | stop processing: n_tokens = 293, truncated = 0\n1.10.369.715 I srv    operator(): operator(): cleaning up before exit...\n",
+      "block": 2
+    },
+    {
+      "arm": "reference",
+      "model": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+      "started_utc": "2026-11-13T12:27:50Z",
+      "argv": [
+        "/tmp/drexel-inference-study/llama-b12283/llama-server",
+        "-m",
+        "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+        "-ngl",
+        "0",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-c",
+        "2048",
+        "-b",
+        "512",
+        "-ub",
+        "512",
+        "-np",
+        "1",
+        "-lm",
+        "mmap",
+        "--offline",
+        "--no-ui",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8094"
+      ],
+      "task_order": [
+        "arithmetic-0001",
+        "state-0001"
+      ],
+      "requests": [
+        {
+          "id": "arithmetic-0001",
+          "family": "arithmetic",
+          "question_sha256": "9cd6c290450568a77b46109fdef79c2564b63a42b977583d4d9e4ed8f1b97e82",
+          "system_prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+          "gold": 23,
+          "content": "Let's solve the problem step by step.\n\n**Step 1: Calculate the number of pencils in the first purchase.**  \nThe school buys 3 packs of 6 pencils each:  \n$ 3 \\times 6 = 18 $ pencils.\n\n**Step 2: Subtract the pencils used.**  \nIt uses 16 pencils:  \n$ 18 - 16 = 2 $ pencils remain unused after the first purchase.\n\n**Step 3: Calculate the number of pencils in the second purchase.**  \nIt buys 7 packs of 3 pencils each:  \n$ 7 \\times 3 = 21 $ pencils.\n\n**Step 4: Add the unused pencils from the first purchase to the new pencils.**  \nAll 21 pencils from the second purchase are unused (since no pencils are mentioned as being used from this batch).  \nSo total unused pencils = unused from first batch + new pencils:  \n$ 2 + 21 = 23 $\n\nThe final answer is 23.  \nThe final answer is 23.",
+          "content_sha256": "aee3b1f302a72976196ad3b4723970dfb57eadefe0fe80ece31b54d4ea5deeaa",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 225,
+            "prompt_tokens": 96,
+            "total_tokens": 321,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 96,
+            "prompt_ms": 1388.495,
+            "prompt_per_token_ms": 14.463489583333333,
+            "prompt_per_second": 69.13960799282677,
+            "predicted_n": 225,
+            "predicted_ms": 24662.418,
+            "predicted_per_token_ms": 110.10008035714286,
+            "predicted_per_second": 9.082645505400158
+          },
+          "wall_seconds": 26.05470077705104,
+          "cpu_before": {
+            "user_seconds": 2.2,
+            "system_seconds": 0.33,
+            "total_seconds": 2.53
+          },
+          "cpu_after": {
+            "user_seconds": 106.44,
+            "system_seconds": 0.42,
+            "total_seconds": 106.86
+          },
+          "cpu_delta_seconds": 104.33,
+          "status_before": {
+            "VmSize": "5186112 kB",
+            "VmHWM": "4513212 kB",
+            "VmRSS": "4513212 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          },
+          "status_after": {
+            "VmSize": "5320332 kB",
+            "VmHWM": "4530936 kB",
+            "VmRSS": "4530936 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          }
+        },
+        {
+          "id": "state-0001",
+          "family": "state",
+          "question_sha256": "1291d488c5a88397ecc616be6230b607dada31f88250410cdc23adac3bed7b4c",
+          "system_prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+          "gold": 53,
+          "content": "We are given the initial number of books in three reading rooms:\n\n- Oak: 15 books  \n- Birch: 57 books  \n- Maple: 15 books  \n\nWe go step by step through the sequence of events.\n\n---\n\n**Step 1: Birch sends 7 books to Maple**\n\n- Birch gives 7 books to Maple.\n- Birch: 57 - 7 = **50**\n- Maple: 15 + 7 = **22**\n\n---\n\n**Step 2: Maple sends half of its then-current books to Oak**\n\n- Maple currently has 22 books.\n- Half of 22 = 11 books sent to Oak.\n- Maple: 22 - 11 = **11**\n- Oak: 15 + 11 = **26**\n\n---\n\n**Step 3: Oak sends half of its then-current books to Birch**\n\n- Oak currently has 26 books.\n- Half of 26 = 13 books sent to Birch.\n- Oak: 26 - 13 = **13**\n- Birch: 50 + 13 = **63**\n\n---\n\n**Step 4: Birch lends out 3 books**\n\n- Birch lends out 3 books \u2014 this means it **loses 3 books**.\n- Birch: 63 - 3 = **60**\n\n---\n\n**Step 5: Birch sends 7 books to Oak**\n\n- Birch sends 7 books to Oak.\n- Birch: 60 - 7 = **53**\n- Oak: 13 + 7 = 20\n\n---\n\nNow, the question is: **How many books are in Birch at the end?**\n\nAfter all steps, Birch has **53** books.\n\nThe final answer is 53.  \nThe final answer is 53.",
+          "content_sha256": "30bcfe1dbdf2876c7f7e35fce233c1846cc3dceb583277438ede3c027406ca4d",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 386,
+            "prompt_tokens": 143,
+            "total_tokens": 529,
+            "prompt_tokens_details": {
+              "cached_tokens": 52
+            }
+          },
+          "timings": {
+            "cache_n": 52,
+            "prompt_n": 91,
+            "prompt_ms": 1225.735,
+            "prompt_per_token_ms": 13.469615384615384,
+            "prompt_per_second": 74.24116958396392,
+            "predicted_n": 386,
+            "predicted_ms": 43346.514,
+            "predicted_per_token_ms": 112.58834805194806,
+            "predicted_per_second": 8.881913779733244
+          },
+          "wall_seconds": 44.59489564597607,
+          "cpu_before": {
+            "user_seconds": 106.44,
+            "system_seconds": 0.42,
+            "total_seconds": 106.86
+          },
+          "cpu_after": {
+            "user_seconds": 284.46,
+            "system_seconds": 0.6,
+            "total_seconds": 285.06
+          },
+          "cpu_delta_seconds": 178.2,
+          "status_before": {
+            "VmSize": "5320332 kB",
+            "VmHWM": "4530936 kB",
+            "VmRSS": "4530936 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          },
+          "status_after": {
+            "VmSize": "5431956 kB",
+            "VmHWM": "4577244 kB",
+            "VmRSS": "4577244 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          }
+        }
+      ],
+      "ready_wall_seconds": 2.0074597909115255,
+      "ready_process_cpu": {
+        "user_seconds": 2.2,
+        "system_seconds": 0.33,
+        "total_seconds": 2.53
+      },
+      "ready_status": {
+        "VmSize": "5120576 kB",
+        "VmHWM": "4513172 kB",
+        "VmRSS": "4513172 kB",
+        "VmSwap": "0 kB",
+        "Threads": "15"
+      },
+      "served_models": {
+        "models": [
+          {
+            "name": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+            "model": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf",
+            "aliases": [
+              "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1794572872,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 151936,
+              "n_ctx": 2048,
+              "n_ctx_train": 262144,
+              "n_embd": 2560,
+              "n_params": 4022468096,
+              "size": 2491323904,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "after_requests_cpu": {
+        "user_seconds": 284.46,
+        "system_seconds": 0.6,
+        "total_seconds": 285.06
+      },
+      "after_requests_status": {
+        "VmSize": "5431956 kB",
+        "VmHWM": "4577244 kB",
+        "VmRSS": "4577244 kB",
+        "VmSwap": "0 kB",
+        "Threads": "15"
+      },
+      "wait_status": 0,
+      "whole_server_wall_seconds": 72.73684473591857,
+      "whole_server_cpu_seconds": 285.183741,
+      "whole_server_user_cpu_seconds": 284.522797,
+      "whole_server_system_cpu_seconds": 0.660944,
+      "whole_server_peak_rss_bytes": 4686557184,
+      "whole_server_major_faults": 0,
+      "whole_server_minor_faults": 173495,
+      "server_log_tail": "0.00.008.046 I srv  llama_server: initializing ...\n0.00.008.075 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)\n0.00.008.186 I srv  init_listene: The UI is disabled\n0.00.008.187 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable\n0.00.008.273 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)\n0.00.010.069 I srv    load_model: loading model '/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_m.gguf'\n0.00.224.344 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\n0.01.261.305 I cmn          init: llama threadpool init, n_threads = 4\n0.01.588.704 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'\n0.01.594.307 I srv  server_run_i: model loaded\n0.01.594.346 I srv  server_on_li: listening on http://127.0.0.1:8094\n0.02.007.498 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1\n0.02.007.608 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0\n0.14.425.487 I slot print_timing: id  0 | task 0 | n_gen =    100, tg =   8.98 t/s, tg_3s =   9.07 t/s\n0.17.485.497 I slot print_timing: id  0 | task 0 | n_gen =    128, tg =   9.01 t/s, tg_3s =   9.15 t/s\n0.20.560.911 I slot print_timing: id  0 | task 0 | n_gen =    157, tg =   9.09 t/s, tg_3s =   9.43 t/s\n0.23.626.495 I slot print_timing: id  0 | task 0 | n_gen =    185, tg =   9.10 t/s, tg_3s =   9.13 t/s\n0.26.712.116 I slot print_timing: id  0 | task 0 | n_gen =    213, tg =   9.09 t/s, tg_3s =   9.07 t/s\n0.28.058.565 I slot print_timing: id  0 | task 0 | prompt eval time =    1388.49 ms /    96 tokens (   14.46 ms per token,    69.14 tokens per second)\n0.28.058.582 I slot print_timing: id  0 | task 0 |        eval time =   24662.42 ms /   225 tokens (  110.10 ms per token,     9.08 tokens per second)\n0.28.058.583 I slot print_timing: id  0 | task 0 |       total time =   26050.91 ms /   321 tokens\n0.28.058.590 I slot print_timing: id  0 | task 0 |    graphs reused =        223\n0.28.058.590 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)\n0.28.058.637 I slot      release: id  0 | task 0 | stop processing: n_tokens = 320, truncated = 0\n0.28.060.988 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.364 (> 0.100 thold), f_keep = 0.162\n0.28.081.518 I slot launch_slot_: id  0 | task 226 | processing task, is_child = 0\n0.39.964.322 I slot print_timing: id  0 | task 226 | n_gen =    100, tg =   9.29 t/s, tg_3s =   9.38 t/s\n0.43.046.984 I slot print_timing: id  0 | task 226 | n_gen =    129, tg =   9.32 t/s, tg_3s =   9.41 t/s\n0.46.156.390 I slot print_timing: id  0 | task 226 | n_gen =    157, tg =   9.26 t/s, tg_3s =   9.00 t/s\n0.49.253.383 I slot print_timing: id  0 | task 226 | n_gen =    184, tg =   9.17 t/s, tg_3s =   8.72 t/s\n0.52.262.927 I slot print_timing: id  0 | task 226 | n_gen =    210, tg =   9.10 t/s, tg_3s =   8.64 t/s\n0.55.341.813 I slot print_timing: id  0 | task 226 | n_gen =    236, tg =   9.03 t/s, tg_3s =   8.44 t/s\n0.58.381.258 I slot print_timing: id  0 | task 226 | n_gen =    263, tg =   9.01 t/s, tg_3s =   8.88 t/s\n1.01.460.115 I slot print_timing: id  0 | task 226 | n_gen =    289, tg =   8.96 t/s, tg_3s =   8.44 t/s\n1.04.543.094 I slot print_timing: id  0 | task 226 | n_gen =    316, tg =   8.94 t/s, tg_3s =   8.76 t/s\n1.07.615.218 I slot print_timing: id  0 | task 226 | n_gen =    343, tg =   8.93 t/s, tg_3s =   8.79 t/s\n1.10.671.159 I slot print_timing: id  0 | task 226 | n_gen =    369, tg =   8.90 t/s, tg_3s =   8.51 t/s\n1.12.653.809 I slot print_timing: id  0 | task 226 | prompt eval time =    1225.73 ms /    91 tokens (   13.47 ms per token,    74.24 tokens per second)\n1.12.653.826 I slot print_timing: id  0 | task 226 |        eval time =   43346.51 ms /   386 tokens (  112.59 ms per token,     8.88 tokens per second)\n1.12.653.827 I slot print_timing: id  0 | task 226 |       total time =   44572.25 ms /   477 tokens\n1.12.653.828 I slot print_timing: id  0 | task 226 |    graphs reused =        605\n1.12.653.828 I slot print_timing: id  0 | task 226 |   graph reallocs =          0    /     0        (same size) / (changed size)\n1.12.653.860 I slot      release: id  0 | task 226 | stop processing: n_tokens = 528, truncated = 0\n1.12.655.039 I srv    operator(): operator(): cleaning up before exit...\n",
+      "block": 3
+    },
+    {
+      "arm": "candidate",
+      "model": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+      "started_utc": "2026-11-13T12:29:03Z",
+      "argv": [
+        "/tmp/drexel-inference-study/llama-b12283/llama-server",
+        "-m",
+        "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+        "-ngl",
+        "0",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-c",
+        "2048",
+        "-b",
+        "512",
+        "-ub",
+        "512",
+        "-np",
+        "1",
+        "-lm",
+        "mmap",
+        "--offline",
+        "--no-ui",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8094"
+      ],
+      "task_order": [
+        "arithmetic-0001",
+        "state-0001"
+      ],
+      "requests": [
+        {
+          "id": "arithmetic-0001",
+          "family": "arithmetic",
+          "question_sha256": "9cd6c290450568a77b46109fdef79c2564b63a42b977583d4d9e4ed8f1b97e82",
+          "system_prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+          "gold": 23,
+          "content": "Let's solve the problem step by step.\n\n**Step 1: Find how many pencils the school initially buys.**\n\nIt buys 3 packs of 6 pencils each:\n\n$$\n3 \\times 6 = 18 \\text{ pencils}\n$$\n\n**Step 2: Subtract the pencils used.**\n\nIt uses 16 pencils:\n\n$$\n18 - 16 = 2 \\text{ pencils remaining}\n$$\n\n**Step 3: Buy 7 more packs of 3 pencils each.**\n\n$$\n7 \\times 3 = 21 \\text{ pencils}\n$$\n\n**Step 4: Add the new pencils to the remaining ones.**\n\nThe school now has:\n\n$$\n2 + 21 = 23 \\text{ pencils}\n$$\n\nThese are all unused (since no pencils were used from the new pack yet).\n\n**Final Answer:**\n\nThe final answer is 23.",
+          "content_sha256": "9ad2168f625df439ac66f7ea6229a2d64468e13789ce47129c79643d0bb5144e",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 193,
+            "prompt_tokens": 96,
+            "total_tokens": 289,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 96,
+            "prompt_ms": 1434.121,
+            "prompt_per_token_ms": 14.938760416666668,
+            "prompt_per_second": 66.93995834382174,
+            "predicted_n": 193,
+            "predicted_ms": 20723.395,
+            "predicted_per_token_ms": 107.93434895833333,
+            "predicted_per_second": 9.264891201465783
+          },
+          "wall_seconds": 22.159596664947458,
+          "cpu_before": {
+            "user_seconds": 2.1,
+            "system_seconds": 0.4,
+            "total_seconds": 2.5
+          },
+          "cpu_after": {
+            "user_seconds": 90.55,
+            "system_seconds": 0.5,
+            "total_seconds": 91.05
+          },
+          "cpu_delta_seconds": 88.55,
+          "status_before": {
+            "VmSize": "5286492 kB",
+            "VmHWM": "4613224 kB",
+            "VmRSS": "4613224 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          },
+          "status_after": {
+            "VmSize": "5420708 kB",
+            "VmHWM": "4630948 kB",
+            "VmRSS": "4630948 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          }
+        },
+        {
+          "id": "state-0001",
+          "family": "state",
+          "question_sha256": "1291d488c5a88397ecc616be6230b607dada31f88250410cdc23adac3bed7b4c",
+          "system_prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+          "gold": 53,
+          "content": "Let's go step by step through the sequence of events and track the number of books in each reading room: Oak, Birch, and Maple.\n\n**Initial books:**\n- Oak: 15\n- Birch: 57\n- Maple: 15\n\n---\n\n**Step 1: Birch sends 7 books to Maple**\n\n- Birch gives 7 books to Maple.\n- Birch: 57 - 7 = 50\n- Maple: 15 + 7 = 22\n\nNow:\n- Oak: 15\n- Birch: 50\n- Maple: 22\n\n---\n\n**Step 2: Maple sends half of its then-current books to Oak**\n\nMaple currently has 22 books \u2192 half is 11.\n\n- Maple sends 11 books to Oak.\n- Maple: 22 - 11 = 11\n- Oak: 15 + 11 = 26\n\nNow:\n- Oak: 26\n- Birch: 50\n- Maple: 11\n\n---\n\n**Step 3: Oak sends half of its then-current books to Birch**\n\nOak currently has 26 books \u2192 half is 13.\n\n- Oak sends 13 books to Birch.\n- Oak: 26 - 13 = 13\n- Birch: 50 + 13 = 63\n\nNow:\n- Oak: 13\n- Birch: 63\n- Maple: 11\n\n---\n\n**Step 4: Birch lends out 3 books**\n\nThis means Birch gives away 3 books (not sending to anyone, just lending out \u2014 so books are removed from Birch).\n\n- Birch: 63 - 3 = 60\n\nNow:\n- Oak: 13\n- Birch: 60\n- Maple: 11\n\n---\n\n**Step 5: Birch sends 7 books to Oak**\n\n- Birch gives 7 books to Oak.\n- Birch: 60 - 7 = 53\n- Oak: 13 + 7 = 20\n\nNow:\n- Oak: 20\n- Birch: 53\n- Maple: 11\n\n---\n\n**Final question: How many books are in Birch at the end?**\n\nAnswer: 53\n\nThe final answer is 53.",
+          "content_sha256": "887655e71c8e63e41bea5cb6fbefda1c0b7c809db662e26c7bc1717e4ac8e237",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 498,
+            "prompt_tokens": 143,
+            "total_tokens": 641,
+            "prompt_tokens_details": {
+              "cached_tokens": 52
+            }
+          },
+          "timings": {
+            "cache_n": 52,
+            "prompt_n": 91,
+            "prompt_ms": 1410.574,
+            "prompt_per_token_ms": 15.500813186813188,
+            "prompt_per_second": 64.51274445722096,
+            "predicted_n": 498,
+            "predicted_ms": 55090.446,
+            "predicted_per_token_ms": 110.84596780684106,
+            "predicted_per_second": 9.021527979642785
+          },
+          "wall_seconds": 56.52004534704611,
+          "cpu_before": {
+            "user_seconds": 90.55,
+            "system_seconds": 0.5,
+            "total_seconds": 91.05
+          },
+          "cpu_after": {
+            "user_seconds": 316.07,
+            "system_seconds": 0.83,
+            "total_seconds": 316.9
+          },
+          "cpu_delta_seconds": 225.85,
+          "status_before": {
+            "VmSize": "5420708 kB",
+            "VmHWM": "4630948 kB",
+            "VmRSS": "4630948 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          },
+          "status_after": {
+            "VmSize": "5527724 kB",
+            "VmHWM": "4672652 kB",
+            "VmRSS": "4672652 kB",
+            "VmSwap": "0 kB",
+            "Threads": "15"
+          }
+        }
+      ],
+      "ready_wall_seconds": 2.008547245990485,
+      "ready_process_cpu": {
+        "user_seconds": 2.1,
+        "system_seconds": 0.4,
+        "total_seconds": 2.5
+      },
+      "ready_status": {
+        "VmSize": "5220956 kB",
+        "VmHWM": "4613184 kB",
+        "VmRSS": "4613184 kB",
+        "VmSwap": "0 kB",
+        "Threads": "15"
+      },
+      "served_models": {
+        "models": [
+          {
+            "name": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+            "model": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf",
+            "aliases": [
+              "/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1794572945,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 151936,
+              "n_ctx": 2048,
+              "n_ctx_train": 262144,
+              "n_embd": 2560,
+              "n_params": 4022468096,
+              "size": 2377352704,
+              "ftype": "Q4_K - Small"
+            }
+          }
+        ]
+      },
+      "after_requests_cpu": {
+        "user_seconds": 316.07,
+        "system_seconds": 0.83,
+        "total_seconds": 316.9
+      },
+      "after_requests_status": {
+        "VmSize": "5527724 kB",
+        "VmHWM": "4672652 kB",
+        "VmRSS": "4672652 kB",
+        "VmSwap": "0 kB",
+        "Threads": "15"
+      },
+      "wait_status": 0,
+      "whole_server_wall_seconds": 80.76916979893576,
+      "whole_server_cpu_seconds": 317.033264,
+      "whole_server_user_cpu_seconds": 316.148222,
+      "whole_server_system_cpu_seconds": 0.885042,
+      "whole_server_peak_rss_bytes": 4784078848,
+      "whole_server_major_faults": 0,
+      "whole_server_minor_faults": 211496,
+      "server_log_tail": "0.00.008.651 I srv  llama_server: initializing ...\n0.00.008.680 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)\n0.00.008.781 I srv  init_listene: The UI is disabled\n0.00.008.781 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable\n0.00.008.860 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)\n0.00.011.342 I srv    load_model: loading model '/home/kali/Desktop/MalDev/.research-cache/qwen3-4b-instruct-2507-bartowski-q4_k_s.gguf'\n0.00.241.600 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\n0.01.415.274 I cmn          init: llama threadpool init, n_threads = 4\n0.01.694.288 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'\n0.01.699.568 I srv  server_run_i: model loaded\n0.01.699.597 I srv  server_on_li: listening on http://127.0.0.1:8094\n0.02.006.325 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1\n0.02.006.395 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0\n0.14.105.333 I slot print_timing: id  0 | task 0 | n_gen =    100, tg =   9.28 t/s, tg_3s =   9.38 t/s\n0.17.129.363 I slot print_timing: id  0 | task 0 | n_gen =    128, tg =   9.28 t/s, tg_3s =   9.26 t/s\n0.20.142.508 I slot print_timing: id  0 | task 0 | n_gen =    156, tg =   9.28 t/s, tg_3s =   9.29 t/s\n0.23.259.038 I slot print_timing: id  0 | task 0 | n_gen =    185, tg =   9.28 t/s, tg_3s =   9.31 t/s\n0.24.163.946 I slot print_timing: id  0 | task 0 | prompt eval time =    1434.12 ms /    96 tokens (   14.94 ms per token,    66.94 tokens per second)\n0.24.163.962 I slot print_timing: id  0 | task 0 |        eval time =   20723.40 ms /   193 tokens (  107.93 ms per token,     9.26 tokens per second)\n0.24.163.963 I slot print_timing: id  0 | task 0 |       total time =   22157.52 ms /   289 tokens\n0.24.163.968 I slot print_timing: id  0 | task 0 |    graphs reused =        191\n0.24.163.969 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)\n0.24.164.014 I slot      release: id  0 | task 0 | stop processing: n_tokens = 288, truncated = 0\n0.24.166.285 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.364 (> 0.100 thold), f_keep = 0.181\n0.24.183.151 I slot launch_slot_: id  0 | task 194 | processing task, is_child = 0\n0.36.448.500 I slot print_timing: id  0 | task 194 | n_gen =    100, tg =   9.12 t/s, tg_3s =   9.21 t/s\n0.39.459.219 I slot print_timing: id  0 | task 194 | n_gen =    128, tg =   9.16 t/s, tg_3s =   9.30 t/s\n0.42.490.448 I slot print_timing: id  0 | task 194 | n_gen =    156, tg =   9.17 t/s, tg_3s =   9.24 t/s\n0.45.537.634 I slot print_timing: id  0 | task 194 | n_gen =    184, tg =   9.18 t/s, tg_3s =   9.19 t/s\n0.48.541.445 I slot print_timing: id  0 | task 194 | n_gen =    212, tg =   9.19 t/s, tg_3s =   9.32 t/s\n0.51.634.694 I slot print_timing: id  0 | task 194 | n_gen =    240, tg =   9.18 t/s, tg_3s =   9.05 t/s\n0.54.706.664 I slot print_timing: id  0 | task 194 | n_gen =    269, tg =   9.21 t/s, tg_3s =   9.44 t/s\n0.57.775.860 I slot print_timing: id  0 | task 194 | n_gen =    297, tg =   9.20 t/s, tg_3s =   9.12 t/s\n1.00.921.462 I slot print_timing: id  0 | task 194 | n_gen =    325, tg =   9.17 t/s, tg_3s =   8.90 t/s\n1.03.974.476 I slot print_timing: id  0 | task 194 | n_gen =    353, tg =   9.17 t/s, tg_3s =   9.17 t/s\n1.07.058.776 I slot print_timing: id  0 | task 194 | n_gen =    380, tg =   9.14 t/s, tg_3s =   8.75 t/s\n1.10.105.206 I slot print_timing: id  0 | task 194 | n_gen =    408, tg =   9.14 t/s, tg_3s =   9.19 t/s\n1.13.146.458 I slot print_timing: id  0 | task 194 | n_gen =    434, tg =   9.11 t/s, tg_3s =   8.55 t/s\n1.16.262.912 I slot print_timing: id  0 | task 194 | n_gen =    461, tg =   9.08 t/s, tg_3s =   8.66 t/s\n1.19.314.572 I slot print_timing: id  0 | task 194 | n_gen =    486, tg =   9.03 t/s, tg_3s =   8.19 t/s\n1.20.684.219 I slot print_timing: id  0 | task 194 | prompt eval time =    1410.57 ms /    91 tokens (   15.50 ms per token,    64.51 tokens per second)\n1.20.684.233 I slot print_timing: id  0 | task 194 |        eval time =   55090.45 ms /   498 tokens (  110.85 ms per token,     9.02 tokens per second)\n1.20.684.233 I slot print_timing: id  0 | task 194 |       total time =   56501.02 ms /   589 tokens\n1.20.684.235 I slot print_timing: id  0 | task 194 |    graphs reused =        685\n1.20.684.235 I slot print_timing: id  0 | task 194 |   graph reallocs =          0    /     0        (same size) / (changed size)\n1.20.684.266 I slot      release: id  0 | task 194 | stop processing: n_tokens = 640, truncated = 0\n1.20.685.331 I srv    operator(): operator(): cleaning up before exit...\n",
+      "block": 3
+    }
+  ]
+}

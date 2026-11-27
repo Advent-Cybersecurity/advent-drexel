@@ -1,0 +1,74 @@
+{
+  "cells": {
+    "7": {
+      "conditional_branch_counts": {
+        "high": 1283,
+        "low": 1291
+      },
+      "depth_counts": {
+        "7": 2574
+      },
+      "draws": 10000,
+      "minimum_depth": 7,
+      "operator_topology": {
+        "accepted": 2574,
+        "all_pairs": 3311451,
+        "empirical_pair_collision_rate": 2.204471695338388e-05,
+        "matching_pairs": 73,
+        "maximum_frequency": 4,
+        "unique": 2506
+      },
+      "rejected": {
+        "insufficient_depth": 6858,
+        "numerically_insensitive": 568
+      },
+      "topology_with_divisor_and_realized_branch": {
+        "accepted": 2574,
+        "all_pairs": 3311451,
+        "empirical_pair_collision_rate": 3.0198242401895725e-07,
+        "matching_pairs": 1,
+        "maximum_frequency": 2,
+        "unique": 2573
+      }
+    },
+    "9": {
+      "conditional_branch_counts": {
+        "high": 1731,
+        "low": 1583
+      },
+      "depth_counts": {
+        "8": 1748,
+        "9": 1566
+      },
+      "draws": 10000,
+      "minimum_depth": 8,
+      "operator_topology": {
+        "accepted": 3314,
+        "all_pairs": 5489641,
+        "empirical_pair_collision_rate": 1.8216127429826468e-07,
+        "matching_pairs": 1,
+        "maximum_frequency": 2,
+        "unique": 3313
+      },
+      "rejected": {
+        "insufficient_depth": 4917,
+        "irrelevant_event": 660,
+        "numerically_insensitive": 1109
+      },
+      "topology_with_divisor_and_realized_branch": {
+        "accepted": 3314,
+        "all_pairs": 5489641,
+        "empirical_pair_collision_rate": 0.0,
+        "matching_pairs": 0,
+        "maximum_frequency": 1,
+        "unique": 3314
+      }
+    }
+  },
+  "draws_per_length": 10000,
+  "generator_script_sha256": "97ee41f34a26bf17faa87c7dc689e69688c5939d600d329f6b48624557ea1d6a",
+  "kind": "public_reference_only_generator_support_audit",
+  "note": "Independent seeded draws before V4 uniqueness and V3-exclusion filtering. Syntactic signatures do not prove functional nonequivalence.",
+  "seed": 83793,
+  "v4_filter_script_sha256": "02e25264b55bd15c32be059de87b753a72ac72a00fe84cbce1a7fe3b9fafbab7"
+}

@@ -1,0 +1,47 @@
+{
+  "arithmetic_four_event_exact_signature_support": 216,
+  "arithmetic_four_event_support_derivation": "12 valid permutations of reserve/release/conditional/consume, times 3 reserve divisors, times 3 release divisors, times 2 conditional branches",
+  "caveat": "IDs encode selected event features, not proven end-to-end functional equivalence; counts do not certify a future sealed grammar",
+  "cells": [
+    {
+      "event_count": 4,
+      "family": "arithmetic",
+      "invalid_rejections": 0,
+      "matching_id_pairs": 232268,
+      "max_repeats_of_one_id": 71,
+      "unique_ids": 216,
+      "valid_draws": 10000
+    },
+    {
+      "event_count": 7,
+      "family": "arithmetic",
+      "invalid_rejections": 2,
+      "matching_id_pairs": 132,
+      "max_repeats_of_one_id": 3,
+      "unique_ids": 9869,
+      "valid_draws": 10000
+    },
+    {
+      "event_count": 4,
+      "family": "state",
+      "invalid_rejections": 0,
+      "matching_id_pairs": 8132,
+      "max_repeats_of_one_id": 11,
+      "unique_ids": 6207,
+      "valid_draws": 10000
+    },
+    {
+      "event_count": 7,
+      "family": "state",
+      "invalid_rejections": 0,
+      "matching_id_pairs": 0,
+      "max_repeats_of_one_id": 1,
+      "unique_ids": 10000,
+      "valid_draws": 10000
+    }
+  ],
+  "kind": "public_v3_structure_signature_support_audit",
+  "runner_sha256_at_audit": "97ee41f34a26bf17faa87c7dc689e69688c5939d600d329f6b48624557ea1d6a",
+  "seed": 83791,
+  "valid_draws_per_cell": 10000
+}

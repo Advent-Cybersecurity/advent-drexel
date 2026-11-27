@@ -1,0 +1,2814 @@
+{
+  "cases": [
+    {
+      "events": [
+        {
+          "amount": 4,
+          "op": "consume"
+        },
+        {
+          "divisor": 4,
+          "op": "reserve"
+        },
+        {
+          "branch": "low",
+          "op": "conditional",
+          "otherwise": 6,
+          "packs": 2,
+          "per_pack": 7,
+          "threshold": 87
+        },
+        {
+          "divisor": 3,
+          "op": "release"
+        }
+      ],
+      "family": "arithmetic",
+      "final": {
+        "active": 98,
+        "reserve": 18
+      },
+      "gold": 98,
+      "id": "arithmetic-01",
+      "initial": 114,
+      "length": 4,
+      "question": "An inventory receives 8 packs of 9 items each and 6 packs of 7 items each, all pooled in active stock; reserve starts at zero. In the following order, use 4 items from active stock; then move one item from every complete group of 4 in the then-current active stock into reserve, pooling all active items before grouping; then if active stock holds at least 87 items at that point, add 2 packs of 7 items each to active stock; otherwise add exactly 6 loose items to active stock; then move one item from every complete group of 3 in the then-current reserve back into active stock, pooling all reserved items before grouping. Items left in an incomplete group stay where they are. How many items are in active stock at the end?",
+      "question_sha256": "9b25a5ea4b32466aaea494e9752c04d24b5180340ab758b837d987c87b736b61",
+      "signature": [
+        [
+          "consume",
+          0,
+          ""
+        ],
+        [
+          "reserve",
+          4,
+          ""
+        ],
+        [
+          "conditional",
+          0,
+          "low"
+        ],
+        [
+          "release",
+          3,
+          ""
+        ]
+      ],
+      "structure_id": "arithmetic-61064f0d047290a4",
+      "trace": [
+        [
+          110,
+          0
+        ],
+        [
+          83,
+          27
+        ],
+        [
+          89,
+          27
+        ],
+        [
+          98,
+          18
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "amount": 10,
+          "op": "consume"
+        },
+        {
+          "branch": "low",
+          "op": "conditional",
+          "otherwise": 6,
+          "packs": 4,
+          "per_pack": 7,
+          "threshold": 110
+        },
+        {
+          "divisor": 3,
+          "op": "reserve"
+        },
+        {
+          "divisor": 3,
+          "op": "release"
+        }
+      ],
+      "family": "arithmetic",
+      "final": {
+        "active": 87,
+        "reserve": 25
+      },
+      "gold": 87,
+      "id": "arithmetic-02",
+      "initial": 116,
+      "length": 4,
+      "question": "An inventory receives 8 packs of 11 items each and 4 packs of 7 items each, all pooled in active stock; reserve starts at zero. In the following order, use 10 items from active stock; then if active stock holds at least 110 items at that point, add 4 packs of 7 items each to active stock; otherwise add exactly 6 loose items to active stock; then move one item from every complete group of 3 in the then-current active stock into reserve, pooling all active items before grouping; then move one item from every complete group of 3 in the then-current reserve back into active stock, pooling all reserved items before grouping. Items left in an incomplete group stay where they are. How many items are in active stock at the end?",
+      "question_sha256": "0485dea98e527073c97100e0a1b190e7100795de443f9ac642dbdbc009e40e7c",
+      "signature": [
+        [
+          "consume",
+          0,
+          ""
+        ],
+        [
+          "conditional",
+          0,
+          "low"
+        ],
+        [
+          "reserve",
+          3,
+          ""
+        ],
+        [
+          "release",
+          3,
+          ""
+        ]
+      ],
+      "structure_id": "arithmetic-e985a51b9a8c33f9",
+      "trace": [
+        [
+          106,
+          0
+        ],
+        [
+          112,
+          0
+        ],
+        [
+          75,
+          37
+        ],
+        [
+          87,
+          25
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "branch": "high",
+          "op": "conditional",
+          "otherwise": 7,
+          "packs": 4,
+          "per_pack": 10,
+          "threshold": 101
+        },
+        {
+          "divisor": 2,
+          "op": "reserve"
+        },
+        {
+          "divisor": 3,
+          "op": "release"
+        },
+        {
+          "amount": 10,
+          "op": "consume"
+        }
+      ],
+      "family": "arithmetic",
+      "final": {
+        "active": 87,
+        "reserve": 48
+      },
+      "gold": 87,
+      "id": "arithmetic-03",
+      "initial": 105,
+      "length": 4,
+      "question": "An inventory receives 7 packs of 8 items each and 7 packs of 7 items each, all pooled in active stock; reserve starts at zero. In the following order, if active stock holds at least 101 items at that point, add 4 packs of 10 items each to active stock; otherwise add exactly 7 loose items to active stock; then move one item from every complete group of 2 in the then-current active stock into reserve, pooling all active items before grouping; then move one item from every complete group of 3 in the then-current reserve back into active stock, pooling all reserved items before grouping; then use 10 items from active stock. Items left in an incomplete group stay where they are. How many items are in active stock at the end?",
+      "question_sha256": "6fc09d9339164224a44d3c6cbbf722a7c6e89b4cbfa11a70c11727af641dc900",
+      "signature": [
+        [
+          "conditional",
+          0,
+          "high"
+        ],
+        [
+          "reserve",
+          2,
+          ""
+        ],
+        [
+          "release",
+          3,
+          ""
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ]
+      ],
+      "structure_id": "arithmetic-542691d54906373e",
+      "trace": [
+        [
+          145,
+          0
+        ],
+        [
+          73,
+          72
+        ],
+        [
+          97,
+          48
+        ],
+        [
+          87,
+          48
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "branch": "low",
+          "op": "conditional",
+          "otherwise": 6,
+          "packs": 4,
+          "per_pack": 10,
+          "threshold": 112
+        },
+        {
+          "amount": 10,
+          "op": "consume"
+        },
+        {
+          "divisor": 4,
+          "op": "reserve"
+        },
+        {
+          "divisor": 3,
+          "op": "release"
+        }
+      ],
+      "family": "arithmetic",
+      "final": {
+        "active": 86,
+        "reserve": 18
+      },
+      "gold": 86,
+      "id": "arithmetic-04",
+      "initial": 108,
+      "length": 4,
+      "question": "An inventory receives 8 packs of 9 items each and 4 packs of 9 items each, all pooled in active stock; reserve starts at zero. In the following order, if active stock holds at least 112 items at that point, add 4 packs of 10 items each to active stock; otherwise add exactly 6 loose items to active stock; then use 10 items from active stock; then move one item from every complete group of 4 in the then-current active stock into reserve, pooling all active items before grouping; then move one item from every complete group of 3 in the then-current reserve back into active stock, pooling all reserved items before grouping. Items left in an incomplete group stay where they are. How many items are in active stock at the end?",
+      "question_sha256": "23825f89d767dde31133b5832661a280cbb5217c13fd4ab1a2606de63534cf1a",
+      "signature": [
+        [
+          "conditional",
+          0,
+          "low"
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ],
+        [
+          "reserve",
+          4,
+          ""
+        ],
+        [
+          "release",
+          3,
+          ""
+        ]
+      ],
+      "structure_id": "arithmetic-ce586f559d371966",
+      "trace": [
+        [
+          114,
+          0
+        ],
+        [
+          104,
+          0
+        ],
+        [
+          78,
+          26
+        ],
+        [
+          86,
+          18
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "divisor": 3,
+          "op": "reserve"
+        },
+        {
+          "divisor": 3,
+          "op": "release"
+        },
+        {
+          "amount": 3,
+          "op": "consume"
+        },
+        {
+          "branch": "low",
+          "op": "conditional",
+          "otherwise": 7,
+          "packs": 3,
+          "per_pack": 9,
+          "threshold": 63
+        }
+      ],
+      "family": "arithmetic",
+      "final": {
+        "active": 66,
+        "reserve": 18
+      },
+      "gold": 66,
+      "id": "arithmetic-05",
+      "initial": 80,
+      "length": 4,
+      "question": "An inventory receives 8 packs of 7 items each and 3 packs of 8 items each, all pooled in active stock; reserve starts at zero. In the following order, move one item from every complete group of 3 in the then-current active stock into reserve, pooling all active items before grouping; then move one item from every complete group of 3 in the then-current reserve back into active stock, pooling all reserved items before grouping; then use 3 items from active stock; then if active stock holds at least 63 items at that point, add 3 packs of 9 items each to active stock; otherwise add exactly 7 loose items to active stock. Items left in an incomplete group stay where they are. How many items are in active stock at the end?",
+      "question_sha256": "ab7afe6fdfe9e13761f62a029a6b8e1997ebee140db5d271ca554785a36a1f69",
+      "signature": [
+        [
+          "reserve",
+          3,
+          ""
+        ],
+        [
+          "release",
+          3,
+          ""
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ],
+        [
+          "conditional",
+          0,
+          "low"
+        ]
+      ],
+      "structure_id": "arithmetic-6061b9bf139288bb",
+      "trace": [
+        [
+          54,
+          26
+        ],
+        [
+          62,
+          18
+        ],
+        [
+          59,
+          18
+        ],
+        [
+          66,
+          18
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "divisor": 4,
+          "op": "reserve"
+        },
+        {
+          "divisor": 2,
+          "op": "release"
+        },
+        {
+          "branch": "low",
+          "op": "conditional",
+          "otherwise": 6,
+          "packs": 4,
+          "per_pack": 10,
+          "threshold": 88
+        },
+        {
+          "amount": 11,
+          "op": "consume"
+        }
+      ],
+      "family": "arithmetic",
+      "final": {
+        "active": 79,
+        "reserve": 12
+      },
+      "gold": 79,
+      "id": "arithmetic-06",
+      "initial": 96,
+      "length": 4,
+      "question": "An inventory receives 9 packs of 9 items each and 3 packs of 5 items each, all pooled in active stock; reserve starts at zero. In the following order, move one item from every complete group of 4 in the then-current active stock into reserve, pooling all active items before grouping; then move one item from every complete group of 2 in the then-current reserve back into active stock, pooling all reserved items before grouping; then if active stock holds at least 88 items at that point, add 4 packs of 10 items each to active stock; otherwise add exactly 6 loose items to active stock; then use 11 items from active stock. Items left in an incomplete group stay where they are. How many items are in active stock at the end?",
+      "question_sha256": "fde1ffc9818295166215ba709d62d25593444d364c76fa783ab7738a19f57204",
+      "signature": [
+        [
+          "reserve",
+          4,
+          ""
+        ],
+        [
+          "release",
+          2,
+          ""
+        ],
+        [
+          "conditional",
+          0,
+          "low"
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ]
+      ],
+      "structure_id": "arithmetic-bb4807e4e4b4f7d1",
+      "trace": [
+        [
+          72,
+          24
+        ],
+        [
+          84,
+          12
+        ],
+        [
+          90,
+          12
+        ],
+        [
+          79,
+          12
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "branch": "low",
+          "op": "conditional",
+          "otherwise": 7,
+          "packs": 2,
+          "per_pack": 10,
+          "threshold": 70
+        },
+        {
+          "amount": 6,
+          "op": "consume"
+        },
+        {
+          "op": "receive",
+          "packs": 3,
+          "per_pack": 9
+        },
+        {
+          "divisor": 4,
+          "op": "reserve"
+        },
+        {
+          "divisor": 2,
+          "op": "release"
+        },
+        {
+          "amount": 6,
+          "op": "consume"
+        },
+        {
+          "divisor": 4,
+          "op": "release"
+        }
+      ],
+      "family": "arithmetic",
+      "final": {
+        "active": 79,
+        "reserve": 9
+      },
+      "gold": 79,
+      "id": "arithmetic-07",
+      "initial": 66,
+      "length": 7,
+      "question": "An inventory receives 6 packs of 7 items each and 3 packs of 8 items each, all pooled in active stock; reserve starts at zero. In the following order, if active stock holds at least 70 items at that point, add 2 packs of 10 items each to active stock; otherwise add exactly 7 loose items to active stock; then use 6 items from active stock; then add 3 packs of 9 items each to active stock; then move one item from every complete group of 4 in the then-current active stock into reserve, pooling all active items before grouping; then move one item from every complete group of 2 in the then-current reserve back into active stock, pooling all reserved items before grouping; then use 6 items from active stock; then move one item from every complete group of 4 in the then-current reserve back into active stock, pooling all reserved items before grouping. Items left in an incomplete group stay where they are. How many items are in active stock at the end?",
+      "question_sha256": "be1d6df0a2ad55a6b4b3cc949ce515ada7d03b127e06002faaa6176fb5b18e4f",
+      "signature": [
+        [
+          "conditional",
+          0,
+          "low"
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ],
+        [
+          "receive",
+          0,
+          ""
+        ],
+        [
+          "reserve",
+          4,
+          ""
+        ],
+        [
+          "release",
+          2,
+          ""
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ],
+        [
+          "release",
+          4,
+          ""
+        ]
+      ],
+      "structure_id": "arithmetic-5937b8afa8721336",
+      "trace": [
+        [
+          73,
+          0
+        ],
+        [
+          67,
+          0
+        ],
+        [
+          94,
+          0
+        ],
+        [
+          71,
+          23
+        ],
+        [
+          82,
+          12
+        ],
+        [
+          76,
+          12
+        ],
+        [
+          79,
+          9
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "divisor": 3,
+          "op": "reserve"
+        },
+        {
+          "amount": 8,
+          "op": "consume"
+        },
+        {
+          "branch": "low",
+          "op": "conditional",
+          "otherwise": 8,
+          "packs": 4,
+          "per_pack": 7,
+          "threshold": 76
+        },
+        {
+          "divisor": 4,
+          "op": "reserve"
+        },
+        {
+          "divisor": 2,
+          "op": "reserve"
+        },
+        {
+          "divisor": 2,
+          "op": "release"
+        },
+        {
+          "divisor": 3,
+          "op": "release"
+        }
+      ],
+      "family": "arithmetic",
+      "final": {
+        "active": 90,
+        "reserve": 30
+      },
+      "gold": 90,
+      "id": "arithmetic-08",
+      "initial": 120,
+      "length": 7,
+      "question": "An inventory receives 8 packs of 10 items each and 5 packs of 8 items each, all pooled in active stock; reserve starts at zero. In the following order, move one item from every complete group of 3 in the then-current active stock into reserve, pooling all active items before grouping; then use 8 items from active stock; then if active stock holds at least 76 items at that point, add 4 packs of 7 items each to active stock; otherwise add exactly 8 loose items to active stock; then move one item from every complete group of 4 in the then-current active stock into reserve, pooling all active items before grouping; then move one item from every complete group of 2 in the then-current active stock into reserve, pooling all active items before grouping; then move one item from every complete group of 2 in the then-current reserve back into active stock, pooling all reserved items before grouping; then move one item from every complete group of 3 in the then-current reserve back into active stock, pooling all reserved items before grouping. Items left in an incomplete group stay where they are. How many items are in active stock at the end?",
+      "question_sha256": "2de937db6edeb351311cf265fa52389f2a6ef605c6fc9386a5b4555db88c2a5f",
+      "signature": [
+        [
+          "reserve",
+          3,
+          ""
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ],
+        [
+          "conditional",
+          0,
+          "low"
+        ],
+        [
+          "reserve",
+          4,
+          ""
+        ],
+        [
+          "reserve",
+          2,
+          ""
+        ],
+        [
+          "release",
+          2,
+          ""
+        ],
+        [
+          "release",
+          3,
+          ""
+        ]
+      ],
+      "structure_id": "arithmetic-1e8a5deb1288829d",
+      "trace": [
+        [
+          80,
+          40
+        ],
+        [
+          72,
+          40
+        ],
+        [
+          80,
+          40
+        ],
+        [
+          60,
+          60
+        ],
+        [
+          30,
+          90
+        ],
+        [
+          75,
+          45
+        ],
+        [
+          90,
+          30
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "branch": "high",
+          "op": "conditional",
+          "otherwise": 5,
+          "packs": 2,
+          "per_pack": 9,
+          "threshold": 70
+        },
+        {
+          "divisor": 3,
+          "op": "reserve"
+        },
+        {
+          "amount": 5,
+          "op": "consume"
+        },
+        {
+          "divisor": 2,
+          "op": "reserve"
+        },
+        {
+          "divisor": 3,
+          "op": "release"
+        },
+        {
+          "divisor": 3,
+          "op": "release"
+        },
+        {
+          "amount": 11,
+          "op": "consume"
+        }
+      ],
+      "family": "arithmetic",
+      "final": {
+        "active": 50,
+        "reserve": 26
+      },
+      "gold": 50,
+      "id": "arithmetic-09",
+      "initial": 74,
+      "length": 7,
+      "question": "An inventory receives 7 packs of 8 items each and 3 packs of 6 items each, all pooled in active stock; reserve starts at zero. In the following order, if active stock holds at least 70 items at that point, add 2 packs of 9 items each to active stock; otherwise add exactly 5 loose items to active stock; then move one item from every complete group of 3 in the then-current active stock into reserve, pooling all active items before grouping; then use 5 items from active stock; then move one item from every complete group of 2 in the then-current active stock into reserve, pooling all active items before grouping; then move one item from every complete group of 3 in the then-current reserve back into active stock, pooling all reserved items before grouping; then move one item from every complete group of 3 in the then-current reserve back into active stock, pooling all reserved items before grouping; then use 11 items from active stock. Items left in an incomplete group stay where they are. How many items are in active stock at the end?",
+      "question_sha256": "72022cb8f25d4c5f63613307d7e6f1ff802cfb4e0fa49c5955aba4f69029fc3f",
+      "signature": [
+        [
+          "conditional",
+          0,
+          "high"
+        ],
+        [
+          "reserve",
+          3,
+          ""
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ],
+        [
+          "reserve",
+          2,
+          ""
+        ],
+        [
+          "release",
+          3,
+          ""
+        ],
+        [
+          "release",
+          3,
+          ""
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ]
+      ],
+      "structure_id": "arithmetic-f2961e1d82a597dd",
+      "trace": [
+        [
+          92,
+          0
+        ],
+        [
+          62,
+          30
+        ],
+        [
+          57,
+          30
+        ],
+        [
+          29,
+          58
+        ],
+        [
+          48,
+          39
+        ],
+        [
+          61,
+          26
+        ],
+        [
+          50,
+          26
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "op": "receive",
+          "packs": 5,
+          "per_pack": 9
+        },
+        {
+          "amount": 3,
+          "op": "consume"
+        },
+        {
+          "divisor": 4,
+          "op": "reserve"
+        },
+        {
+          "branch": "high",
+          "op": "conditional",
+          "otherwise": 4,
+          "packs": 2,
+          "per_pack": 10,
+          "threshold": 107
+        },
+        {
+          "amount": 8,
+          "op": "consume"
+        },
+        {
+          "op": "receive",
+          "packs": 3,
+          "per_pack": 9
+        },
+        {
+          "divisor": 4,
+          "op": "release"
+        }
+      ],
+      "family": "arithmetic",
+      "final": {
+        "active": 159,
+        "reserve": 27
+      },
+      "gold": 159,
+      "id": "arithmetic-10",
+      "initial": 105,
+      "length": 7,
+      "question": "An inventory receives 10 packs of 8 items each and 5 packs of 5 items each, all pooled in active stock; reserve starts at zero. In the following order, add 5 packs of 9 items each to active stock; then use 3 items from active stock; then move one item from every complete group of 4 in the then-current active stock into reserve, pooling all active items before grouping; then if active stock holds at least 107 items at that point, add 2 packs of 10 items each to active stock; otherwise add exactly 4 loose items to active stock; then use 8 items from active stock; then add 3 packs of 9 items each to active stock; then move one item from every complete group of 4 in the then-current reserve back into active stock, pooling all reserved items before grouping. Items left in an incomplete group stay where they are. How many items are in active stock at the end?",
+      "question_sha256": "350fb87624ca138f6930421c6c26f232de7c26141e6d40a837d01f21bf4399cf",
+      "signature": [
+        [
+          "receive",
+          0,
+          ""
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ],
+        [
+          "reserve",
+          4,
+          ""
+        ],
+        [
+          "conditional",
+          0,
+          "high"
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ],
+        [
+          "receive",
+          0,
+          ""
+        ],
+        [
+          "release",
+          4,
+          ""
+        ]
+      ],
+      "structure_id": "arithmetic-1c7bc5b7b702cb61",
+      "trace": [
+        [
+          150,
+          0
+        ],
+        [
+          147,
+          0
+        ],
+        [
+          111,
+          36
+        ],
+        [
+          131,
+          36
+        ],
+        [
+          123,
+          36
+        ],
+        [
+          150,
+          36
+        ],
+        [
+          159,
+          27
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "divisor": 4,
+          "op": "reserve"
+        },
+        {
+          "amount": 4,
+          "op": "consume"
+        },
+        {
+          "op": "receive",
+          "packs": 4,
+          "per_pack": 7
+        },
+        {
+          "divisor": 4,
+          "op": "reserve"
+        },
+        {
+          "branch": "high",
+          "op": "conditional",
+          "otherwise": 4,
+          "packs": 3,
+          "per_pack": 8,
+          "threshold": 73
+        },
+        {
+          "divisor": 4,
+          "op": "release"
+        },
+        {
+          "op": "receive",
+          "packs": 5,
+          "per_pack": 9
+        }
+      ],
+      "family": "arithmetic",
+      "final": {
+        "active": 158,
+        "reserve": 38
+      },
+      "gold": 158,
+      "id": "arithmetic-11",
+      "initial": 103,
+      "length": 7,
+      "question": "An inventory receives 7 packs of 7 items each and 6 packs of 9 items each, all pooled in active stock; reserve starts at zero. In the following order, move one item from every complete group of 4 in the then-current active stock into reserve, pooling all active items before grouping; then use 4 items from active stock; then add 4 packs of 7 items each to active stock; then move one item from every complete group of 4 in the then-current active stock into reserve, pooling all active items before grouping; then if active stock holds at least 73 items at that point, add 3 packs of 8 items each to active stock; otherwise add exactly 4 loose items to active stock; then move one item from every complete group of 4 in the then-current reserve back into active stock, pooling all reserved items before grouping; then add 5 packs of 9 items each to active stock. Items left in an incomplete group stay where they are. How many items are in active stock at the end?",
+      "question_sha256": "8bdebb018adf0692bc7d5112c84393de2d79269618340d54dc0890b0c4ece359",
+      "signature": [
+        [
+          "reserve",
+          4,
+          ""
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ],
+        [
+          "receive",
+          0,
+          ""
+        ],
+        [
+          "reserve",
+          4,
+          ""
+        ],
+        [
+          "conditional",
+          0,
+          "high"
+        ],
+        [
+          "release",
+          4,
+          ""
+        ],
+        [
+          "receive",
+          0,
+          ""
+        ]
+      ],
+      "structure_id": "arithmetic-7e0f1df11f199e8a",
+      "trace": [
+        [
+          78,
+          25
+        ],
+        [
+          74,
+          25
+        ],
+        [
+          102,
+          25
+        ],
+        [
+          77,
+          50
+        ],
+        [
+          101,
+          50
+        ],
+        [
+          113,
+          38
+        ],
+        [
+          158,
+          38
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "divisor": 3,
+          "op": "reserve"
+        },
+        {
+          "branch": "low",
+          "op": "conditional",
+          "otherwise": 6,
+          "packs": 4,
+          "per_pack": 7,
+          "threshold": 54
+        },
+        {
+          "divisor": 4,
+          "op": "release"
+        },
+        {
+          "amount": 9,
+          "op": "consume"
+        },
+        {
+          "divisor": 2,
+          "op": "reserve"
+        },
+        {
+          "divisor": 2,
+          "op": "reserve"
+        },
+        {
+          "divisor": 4,
+          "op": "reserve"
+        }
+      ],
+      "family": "arithmetic",
+      "final": {
+        "active": 11,
+        "reserve": 60
+      },
+      "gold": 11,
+      "id": "arithmetic-12",
+      "initial": 74,
+      "length": 7,
+      "question": "An inventory receives 5 packs of 10 items each and 4 packs of 6 items each, all pooled in active stock; reserve starts at zero. In the following order, move one item from every complete group of 3 in the then-current active stock into reserve, pooling all active items before grouping; then if active stock holds at least 54 items at that point, add 4 packs of 7 items each to active stock; otherwise add exactly 6 loose items to active stock; then move one item from every complete group of 4 in the then-current reserve back into active stock, pooling all reserved items before grouping; then use 9 items from active stock; then move one item from every complete group of 2 in the then-current active stock into reserve, pooling all active items before grouping; then move one item from every complete group of 2 in the then-current active stock into reserve, pooling all active items before grouping; then move one item from every complete group of 4 in the then-current active stock into reserve, pooling all active items before grouping. Items left in an incomplete group stay where they are. How many items are in active stock at the end?",
+      "question_sha256": "91df5af72f2a840f1e6fdcdf3fb76bef4f092746275f3414d693ad37f5dddaae",
+      "signature": [
+        [
+          "reserve",
+          3,
+          ""
+        ],
+        [
+          "conditional",
+          0,
+          "low"
+        ],
+        [
+          "release",
+          4,
+          ""
+        ],
+        [
+          "consume",
+          0,
+          ""
+        ],
+        [
+          "reserve",
+          2,
+          ""
+        ],
+        [
+          "reserve",
+          2,
+          ""
+        ],
+        [
+          "reserve",
+          4,
+          ""
+        ]
+      ],
+      "structure_id": "arithmetic-988e24eb463e22d3",
+      "trace": [
+        [
+          50,
+          24
+        ],
+        [
+          56,
+          24
+        ],
+        [
+          62,
+          18
+        ],
+        [
+          53,
+          18
+        ],
+        [
+          27,
+          44
+        ],
+        [
+          14,
+          57
+        ],
+        [
+          11,
+          60
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "destination": "A",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "destination": "C",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "amount": 5,
+          "branch": "low",
+          "destination": "A",
+          "op": "conditional",
+          "source": "C",
+          "threshold": 165
+        },
+        {
+          "destination": "B",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "C"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 87,
+        "B": 199,
+        "C": 110,
+        "D": 145
+      },
+      "gold": 199,
+      "id": "state-01",
+      "initial": {
+        "A": 114,
+        "B": 144,
+        "C": 138,
+        "D": 145
+      },
+      "length": 4,
+      "question": "Four storage rooms start with 114 items in room A, 144 items in room B, 138 items in room C, 145 items in room D. In the following order, room C sends one item for every complete group of 2 items it holds at that point to room A, rounding down; then room A sends one item for every complete group of 2 items it holds at that point to room C, rounding down; then if room C holds at least 165 items at that point, room C sends 5 items to room A; otherwise room A sends 5 items to room C; then room C sends one item for every complete group of 3 items it holds at that point to room B, rounding down. How many items are in room B at the end?",
+      "question_sha256": "244764002c09543edfdb6fdde883ab2561ffc35d8d7e2a48dac7752deccb4c4c",
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "A",
+            2,
+            ""
+          ],
+          [
+            "conditional",
+            "A",
+            "B",
+            0,
+            "low"
+          ],
+          [
+            "fraction",
+            "A",
+            "C",
+            3,
+            ""
+          ]
+        ],
+        "C"
+      ],
+      "structure_id": "state-4a5ff26a27d48278",
+      "target": "B",
+      "trace": [
+        [
+          183,
+          144,
+          69,
+          145
+        ],
+        [
+          92,
+          144,
+          160,
+          145
+        ],
+        [
+          87,
+          144,
+          165,
+          145
+        ],
+        [
+          87,
+          199,
+          110,
+          145
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "destination": "D",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "A",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "amount": 7,
+          "branch": "low",
+          "destination": "D",
+          "op": "conditional",
+          "source": "A",
+          "threshold": 172
+        },
+        {
+          "amount": 9,
+          "destination": "B",
+          "op": "fixed",
+          "source": "A"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 165,
+        "B": 134,
+        "C": 99,
+        "D": 112
+      },
+      "gold": 134,
+      "id": "state-02",
+      "initial": {
+        "A": 143,
+        "B": 125,
+        "C": 99,
+        "D": 143
+      },
+      "length": 4,
+      "question": "Four storage rooms start with 143 items in room A, 125 items in room B, 99 items in room C, 143 items in room D. In the following order, room A sends one item for every complete group of 4 items it holds at that point to room D, rounding down; then room D sends one item for every complete group of 3 items it holds at that point to room A, rounding down; then if room A holds at least 172 items at that point, room A sends 7 items to room D; otherwise room D sends 7 items to room A; then room A sends 9 items to room B. How many items are in room B at the end?",
+      "question_sha256": "019485390a577757ccfe1d387facd7f045fd5d1da5696606f8df95b6ea309784",
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "A",
+            3,
+            ""
+          ],
+          [
+            "conditional",
+            "A",
+            "B",
+            0,
+            "low"
+          ],
+          [
+            "fixed",
+            "A",
+            "C",
+            0,
+            ""
+          ]
+        ],
+        "C"
+      ],
+      "structure_id": "state-9e9b1f44ca762baa",
+      "target": "B",
+      "trace": [
+        [
+          108,
+          125,
+          99,
+          178
+        ],
+        [
+          167,
+          125,
+          99,
+          119
+        ],
+        [
+          174,
+          125,
+          99,
+          112
+        ],
+        [
+          165,
+          134,
+          99,
+          112
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "destination": "C",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "amount": 10,
+          "destination": "B",
+          "op": "fixed",
+          "source": "C"
+        },
+        {
+          "amount": 4,
+          "branch": "high",
+          "destination": "C",
+          "op": "conditional",
+          "source": "B",
+          "threshold": 132
+        },
+        {
+          "destination": "B",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "C"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 108,
+        "B": 176,
+        "C": 88,
+        "D": 138
+      },
+      "gold": 176,
+      "id": "state-03",
+      "initial": {
+        "A": 144,
+        "B": 127,
+        "C": 101,
+        "D": 138
+      },
+      "length": 4,
+      "question": "Four storage rooms start with 144 items in room A, 127 items in room B, 101 items in room C, 138 items in room D. In the following order, room A sends one item for every complete group of 4 items it holds at that point to room C, rounding down; then room C sends 10 items to room B; then if room B holds at least 132 items at that point, room B sends 4 items to room C; otherwise room C sends 4 items to room B; then room C sends one item for every complete group of 3 items it holds at that point to room B, rounding down. How many items are in room B at the end?",
+      "question_sha256": "f24b7d101f8908c517a1140a86fd9d8dc52f360e10d4b0fa5840fbc8ca883e54",
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fixed",
+            "B",
+            "C",
+            0,
+            ""
+          ],
+          [
+            "conditional",
+            "C",
+            "B",
+            0,
+            "high"
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            3,
+            ""
+          ]
+        ],
+        "C"
+      ],
+      "structure_id": "state-d56725de103b86ec",
+      "target": "B",
+      "trace": [
+        [
+          108,
+          127,
+          137,
+          138
+        ],
+        [
+          108,
+          137,
+          127,
+          138
+        ],
+        [
+          108,
+          133,
+          131,
+          138
+        ],
+        [
+          108,
+          176,
+          88,
+          138
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "destination": "D",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "C",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "amount": 5,
+          "branch": "low",
+          "destination": "B",
+          "op": "conditional",
+          "source": "C",
+          "threshold": 143
+        },
+        {
+          "amount": 4,
+          "destination": "D",
+          "op": "fixed",
+          "source": "C"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 68,
+        "B": 100,
+        "C": 139,
+        "D": 105
+      },
+      "gold": 105,
+      "id": "state-04",
+      "initial": {
+        "A": 102,
+        "B": 105,
+        "C": 105,
+        "D": 100
+      },
+      "length": 4,
+      "question": "Four storage rooms start with 102 items in room A, 105 items in room B, 105 items in room C, 100 items in room D. In the following order, room A sends one item for every complete group of 3 items it holds at that point to room D, rounding down; then room D sends one item for every complete group of 4 items it holds at that point to room C, rounding down; then if room C holds at least 143 items at that point, room C sends 5 items to room B; otherwise room B sends 5 items to room C; then room C sends 4 items to room D. How many items are in room D at the end?",
+      "question_sha256": "7a1a0f105352acaf259bda19095dd01c5591ecc03e31996784f8cb8ec650557a",
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            4,
+            ""
+          ],
+          [
+            "conditional",
+            "C",
+            "D",
+            0,
+            "low"
+          ],
+          [
+            "fixed",
+            "C",
+            "B",
+            0,
+            ""
+          ]
+        ],
+        "B"
+      ],
+      "structure_id": "state-740542e4cbe7bd4d",
+      "target": "D",
+      "trace": [
+        [
+          68,
+          105,
+          105,
+          134
+        ],
+        [
+          68,
+          105,
+          138,
+          101
+        ],
+        [
+          68,
+          100,
+          143,
+          101
+        ],
+        [
+          68,
+          100,
+          139,
+          105
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "amount": 7,
+          "destination": "D",
+          "op": "fixed",
+          "source": "B"
+        },
+        {
+          "destination": "A",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "amount": 9,
+          "branch": "low",
+          "destination": "B",
+          "op": "conditional",
+          "source": "A",
+          "threshold": 166
+        },
+        {
+          "destination": "C",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 85,
+        "B": 74,
+        "C": 220,
+        "D": 108
+      },
+      "gold": 220,
+      "id": "state-05",
+      "initial": {
+        "A": 125,
+        "B": 90,
+        "C": 135,
+        "D": 137
+      },
+      "length": 4,
+      "question": "Four storage rooms start with 125 items in room A, 90 items in room B, 135 items in room C, 137 items in room D. In the following order, room B sends 7 items to room D; then room D sends one item for every complete group of 4 items it holds at that point to room A, rounding down; then if room A holds at least 166 items at that point, room A sends 9 items to room B; otherwise room B sends 9 items to room A; then room A sends one item for every complete group of 2 items it holds at that point to room C, rounding down. How many items are in room C at the end?",
+      "question_sha256": "8df6a75727261bb56055114b722c3070c690af330052f46b94c30a51b2649cdc",
+      "signature": [
+        [
+          [
+            "fixed",
+            "A",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            4,
+            ""
+          ],
+          [
+            "conditional",
+            "C",
+            "A",
+            0,
+            "low"
+          ],
+          [
+            "fraction",
+            "C",
+            "D",
+            2,
+            ""
+          ]
+        ],
+        "D"
+      ],
+      "structure_id": "state-8ed6f054c04117cf",
+      "target": "C",
+      "trace": [
+        [
+          125,
+          83,
+          135,
+          144
+        ],
+        [
+          161,
+          83,
+          135,
+          108
+        ],
+        [
+          170,
+          74,
+          135,
+          108
+        ],
+        [
+          85,
+          74,
+          220,
+          108
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "destination": "C",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "A",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "amount": 7,
+          "branch": "high",
+          "destination": "D",
+          "op": "conditional",
+          "source": "A",
+          "threshold": 138
+        },
+        {
+          "destination": "D",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 68,
+        "B": 94,
+        "C": 96,
+        "D": 186
+      },
+      "gold": 186,
+      "id": "state-06",
+      "initial": {
+        "A": 143,
+        "B": 94,
+        "C": 96,
+        "D": 111
+      },
+      "length": 4,
+      "question": "Four storage rooms start with 143 items in room A, 94 items in room B, 96 items in room C, 111 items in room D. In the following order, room A sends one item for every complete group of 3 items it holds at that point to room C, rounding down; then room C sends one item for every complete group of 3 items it holds at that point to room A, rounding down; then if room A holds at least 138 items at that point, room A sends 7 items to room D; otherwise room D sends 7 items to room A; then room A sends one item for every complete group of 2 items it holds at that point to room D, rounding down. How many items are in room D at the end?",
+      "question_sha256": "434ecbfd1c66aabdddee4bf8eb2e83f07913c9cc7f6eb53466ad781be3c4bfed",
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "A",
+            3,
+            ""
+          ],
+          [
+            "conditional",
+            "A",
+            "C",
+            0,
+            "high"
+          ],
+          [
+            "fraction",
+            "A",
+            "C",
+            2,
+            ""
+          ]
+        ],
+        "C"
+      ],
+      "structure_id": "state-406ac466c72a0717",
+      "target": "D",
+      "trace": [
+        [
+          96,
+          94,
+          143,
+          111
+        ],
+        [
+          143,
+          94,
+          96,
+          111
+        ],
+        [
+          136,
+          94,
+          96,
+          118
+        ],
+        [
+          68,
+          94,
+          96,
+          186
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "destination": "C",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "B",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "destination": "B",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "amount": 8,
+          "branch": "low",
+          "destination": "C",
+          "op": "conditional",
+          "source": "B",
+          "threshold": 214
+        },
+        {
+          "destination": "B",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "amount": 11,
+          "destination": "C",
+          "op": "fixed",
+          "source": "B"
+        },
+        {
+          "amount": 7,
+          "destination": "D",
+          "op": "fixed",
+          "source": "C"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 29,
+        "B": 231,
+        "C": 81,
+        "D": 145
+      },
+      "gold": 145,
+      "id": "state-07",
+      "initial": {
+        "A": 113,
+        "B": 126,
+        "C": 109,
+        "D": 138
+      },
+      "length": 7,
+      "question": "Four storage rooms start with 113 items in room A, 126 items in room B, 109 items in room C, 138 items in room D. In the following order, room A sends one item for every complete group of 2 items it holds at that point to room C, rounding down; then room C sends one item for every complete group of 3 items it holds at that point to room B, rounding down; then room A sends one item for every complete group of 2 items it holds at that point to room B, rounding down; then if room B holds at least 214 items at that point, room B sends 8 items to room C; otherwise room C sends 8 items to room B; then room C sends one item for every complete group of 4 items it holds at that point to room B, rounding down; then room B sends 11 items to room C; then room C sends 7 items to room D. How many items are in room D at the end?",
+      "question_sha256": "dd6265464b503be8faf70ffe0944855aa2a7ab5d3598bd3a58890b387f10716f",
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "A",
+            "C",
+            2,
+            ""
+          ],
+          [
+            "conditional",
+            "C",
+            "B",
+            0,
+            "low"
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            4,
+            ""
+          ],
+          [
+            "fixed",
+            "C",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "fixed",
+            "B",
+            "D",
+            0,
+            ""
+          ]
+        ],
+        "D"
+      ],
+      "structure_id": "state-99ab5a0c5cbecf67",
+      "target": "D",
+      "trace": [
+        [
+          57,
+          126,
+          165,
+          138
+        ],
+        [
+          57,
+          181,
+          110,
+          138
+        ],
+        [
+          29,
+          209,
+          110,
+          138
+        ],
+        [
+          29,
+          217,
+          102,
+          138
+        ],
+        [
+          29,
+          242,
+          77,
+          138
+        ],
+        [
+          29,
+          231,
+          88,
+          138
+        ],
+        [
+          29,
+          231,
+          81,
+          145
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "destination": "C",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "destination": "D",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "B",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "amount": 5,
+          "branch": "high",
+          "destination": "D",
+          "op": "conditional",
+          "source": "B",
+          "threshold": 113
+        },
+        {
+          "amount": 11,
+          "destination": "B",
+          "op": "fixed",
+          "source": "D"
+        },
+        {
+          "amount": 6,
+          "destination": "A",
+          "op": "fixed",
+          "source": "B"
+        },
+        {
+          "destination": "D",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "A"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 39,
+        "B": 118,
+        "C": 167,
+        "D": 119
+      },
+      "gold": 119,
+      "id": "state-08",
+      "initial": {
+        "A": 92,
+        "B": 94,
+        "C": 136,
+        "D": 121
+      },
+      "length": 7,
+      "question": "Four storage rooms start with 92 items in room A, 94 items in room B, 136 items in room C, 121 items in room D. In the following order, room B sends one item for every complete group of 3 items it holds at that point to room C, rounding down; then room A sends one item for every complete group of 2 items it holds at that point to room D, rounding down; then room D sends one item for every complete group of 3 items it holds at that point to room B, rounding down; then if room B holds at least 113 items at that point, room B sends 5 items to room D; otherwise room D sends 5 items to room B; then room D sends 11 items to room B; then room B sends 6 items to room A; then room A sends one item for every complete group of 4 items it holds at that point to room D, rounding down. How many items are in room D at the end?",
+      "question_sha256": "cf7fb05f3443091987fe55f8a5e77fdc329c599c40267f9d269b11838b668977",
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "D",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "D",
+            "A",
+            3,
+            ""
+          ],
+          [
+            "conditional",
+            "A",
+            "D",
+            0,
+            "high"
+          ],
+          [
+            "fixed",
+            "D",
+            "A",
+            0,
+            ""
+          ],
+          [
+            "fixed",
+            "A",
+            "C",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "D",
+            4,
+            ""
+          ]
+        ],
+        "D"
+      ],
+      "structure_id": "state-3fb4c0011634fa7a",
+      "target": "D",
+      "trace": [
+        [
+          92,
+          63,
+          167,
+          121
+        ],
+        [
+          46,
+          63,
+          167,
+          167
+        ],
+        [
+          46,
+          118,
+          167,
+          112
+        ],
+        [
+          46,
+          113,
+          167,
+          117
+        ],
+        [
+          46,
+          124,
+          167,
+          106
+        ],
+        [
+          52,
+          118,
+          167,
+          106
+        ],
+        [
+          39,
+          118,
+          167,
+          119
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "destination": "D",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "amount": 11,
+          "destination": "A",
+          "op": "fixed",
+          "source": "C"
+        },
+        {
+          "destination": "C",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "amount": 9,
+          "branch": "low",
+          "destination": "A",
+          "op": "conditional",
+          "source": "C",
+          "threshold": 143
+        },
+        {
+          "destination": "A",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "amount": 5,
+          "destination": "D",
+          "op": "fixed",
+          "source": "A"
+        },
+        {
+          "amount": 6,
+          "destination": "D",
+          "op": "fixed",
+          "source": "C"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 176,
+        "B": 51,
+        "C": 105,
+        "D": 170
+      },
+      "gold": 170,
+      "id": "state-09",
+      "initial": {
+        "A": 143,
+        "B": 136,
+        "C": 98,
+        "D": 125
+      },
+      "length": 7,
+      "question": "Four storage rooms start with 143 items in room A, 136 items in room B, 98 items in room C, 125 items in room D. In the following order, room B sends one item for every complete group of 4 items it holds at that point to room D, rounding down; then room C sends 11 items to room A; then room B sends one item for every complete group of 2 items it holds at that point to room C, rounding down; then if room C holds at least 143 items at that point, room C sends 9 items to room A; otherwise room A sends 9 items to room C; then room C sends one item for every complete group of 4 items it holds at that point to room A, rounding down; then room A sends 5 items to room D; then room C sends 6 items to room D. How many items are in room D at the end?",
+      "question_sha256": "17ae16a43e1646ee894b4cc65fe94717a8fb4228dd89aad4e5f1f8725f95ea3c",
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fixed",
+            "C",
+            "D",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "A",
+            "C",
+            2,
+            ""
+          ],
+          [
+            "conditional",
+            "C",
+            "D",
+            0,
+            "low"
+          ],
+          [
+            "fraction",
+            "C",
+            "D",
+            4,
+            ""
+          ],
+          [
+            "fixed",
+            "D",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "fixed",
+            "C",
+            "B",
+            0,
+            ""
+          ]
+        ],
+        "B"
+      ],
+      "structure_id": "state-870a95ec4ae191f5",
+      "target": "D",
+      "trace": [
+        [
+          143,
+          102,
+          98,
+          159
+        ],
+        [
+          154,
+          102,
+          87,
+          159
+        ],
+        [
+          154,
+          51,
+          138,
+          159
+        ],
+        [
+          145,
+          51,
+          147,
+          159
+        ],
+        [
+          181,
+          51,
+          111,
+          159
+        ],
+        [
+          176,
+          51,
+          111,
+          164
+        ],
+        [
+          176,
+          51,
+          105,
+          170
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "destination": "B",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "destination": "D",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "amount": 7,
+          "destination": "B",
+          "op": "fixed",
+          "source": "A"
+        },
+        {
+          "amount": 10,
+          "branch": "high",
+          "destination": "A",
+          "op": "conditional",
+          "source": "B",
+          "threshold": 100
+        },
+        {
+          "amount": 5,
+          "destination": "D",
+          "op": "fixed",
+          "source": "A"
+        },
+        {
+          "destination": "B",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "destination": "D",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "B"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 104,
+        "B": 120,
+        "C": 86,
+        "D": 168
+      },
+      "gold": 168,
+      "id": "state-10",
+      "initial": {
+        "A": 106,
+        "B": 118,
+        "C": 114,
+        "D": 140
+      },
+      "length": 7,
+      "question": "Four storage rooms start with 106 items in room A, 118 items in room B, 114 items in room C, 140 items in room D. In the following order, room C sends one item for every complete group of 4 items it holds at that point to room B, rounding down; then room B sends one item for every complete group of 3 items it holds at that point to room D, rounding down; then room A sends 7 items to room B; then if room B holds at least 100 items at that point, room B sends 10 items to room A; otherwise room A sends 10 items to room B; then room A sends 5 items to room D; then room D sends one item for every complete group of 3 items it holds at that point to room B, rounding down; then room B sends one item for every complete group of 4 items it holds at that point to room D, rounding down. How many items are in room D at the end?",
+      "question_sha256": "042133c2890be5b6b3f9307bf5506a87bcbdb17925fcaca27bbbd6b682e0c10b",
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            3,
+            ""
+          ],
+          [
+            "fixed",
+            "D",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "conditional",
+            "B",
+            "D",
+            0,
+            "high"
+          ],
+          [
+            "fixed",
+            "D",
+            "C",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "B",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            4,
+            ""
+          ]
+        ],
+        "C"
+      ],
+      "structure_id": "state-2858d151c8ad60ba",
+      "target": "D",
+      "trace": [
+        [
+          106,
+          146,
+          86,
+          140
+        ],
+        [
+          106,
+          98,
+          86,
+          188
+        ],
+        [
+          99,
+          105,
+          86,
+          188
+        ],
+        [
+          109,
+          95,
+          86,
+          188
+        ],
+        [
+          104,
+          95,
+          86,
+          193
+        ],
+        [
+          104,
+          159,
+          86,
+          129
+        ],
+        [
+          104,
+          120,
+          86,
+          168
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "amount": 4,
+          "destination": "B",
+          "op": "fixed",
+          "source": "C"
+        },
+        {
+          "destination": "D",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "amount": 10,
+          "destination": "D",
+          "op": "fixed",
+          "source": "A"
+        },
+        {
+          "amount": 11,
+          "branch": "high",
+          "destination": "A",
+          "op": "conditional",
+          "source": "D",
+          "threshold": 132
+        },
+        {
+          "amount": 9,
+          "destination": "D",
+          "op": "fixed",
+          "source": "A"
+        },
+        {
+          "amount": 4,
+          "destination": "D",
+          "op": "fixed",
+          "source": "C"
+        },
+        {
+          "destination": "B",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "D"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 131,
+        "B": 153,
+        "C": 92,
+        "D": 70
+      },
+      "gold": 153,
+      "id": "state-11",
+      "initial": {
+        "A": 139,
+        "B": 107,
+        "C": 100,
+        "D": 100
+      },
+      "length": 7,
+      "question": "Four storage rooms start with 139 items in room A, 107 items in room B, 100 items in room C, 100 items in room D. In the following order, room C sends 4 items to room B; then room B sends one item for every complete group of 4 items it holds at that point to room D, rounding down; then room A sends 10 items to room D; then if room D holds at least 132 items at that point, room D sends 11 items to room A; otherwise room A sends 11 items to room D; then room A sends 9 items to room D; then room C sends 4 items to room D; then room D sends one item for every complete group of 2 items it holds at that point to room B, rounding down. How many items are in room B at the end?",
+      "question_sha256": "8705f790ada23e0bfa3ebbfa20fe4c901c335e3650378c54e4721a8d152d64c7",
+      "signature": [
+        [
+          [
+            "fixed",
+            "A",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            4,
+            ""
+          ],
+          [
+            "fixed",
+            "D",
+            "C",
+            0,
+            ""
+          ],
+          [
+            "conditional",
+            "C",
+            "D",
+            0,
+            "high"
+          ],
+          [
+            "fixed",
+            "D",
+            "C",
+            0,
+            ""
+          ],
+          [
+            "fixed",
+            "A",
+            "C",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "B",
+            2,
+            ""
+          ]
+        ],
+        "B"
+      ],
+      "structure_id": "state-1e2743f934c65ee1",
+      "target": "B",
+      "trace": [
+        [
+          139,
+          111,
+          96,
+          100
+        ],
+        [
+          139,
+          84,
+          96,
+          127
+        ],
+        [
+          129,
+          84,
+          96,
+          137
+        ],
+        [
+          140,
+          84,
+          96,
+          126
+        ],
+        [
+          131,
+          84,
+          96,
+          135
+        ],
+        [
+          131,
+          84,
+          92,
+          139
+        ],
+        [
+          131,
+          153,
+          92,
+          70
+        ]
+      ]
+    },
+    {
+      "events": [
+        {
+          "destination": "D",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "destination": "B",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "D",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "amount": 6,
+          "branch": "high",
+          "destination": "C",
+          "op": "conditional",
+          "source": "D",
+          "threshold": 177
+        },
+        {
+          "destination": "A",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "destination": "A",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "amount": 5,
+          "destination": "D",
+          "op": "fixed",
+          "source": "A"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 147,
+        "B": 79,
+        "C": 57,
+        "D": 181
+      },
+      "gold": 181,
+      "id": "state-12",
+      "initial": {
+        "A": 109,
+        "B": 103,
+        "C": 123,
+        "D": 129
+      },
+      "length": 7,
+      "question": "Four storage rooms start with 109 items in room A, 103 items in room B, 123 items in room C, 129 items in room D. In the following order, room C sends one item for every complete group of 4 items it holds at that point to room D, rounding down; then room A sends one item for every complete group of 2 items it holds at that point to room B, rounding down; then room C sends one item for every complete group of 4 items it holds at that point to room D, rounding down; then if room D holds at least 177 items at that point, room D sends 6 items to room C; otherwise room C sends 6 items to room D; then room C sends one item for every complete group of 4 items it holds at that point to room A, rounding down; then room B sends one item for every complete group of 2 items it holds at that point to room A, rounding down; then room A sends 5 items to room D. How many items are in room D at the end?",
+      "question_sha256": "3c04f781c9381f185125219ace94c3b2477805527ec5d5d36b0b28031863813e",
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "D",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "A",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "conditional",
+            "B",
+            "A",
+            0,
+            "high"
+          ],
+          [
+            "fraction",
+            "A",
+            "C",
+            4,
+            ""
+          ],
+          [
+            "fraction",
+            "D",
+            "C",
+            2,
+            ""
+          ],
+          [
+            "fixed",
+            "C",
+            "B",
+            0,
+            ""
+          ]
+        ],
+        "B"
+      ],
+      "structure_id": "state-4fcc28aafc3bae4f",
+      "target": "D",
+      "trace": [
+        [
+          109,
+          103,
+          93,
+          159
+        ],
+        [
+          55,
+          157,
+          93,
+          159
+        ],
+        [
+          55,
+          157,
+          70,
+          182
+        ],
+        [
+          55,
+          157,
+          76,
+          176
+        ],
+        [
+          74,
+          157,
+          57,
+          176
+        ],
+        [
+          152,
+          79,
+          57,
+          176
+        ],
+        [
+          147,
+          79,
+          57,
+          181
+        ]
+      ]
+    }
+  ],
+  "kind": "reference_only_public_development",
+  "max_tokens": 1536,
+  "notice": "Exclude these structures, their isomorphs, and functional equivalents from sealed tests",
+  "parser": "last-numeric-token-on-normal-stop-v1",
+  "reference_sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+  "schema_version": 3,
+  "seed": 2026111303,
+  "system_prompt": "Use brief calculations with only the intermediate quantities needed to solve the problem. Finish with exactly one separate line: The final answer is N. Replace N with the integer answer. Write nothing after that line.",
+  "temperature": 0
+}

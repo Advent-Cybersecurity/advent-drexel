@@ -1,0 +1,91 @@
+{
+  "by_length": {
+    "4": {
+      "cases": 6,
+      "depth_histogram": {
+        "1": 1,
+        "3": 1,
+        "4": 4
+      },
+      "full_length_depth": 4
+    },
+    "7": {
+      "cases": 6,
+      "depth_histogram": {
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1
+      },
+      "full_length_depth": 1
+    }
+  },
+  "cases": [
+    {
+      "event_count": 4,
+      "id": "state-01",
+      "longest_query_dependency_path": 4
+    },
+    {
+      "event_count": 4,
+      "id": "state-02",
+      "longest_query_dependency_path": 1
+    },
+    {
+      "event_count": 4,
+      "id": "state-03",
+      "longest_query_dependency_path": 4
+    },
+    {
+      "event_count": 4,
+      "id": "state-04",
+      "longest_query_dependency_path": 3
+    },
+    {
+      "event_count": 4,
+      "id": "state-05",
+      "longest_query_dependency_path": 4
+    },
+    {
+      "event_count": 4,
+      "id": "state-06",
+      "longest_query_dependency_path": 4
+    },
+    {
+      "event_count": 7,
+      "id": "state-07",
+      "longest_query_dependency_path": 1
+    },
+    {
+      "event_count": 7,
+      "id": "state-08",
+      "longest_query_dependency_path": 5
+    },
+    {
+      "event_count": 7,
+      "id": "state-09",
+      "longest_query_dependency_path": 3
+    },
+    {
+      "event_count": 7,
+      "id": "state-10",
+      "longest_query_dependency_path": 6
+    },
+    {
+      "event_count": 7,
+      "id": "state-11",
+      "longest_query_dependency_path": 7
+    },
+    {
+      "event_count": 7,
+      "id": "state-12",
+      "longest_query_dependency_path": 4
+    }
+  ],
+  "caveat": "Symbolic path length does not prove numeric sensitivity on this instance, end-to-end functional non-equivalence, or model difficulty.",
+  "kind": "public_v3_state_query_dependency_depth_audit",
+  "manifest_sha256": "7b6db8127f63beb1c0a4779b8232d1d64cfc54cc8c207e69f34d845c94330943",
+  "rule": "Longest symbolic event path to queried final room; fixed transfers each depend only on the same room's old balance, fraction transfers also depend on source balance, and conditional direction depends on its named source balance."
+}

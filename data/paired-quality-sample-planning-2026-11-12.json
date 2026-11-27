@@ -1,0 +1,229 @@
+{
+  "purpose": "prospective scenario analysis, not fitted power",
+  "assumptions": "equal true arm rates, symmetric discordance, independent items and families",
+  "seed": 20261113,
+  "trials_per_scenario": 10000,
+  "gate": {
+    "floor": 0.6,
+    "paired_margin": 0.05,
+    "bonferroni_alpha_per_assertion": 0.008333333333333333
+  },
+  "rows": [
+    {
+      "reference_and_candidate_true_rate": 0.7,
+      "total_discordance_probability": 0.05,
+      "n_per_family": 300,
+      "responses_for_two_models_two_families": 1200,
+      "joint_passes": 1576,
+      "joint_pass_fraction": 0.1576,
+      "family_pass_fraction": 0.3957
+    },
+    {
+      "reference_and_candidate_true_rate": 0.7,
+      "total_discordance_probability": 0.05,
+      "n_per_family": 600,
+      "responses_for_two_models_two_families": 2400,
+      "joint_passes": 8683,
+      "joint_pass_fraction": 0.8683,
+      "family_pass_fraction": 0.93165
+    },
+    {
+      "reference_and_candidate_true_rate": 0.7,
+      "total_discordance_probability": 0.05,
+      "n_per_family": 900,
+      "responses_for_two_models_two_families": 3600,
+      "joint_passes": 9942,
+      "joint_pass_fraction": 0.9942,
+      "family_pass_fraction": 0.9971
+    },
+    {
+      "reference_and_candidate_true_rate": 0.7,
+      "total_discordance_probability": 0.05,
+      "n_per_family": 1200,
+      "responses_for_two_models_two_families": 4800,
+      "joint_passes": 9999,
+      "joint_pass_fraction": 0.9999,
+      "family_pass_fraction": 0.99995
+    },
+    {
+      "reference_and_candidate_true_rate": 0.7,
+      "total_discordance_probability": 0.1,
+      "n_per_family": 300,
+      "responses_for_two_models_two_families": 1200,
+      "joint_passes": 121,
+      "joint_pass_fraction": 0.0121,
+      "family_pass_fraction": 0.10825
+    },
+    {
+      "reference_and_candidate_true_rate": 0.7,
+      "total_discordance_probability": 0.1,
+      "n_per_family": 600,
+      "responses_for_two_models_two_families": 2400,
+      "joint_passes": 2984,
+      "joint_pass_fraction": 0.2984,
+      "family_pass_fraction": 0.5411
+    },
+    {
+      "reference_and_candidate_true_rate": 0.7,
+      "total_discordance_probability": 0.1,
+      "n_per_family": 900,
+      "responses_for_two_models_two_families": 3600,
+      "joint_passes": 6966,
+      "joint_pass_fraction": 0.6966,
+      "family_pass_fraction": 0.8367
+    },
+    {
+      "reference_and_candidate_true_rate": 0.7,
+      "total_discordance_probability": 0.1,
+      "n_per_family": 1200,
+      "responses_for_two_models_two_families": 4800,
+      "joint_passes": 9149,
+      "joint_pass_fraction": 0.9149,
+      "family_pass_fraction": 0.9565
+    },
+    {
+      "reference_and_candidate_true_rate": 0.7,
+      "total_discordance_probability": 0.2,
+      "n_per_family": 300,
+      "responses_for_two_models_two_families": 1200,
+      "joint_passes": 5,
+      "joint_pass_fraction": 0.0005,
+      "family_pass_fraction": 0.0252
+    },
+    {
+      "reference_and_candidate_true_rate": 0.7,
+      "total_discordance_probability": 0.2,
+      "n_per_family": 600,
+      "responses_for_two_models_two_families": 2400,
+      "joint_passes": 332,
+      "joint_pass_fraction": 0.0332,
+      "family_pass_fraction": 0.18435
+    },
+    {
+      "reference_and_candidate_true_rate": 0.7,
+      "total_discordance_probability": 0.2,
+      "n_per_family": 900,
+      "responses_for_two_models_two_families": 3600,
+      "joint_passes": 1562,
+      "joint_pass_fraction": 0.1562,
+      "family_pass_fraction": 0.3985
+    },
+    {
+      "reference_and_candidate_true_rate": 0.7,
+      "total_discordance_probability": 0.2,
+      "n_per_family": 1200,
+      "responses_for_two_models_two_families": 4800,
+      "joint_passes": 3637,
+      "joint_pass_fraction": 0.3637,
+      "family_pass_fraction": 0.60615
+    },
+    {
+      "reference_and_candidate_true_rate": 0.8,
+      "total_discordance_probability": 0.05,
+      "n_per_family": 300,
+      "responses_for_two_models_two_families": 1200,
+      "joint_passes": 2063,
+      "joint_pass_fraction": 0.2063,
+      "family_pass_fraction": 0.45835
+    },
+    {
+      "reference_and_candidate_true_rate": 0.8,
+      "total_discordance_probability": 0.05,
+      "n_per_family": 600,
+      "responses_for_two_models_two_families": 2400,
+      "joint_passes": 8786,
+      "joint_pass_fraction": 0.8786,
+      "family_pass_fraction": 0.93735
+    },
+    {
+      "reference_and_candidate_true_rate": 0.8,
+      "total_discordance_probability": 0.05,
+      "n_per_family": 900,
+      "responses_for_two_models_two_families": 3600,
+      "joint_passes": 9954,
+      "joint_pass_fraction": 0.9954,
+      "family_pass_fraction": 0.9977
+    },
+    {
+      "reference_and_candidate_true_rate": 0.8,
+      "total_discordance_probability": 0.05,
+      "n_per_family": 1200,
+      "responses_for_two_models_two_families": 4800,
+      "joint_passes": 9998,
+      "joint_pass_fraction": 0.9998,
+      "family_pass_fraction": 0.9999
+    },
+    {
+      "reference_and_candidate_true_rate": 0.8,
+      "total_discordance_probability": 0.1,
+      "n_per_family": 300,
+      "responses_for_two_models_two_families": 1200,
+      "joint_passes": 187,
+      "joint_pass_fraction": 0.0187,
+      "family_pass_fraction": 0.14165
+    },
+    {
+      "reference_and_candidate_true_rate": 0.8,
+      "total_discordance_probability": 0.1,
+      "n_per_family": 600,
+      "responses_for_two_models_two_families": 2400,
+      "joint_passes": 2830,
+      "joint_pass_fraction": 0.283,
+      "family_pass_fraction": 0.53845
+    },
+    {
+      "reference_and_candidate_true_rate": 0.8,
+      "total_discordance_probability": 0.1,
+      "n_per_family": 900,
+      "responses_for_two_models_two_families": 3600,
+      "joint_passes": 7035,
+      "joint_pass_fraction": 0.7035,
+      "family_pass_fraction": 0.8375
+    },
+    {
+      "reference_and_candidate_true_rate": 0.8,
+      "total_discordance_probability": 0.1,
+      "n_per_family": 1200,
+      "responses_for_two_models_two_families": 4800,
+      "joint_passes": 9131,
+      "joint_pass_fraction": 0.9131,
+      "family_pass_fraction": 0.9559
+    },
+    {
+      "reference_and_candidate_true_rate": 0.8,
+      "total_discordance_probability": 0.2,
+      "n_per_family": 300,
+      "responses_for_two_models_two_families": 1200,
+      "joint_passes": 20,
+      "joint_pass_fraction": 0.002,
+      "family_pass_fraction": 0.04155
+    },
+    {
+      "reference_and_candidate_true_rate": 0.8,
+      "total_discordance_probability": 0.2,
+      "n_per_family": 600,
+      "responses_for_two_models_two_families": 2400,
+      "joint_passes": 348,
+      "joint_pass_fraction": 0.0348,
+      "family_pass_fraction": 0.18895
+    },
+    {
+      "reference_and_candidate_true_rate": 0.8,
+      "total_discordance_probability": 0.2,
+      "n_per_family": 900,
+      "responses_for_two_models_two_families": 3600,
+      "joint_passes": 1565,
+      "joint_pass_fraction": 0.1565,
+      "family_pass_fraction": 0.3998
+    },
+    {
+      "reference_and_candidate_true_rate": 0.8,
+      "total_discordance_probability": 0.2,
+      "n_per_family": 1200,
+      "responses_for_two_models_two_families": 4800,
+      "joint_passes": 3705,
+      "joint_pass_fraction": 0.3705,
+      "family_pass_fraction": 0.60815
+    }
+  ]
+}

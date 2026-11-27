@@ -1,0 +1,2282 @@
+{
+  "cases": [
+    {
+      "dependency_depth": 7,
+      "events": [
+        {
+          "destination": "C",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "B",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "amount": 11,
+          "destination": "A",
+          "op": "fixed",
+          "source": "B"
+        },
+        {
+          "amount": 9,
+          "branch": "low",
+          "destination": "D",
+          "op": "conditional",
+          "source": "B",
+          "threshold": 161
+        },
+        {
+          "destination": "A",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "destination": "C",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "D",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "C"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 101,
+        "B": 83,
+        "C": 114,
+        "D": 186
+      },
+      "gold": 186,
+      "id": "state-01",
+      "initial": {
+        "A": 145,
+        "B": 98,
+        "C": 103,
+        "D": 138
+      },
+      "length": 7,
+      "question": "Four storage rooms start with 145 items in room A, 98 items in room B, 103 items in room C, 138 items in room D. In the following order, room A sends one item for every complete group of 4 items it holds at that point to room C, rounding down; then room C sends one item for every complete group of 2 items it holds at that point to room B, rounding down; then room B sends 11 items to room A; then if room B holds at least 161 items at that point, room B sends 9 items to room D; otherwise room D sends 9 items to room B; then room B sends one item for every complete group of 2 items it holds at that point to room A, rounding down; then room A sends one item for every complete group of 2 items it holds at that point to room C, rounding down; then room C sends one item for every complete group of 3 items it holds at that point to room D, rounding down. How many items are in room D at the end?",
+      "question_sha256": "6381226697935026479f831a574773d05da6d8c190e08d2236053039fa9cdc54",
+      "relevant_event_count": 7,
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            2,
+            ""
+          ],
+          [
+            "fixed",
+            "C",
+            "A",
+            0,
+            ""
+          ],
+          [
+            "conditional",
+            "C",
+            "D",
+            0,
+            "low"
+          ],
+          [
+            "fraction",
+            "C",
+            "A",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "A",
+            "B",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "D",
+            3,
+            ""
+          ]
+        ],
+        "D"
+      ],
+      "structure_id": "state-390a94fdf6ac03ed",
+      "target": "D",
+      "trace": [
+        [
+          109,
+          98,
+          139,
+          138
+        ],
+        [
+          109,
+          167,
+          70,
+          138
+        ],
+        [
+          120,
+          156,
+          70,
+          138
+        ],
+        [
+          120,
+          165,
+          70,
+          129
+        ],
+        [
+          202,
+          83,
+          70,
+          129
+        ],
+        [
+          101,
+          83,
+          171,
+          129
+        ],
+        [
+          101,
+          83,
+          114,
+          186
+        ]
+      ]
+    },
+    {
+      "dependency_depth": 7,
+      "events": [
+        {
+          "destination": "D",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "destination": "D",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "C",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "amount": 6,
+          "branch": "low",
+          "destination": "A",
+          "op": "conditional",
+          "source": "C",
+          "threshold": 180
+        },
+        {
+          "destination": "A",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "destination": "C",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "C",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "D"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 81,
+        "B": 119,
+        "C": 197,
+        "D": 102
+      },
+      "gold": 197,
+      "id": "state-02",
+      "initial": {
+        "A": 105,
+        "B": 119,
+        "C": 133,
+        "D": 142
+      },
+      "length": 7,
+      "question": "Four storage rooms start with 105 items in room A, 119 items in room B, 133 items in room C, 142 items in room D. In the following order, room C sends one item for every complete group of 4 items it holds at that point to room D, rounding down; then room A sends one item for every complete group of 2 items it holds at that point to room D, rounding down; then room D sends one item for every complete group of 3 items it holds at that point to room C, rounding down; then if room C holds at least 180 items at that point, room C sends 6 items to room A; otherwise room A sends 6 items to room C; then room C sends one item for every complete group of 3 items it holds at that point to room A, rounding down; then room A sends one item for every complete group of 4 items it holds at that point to room C, rounding down; then room D sends one item for every complete group of 3 items it holds at that point to room C, rounding down. How many items are in room C at the end?",
+      "question_sha256": "007dc40efb03e61350b9f5dca6cfffc560066acf87fd3102302b6e411877e6ec",
+      "relevant_event_count": 7,
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "B",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "A",
+            3,
+            ""
+          ],
+          [
+            "conditional",
+            "A",
+            "C",
+            0,
+            "low"
+          ],
+          [
+            "fraction",
+            "A",
+            "C",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "A",
+            4,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "A",
+            3,
+            ""
+          ]
+        ],
+        "A"
+      ],
+      "structure_id": "state-17732743a778fa13",
+      "target": "C",
+      "trace": [
+        [
+          105,
+          119,
+          100,
+          175
+        ],
+        [
+          53,
+          119,
+          100,
+          227
+        ],
+        [
+          53,
+          119,
+          175,
+          152
+        ],
+        [
+          47,
+          119,
+          181,
+          152
+        ],
+        [
+          107,
+          119,
+          121,
+          152
+        ],
+        [
+          81,
+          119,
+          147,
+          152
+        ],
+        [
+          81,
+          119,
+          197,
+          102
+        ]
+      ]
+    },
+    {
+      "dependency_depth": 7,
+      "events": [
+        {
+          "destination": "B",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "destination": "B",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "amount": 11,
+          "destination": "C",
+          "op": "fixed",
+          "source": "B"
+        },
+        {
+          "amount": 7,
+          "branch": "high",
+          "destination": "B",
+          "op": "conditional",
+          "source": "D",
+          "threshold": 119
+        },
+        {
+          "amount": 7,
+          "destination": "D",
+          "op": "fixed",
+          "source": "B"
+        },
+        {
+          "amount": 6,
+          "destination": "B",
+          "op": "fixed",
+          "source": "D"
+        },
+        {
+          "destination": "A",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "B"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 207,
+        "B": 137,
+        "C": 51,
+        "D": 118
+      },
+      "gold": 207,
+      "id": "state-03",
+      "initial": {
+        "A": 139,
+        "B": 131,
+        "C": 119,
+        "D": 124
+      },
+      "length": 7,
+      "question": "Four storage rooms start with 139 items in room A, 131 items in room B, 119 items in room C, 124 items in room D. In the following order, room C sends one item for every complete group of 3 items it holds at that point to room B, rounding down; then room C sends one item for every complete group of 2 items it holds at that point to room B, rounding down; then room B sends 11 items to room C; then if room D holds at least 119 items at that point, room D sends 7 items to room B; otherwise room B sends 7 items to room D; then room B sends 7 items to room D; then room D sends 6 items to room B; then room B sends one item for every complete group of 3 items it holds at that point to room A, rounding down. How many items are in room A at the end?",
+      "question_sha256": "fdcd05d57e597b3ab0ea31102c95bb3cba239fc6ae26f90f4a01a3b5a33a8230",
+      "relevant_event_count": 7,
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "A",
+            "B",
+            2,
+            ""
+          ],
+          [
+            "fixed",
+            "B",
+            "A",
+            0,
+            ""
+          ],
+          [
+            "conditional",
+            "C",
+            "B",
+            0,
+            "high"
+          ],
+          [
+            "fixed",
+            "B",
+            "C",
+            0,
+            ""
+          ],
+          [
+            "fixed",
+            "C",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "D",
+            3,
+            ""
+          ]
+        ],
+        "D"
+      ],
+      "structure_id": "state-7cdbf44f4a8b9e58",
+      "target": "A",
+      "trace": [
+        [
+          139,
+          170,
+          80,
+          124
+        ],
+        [
+          139,
+          210,
+          40,
+          124
+        ],
+        [
+          139,
+          199,
+          51,
+          124
+        ],
+        [
+          139,
+          206,
+          51,
+          117
+        ],
+        [
+          139,
+          199,
+          51,
+          124
+        ],
+        [
+          139,
+          205,
+          51,
+          118
+        ],
+        [
+          207,
+          137,
+          51,
+          118
+        ]
+      ]
+    },
+    {
+      "dependency_depth": 7,
+      "events": [
+        {
+          "destination": "A",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "destination": "D",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "amount": 4,
+          "destination": "A",
+          "op": "fixed",
+          "source": "D"
+        },
+        {
+          "amount": 11,
+          "branch": "low",
+          "destination": "D",
+          "op": "conditional",
+          "source": "B",
+          "threshold": 122
+        },
+        {
+          "destination": "D",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "destination": "B",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "destination": "A",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "B"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 202,
+        "B": 85,
+        "C": 93,
+        "D": 84
+      },
+      "gold": 202,
+      "id": "state-04",
+      "initial": {
+        "A": 143,
+        "B": 117,
+        "C": 93,
+        "D": 111
+      },
+      "length": 7,
+      "question": "Four storage rooms start with 143 items in room A, 117 items in room B, 93 items in room C, 111 items in room D. In the following order, room D sends one item for every complete group of 4 items it holds at that point to room A, rounding down; then room A sends one item for every complete group of 3 items it holds at that point to room D, rounding down; then room D sends 4 items to room A; then if room B holds at least 122 items at that point, room B sends 11 items to room D; otherwise room D sends 11 items to room B; then room B sends one item for every complete group of 3 items it holds at that point to room D, rounding down; then room D sends one item for every complete group of 2 items it holds at that point to room B, rounding down; then room B sends one item for every complete group of 2 items it holds at that point to room A, rounding down. How many items are in room A at the end?",
+      "question_sha256": "35e8ae1528c7fa4f14edc20d28fd16a7e16e53102035dbacfc0f36391d4bb0b2",
+      "relevant_event_count": 7,
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "A",
+            3,
+            ""
+          ],
+          [
+            "fixed",
+            "A",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "conditional",
+            "C",
+            "A",
+            0,
+            "low"
+          ],
+          [
+            "fraction",
+            "C",
+            "A",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "A",
+            "C",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "B",
+            2,
+            ""
+          ]
+        ],
+        "B"
+      ],
+      "structure_id": "state-f318d34e50264fae",
+      "target": "A",
+      "trace": [
+        [
+          170,
+          117,
+          93,
+          84
+        ],
+        [
+          114,
+          117,
+          93,
+          140
+        ],
+        [
+          118,
+          117,
+          93,
+          136
+        ],
+        [
+          118,
+          128,
+          93,
+          125
+        ],
+        [
+          118,
+          86,
+          93,
+          167
+        ],
+        [
+          118,
+          169,
+          93,
+          84
+        ],
+        [
+          202,
+          85,
+          93,
+          84
+        ]
+      ]
+    },
+    {
+      "dependency_depth": 7,
+      "events": [
+        {
+          "destination": "B",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "destination": "D",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "amount": 10,
+          "destination": "B",
+          "op": "fixed",
+          "source": "D"
+        },
+        {
+          "amount": 11,
+          "branch": "low",
+          "destination": "D",
+          "op": "conditional",
+          "source": "B",
+          "threshold": 91
+        },
+        {
+          "destination": "A",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "amount": 4,
+          "destination": "B",
+          "op": "fixed",
+          "source": "A"
+        },
+        {
+          "destination": "C",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "B"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 138,
+        "B": 58,
+        "C": 132,
+        "D": 160
+      },
+      "gold": 132,
+      "id": "state-05",
+      "initial": {
+        "A": 118,
+        "B": 116,
+        "C": 113,
+        "D": 141
+      },
+      "length": 7,
+      "question": "Four storage rooms start with 118 items in room A, 116 items in room B, 113 items in room C, 141 items in room D. In the following order, room D sends one item for every complete group of 4 items it holds at that point to room B, rounding down; then room B sends one item for every complete group of 2 items it holds at that point to room D, rounding down; then room D sends 10 items to room B; then if room B holds at least 91 items at that point, room B sends 11 items to room D; otherwise room D sends 11 items to room B; then room B sends one item for every complete group of 4 items it holds at that point to room A, rounding down; then room A sends 4 items to room B; then room B sends one item for every complete group of 4 items it holds at that point to room C, rounding down. How many items are in room C at the end?",
+      "question_sha256": "8f2a12d619a086a6ed57083c752bfd4889c85e1577551ae5f804dd6948ca48ef",
+      "relevant_event_count": 7,
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "A",
+            2,
+            ""
+          ],
+          [
+            "fixed",
+            "A",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "conditional",
+            "B",
+            "A",
+            0,
+            "low"
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            4,
+            ""
+          ],
+          [
+            "fixed",
+            "C",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "D",
+            4,
+            ""
+          ]
+        ],
+        "D"
+      ],
+      "structure_id": "state-64110e52baada09f",
+      "target": "C",
+      "trace": [
+        [
+          118,
+          151,
+          113,
+          106
+        ],
+        [
+          118,
+          76,
+          113,
+          181
+        ],
+        [
+          118,
+          86,
+          113,
+          171
+        ],
+        [
+          118,
+          97,
+          113,
+          160
+        ],
+        [
+          142,
+          73,
+          113,
+          160
+        ],
+        [
+          138,
+          77,
+          113,
+          160
+        ],
+        [
+          138,
+          58,
+          132,
+          160
+        ]
+      ]
+    },
+    {
+      "dependency_depth": 7,
+      "events": [
+        {
+          "amount": 5,
+          "destination": "B",
+          "op": "fixed",
+          "source": "D"
+        },
+        {
+          "amount": 11,
+          "destination": "D",
+          "op": "fixed",
+          "source": "B"
+        },
+        {
+          "destination": "A",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "amount": 7,
+          "branch": "low",
+          "destination": "D",
+          "op": "conditional",
+          "source": "A",
+          "threshold": 156
+        },
+        {
+          "destination": "B",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "D",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "destination": "A",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "D"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 160,
+        "B": 80,
+        "C": 110,
+        "D": 123
+      },
+      "gold": 160,
+      "id": "state-06",
+      "initial": {
+        "A": 121,
+        "B": 127,
+        "C": 110,
+        "D": 115
+      },
+      "length": 7,
+      "question": "Four storage rooms start with 121 items in room A, 127 items in room B, 110 items in room C, 115 items in room D. In the following order, room D sends 5 items to room B; then room B sends 11 items to room D; then room D sends one item for every complete group of 4 items it holds at that point to room A, rounding down; then if room A holds at least 156 items at that point, room A sends 7 items to room D; otherwise room D sends 7 items to room A; then room A sends one item for every complete group of 4 items it holds at that point to room B, rounding down; then room B sends one item for every complete group of 2 items it holds at that point to room D, rounding down; then room D sends one item for every complete group of 4 items it holds at that point to room A, rounding down. How many items are in room A at the end?",
+      "question_sha256": "5b0137423ee958644b490c2e4715310fc071bec1e673bbf4b2cdca66f4552927",
+      "relevant_event_count": 7,
+      "signature": [
+        [
+          [
+            "fixed",
+            "A",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "fixed",
+            "B",
+            "A",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "A",
+            "C",
+            4,
+            ""
+          ],
+          [
+            "conditional",
+            "C",
+            "A",
+            0,
+            "low"
+          ],
+          [
+            "fraction",
+            "C",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "A",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "A",
+            "C",
+            4,
+            ""
+          ]
+        ],
+        "C"
+      ],
+      "structure_id": "state-fa768ef5c24952b1",
+      "target": "A",
+      "trace": [
+        [
+          121,
+          132,
+          110,
+          110
+        ],
+        [
+          121,
+          121,
+          110,
+          121
+        ],
+        [
+          151,
+          121,
+          110,
+          91
+        ],
+        [
+          158,
+          121,
+          110,
+          84
+        ],
+        [
+          119,
+          160,
+          110,
+          84
+        ],
+        [
+          119,
+          80,
+          110,
+          164
+        ],
+        [
+          160,
+          80,
+          110,
+          123
+        ]
+      ]
+    },
+    {
+      "dependency_depth": 9,
+      "events": [
+        {
+          "destination": "C",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "destination": "A",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "destination": "C",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "destination": "B",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "amount": 9,
+          "branch": "low",
+          "destination": "D",
+          "op": "conditional",
+          "source": "B",
+          "threshold": 142
+        },
+        {
+          "amount": 11,
+          "destination": "D",
+          "op": "fixed",
+          "source": "C"
+        },
+        {
+          "destination": "B",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "destination": "A",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "destination": "B",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 131,
+        "B": 216,
+        "C": 86,
+        "D": 24
+      },
+      "gold": 216,
+      "id": "state-07",
+      "initial": {
+        "A": 119,
+        "B": 118,
+        "C": 128,
+        "D": 92
+      },
+      "length": 9,
+      "question": "Four storage rooms start with 119 items in room A, 118 items in room B, 128 items in room C, 92 items in room D. In the following order, room D sends one item for every complete group of 2 items it holds at that point to room C, rounding down; then room C sends one item for every complete group of 3 items it holds at that point to room A, rounding down; then room B sends one item for every complete group of 4 items it holds at that point to room C, rounding down; then room C sends one item for every complete group of 3 items it holds at that point to room B, rounding down; then if room B holds at least 142 items at that point, room B sends 9 items to room D; otherwise room D sends 9 items to room B; then room C sends 11 items to room D; then room D sends one item for every complete group of 2 items it holds at that point to room B, rounding down; then room B sends one item for every complete group of 2 items it holds at that point to room A, rounding down; then room A sends one item for every complete group of 2 items it holds at that point to room B, rounding down. How many items are in room B at the end?",
+      "question_sha256": "a53ef71348179015be57a32a65444a214261f2bf509f3ddd1b497a512d8d225f",
+      "relevant_event_count": 9,
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "D",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "D",
+            3,
+            ""
+          ],
+          [
+            "conditional",
+            "D",
+            "A",
+            0,
+            "low"
+          ],
+          [
+            "fixed",
+            "B",
+            "A",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "A",
+            "D",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "D",
+            "C",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "D",
+            2,
+            ""
+          ]
+        ],
+        "D"
+      ],
+      "structure_id": "state-6c17fd1ca4bb4817",
+      "target": "B",
+      "trace": [
+        [
+          119,
+          118,
+          174,
+          46
+        ],
+        [
+          177,
+          118,
+          116,
+          46
+        ],
+        [
+          177,
+          89,
+          145,
+          46
+        ],
+        [
+          177,
+          137,
+          97,
+          46
+        ],
+        [
+          177,
+          146,
+          97,
+          37
+        ],
+        [
+          177,
+          146,
+          86,
+          48
+        ],
+        [
+          177,
+          170,
+          86,
+          24
+        ],
+        [
+          262,
+          85,
+          86,
+          24
+        ],
+        [
+          131,
+          216,
+          86,
+          24
+        ]
+      ]
+    },
+    {
+      "dependency_depth": 8,
+      "events": [
+        {
+          "destination": "C",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "destination": "B",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "amount": 9,
+          "destination": "C",
+          "op": "fixed",
+          "source": "B"
+        },
+        {
+          "destination": "B",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "amount": 9,
+          "branch": "high",
+          "destination": "A",
+          "op": "conditional",
+          "source": "D",
+          "threshold": 75
+        },
+        {
+          "destination": "C",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "B",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "destination": "A",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "destination": "B",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 105,
+        "B": 248,
+        "C": 64,
+        "D": 71
+      },
+      "gold": 248,
+      "id": "state-08",
+      "initial": {
+        "A": 121,
+        "B": 141,
+        "C": 107,
+        "D": 119
+      },
+      "length": 9,
+      "question": "Four storage rooms start with 121 items in room A, 141 items in room B, 107 items in room C, 119 items in room D. In the following order, room D sends one item for every complete group of 3 items it holds at that point to room C, rounding down; then room C sends one item for every complete group of 2 items it holds at that point to room B, rounding down; then room B sends 9 items to room C; then room C sends one item for every complete group of 4 items it holds at that point to room B, rounding down; then if room D holds at least 75 items at that point, room D sends 9 items to room A; otherwise room A sends 9 items to room D; then room A sends one item for every complete group of 2 items it holds at that point to room C, rounding down; then room C sends one item for every complete group of 2 items it holds at that point to room B, rounding down; then room B sends one item for every complete group of 2 items it holds at that point to room A, rounding down; then room A sends one item for every complete group of 2 items it holds at that point to room B, rounding down. How many items are in room B at the end?",
+      "question_sha256": "3794e65225aee340d5d51e38774cf0d290397b42d2c047ae5ba7136898d749c1",
+      "relevant_event_count": 9,
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            2,
+            ""
+          ],
+          [
+            "fixed",
+            "C",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            4,
+            ""
+          ],
+          [
+            "conditional",
+            "A",
+            "D",
+            0,
+            "high"
+          ],
+          [
+            "fraction",
+            "D",
+            "B",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "D",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "D",
+            "C",
+            2,
+            ""
+          ]
+        ],
+        "C"
+      ],
+      "structure_id": "state-0d98d4510ca4a604",
+      "target": "B",
+      "trace": [
+        [
+          121,
+          141,
+          146,
+          80
+        ],
+        [
+          121,
+          214,
+          73,
+          80
+        ],
+        [
+          121,
+          205,
+          82,
+          80
+        ],
+        [
+          121,
+          225,
+          62,
+          80
+        ],
+        [
+          130,
+          225,
+          62,
+          71
+        ],
+        [
+          65,
+          225,
+          127,
+          71
+        ],
+        [
+          65,
+          288,
+          64,
+          71
+        ],
+        [
+          209,
+          144,
+          64,
+          71
+        ],
+        [
+          105,
+          248,
+          64,
+          71
+        ]
+      ]
+    },
+    {
+      "dependency_depth": 8,
+      "events": [
+        {
+          "amount": 6,
+          "destination": "D",
+          "op": "fixed",
+          "source": "A"
+        },
+        {
+          "destination": "B",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "amount": 4,
+          "destination": "C",
+          "op": "fixed",
+          "source": "B"
+        },
+        {
+          "amount": 7,
+          "destination": "B",
+          "op": "fixed",
+          "source": "C"
+        },
+        {
+          "amount": 8,
+          "branch": "high",
+          "destination": "A",
+          "op": "conditional",
+          "source": "C",
+          "threshold": 82
+        },
+        {
+          "amount": 6,
+          "destination": "B",
+          "op": "fixed",
+          "source": "C"
+        },
+        {
+          "destination": "C",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "amount": 4,
+          "destination": "B",
+          "op": "fixed",
+          "source": "C"
+        },
+        {
+          "destination": "C",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "B"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 135,
+        "B": 55,
+        "C": 159,
+        "D": 78
+      },
+      "gold": 159,
+      "id": "state-09",
+      "initial": {
+        "A": 133,
+        "B": 106,
+        "C": 90,
+        "D": 98
+      },
+      "length": 9,
+      "question": "Four storage rooms start with 133 items in room A, 106 items in room B, 90 items in room C, 98 items in room D. In the following order, room A sends 6 items to room D; then room D sends one item for every complete group of 4 items it holds at that point to room B, rounding down; then room B sends 4 items to room C; then room C sends 7 items to room B; then if room C holds at least 82 items at that point, room C sends 8 items to room A; otherwise room A sends 8 items to room C; then room C sends 6 items to room B; then room B sends one item for every complete group of 4 items it holds at that point to room C, rounding down; then room C sends 4 items to room B; then room B sends one item for every complete group of 2 items it holds at that point to room C, rounding down. How many items are in room C at the end?",
+      "question_sha256": "1321f6d2fa9bd29ae86fd440e91878dd8e8da488306290373b9ae8a6101d6f79",
+      "relevant_event_count": 9,
+      "signature": [
+        [
+          [
+            "fixed",
+            "A",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            4,
+            ""
+          ],
+          [
+            "fixed",
+            "C",
+            "D",
+            0,
+            ""
+          ],
+          [
+            "fixed",
+            "D",
+            "C",
+            0,
+            ""
+          ],
+          [
+            "conditional",
+            "D",
+            "A",
+            0,
+            "high"
+          ],
+          [
+            "fixed",
+            "D",
+            "C",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "D",
+            4,
+            ""
+          ],
+          [
+            "fixed",
+            "D",
+            "C",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "D",
+            2,
+            ""
+          ]
+        ],
+        "D"
+      ],
+      "structure_id": "state-0f7e67f1428f0060",
+      "target": "C",
+      "trace": [
+        [
+          127,
+          106,
+          90,
+          104
+        ],
+        [
+          127,
+          132,
+          90,
+          78
+        ],
+        [
+          127,
+          128,
+          94,
+          78
+        ],
+        [
+          127,
+          135,
+          87,
+          78
+        ],
+        [
+          135,
+          135,
+          79,
+          78
+        ],
+        [
+          135,
+          141,
+          73,
+          78
+        ],
+        [
+          135,
+          106,
+          108,
+          78
+        ],
+        [
+          135,
+          110,
+          104,
+          78
+        ],
+        [
+          135,
+          55,
+          159,
+          78
+        ]
+      ]
+    },
+    {
+      "dependency_depth": 9,
+      "events": [
+        {
+          "destination": "D",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "amount": 11,
+          "destination": "B",
+          "op": "fixed",
+          "source": "D"
+        },
+        {
+          "destination": "D",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "destination": "B",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "amount": 6,
+          "branch": "high",
+          "destination": "A",
+          "op": "conditional",
+          "source": "B",
+          "threshold": 111
+        },
+        {
+          "destination": "D",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "amount": 9,
+          "destination": "B",
+          "op": "fixed",
+          "source": "D"
+        },
+        {
+          "destination": "D",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "destination": "B",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "D"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 65,
+        "B": 159,
+        "C": 117,
+        "D": 79
+      },
+      "gold": 159,
+      "id": "state-10",
+      "initial": {
+        "A": 106,
+        "B": 97,
+        "C": 117,
+        "D": 100
+      },
+      "length": 9,
+      "question": "Four storage rooms start with 106 items in room A, 97 items in room B, 117 items in room C, 100 items in room D. In the following order, room A sends one item for every complete group of 4 items it holds at that point to room D, rounding down; then room D sends 11 items to room B; then room B sends one item for every complete group of 4 items it holds at that point to room D, rounding down; then room D sends one item for every complete group of 4 items it holds at that point to room B, rounding down; then if room B holds at least 111 items at that point, room B sends 6 items to room A; otherwise room A sends 6 items to room B; then room A sends one item for every complete group of 4 items it holds at that point to room D, rounding down; then room D sends 9 items to room B; then room B sends one item for every complete group of 3 items it holds at that point to room D, rounding down; then room D sends one item for every complete group of 2 items it holds at that point to room B, rounding down. How many items are in room B at the end?",
+      "question_sha256": "1d058eac96ed594594b299748f802637a8a44a45a33f64639e2cc40983688157",
+      "relevant_event_count": 9,
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fixed",
+            "B",
+            "C",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            4,
+            ""
+          ],
+          [
+            "conditional",
+            "C",
+            "A",
+            0,
+            "high"
+          ],
+          [
+            "fraction",
+            "A",
+            "B",
+            4,
+            ""
+          ],
+          [
+            "fixed",
+            "B",
+            "C",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "B",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            2,
+            ""
+          ]
+        ],
+        "C"
+      ],
+      "structure_id": "state-f33102445f33421e",
+      "target": "B",
+      "trace": [
+        [
+          80,
+          97,
+          117,
+          126
+        ],
+        [
+          80,
+          108,
+          117,
+          115
+        ],
+        [
+          80,
+          81,
+          117,
+          142
+        ],
+        [
+          80,
+          116,
+          117,
+          107
+        ],
+        [
+          86,
+          110,
+          117,
+          107
+        ],
+        [
+          65,
+          110,
+          117,
+          128
+        ],
+        [
+          65,
+          119,
+          117,
+          119
+        ],
+        [
+          65,
+          80,
+          117,
+          158
+        ],
+        [
+          65,
+          159,
+          117,
+          79
+        ]
+      ]
+    },
+    {
+      "dependency_depth": 8,
+      "events": [
+        {
+          "amount": 10,
+          "destination": "B",
+          "op": "fixed",
+          "source": "A"
+        },
+        {
+          "destination": "A",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "destination": "D",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "A",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "amount": 10,
+          "branch": "high",
+          "destination": "B",
+          "op": "conditional",
+          "source": "A",
+          "threshold": 139
+        },
+        {
+          "destination": "C",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "B"
+        },
+        {
+          "amount": 9,
+          "destination": "A",
+          "op": "fixed",
+          "source": "C"
+        },
+        {
+          "amount": 6,
+          "destination": "A",
+          "op": "fixed",
+          "source": "D"
+        },
+        {
+          "destination": "C",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 75,
+        "B": 62,
+        "C": 238,
+        "D": 108
+      },
+      "gold": 238,
+      "id": "state-11",
+      "initial": {
+        "A": 129,
+        "B": 113,
+        "C": 143,
+        "D": 98
+      },
+      "length": 9,
+      "question": "Four storage rooms start with 129 items in room A, 113 items in room B, 143 items in room C, 98 items in room D. In the following order, room A sends 10 items to room B; then room B sends one item for every complete group of 3 items it holds at that point to room A, rounding down; then room A sends one item for every complete group of 3 items it holds at that point to room D, rounding down; then room D sends one item for every complete group of 4 items it holds at that point to room A, rounding down; then if room A holds at least 139 items at that point, room A sends 10 items to room B; otherwise room B sends 10 items to room A; then room B sends one item for every complete group of 3 items it holds at that point to room C, rounding down; then room C sends 9 items to room A; then room D sends 6 items to room A; then room A sends one item for every complete group of 2 items it holds at that point to room C, rounding down. How many items are in room C at the end?",
+      "question_sha256": "65f7610d9347bd2774481b20fe49e0551158f1807b474d0b8c397c2189d6f09d",
+      "relevant_event_count": 9,
+      "signature": [
+        [
+          [
+            "fixed",
+            "A",
+            "B",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "A",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "A",
+            "C",
+            3,
+            ""
+          ],
+          [
+            "fraction",
+            "C",
+            "A",
+            4,
+            ""
+          ],
+          [
+            "conditional",
+            "A",
+            "B",
+            0,
+            "high"
+          ],
+          [
+            "fraction",
+            "B",
+            "D",
+            3,
+            ""
+          ],
+          [
+            "fixed",
+            "D",
+            "A",
+            0,
+            ""
+          ],
+          [
+            "fixed",
+            "C",
+            "A",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "A",
+            "D",
+            2,
+            ""
+          ]
+        ],
+        "D"
+      ],
+      "structure_id": "state-c12db992a4d0e288",
+      "target": "C",
+      "trace": [
+        [
+          119,
+          123,
+          143,
+          98
+        ],
+        [
+          160,
+          82,
+          143,
+          98
+        ],
+        [
+          107,
+          82,
+          143,
+          151
+        ],
+        [
+          144,
+          82,
+          143,
+          114
+        ],
+        [
+          134,
+          92,
+          143,
+          114
+        ],
+        [
+          134,
+          62,
+          173,
+          114
+        ],
+        [
+          143,
+          62,
+          164,
+          114
+        ],
+        [
+          149,
+          62,
+          164,
+          108
+        ],
+        [
+          75,
+          62,
+          238,
+          108
+        ]
+      ]
+    },
+    {
+      "dependency_depth": 8,
+      "events": [
+        {
+          "destination": "C",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "destination": "B",
+          "divisor": 4,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "amount": 6,
+          "destination": "D",
+          "op": "fixed",
+          "source": "A"
+        },
+        {
+          "destination": "A",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "D"
+        },
+        {
+          "amount": 5,
+          "branch": "high",
+          "destination": "C",
+          "op": "conditional",
+          "source": "D",
+          "threshold": 39
+        },
+        {
+          "destination": "A",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "destination": "C",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "A"
+        },
+        {
+          "destination": "A",
+          "divisor": 2,
+          "op": "fraction",
+          "source": "C"
+        },
+        {
+          "destination": "C",
+          "divisor": 3,
+          "op": "fraction",
+          "source": "A"
+        }
+      ],
+      "family": "state",
+      "final": {
+        "A": 130,
+        "B": 155,
+        "C": 152,
+        "D": 39
+      },
+      "gold": 152,
+      "id": "state-12",
+      "initial": {
+        "A": 136,
+        "B": 114,
+        "C": 107,
+        "D": 119
+      },
+      "length": 9,
+      "question": "Four storage rooms start with 136 items in room A, 114 items in room B, 107 items in room C, 119 items in room D. In the following order, room D sends one item for every complete group of 2 items it holds at that point to room C, rounding down; then room C sends one item for every complete group of 4 items it holds at that point to room B, rounding down; then room A sends 6 items to room D; then room D sends one item for every complete group of 3 items it holds at that point to room A, rounding down; then if room D holds at least 39 items at that point, room D sends 5 items to room C; otherwise room C sends 5 items to room D; then room C sends one item for every complete group of 2 items it holds at that point to room A, rounding down; then room A sends one item for every complete group of 2 items it holds at that point to room C, rounding down; then room C sends one item for every complete group of 2 items it holds at that point to room A, rounding down; then room A sends one item for every complete group of 3 items it holds at that point to room C, rounding down. How many items are in room C at the end?",
+      "question_sha256": "632277d643604c8d2f8fc4056f5e7bb7d67ffc6224441819c6ab7767c3ed4f75",
+      "relevant_event_count": 9,
+      "signature": [
+        [
+          [
+            "fraction",
+            "A",
+            "B",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "C",
+            4,
+            ""
+          ],
+          [
+            "fixed",
+            "D",
+            "A",
+            0,
+            ""
+          ],
+          [
+            "fraction",
+            "A",
+            "D",
+            3,
+            ""
+          ],
+          [
+            "conditional",
+            "A",
+            "B",
+            0,
+            "high"
+          ],
+          [
+            "fraction",
+            "B",
+            "D",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "D",
+            "B",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "B",
+            "D",
+            2,
+            ""
+          ],
+          [
+            "fraction",
+            "D",
+            "B",
+            3,
+            ""
+          ]
+        ],
+        "B"
+      ],
+      "structure_id": "state-8ff2cd838c8c6c07",
+      "target": "C",
+      "trace": [
+        [
+          136,
+          114,
+          166,
+          60
+        ],
+        [
+          136,
+          155,
+          125,
+          60
+        ],
+        [
+          130,
+          155,
+          125,
+          66
+        ],
+        [
+          152,
+          155,
+          125,
+          44
+        ],
+        [
+          152,
+          155,
+          130,
+          39
+        ],
+        [
+          217,
+          155,
+          65,
+          39
+        ],
+        [
+          109,
+          155,
+          173,
+          39
+        ],
+        [
+          195,
+          155,
+          87,
+          39
+        ],
+        [
+          130,
+          155,
+          152,
+          39
+        ]
+      ]
+    }
+  ],
+  "draw_stats": {
+    "7": {
+      "accepted": 6,
+      "draws": 21,
+      "rejected": {
+        "insufficient_depth": 14,
+        "irrelevant_event": 0,
+        "numerically_insensitive": 1,
+        "topology_collision": 0
+      }
+    },
+    "9": {
+      "accepted": 6,
+      "draws": 20,
+      "rejected": {
+        "insufficient_depth": 14,
+        "irrelevant_event": 0,
+        "numerically_insensitive": 0,
+        "topology_collision": 0
+      }
+    }
+  },
+  "exclusion_manifest_sha256": "7b6db8127f63beb1c0a4779b8232d1d64cfc54cc8c207e69f34d845c94330943",
+  "kind": "reference_only_public_development",
+  "max_tokens": 1536,
+  "notice": "Public reference-only development data. Exclude all cases and functional equivalents from sealed tests.",
+  "parser": "last-numeric-token-on-normal-stop-v1 with exactly-one-terminal sensitivity",
+  "reference_sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+  "schema_version": 4,
+  "seed": 2026111304,
+  "selection": "Six seven-event cases with depth seven; six nine-event cases with depth at least eight; all listed events symbolically query-relevant and individually numerically sensitive; unique query-relevant operator topology under room renaming; exclude V3 state topologies.",
+  "source_generator": "V3 state_case grammar",
+  "system_prompt": "Use brief calculations with only the intermediate quantities needed to solve the problem. Finish with exactly one separate line: The final answer is N. Replace N with the integer answer. Write nothing after that line.",
+  "temperature": 0
+}

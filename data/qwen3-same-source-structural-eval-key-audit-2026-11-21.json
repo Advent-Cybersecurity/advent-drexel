@@ -1,0 +1,14 @@
+{
+  "manifest_sha256": "51b5e73cf150b19e4e5bc6a9ab5e2c7f410c0260541076dcb2bff0b9f8073fa4",
+  "validated_cases": 240,
+  "structure_counts": {
+    "heldout-arithmetic-0": 30,
+    "heldout-arithmetic-1": 30,
+    "heldout-arithmetic-2": 30,
+    "heldout-arithmetic-3": 30,
+    "heldout-state-0": 30,
+    "heldout-state-1": 30,
+    "heldout-state-2": 30,
+    "heldout-state-3": 30
+  }
+}

@@ -1,0 +1,15 @@
+# A general-purpose AI agent packaged as a backdoor: Hermes/LeadStack
+
+Advent Cybersecurity source audit, 26 November 2026. Based on [SafeDep's 19 November first-party package analysis](https://safedep.io/blog/malicious-npm-leadstack-crm-connect-hermes-agent-backdoor). This is static source and publication analysis; no package, model, or malware was run here.
+
+## Observed artifacts and reported mechanism
+
+SafeDep recovered nine malicious versions of a fake CRM package published within six hours on 16 November. Early versions' code installs the legitimate Hermes Agent and supplies attacker-hosted configuration and a chat-gateway credential, then registers the gateway as a service. Later package versions shift to downloaded JavaScript, a binary, and an unpublished platform package. These are **publisher-side release and delivery changes**. A new tarball version does not mean one previously installed agent accepted a new executable version. SafeDep explicitly says it did not recover the later downloads and had not observed the activity on a victim. [Version timeline and victim-observation limit](https://safedep.io/blog/malicious-npm-leadstack-crm-connect-hermes-agent-backdoor).
+
+The early agent-install path offers an unusual placement: rather than embedding a model caller inside a bespoke RAT, the operator seeks to use an existing tool-capable AI agent as the remote-control program. The package source includes a check for the gateway's chat connection during installation. That code path is evidence of **intended reachability verification**, not a published independent transcript in which a compromised victim receives a task and returns its result. SafeDep lists Hermes's file, shell, code, and scheduling tools from the product's documentation; it does not show the model using these tools to change its own installed code. The downloaded persona/configuration is an instruction change, and the article does not publish a sequence of persona versions applied to a continuing process. [Agent and service analysis](https://safedep.io/blog/malicious-npm-leadstack-crm-connect-hermes-agent-backdoor).
+
+SafeDep compares an earlier [ThreatDown CARBONATO investigation](https://www.threatdown.com/blog/carbonato/) that also found Hermes Agent installed largely unchanged and tasked externally. The two campaigns have different delivery paths and must not be combined into a single version or process lineage. Neither report supplies model output-to-code-delta provenance or after-each-revision remote-control checks.
+
+## Implication for the feasibility question
+
+The case supports a **deployment design and attacker-intent observation**: a malicious package can attempt to turn a general AI agent into persistent remote-control infrastructure. It does not establish successful installation on a victim in the published report, model-caused executable-code revision, two active revisions in one continuing process, or retained access after each. The nine package versions cannot serve as the denominator or numerator of a Drexel serial-revision estimate.

@@ -1,0 +1,63 @@
+{
+  "caveat": "Each level is a syntactic signature under room renaming. Matching signatures do not prove end-to-end functional equivalence; distinct signatures do not prove functional non-equivalence. Removing branch or divisor is an intentionally coarse topology view. No model or sealed case was queried.",
+  "cells": {
+    "4": {
+      "accepted": 8269,
+      "draws": 10000,
+      "signatures": {
+        "full_program_with_divisor_and_realized_branch": {
+          "matching_pairs": 6642,
+          "maximum_frequency": 10,
+          "unique": 5101
+        },
+        "query_ancestor_operator_topology_only": {
+          "matching_pairs": 96556,
+          "maximum_frequency": 79,
+          "unique": 1463
+        },
+        "query_ancestors_with_divisor_and_realized_branch": {
+          "matching_pairs": 10601,
+          "maximum_frequency": 45,
+          "unique": 4729
+        },
+        "query_ancestors_with_realized_branch": {
+          "matching_pairs": 82736,
+          "maximum_frequency": 69,
+          "unique": 1859
+        }
+      }
+    },
+    "7": {
+      "accepted": 8272,
+      "draws": 10000,
+      "signatures": {
+        "full_program_with_divisor_and_realized_branch": {
+          "matching_pairs": 0,
+          "maximum_frequency": 1,
+          "unique": 8272
+        },
+        "query_ancestor_operator_topology_only": {
+          "matching_pairs": 245,
+          "maximum_frequency": 4,
+          "unique": 8049
+        },
+        "query_ancestors_with_divisor_and_realized_branch": {
+          "matching_pairs": 9,
+          "maximum_frequency": 2,
+          "unique": 8263
+        },
+        "query_ancestors_with_realized_branch": {
+          "matching_pairs": 201,
+          "maximum_frequency": 4,
+          "unique": 8087
+        }
+      }
+    }
+  },
+  "depth_audit_sha256": "0fdcf690f107600b7cc830383de6a4bbcc24feafcbd76311be7b1d36fa9aba3e",
+  "generator_sha256": "97ee41f34a26bf17faa87c7dc689e69688c5939d600d329f6b48624557ea1d6a",
+  "kind": "public_v3_state_relevant_signature_support_audit",
+  "query_ancestor_audit_sha256": "641b7133e01f88261ee944af4783e2a0958e5ff04373f7c5b8341c88c43b49e0",
+  "rule": "Four-event depth and ancestor count at least three; seven-event depth and ancestor count at least five; same seeded draws as the depth-yield audit.",
+  "seed": 83792
+}

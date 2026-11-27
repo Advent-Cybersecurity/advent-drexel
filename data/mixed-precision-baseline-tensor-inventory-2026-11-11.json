@@ -1,0 +1,196 @@
+{
+  "schema": "gguf-tensor-inventory-v1",
+  "measured_utc": "2026-11-11T15:02:27+00:00",
+  "reader": "gguf.GGUFReader",
+  "reader_source": "ggml-org/llama.cpp",
+  "reader_commit": "f3b407ca1bfeeecebf9e9ef19fcd6eed565bd70a",
+  "method": "Read pinned local public GGUF files, sum ReaderTensor.n_bytes by tensor_type and by the role suffix in blk.<index>.<role> tensor names, record selected tensor shapes and bytes, hash full files with SHA-256, and compare each full-file hash with the official pinned revision's Q4_K_M LFS object ID. Role totals include weights and any biases or norms with that exact role suffix. No model was quantized or run for quality.",
+  "models": [
+    {
+      "file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "official_revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+      "file_bytes": 491400032,
+      "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+      "official_lfs_oid_matches_local_sha256": true,
+      "tensor_count": 291,
+      "tensor_payload_bytes": 485452288,
+      "by_type": {
+        "F32": {
+          "tensors": 121,
+          "payload_bytes": 286208
+        },
+        "Q4_K": {
+          "tensors": 12,
+          "payload_bytes": 29417472
+        },
+        "Q5_0": {
+          "tensors": 133,
+          "payload_bytes": 266742784
+        },
+        "Q6_K": {
+          "tensors": 12,
+          "payload_bytes": 42900480
+        },
+        "Q8_0": {
+          "tensors": 13,
+          "payload_bytes": 146105344
+        }
+      },
+      "embedding_output": {
+        "output.weight": {
+          "type": "Q8_0",
+          "shape": [
+            896,
+            151936
+          ],
+          "payload_bytes": 144643072
+        },
+        "token_embd.weight": {
+          "type": "Q5_0",
+          "shape": [
+            896,
+            151936
+          ],
+          "payload_bytes": 93592576
+        }
+      },
+      "q5_0_q8_0_tensors_with_first_dimension_not_divisible_by_256": {
+        "Q5_0": 133,
+        "Q8_0": 13
+      },
+      "first_dimension_values_for_q5_0_q8_0": {
+        "Q5_0": [
+          896
+        ],
+        "Q8_0": [
+          896
+        ]
+      },
+      "block_role_payload": {
+        "attn_k": {
+          "tensors": 48,
+          "payload_bytes": 1904640
+        },
+        "attn_norm": {
+          "tensors": 24,
+          "payload_bytes": 86016
+        },
+        "attn_output": {
+          "tensors": 24,
+          "payload_bytes": 13246464
+        },
+        "attn_q": {
+          "tensors": 48,
+          "payload_bytes": 13332480
+        },
+        "attn_v": {
+          "tensors": 48,
+          "payload_bytes": 2420736
+        },
+        "ffn_down": {
+          "tensors": 24,
+          "payload_bytes": 72317952
+        },
+        "ffn_gate": {
+          "tensors": 24,
+          "payload_bytes": 71909376
+        },
+        "ffn_norm": {
+          "tensors": 24,
+          "payload_bytes": 86016
+        },
+        "ffn_up": {
+          "tensors": 24,
+          "payload_bytes": 71909376
+        }
+      }
+    },
+    {
+      "file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "official_revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+      "file_bytes": 1117320736,
+      "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+      "official_lfs_oid_matches_local_sha256": true,
+      "tensor_count": 339,
+      "tensor_payload_bytes": 1111370240,
+      "by_type": {
+        "F32": {
+          "tensors": 141,
+          "payload_bytes": 579584
+        },
+        "Q4_K": {
+          "tensors": 169,
+          "payload_bytes": 756781056
+        },
+        "Q6_K": {
+          "tensors": 29,
+          "payload_bytes": 354009600
+        }
+      },
+      "embedding_output": {
+        "output.weight": {
+          "type": "Q6_K",
+          "shape": [
+            1536,
+            151936
+          ],
+          "payload_bytes": 191439360
+        },
+        "token_embd.weight": {
+          "type": "Q4_K",
+          "shape": [
+            1536,
+            151936
+          ],
+          "payload_bytes": 131272704
+        }
+      },
+      "q5_0_q8_0_tensors_with_first_dimension_not_divisible_by_256": {
+        "Q5_0": 0,
+        "Q8_0": 0
+      },
+      "first_dimension_values_for_q5_0_q8_0": {
+        "Q5_0": [],
+        "Q8_0": []
+      },
+      "block_role_payload": {
+        "attn_k": {
+          "tensors": 56,
+          "payload_bytes": 6221824
+        },
+        "attn_norm": {
+          "tensors": 28,
+          "payload_bytes": 172032
+        },
+        "attn_output": {
+          "tensors": 28,
+          "payload_bytes": 37158912
+        },
+        "attn_q": {
+          "tensors": 56,
+          "payload_bytes": 37330944
+        },
+        "attn_v": {
+          "tensors": 56,
+          "payload_bytes": 7641088
+        },
+        "ffn_down": {
+          "tensors": 28,
+          "payload_bytes": 266434560
+        },
+        "ffn_gate": {
+          "tensors": 28,
+          "payload_bytes": 216760320
+        },
+        "ffn_norm": {
+          "tensors": 28,
+          "payload_bytes": 172032
+        },
+        "ffn_up": {
+          "tensors": 28,
+          "payload_bytes": 216760320
+        }
+      }
+    }
+  ]
+}

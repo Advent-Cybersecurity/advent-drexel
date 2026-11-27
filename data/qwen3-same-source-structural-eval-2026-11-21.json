@@ -1,0 +1,1946 @@
+{
+  "cases": [
+    {
+      "family": "arithmetic",
+      "gold": 56,
+      "id": "arithmetic-0000",
+      "question": "A club has 68 badges and receives 3 packs of 6 badges. It gives away half its current badges, then receives 13 more. How many badges does it have?",
+      "question_sha256": "b09ee69cddca71f4011b174b0cfd9f5a8ecd31561dc6d35f0970b639da8fcd8a",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 32,
+      "id": "arithmetic-0001",
+      "question": "A library receives 7 cartons with 10 cards each. It discards 6 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "a56b841a43a70066200b809e67665ff98f47e02e26eaf6f392191f6cc146c49a",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 201,
+      "id": "arithmetic-0002",
+      "question": "A shop starts with 34 tickets. It doubles its supply, uses 3, triples what remains, then prints 6 more. How many tickets are there now?",
+      "question_sha256": "876d38e4ee7f2cf54c3ae8c880e9cddff6c6fef3aea19be300bd9e08b8e5cec3",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 72,
+      "id": "arithmetic-0003",
+      "question": "A store has 84 pencils. It gives away one third, then gets 5 boxes with 6 pencils in each box, then uses 14. How many pencils remain?",
+      "question_sha256": "c6ef40f4f9bfc15bd77aca738a70276282390143d8f2c497704f40f20aa23849",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 63,
+      "id": "arithmetic-0004",
+      "question": "A club has 74 badges and receives 3 packs of 14 badges. It gives away half its current badges, then receives 5 more. How many badges does it have?",
+      "question_sha256": "7edd8945d73cb359c8c54db283f3b6f1aa8a9032fbfc99ef6d37b0c20269e568",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 12,
+      "id": "arithmetic-0005",
+      "question": "A library receives 5 cartons with 10 cards each. It discards 14 cards and shares the rest equally among 3 desks. How many cards does each desk get?",
+      "question_sha256": "7c28a02a9db47054039e209181b375d23620a04381b5af9dae21e72c30c95c26",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 245,
+      "id": "arithmetic-0006",
+      "question": "A shop starts with 44 tickets. It doubles its supply, uses 10, triples what remains, then prints 11 more. How many tickets are there now?",
+      "question_sha256": "b1499343fdf70b5b2ba441853ffe942534937783e1ff12b90426b356f00da265",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 64,
+      "id": "arithmetic-0007",
+      "question": "A store has 96 pencils. It gives away one third, then gets 2 boxes with 5 pencils in each box, then uses 10. How many pencils remain?",
+      "question_sha256": "c671b068675bda1d8ea2c92bf2be5d19112b3fa7e329b5f0725c754c013a93f1",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 53,
+      "id": "arithmetic-0008",
+      "question": "A club has 52 badges and receives 4 packs of 10 badges. It gives away half its current badges, then receives 7 more. How many badges does it have?",
+      "question_sha256": "df93f33092a15a68780982918545a56d645daa4d8f2ed16341bbcf43eb02b5be",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 26,
+      "id": "arithmetic-0009",
+      "question": "A library receives 10 cartons with 12 cards each. It discards 16 cards and shares the rest equally among 4 desks. How many cards does each desk get?",
+      "question_sha256": "03074f2d3918ee6129c9a7e0ce3f394daafa51506312fe29e63277a301de89be",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 277,
+      "id": "arithmetic-0010",
+      "question": "A shop starts with 47 tickets. It doubles its supply, uses 5, triples what remains, then prints 10 more. How many tickets are there now?",
+      "question_sha256": "644eaff97e221ade2c4317676b5ad7f9b5c2fb760154d560ed13cc1c4689f7b3",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 50,
+      "id": "arithmetic-0011",
+      "question": "A store has 75 pencils. It gives away one third, then gets 2 boxes with 5 pencils in each box, then uses 10. How many pencils remain?",
+      "question_sha256": "26f35db04ec7bf003dcc6d52df969a1bc77befcbeedca72d36a4b4578f29f358",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 52,
+      "id": "arithmetic-0012",
+      "question": "A club has 68 badges and receives 3 packs of 8 badges. It gives away half its current badges, then receives 6 more. How many badges does it have?",
+      "question_sha256": "00bb49885529fc30408cc18bf13ff5d4a7ce162be436b505efeb812193482b24",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 37,
+      "id": "arithmetic-0013",
+      "question": "A library receives 8 cartons with 16 cards each. It discards 17 cards and shares the rest equally among 3 desks. How many cards does each desk get?",
+      "question_sha256": "ea8056e3a29191a796169c36238b5eaea3d138573de0ede4d25bf7f424dd9da7",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 163,
+      "id": "arithmetic-0014",
+      "question": "A shop starts with 28 tickets. It doubles its supply, uses 4, triples what remains, then prints 7 more. How many tickets are there now?",
+      "question_sha256": "dd9fb67f6694390332d37a52a2c153af881fab600b6e86bd327edb29833c354b",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 62,
+      "id": "arithmetic-0015",
+      "question": "A store has 69 pencils. It gives away one third, then gets 4 boxes with 5 pencils in each box, then uses 4. How many pencils remain?",
+      "question_sha256": "121f143b4ec358a0b22779524867acd76fdc3b6e34448e64e481cb7d777968d6",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 51,
+      "id": "arithmetic-0016",
+      "question": "A club has 70 badges and receives 2 packs of 14 badges. It gives away half its current badges, then receives 2 more. How many badges does it have?",
+      "question_sha256": "158904763da271e7434ed041f18f8bda3491f503ed7d44c5448f5102f339df0d",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 32,
+      "id": "arithmetic-0017",
+      "question": "A library receives 8 cartons with 13 cards each. It discards 8 cards and shares the rest equally among 3 desks. How many cards does each desk get?",
+      "question_sha256": "1c3730ac16a769a16c6c20b693a67d02427d918dc376c0ff938ce959f317bcbc",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 165,
+      "id": "arithmetic-0018",
+      "question": "A shop starts with 27 tickets. It doubles its supply, uses 3, triples what remains, then prints 12 more. How many tickets are there now?",
+      "question_sha256": "da6252af440a4d0e6f6996c353294599e2342f48d9f3e56cc838e669194a7200",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 51,
+      "id": "arithmetic-0019",
+      "question": "A store has 72 pencils. It gives away one third, then gets 5 boxes with 3 pencils in each box, then uses 12. How many pencils remain?",
+      "question_sha256": "f714073e6b5103eee96eca689a0c95daeb0fe47176086e3f0ad81bb5383bbf62",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 55,
+      "id": "arithmetic-0020",
+      "question": "A club has 80 badges and receives 2 packs of 10 badges. It gives away half its current badges, then receives 5 more. How many badges does it have?",
+      "question_sha256": "56d628e54858f60872c8a46772a688e6e4c5100444a68da04734f1c61b95cc37",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 57,
+      "id": "arithmetic-0021",
+      "question": "A library receives 10 cartons with 13 cards each. It discards 16 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "f70c531616e5d23b4110b59351b160b19fc88d14a3247726baec8004769ba732",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 138,
+      "id": "arithmetic-0022",
+      "question": "A shop starts with 27 tickets. It doubles its supply, uses 9, triples what remains, then prints 3 more. How many tickets are there now?",
+      "question_sha256": "955103b84efea31a7d118f687a127775ca9ef4482411cb10ca8a06d640003a02",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 92,
+      "id": "arithmetic-0023",
+      "question": "A store has 81 pencils. It gives away one third, then gets 6 boxes with 8 pencils in each box, then uses 10. How many pencils remain?",
+      "question_sha256": "d1918462e9dfceddf468c843307c4825a5b0c966f55f1f08eab7f52dee463c84",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 86,
+      "id": "arithmetic-0024",
+      "question": "A club has 78 badges and receives 4 packs of 16 badges. It gives away half its current badges, then receives 15 more. How many badges does it have?",
+      "question_sha256": "4349a5d15b0d9fc93aac8c8f7e79c575d72ebd32cd55f16965839cbddb35344d",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 29,
+      "id": "arithmetic-0025",
+      "question": "A library receives 5 cartons with 13 cards each. It discards 7 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "342133c544f5e501d466e1af028c78e435fbe5e3c62b2c01c8f4760ca81fb30a",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 122,
+      "id": "arithmetic-0026",
+      "question": "A shop starts with 26 tickets. It doubles its supply, uses 13, triples what remains, then prints 5 more. How many tickets are there now?",
+      "question_sha256": "3b13c0458dabaf8ac777d97b355ec472b58d42990fe28395e4a464f29734ed55",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 84,
+      "id": "arithmetic-0027",
+      "question": "A store has 72 pencils. It gives away one third, then gets 5 boxes with 8 pencils in each box, then uses 4. How many pencils remain?",
+      "question_sha256": "40f1db81cde8d08a434f966806c203c11ef05da7a9eb81723e4a4888310775f8",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 39,
+      "id": "arithmetic-0028",
+      "question": "A club has 50 badges and receives 4 packs of 6 badges. It gives away half its current badges, then receives 2 more. How many badges does it have?",
+      "question_sha256": "575afd7925e99e83e993c174aa4c41f6afee84a637fba26df91b1e8075a9e562",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 21,
+      "id": "arithmetic-0029",
+      "question": "A library receives 10 cartons with 11 cards each. It discards 26 cards and shares the rest equally among 4 desks. How many cards does each desk get?",
+      "question_sha256": "f08e42769e9b9dded8c27078c90768a70a1035291323526600048cf0d91e18de",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 217,
+      "id": "arithmetic-0030",
+      "question": "A shop starts with 40 tickets. It doubles its supply, uses 11, triples what remains, then prints 10 more. How many tickets are there now?",
+      "question_sha256": "4cdc2a6c6a8e7088b791f56d86c819b495762f837fa28c5368bfc5d407d9055e",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 59,
+      "id": "arithmetic-0031",
+      "question": "A store has 75 pencils. It gives away one third, then gets 3 boxes with 5 pencils in each box, then uses 6. How many pencils remain?",
+      "question_sha256": "151b1f5061700ff40735c160039670280810ea17b1b6d08da21ccc969b830231",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 68,
+      "id": "arithmetic-0032",
+      "question": "A club has 80 badges and receives 2 packs of 16 badges. It gives away half its current badges, then receives 12 more. How many badges does it have?",
+      "question_sha256": "0ba4a677803de603c41de3621e1fb80af02783a84c87dd946f0479bec7caca98",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 26,
+      "id": "arithmetic-0033",
+      "question": "A library receives 9 cartons with 14 cards each. It discards 22 cards and shares the rest equally among 4 desks. How many cards does each desk get?",
+      "question_sha256": "7822caab89365be8d33daf788738a1ea5c486ea0521d777dcf9fe15b496f4ac8",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 274,
+      "id": "arithmetic-0034",
+      "question": "A shop starts with 46 tickets. It doubles its supply, uses 4, triples what remains, then prints 10 more. How many tickets are there now?",
+      "question_sha256": "56f0e5b923be9b27c54b9a8a90c07e1c75ff68b04c5add24069a23dbb7bdfd66",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 60,
+      "id": "arithmetic-0035",
+      "question": "A store has 63 pencils. It gives away one third, then gets 3 boxes with 8 pencils in each box, then uses 6. How many pencils remain?",
+      "question_sha256": "7e6fd2a840c2613bdd094181edbd87f99910fa3093a1d751c0d83d9aff9749f3",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 74,
+      "id": "arithmetic-0036",
+      "question": "A club has 78 badges and receives 4 packs of 16 badges. It gives away half its current badges, then receives 3 more. How many badges does it have?",
+      "question_sha256": "b8d2d8b1799cf39653724c94b3c1046fdecc57b5c829e5da585ccf30c85cccab",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 60,
+      "id": "arithmetic-0037",
+      "question": "A library receives 12 cartons with 11 cards each. It discards 12 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "434c3528e796e872bfc9041d30a7bd4add2f958406656a3609958f48522c4406",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 247,
+      "id": "arithmetic-0038",
+      "question": "A shop starts with 44 tickets. It doubles its supply, uses 7, triples what remains, then prints 4 more. How many tickets are there now?",
+      "question_sha256": "9f84b35895d9e45d308dfb98c5bd63a8d2c02dcdf5cc896270dc75395f1a2b29",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 88,
+      "id": "arithmetic-0039",
+      "question": "A store has 93 pencils. It gives away one third, then gets 6 boxes with 6 pencils in each box, then uses 10. How many pencils remain?",
+      "question_sha256": "260904fbafd03f5d2e66c43700474afa3e595fa4b54f1d155f145dffce5b1da1",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 52,
+      "id": "arithmetic-0040",
+      "question": "A club has 68 badges and receives 3 packs of 10 badges. It gives away half its current badges, then receives 3 more. How many badges does it have?",
+      "question_sha256": "b57b123496f6bbf15a90aec167d3e7c0a790b797e3b7e2cab1e7a8364d719ba8",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 11,
+      "id": "arithmetic-0041",
+      "question": "A library receives 5 cartons with 12 cards each. It discards 16 cards and shares the rest equally among 4 desks. How many cards does each desk get?",
+      "question_sha256": "f8ec721c777aca1b6dc28c4f2eb22dce8bcfdf3b8d77b204ac62fe6aadc7d574",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 261,
+      "id": "arithmetic-0042",
+      "question": "A shop starts with 48 tickets. It doubles its supply, uses 13, triples what remains, then prints 12 more. How many tickets are there now?",
+      "question_sha256": "4f6880d327e38d59b7230d7dbbddc555f1989fde59a3d49973e3d2d6811b93ed",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 67,
+      "id": "arithmetic-0043",
+      "question": "A store has 54 pencils. It gives away one third, then gets 6 boxes with 7 pencils in each box, then uses 11. How many pencils remain?",
+      "question_sha256": "56f0bb67148f65486d72237d042d9b52697830a4c5f7c03fd44eed1352daa267",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 70,
+      "id": "arithmetic-0044",
+      "question": "A club has 86 badges and receives 4 packs of 10 badges. It gives away half its current badges, then receives 7 more. How many badges does it have?",
+      "question_sha256": "6c2a8243bf7e39403f0d215f2e754912141e455820778655838752c5c491435d",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 16,
+      "id": "arithmetic-0045",
+      "question": "A library receives 5 cartons with 16 cards each. It discards 16 cards and shares the rest equally among 4 desks. How many cards does each desk get?",
+      "question_sha256": "0645e54e9ec739c76a6ed006b2b8cad90c056a0d83d6ad5fbc51559ce1bbfecc",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 252,
+      "id": "arithmetic-0046",
+      "question": "A shop starts with 43 tickets. It doubles its supply, uses 3, triples what remains, then prints 3 more. How many tickets are there now?",
+      "question_sha256": "1df515487b032c5b04b5fb4761f57009712785b5763754bb31c5b94c1391fc17",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 42,
+      "id": "arithmetic-0047",
+      "question": "A store has 63 pencils. It gives away one third, then gets 3 boxes with 3 pencils in each box, then uses 9. How many pencils remain?",
+      "question_sha256": "295802c0bde8d5100710ee19bfa423e10a9865d1b04578e7120f0901a7737d46",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 45,
+      "id": "arithmetic-0048",
+      "question": "A club has 66 badges and receives 3 packs of 6 badges. It gives away half its current badges, then receives 3 more. How many badges does it have?",
+      "question_sha256": "6b8c87632aa6bf29a201b0e5c8e35fd6c4669e47807e607298b38bdaa62efc5b",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 74,
+      "id": "arithmetic-0049",
+      "question": "A library receives 11 cartons with 15 cards each. It discards 17 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "6cccbefb106120a4703a22809381c203c064741f393060dad9a5e3e5c2a78af4",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 139,
+      "id": "arithmetic-0050",
+      "question": "A shop starts with 28 tickets. It doubles its supply, uses 11, triples what remains, then prints 4 more. How many tickets are there now?",
+      "question_sha256": "c7712999210223bd3f66c9188a1c98b510c27b30ff0e9f1d56a3da7300af6ac9",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 81,
+      "id": "arithmetic-0051",
+      "question": "A store has 102 pencils. It gives away one third, then gets 6 boxes with 4 pencils in each box, then uses 11. How many pencils remain?",
+      "question_sha256": "d7a9f8e2d5413f28a73e0b6e35656a93467afd786f7a0f9da1da22e4972ab62f",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 70,
+      "id": "arithmetic-0052",
+      "question": "A club has 60 badges and receives 4 packs of 16 badges. It gives away half its current badges, then receives 8 more. How many badges does it have?",
+      "question_sha256": "3a68632698595983d3695597d021e50eb96a3e5ef89092984e0b38c3b9c0b3f5",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 58,
+      "id": "arithmetic-0053",
+      "question": "A library receives 8 cartons with 16 cards each. It discards 12 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "fcdbcba0acc11009b55ca317d27448738abbf29dfb436b318835e8228d0bb186",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 177,
+      "id": "arithmetic-0054",
+      "question": "A shop starts with 31 tickets. It doubles its supply, uses 6, triples what remains, then prints 9 more. How many tickets are there now?",
+      "question_sha256": "28227fe4b82b7759a2dcebcd767402dc5af84341ca2c37eeafeb8ac3541ee573",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 72,
+      "id": "arithmetic-0055",
+      "question": "A store has 90 pencils. It gives away one third, then gets 3 boxes with 7 pencils in each box, then uses 9. How many pencils remain?",
+      "question_sha256": "e89fa13f143f13fa71a0ea42e959f30a9d40d02d3553d0a3298a69841585105f",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 62,
+      "id": "arithmetic-0056",
+      "question": "A club has 50 badges and receives 5 packs of 12 badges. It gives away half its current badges, then receives 7 more. How many badges does it have?",
+      "question_sha256": "0e45b1a4c1b977fa295c3c811d3e74717c6dca59d0a5344199ce33b4f1a1353c",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 65,
+      "id": "arithmetic-0057",
+      "question": "A library receives 9 cartons with 15 cards each. It discards 5 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "25401a7cfcfc4678b3c7301c8e87e3f085469747029b35b3b87d1441f1c73082",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 163,
+      "id": "arithmetic-0058",
+      "question": "A shop starts with 28 tickets. It doubles its supply, uses 3, triples what remains, then prints 4 more. How many tickets are there now?",
+      "question_sha256": "bd07ccb9e226af4ccbbd40fff22fcde9e2d94377b89e454db83a07976f922b25",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 57,
+      "id": "arithmetic-0059",
+      "question": "A store has 78 pencils. It gives away one third, then gets 2 boxes with 4 pencils in each box, then uses 3. How many pencils remain?",
+      "question_sha256": "26d58dfa6a8da012e974cc90b37e6ded3da0556a104ca49d6e9ee921b2bfcc05",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 80,
+      "id": "arithmetic-0060",
+      "question": "A club has 74 badges and receives 5 packs of 16 badges. It gives away half its current badges, then receives 3 more. How many badges does it have?",
+      "question_sha256": "de75d2c7b870591d67851269bc00f027382792378a8dcf1a9cbfba496f0c5643",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 11,
+      "id": "arithmetic-0061",
+      "question": "A library receives 8 cartons with 8 cards each. It discards 20 cards and shares the rest equally among 4 desks. How many cards does each desk get?",
+      "question_sha256": "b1fe43742205eb529fa3a310df7e0095f9691391f43d483241fb9602f62f3d7f",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 155,
+      "id": "arithmetic-0062",
+      "question": "A shop starts with 27 tickets. It doubles its supply, uses 5, triples what remains, then prints 8 more. How many tickets are there now?",
+      "question_sha256": "d0cfb8f30ffd8acbd17602d738c68627b46eba13c10ffe45ebca119c91fc1c4f",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 61,
+      "id": "arithmetic-0063",
+      "question": "A store has 72 pencils. It gives away one third, then gets 5 boxes with 4 pencils in each box, then uses 7. How many pencils remain?",
+      "question_sha256": "e6c4b10148cd0e8d6f4cb197bccae0aae8b29cd012bd3ea93a257f90d60136ec",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 80,
+      "id": "arithmetic-0064",
+      "question": "A club has 80 badges and receives 5 packs of 10 badges. It gives away half its current badges, then receives 15 more. How many badges does it have?",
+      "question_sha256": "4e283e1584046e546b584abe39cf37d2859ffb56ce8223ce51f43a41227b27ea",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 14,
+      "id": "arithmetic-0065",
+      "question": "A library receives 6 cartons with 9 cards each. It discards 12 cards and shares the rest equally among 3 desks. How many cards does each desk get?",
+      "question_sha256": "153750cf5a28df704a152ffb51ec319792888c985255876d342b1fb9006fcbfc",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 199,
+      "id": "arithmetic-0066",
+      "question": "A shop starts with 35 tickets. It doubles its supply, uses 5, triples what remains, then prints 4 more. How many tickets are there now?",
+      "question_sha256": "1bb400a6aa8e3d4173ac19f96b08fe000aa59dbe5c041093313c5cc28409f05a",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 68,
+      "id": "arithmetic-0067",
+      "question": "A store has 75 pencils. It gives away one third, then gets 5 boxes with 6 pencils in each box, then uses 12. How many pencils remain?",
+      "question_sha256": "a7eea1c607883b2f004bc89627a2c2f081700e1dc45276d3defb138f359e9c03",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 87,
+      "id": "arithmetic-0068",
+      "question": "A club has 88 badges and receives 5 packs of 16 badges. It gives away half its current badges, then receives 3 more. How many badges does it have?",
+      "question_sha256": "6a0506fc70f2a9e230650e11be476385e5f9d095bc5c67845af89fcdeedf59eb",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 41,
+      "id": "arithmetic-0069",
+      "question": "A library receives 11 cartons with 9 cards each. It discards 17 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "6ac4dbb57add6622024c63478de51da20af9e48b1aa5c99b150f92d07a199780",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 248,
+      "id": "arithmetic-0070",
+      "question": "A shop starts with 47 tickets. It doubles its supply, uses 13, triples what remains, then prints 5 more. How many tickets are there now?",
+      "question_sha256": "aa11ba0fa375d7c565d35eb2c521440684a801e45452cbc311f2c1f1eaecdbf1",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 78,
+      "id": "arithmetic-0071",
+      "question": "A store has 78 pencils. It gives away one third, then gets 6 boxes with 5 pencils in each box, then uses 4. How many pencils remain?",
+      "question_sha256": "4858d090853ddb081cdc19cc3882258fa478345d9ff4c3314b9e97bf18e2e976",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 61,
+      "id": "arithmetic-0072",
+      "question": "A club has 58 badges and receives 3 packs of 12 badges. It gives away half its current badges, then receives 14 more. How many badges does it have?",
+      "question_sha256": "17a5ed76c82cb217e7e93ab8662183e62d3a914a12c17a47031a4cd220477dfc",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 45,
+      "id": "arithmetic-0073",
+      "question": "A library receives 11 cartons with 9 cards each. It discards 9 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "91204f6c0a13853a052a226962d83baa3b6cbdd9f801a01c05bcce70b47b1c74",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 169,
+      "id": "arithmetic-0074",
+      "question": "A shop starts with 31 tickets. It doubles its supply, uses 8, triples what remains, then prints 7 more. How many tickets are there now?",
+      "question_sha256": "3e2764e9b6a8b3b3053137df3bce8bf35c9dcecd0bdfda0144211eb4f25352be",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 52,
+      "id": "arithmetic-0075",
+      "question": "A store has 54 pencils. It gives away one third, then gets 3 boxes with 7 pencils in each box, then uses 5. How many pencils remain?",
+      "question_sha256": "30e6508146e8d32df2f75b59b1a5460c0d7823eb62aab79641766ed196c1c31e",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 72,
+      "id": "arithmetic-0076",
+      "question": "A club has 84 badges and receives 3 packs of 12 badges. It gives away half its current badges, then receives 12 more. How many badges does it have?",
+      "question_sha256": "c5d50cee14b88c599079687174a78e4188264ba2664612a18cc4d004ebe3d338",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 50,
+      "id": "arithmetic-0077",
+      "question": "A library receives 10 cartons with 11 cards each. It discards 10 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "f1dd16fce0714dc26cfb0aa5c995cab3b91943da8abcb8662ad6b1d0910f1c40",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 242,
+      "id": "arithmetic-0078",
+      "question": "A shop starts with 41 tickets. It doubles its supply, uses 3, triples what remains, then prints 5 more. How many tickets are there now?",
+      "question_sha256": "c00a23b8fb12e62d87f299d92ba28fbbc1095e82f9f69579551b6c4374a3e484",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 54,
+      "id": "arithmetic-0079",
+      "question": "A store has 57 pencils. It gives away one third, then gets 3 boxes with 7 pencils in each box, then uses 5. How many pencils remain?",
+      "question_sha256": "160c0ad43d85f60953874f4d4cdd0599dfabc16e78f75b5b4d05b878e464e8c7",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 61,
+      "id": "arithmetic-0080",
+      "question": "A club has 60 badges and receives 4 packs of 10 badges. It gives away half its current badges, then receives 11 more. How many badges does it have?",
+      "question_sha256": "e38a4c243484560ba537b5d4f138ed8a50107ead5960501c7106d23ede2130f8",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 14,
+      "id": "arithmetic-0081",
+      "question": "A library receives 5 cartons with 12 cards each. It discards 18 cards and shares the rest equally among 3 desks. How many cards does each desk get?",
+      "question_sha256": "66fbfa770649362454214ab08b68d8769716990977b7a479eba7c21515d0f24a",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 158,
+      "id": "arithmetic-0082",
+      "question": "A shop starts with 31 tickets. It doubles its supply, uses 10, triples what remains, then prints 2 more. How many tickets are there now?",
+      "question_sha256": "03bd9be24ad9cc8cc35c3ec86fc9628bd84285d32afbd8df1c76e4fe6ba29057",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 104,
+      "id": "arithmetic-0083",
+      "question": "A store has 105 pencils. It gives away one third, then gets 6 boxes with 8 pencils in each box, then uses 14. How many pencils remain?",
+      "question_sha256": "8d090c848de082d4c8559b609ba0a91ad189eef7f2bc561f6cc02e8d38f49222",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 86,
+      "id": "arithmetic-0084",
+      "question": "A club has 50 badges and receives 6 packs of 16 badges. It gives away half its current badges, then receives 13 more. How many badges does it have?",
+      "question_sha256": "2f7d06c162a7c07909efe799a3f7cb9ee1524af2e3edabb12c80818868fb4b14",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 5,
+      "id": "arithmetic-0085",
+      "question": "A library receives 5 cartons with 10 cards each. It discards 30 cards and shares the rest equally among 4 desks. How many cards does each desk get?",
+      "question_sha256": "a7a856e9848d6f2fb6083ee89cdedc649b32c659bc1f5a01511a92273bf7190f",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 253,
+      "id": "arithmetic-0086",
+      "question": "A shop starts with 48 tickets. It doubles its supply, uses 14, triples what remains, then prints 7 more. How many tickets are there now?",
+      "question_sha256": "248a33d07b1659e36a83694ae659327f9934eaa1da88710ce358a1e68141b681",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 59,
+      "id": "arithmetic-0087",
+      "question": "A store has 66 pencils. It gives away one third, then gets 5 boxes with 5 pencils in each box, then uses 10. How many pencils remain?",
+      "question_sha256": "d94df8f30b16c8ba591cb326c9d723e248acf325e5fbac7ff85a269168ba4748",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 74,
+      "id": "arithmetic-0088",
+      "question": "A club has 84 badges and receives 6 packs of 6 badges. It gives away half its current badges, then receives 14 more. How many badges does it have?",
+      "question_sha256": "3dfd812f387ac4e2dbe2580dbc0a693b13201c91590919a69e79f64b5da14aac",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 32,
+      "id": "arithmetic-0089",
+      "question": "A library receives 10 cartons with 14 cards each. It discards 12 cards and shares the rest equally among 4 desks. How many cards does each desk get?",
+      "question_sha256": "7b9d63f6f86e67c99080f1cc849cbb270eee94dd941fadc9f0a20bbb86ebae1a",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 140,
+      "id": "arithmetic-0090",
+      "question": "A shop starts with 25 tickets. It doubles its supply, uses 6, triples what remains, then prints 8 more. How many tickets are there now?",
+      "question_sha256": "2f44eac8458c10ff0525315b9b4129f954d1a19f5295f2cc51b178f5f0cc6068",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 68,
+      "id": "arithmetic-0091",
+      "question": "A store has 102 pencils. It gives away one third, then gets 3 boxes with 4 pencils in each box, then uses 12. How many pencils remain?",
+      "question_sha256": "ce6b715be2a6cf9778017ba5b69cda68accef9bb56d395abe3b4d5e78bcb3991",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 74,
+      "id": "arithmetic-0092",
+      "question": "A club has 82 badges and receives 6 packs of 6 badges. It gives away half its current badges, then receives 15 more. How many badges does it have?",
+      "question_sha256": "49ed63a28c686bacc00952a1457872fa1ff910fe18355a04da5d144b58f5b7c7",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 19,
+      "id": "arithmetic-0093",
+      "question": "A library receives 5 cartons with 15 cards each. It discards 18 cards and shares the rest equally among 3 desks. How many cards does each desk get?",
+      "question_sha256": "c703e2600901bf8bac6924168b41db28451fe99006d95e61637a07e28949094c",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 148,
+      "id": "arithmetic-0094",
+      "question": "A shop starts with 31 tickets. It doubles its supply, uses 14, triples what remains, then prints 4 more. How many tickets are there now?",
+      "question_sha256": "faa8a88da10d585d96cf5d7efaf394fe599b041525f8604121b66a835d54c894",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 98,
+      "id": "arithmetic-0095",
+      "question": "A store has 87 pencils. It gives away one third, then gets 6 boxes with 8 pencils in each box, then uses 8. How many pencils remain?",
+      "question_sha256": "2739b1fecb11a002d6d76302a021f3f918e79797d2db42a3d2be7aaa9ccc005e",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 49,
+      "id": "arithmetic-0096",
+      "question": "A club has 50 badges and receives 2 packs of 12 badges. It gives away half its current badges, then receives 12 more. How many badges does it have?",
+      "question_sha256": "159d4729485cea18e8205aaf427e925e7af086d94f79c8584b31b7eb4ed1abce",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 89,
+      "id": "arithmetic-0097",
+      "question": "A library receives 12 cartons with 16 cards each. It discards 14 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "461debe9bfb1632a3281eb15eac4722143c13957ae28623087abc613d129b051",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 137,
+      "id": "arithmetic-0098",
+      "question": "A shop starts with 24 tickets. It doubles its supply, uses 4, triples what remains, then prints 5 more. How many tickets are there now?",
+      "question_sha256": "4d8608f5e3ee509d73c36e895fd28dce7fc3472a29ce42cc55581ea755ceddb6",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 70,
+      "id": "arithmetic-0099",
+      "question": "A store has 105 pencils. It gives away one third, then gets 3 boxes with 3 pencils in each box, then uses 9. How many pencils remain?",
+      "question_sha256": "4efe79509906f2f092eee9db89048c3d9cde3ba4b2234995ad0335aafed7d1ad",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 85,
+      "id": "arithmetic-0100",
+      "question": "A club has 64 badges and receives 6 packs of 16 badges. It gives away half its current badges, then receives 5 more. How many badges does it have?",
+      "question_sha256": "608acd08d1f829dd7c9eb0b4a2abec79643843186e08be697c801944dcd080c3",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 22,
+      "id": "arithmetic-0101",
+      "question": "A library receives 6 cartons with 12 cards each. It discards 6 cards and shares the rest equally among 3 desks. How many cards does each desk get?",
+      "question_sha256": "77e1e844af54936eedebb6a793438e94842f78c31dae70bbe094c86725439d8b",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 132,
+      "id": "arithmetic-0102",
+      "question": "A shop starts with 22 tickets. It doubles its supply, uses 3, triples what remains, then prints 9 more. How many tickets are there now?",
+      "question_sha256": "459e081d6e92a6472225d38b7b8bc04868c071ebfc738d289aa237c3c9f4f9fb",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 92,
+      "id": "arithmetic-0103",
+      "question": "A store has 99 pencils. It gives away one third, then gets 5 boxes with 8 pencils in each box, then uses 14. How many pencils remain?",
+      "question_sha256": "44803d622fe233380ef6f89d7a99b1e7b39916003d76d91acbe4659f3cab71ed",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 58,
+      "id": "arithmetic-0104",
+      "question": "A club has 82 badges and receives 3 packs of 10 badges. It gives away half its current badges, then receives 2 more. How many badges does it have?",
+      "question_sha256": "fefcef3a37f42545bdd2faab17f80c0834e8faa333dccfbd1b1048340295f2d3",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 38,
+      "id": "arithmetic-0105",
+      "question": "A library receives 8 cartons with 11 cards each. It discards 12 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "6604fe5e90134bc7598c6c8a3647edf923a1edcc7bb6f0ec35b5311a3e10fcee",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 175,
+      "id": "arithmetic-0106",
+      "question": "A shop starts with 34 tickets. It doubles its supply, uses 13, triples what remains, then prints 10 more. How many tickets are there now?",
+      "question_sha256": "aa5f1cc1d08f0fdac3fe0dccbbb28fd3ed4553c46933dbf230fabc12a6738ab2",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 70,
+      "id": "arithmetic-0107",
+      "question": "A store has 93 pencils. It gives away one third, then gets 2 boxes with 7 pencils in each box, then uses 6. How many pencils remain?",
+      "question_sha256": "e9ae190a18881f49be5520bc5f62826e9d082b282eb7725994131756a8f79906",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 46,
+      "id": "arithmetic-0108",
+      "question": "A club has 56 badges and receives 2 packs of 8 badges. It gives away half its current badges, then receives 10 more. How many badges does it have?",
+      "question_sha256": "831a4a99fb16c8f0bc80c67f2d28e7ebbad3a73e90d2df524fa6203ac28ba6d7",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 31,
+      "id": "arithmetic-0109",
+      "question": "A library receives 9 cartons with 15 cards each. It discards 11 cards and shares the rest equally among 4 desks. How many cards does each desk get?",
+      "question_sha256": "86e975ce25467efecf7e9c3e8f197f5af186d905a771c7aec673bbf5be7409be",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 268,
+      "id": "arithmetic-0110",
+      "question": "A shop starts with 46 tickets. It doubles its supply, uses 5, triples what remains, then prints 7 more. How many tickets are there now?",
+      "question_sha256": "5538676cb36fbe6909c9a1343416ed68760adabce18b9b4ce45d4cc9d25f947e",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 45,
+      "id": "arithmetic-0111",
+      "question": "A store has 57 pencils. It gives away one third, then gets 2 boxes with 7 pencils in each box, then uses 7. How many pencils remain?",
+      "question_sha256": "86fb0360df646e8a0aa903d80bce40ab352ffaea5dfec5af43a56e5c3eccb196",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 50,
+      "id": "arithmetic-0112",
+      "question": "A club has 72 badges and receives 2 packs of 12 badges. It gives away half its current badges, then receives 2 more. How many badges does it have?",
+      "question_sha256": "e4b5c9655da57e3a4e343e43d5b0871dedca4f6563fe7fb5c31b9f93318c5dcc",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 13,
+      "id": "arithmetic-0113",
+      "question": "A library receives 5 cartons with 8 cards each. It discards 14 cards and shares the rest equally among 2 desks. How many cards does each desk get?",
+      "question_sha256": "c5b0af68d56cc6140634e9d1f5ceb51ec577789c41479c56da8357d901b64f31",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 134,
+      "id": "arithmetic-0114",
+      "question": "A shop starts with 26 tickets. It doubles its supply, uses 10, triples what remains, then prints 8 more. How many tickets are there now?",
+      "question_sha256": "81e3ef66b542f14a3d61cf2934540f31484d8fe6a70a92f6e0bad9e44a29b321",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 73,
+      "id": "arithmetic-0115",
+      "question": "A store has 81 pencils. It gives away one third, then gets 4 boxes with 6 pencils in each box, then uses 5. How many pencils remain?",
+      "question_sha256": "0c9cfbcb5ad2bf07c150d839f8a7b97d4d713e625c57648555441a84cce4b487",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 57,
+      "id": "arithmetic-0116",
+      "question": "A club has 70 badges and receives 6 packs of 6 badges. It gives away half its current badges, then receives 4 more. How many badges does it have?",
+      "question_sha256": "90f21461ea3f423744b23d25139eeecc2d0a37cbff3482e1a853cdf2c3c427b4",
+      "structure": "heldout-arithmetic-0"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 18,
+      "id": "arithmetic-0117",
+      "question": "A library receives 6 cartons with 12 cards each. It discards 18 cards and shares the rest equally among 3 desks. How many cards does each desk get?",
+      "question_sha256": "60d55c7791ee214f26cc88448b8a33fc47855d84eab47ed65ee4a17aaa40ec06",
+      "structure": "heldout-arithmetic-1"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 224,
+      "id": "arithmetic-0118",
+      "question": "A shop starts with 41 tickets. It doubles its supply, uses 8, triples what remains, then prints 2 more. How many tickets are there now?",
+      "question_sha256": "112654e66b2bb5d0d09da86f9b9cee0b5415107869be551d0815629cf7580178",
+      "structure": "heldout-arithmetic-2"
+    },
+    {
+      "family": "arithmetic",
+      "gold": 54,
+      "id": "arithmetic-0119",
+      "question": "A store has 57 pencils. It gives away one third, then gets 5 boxes with 6 pencils in each box, then uses 14. How many pencils remain?",
+      "question_sha256": "ca74a6de073d07893cde2d1a9144bf7a97ebe38cf797924df31d9a91842a02c3",
+      "structure": "heldout-arithmetic-3"
+    },
+    {
+      "family": "state",
+      "gold": 74,
+      "id": "state-0000",
+      "question": "Three reading rooms have 84, 66, and 66 books in Oak, Cedar, and Maple, respectively. In order, Oak sends 12 books to Cedar; Cedar sends half of its then-current books to Oak; Oak sends one third of its then-current books to Maple; Maple lends out 7 books. How many books are in Oak at the end?",
+      "question_sha256": "634dfb9fc1f7b96243991d1189259ecc4b576b9442753b0bec4036b7e10447de",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 102,
+      "id": "state-0001",
+      "question": "Three reading rooms have 102, 48, and 108 books in Oak, Pine, and Maple, respectively. In order, Maple sends 6 books to Oak; Oak sends half of its then-current books to Pine; Pine sends one third of its then-current books to Oak; Oak lends out 4 books. How many books are in Maple at the end?",
+      "question_sha256": "243162b2bfe4bc5156f98dc731ae0ae6bda67a78dc9dcc2cc8fc9f7bb781d83d",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 94,
+      "id": "state-0002",
+      "question": "Three reading rooms have 78, 90, and 108 books in Birch, Pine, and Cedar, respectively. In order, Pine sends 6 books to Cedar; Cedar sends half of its then-current books to Pine; Pine sends one third of its then-current books to Birch; Birch lends out 7 books. How many books are in Pine at the end?",
+      "question_sha256": "1d15ea2a52639816cb14beba148f3a0b0aa3e70fbd64f252809bd115d631f9a6",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 72,
+      "id": "state-0003",
+      "question": "Three reading rooms have 84, 84, and 84 books in Cedar, Oak, and Maple, respectively. In order, Cedar sends 12 books to Maple; Maple sends half of its then-current books to Oak; Oak sends one third of its then-current books to Maple; Maple lends out 6 books. How many books are in Cedar at the end?",
+      "question_sha256": "bee20dcc87273778254597d3ab81e3668b7eb1ec3e622e909686a77f2cf51a17",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 76,
+      "id": "state-0004",
+      "question": "Three reading rooms have 78, 78, and 84 books in Cedar, Birch, and Maple, respectively. In order, Cedar sends 6 books to Birch; Birch sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Maple; Maple lends out 5 books. How many books are in Cedar at the end?",
+      "question_sha256": "428945534477a6be75b9e99fefb0386c89a799de206adf2ac0eac25333373087",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 54,
+      "id": "state-0005",
+      "question": "Three reading rooms have 102, 60, and 60 books in Birch, Oak, and Maple, respectively. In order, Maple sends 6 books to Birch; Birch sends half of its then-current books to Oak; Oak sends one third of its then-current books to Birch; Birch lends out 7 books. How many books are in Maple at the end?",
+      "question_sha256": "2669a4d014935d1ed8f85853db8911ee73a73699d7f16c4485e893da8ab22e12",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 78,
+      "id": "state-0006",
+      "question": "Three reading rooms have 66, 72, and 108 books in Pine, Oak, and Birch, respectively. In order, Oak sends 18 books to Birch; Birch sends half of its then-current books to Oak; Oak sends one third of its then-current books to Pine; Pine lends out 3 books. How many books are in Oak at the end?",
+      "question_sha256": "67d60790622cbaaa4aab40ae742ee4853e6747d8e6aed8ac1e696e59e48ece64",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 54,
+      "id": "state-0007",
+      "question": "Three reading rooms have 60, 84, and 60 books in Cedar, Oak, and Maple, respectively. In order, Cedar sends 6 books to Maple; Maple sends half of its then-current books to Oak; Oak sends one third of its then-current books to Maple; Maple lends out 5 books. How many books are in Cedar at the end?",
+      "question_sha256": "1095529015a779e2206e4e8957bd79cbfaaf9349d46932eba369fe68be5f4d80",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 60,
+      "id": "state-0008",
+      "question": "Three reading rooms have 48, 90, and 84 books in Cedar, Birch, and Maple, respectively. In order, Cedar sends 6 books to Birch; Birch sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Maple; Maple lends out 8 books. How many books are in Cedar at the end?",
+      "question_sha256": "0d2922aaafee1e5c85ce33eb9588c13145ef178336c8de77f152000da22e7315",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 96,
+      "id": "state-0009",
+      "question": "Three reading rooms have 60, 102, and 102 books in Pine, Cedar, and Oak, respectively. In order, Oak sends 6 books to Pine; Pine sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Pine; Pine lends out 3 books. How many books are in Oak at the end?",
+      "question_sha256": "d6fa1f41304ec0be8e5c295af60c18c7df3c927edbf06f65f922d2cdd3b60307",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 74,
+      "id": "state-0010",
+      "question": "Three reading rooms have 102, 72, and 96 books in Birch, Oak, and Cedar, respectively. In order, Oak sends 18 books to Cedar; Cedar sends half of its then-current books to Oak; Oak sends one third of its then-current books to Birch; Birch lends out 2 books. How many books are in Oak at the end?",
+      "question_sha256": "eaf5015daa660c519d9cdba49417f4bea4653a61b7c37144e3db4999f09a0eaa",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 42,
+      "id": "state-0011",
+      "question": "Three reading rooms have 54, 72, and 54 books in Cedar, Oak, and Maple, respectively. In order, Cedar sends 12 books to Maple; Maple sends half of its then-current books to Oak; Oak sends one third of its then-current books to Maple; Maple lends out 7 books. How many books are in Cedar at the end?",
+      "question_sha256": "34d09d3e0e509e80e8ffc23fa2d8b67b24e21f345b34b90c9f01e20f3f48c029",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 84,
+      "id": "state-0012",
+      "question": "Three reading rooms have 84, 90, and 48 books in Birch, Pine, and Oak, respectively. In order, Birch sends 6 books to Pine; Pine sends half of its then-current books to Birch; Birch sends one third of its then-current books to Oak; Oak lends out 3 books. How many books are in Birch at the end?",
+      "question_sha256": "9fdaf99691f05dba229e00a45dcd5a0795621e01cb99c74986e262f2e0daa023",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 66,
+      "id": "state-0013",
+      "question": "Three reading rooms have 102, 84, and 84 books in Oak, Maple, and Pine, respectively. In order, Pine sends 18 books to Oak; Oak sends half of its then-current books to Maple; Maple sends one third of its then-current books to Oak; Oak lends out 6 books. How many books are in Pine at the end?",
+      "question_sha256": "285d76210049ca2bae18476e34ff2006abcf94743ff7326673dce5e5b2ba135b",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 78,
+      "id": "state-0014",
+      "question": "Three reading rooms have 66, 84, and 72 books in Birch, Oak, and Cedar, respectively. In order, Oak sends 6 books to Cedar; Cedar sends half of its then-current books to Oak; Oak sends one third of its then-current books to Birch; Birch lends out 2 books. How many books are in Oak at the end?",
+      "question_sha256": "937b1c89eb5390500a44b10b2b2be5cc9d51ef8d5956b41e1dfe27c32cb22c1d",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 72,
+      "id": "state-0015",
+      "question": "Three reading rooms have 90, 78, and 48 books in Birch, Maple, and Oak, respectively. In order, Birch sends 18 books to Oak; Oak sends half of its then-current books to Maple; Maple sends one third of its then-current books to Oak; Oak lends out 5 books. How many books are in Birch at the end?",
+      "question_sha256": "4723efe88708579e070d1d60f5e21cf6cb94cb3cd5b1fcca0915c10fb99650f5",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 82,
+      "id": "state-0016",
+      "question": "Three reading rooms have 96, 60, and 78 books in Maple, Birch, and Oak, respectively. In order, Maple sends 6 books to Birch; Birch sends half of its then-current books to Maple; Maple sends one third of its then-current books to Oak; Oak lends out 4 books. How many books are in Maple at the end?",
+      "question_sha256": "a81a517ae91de7c5ca76149d2b5e7c7b46b051a82ced269bb983a8969d1809ab",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 48,
+      "id": "state-0017",
+      "question": "Three reading rooms have 78, 66, and 66 books in Oak, Pine, and Cedar, respectively. In order, Cedar sends 18 books to Oak; Oak sends half of its then-current books to Pine; Pine sends one third of its then-current books to Oak; Oak lends out 6 books. How many books are in Cedar at the end?",
+      "question_sha256": "8a80f77a69fbb146542f69fa7cd3f7608f044fddeb22ae76dd153d570b7675ad",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 64,
+      "id": "state-0018",
+      "question": "Three reading rooms have 108, 66, and 72 books in Birch, Oak, and Maple, respectively. In order, Oak sends 12 books to Maple; Maple sends half of its then-current books to Oak; Oak sends one third of its then-current books to Birch; Birch lends out 8 books. How many books are in Oak at the end?",
+      "question_sha256": "aa4879140ee9155e8aa48707f25661170c98c26ae7085e3eb1d08a1ba476c2e7",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 96,
+      "id": "state-0019",
+      "question": "Three reading rooms have 108, 54, and 60 books in Birch, Pine, and Maple, respectively. In order, Birch sends 12 books to Maple; Maple sends half of its then-current books to Pine; Pine sends one third of its then-current books to Maple; Maple lends out 4 books. How many books are in Birch at the end?",
+      "question_sha256": "c58ac4444c41968dd2fc3960db3fc371c7cc7f2ee402ee32cacb690e763fca98",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 48,
+      "id": "state-0020",
+      "question": "Three reading rooms have 48, 60, and 54 books in Pine, Oak, and Birch, respectively. In order, Pine sends 12 books to Oak; Oak sends half of its then-current books to Pine; Pine sends one third of its then-current books to Birch; Birch lends out 7 books. How many books are in Pine at the end?",
+      "question_sha256": "9b24f0361e7b6c3a1469e6fd95b3be5d87ad9af5530383de98a8223e4db55794",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 60,
+      "id": "state-0021",
+      "question": "Three reading rooms have 108, 96, and 72 books in Oak, Pine, and Birch, respectively. In order, Birch sends 12 books to Oak; Oak sends half of its then-current books to Pine; Pine sends one third of its then-current books to Oak; Oak lends out 2 books. How many books are in Birch at the end?",
+      "question_sha256": "5e4c1833c642ea206c6b63ba9957ca532ef5a18bd46094a209300fae1e2e2a4b",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 98,
+      "id": "state-0022",
+      "question": "Three reading rooms have 84, 108, and 90 books in Cedar, Maple, and Oak, respectively. In order, Maple sends 12 books to Oak; Oak sends half of its then-current books to Maple; Maple sends one third of its then-current books to Cedar; Cedar lends out 5 books. How many books are in Maple at the end?",
+      "question_sha256": "ce1d11c2593bc834b55b1ad50242bd679a0705b57dfea8da18d01cc231d363bc",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 78,
+      "id": "state-0023",
+      "question": "Three reading rooms have 84, 66, and 54 books in Birch, Cedar, and Pine, respectively. In order, Birch sends 6 books to Pine; Pine sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Pine; Pine lends out 5 books. How many books are in Birch at the end?",
+      "question_sha256": "f0db34831af30c500bf5e96174f35c46f77ca50379f75c6d5d4524510e2bc762",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 64,
+      "id": "state-0024",
+      "question": "Three reading rooms have 66, 72, and 78 books in Oak, Cedar, and Pine, respectively. In order, Oak sends 12 books to Cedar; Cedar sends half of its then-current books to Oak; Oak sends one third of its then-current books to Pine; Pine lends out 6 books. How many books are in Oak at the end?",
+      "question_sha256": "31d0fd8a01f082a506ea9e0be56d3aba88b166e96f2c0c87adcab48aa8c1e42f",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 96,
+      "id": "state-0025",
+      "question": "Three reading rooms have 54, 48, and 108 books in Maple, Pine, and Cedar, respectively. In order, Cedar sends 12 books to Maple; Maple sends half of its then-current books to Pine; Pine sends one third of its then-current books to Maple; Maple lends out 4 books. How many books are in Cedar at the end?",
+      "question_sha256": "be7e18b8a3ad236fd10d6b98b5b754af18e6f395a6582fece022a4fb417ece0e",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 76,
+      "id": "state-0026",
+      "question": "Three reading rooms have 108, 78, and 78 books in Maple, Pine, and Birch, respectively. In order, Pine sends 6 books to Birch; Birch sends half of its then-current books to Pine; Pine sends one third of its then-current books to Maple; Maple lends out 6 books. How many books are in Pine at the end?",
+      "question_sha256": "9abdebceaa4c20f9312f8886c2a810a72cf7c8352ea6e6789ecf558955ad55a9",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 36,
+      "id": "state-0027",
+      "question": "Three reading rooms have 54, 108, and 90 books in Pine, Cedar, and Maple, respectively. In order, Pine sends 18 books to Maple; Maple sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Maple; Maple lends out 6 books. How many books are in Pine at the end?",
+      "question_sha256": "5788b106e2b08d1796d7bd591139855d5e67c9c01032c3aa8078c8bc160a2757",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 70,
+      "id": "state-0028",
+      "question": "Three reading rooms have 84, 48, and 48 books in Birch, Pine, and Cedar, respectively. In order, Birch sends 6 books to Pine; Pine sends half of its then-current books to Birch; Birch sends one third of its then-current books to Cedar; Cedar lends out 5 books. How many books are in Birch at the end?",
+      "question_sha256": "2038f3fa73606349e339625f99dde38d3b7123778b151ed248fa2e41313847da",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 72,
+      "id": "state-0029",
+      "question": "Three reading rooms have 72, 48, and 90 books in Cedar, Maple, and Oak, respectively. In order, Oak sends 18 books to Cedar; Cedar sends half of its then-current books to Maple; Maple sends one third of its then-current books to Cedar; Cedar lends out 5 books. How many books are in Oak at the end?",
+      "question_sha256": "ce70ac00f11d4e4896a92b3d2e3aef673601aecb5330e4a8da2bb0f7297955d1",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 88,
+      "id": "state-0030",
+      "question": "Three reading rooms have 60, 96, and 84 books in Birch, Oak, and Pine, respectively. In order, Oak sends 12 books to Pine; Pine sends half of its then-current books to Oak; Oak sends one third of its then-current books to Birch; Birch lends out 5 books. How many books are in Oak at the end?",
+      "question_sha256": "eac54df3fd1336411feae1f74a2b9e5ed41112b25a2b850fde47035924a96c33",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 42,
+      "id": "state-0031",
+      "question": "Three reading rooms have 48, 96, and 108 books in Cedar, Birch, and Pine, respectively. In order, Cedar sends 6 books to Pine; Pine sends half of its then-current books to Birch; Birch sends one third of its then-current books to Pine; Pine lends out 6 books. How many books are in Cedar at the end?",
+      "question_sha256": "40dbb80aa79ef2ad4fbd7cc380140dd801ad4a68dbd2906da960877e00749a4c",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 52,
+      "id": "state-0032",
+      "question": "Three reading rooms have 48, 78, and 108 books in Maple, Pine, and Cedar, respectively. In order, Maple sends 18 books to Pine; Pine sends half of its then-current books to Maple; Maple sends one third of its then-current books to Cedar; Cedar lends out 3 books. How many books are in Maple at the end?",
+      "question_sha256": "513323f3c8556537b29b384969460997f1b8c04578a3fbcf41e5d104a7aa3adc",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 36,
+      "id": "state-0033",
+      "question": "Three reading rooms have 84, 90, and 54 books in Pine, Maple, and Cedar, respectively. In order, Cedar sends 18 books to Pine; Pine sends half of its then-current books to Maple; Maple sends one third of its then-current books to Pine; Pine lends out 8 books. How many books are in Cedar at the end?",
+      "question_sha256": "2f194eb441d27803cb7702b42d4058114ce4955e768d41312952b6bd452c3598",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 78,
+      "id": "state-0034",
+      "question": "Three reading rooms have 48, 84, and 78 books in Cedar, Birch, and Oak, respectively. In order, Birch sends 12 books to Oak; Oak sends half of its then-current books to Birch; Birch sends one third of its then-current books to Cedar; Cedar lends out 7 books. How many books are in Birch at the end?",
+      "question_sha256": "17145a665cf12df96444ec74e2a98b4a38696fbae7c8b9fb2a184025cf3900ba",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 96,
+      "id": "state-0035",
+      "question": "Three reading rooms have 108, 60, and 72 books in Maple, Oak, and Pine, respectively. In order, Maple sends 12 books to Pine; Pine sends half of its then-current books to Oak; Oak sends one third of its then-current books to Pine; Pine lends out 4 books. How many books are in Maple at the end?",
+      "question_sha256": "62a1de98670078f6924b6b649e4a0d129ea9bc534b8c4cc00b3b0c48024a97a4",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 60,
+      "id": "state-0036",
+      "question": "Three reading rooms have 54, 90, and 102 books in Oak, Birch, and Cedar, respectively. In order, Oak sends 18 books to Birch; Birch sends half of its then-current books to Oak; Oak sends one third of its then-current books to Cedar; Cedar lends out 2 books. How many books are in Oak at the end?",
+      "question_sha256": "a5d0a532be6900f4f7f8af81d83a97697d6b321537c0c51e3f597e0ae25e1169",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 78,
+      "id": "state-0037",
+      "question": "Three reading rooms have 108, 90, and 96 books in Birch, Maple, and Cedar, respectively. In order, Cedar sends 18 books to Birch; Birch sends half of its then-current books to Maple; Maple sends one third of its then-current books to Birch; Birch lends out 8 books. How many books are in Cedar at the end?",
+      "question_sha256": "fbfe46c2ceb9c2a251ebd604dffa0f536796e7ecfc4ff0b2f860938a662ce9b6",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 100,
+      "id": "state-0038",
+      "question": "Three reading rooms have 54, 108, and 96 books in Pine, Birch, and Cedar, respectively. In order, Birch sends 12 books to Cedar; Cedar sends half of its then-current books to Birch; Birch sends one third of its then-current books to Pine; Pine lends out 5 books. How many books are in Birch at the end?",
+      "question_sha256": "3965cc9453f29070472e647e4810b1879f634c8548bb2b35d4e191844cbd939d",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 54,
+      "id": "state-0039",
+      "question": "Three reading rooms have 60, 54, and 54 books in Oak, Birch, and Pine, respectively. In order, Oak sends 6 books to Pine; Pine sends half of its then-current books to Birch; Birch sends one third of its then-current books to Pine; Pine lends out 5 books. How many books are in Oak at the end?",
+      "question_sha256": "c5195833627640418adc6fd66ed802d09f3f23b7b8cbc85f308af960b365c580",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 56,
+      "id": "state-0040",
+      "question": "Three reading rooms have 48, 78, and 84 books in Cedar, Maple, and Pine, respectively. In order, Cedar sends 6 books to Maple; Maple sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Pine; Pine lends out 4 books. How many books are in Cedar at the end?",
+      "question_sha256": "51c587b0e1de1d0bd4c10db7915e501496fc2e2cd315fb704cd85f2af8ca3a00",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 42,
+      "id": "state-0041",
+      "question": "Three reading rooms have 102, 54, and 60 books in Birch, Maple, and Cedar, respectively. In order, Cedar sends 18 books to Birch; Birch sends half of its then-current books to Maple; Maple sends one third of its then-current books to Birch; Birch lends out 3 books. How many books are in Cedar at the end?",
+      "question_sha256": "04cdb2a0a2e06e7adf6e04236390fdcd80b06ee7a8354364c62bed295d8d8c3f",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 88,
+      "id": "state-0042",
+      "question": "Three reading rooms have 90, 102, and 72 books in Cedar, Pine, and Birch, respectively. In order, Pine sends 12 books to Birch; Birch sends half of its then-current books to Pine; Pine sends one third of its then-current books to Cedar; Cedar lends out 3 books. How many books are in Pine at the end?",
+      "question_sha256": "3b552b800141a1fe828f7b7d94e961add66d275fa60d2584989ca22a0f4d2c7c",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 78,
+      "id": "state-0043",
+      "question": "Three reading rooms have 90, 90, and 48 books in Cedar, Birch, and Maple, respectively. In order, Cedar sends 12 books to Maple; Maple sends half of its then-current books to Birch; Birch sends one third of its then-current books to Maple; Maple lends out 5 books. How many books are in Cedar at the end?",
+      "question_sha256": "ed3bf16dda9ea0a626f82c0b4164d3b9df7f597f926cc3065dd47d9f26ac9fa9",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 64,
+      "id": "state-0044",
+      "question": "Three reading rooms have 60, 78, and 96 books in Pine, Cedar, and Oak, respectively. In order, Pine sends 6 books to Cedar; Cedar sends half of its then-current books to Pine; Pine sends one third of its then-current books to Oak; Oak lends out 4 books. How many books are in Pine at the end?",
+      "question_sha256": "7683c84a9383778e8836d64db8b1a44e3c0caf14e57c8c8dfc469bf9cd05bd9c",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 54,
+      "id": "state-0045",
+      "question": "Three reading rooms have 108, 72, and 66 books in Maple, Cedar, and Pine, respectively. In order, Pine sends 12 books to Maple; Maple sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Maple; Maple lends out 3 books. How many books are in Pine at the end?",
+      "question_sha256": "fcf494c8a51ae3bddd917f0cf9c1eaea1d14f751d6e0108ab985cfce93f6b9a1",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 92,
+      "id": "state-0046",
+      "question": "Three reading rooms have 66, 102, and 90 books in Pine, Oak, and Birch, respectively. In order, Oak sends 18 books to Birch; Birch sends half of its then-current books to Oak; Oak sends one third of its then-current books to Pine; Pine lends out 4 books. How many books are in Oak at the end?",
+      "question_sha256": "138f49775c4918133275a048953b9ca186b82e2cb72ec2fef3cad7d08e19b2b6",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 84,
+      "id": "state-0047",
+      "question": "Three reading rooms have 96, 90, and 72 books in Cedar, Oak, and Birch, respectively. In order, Cedar sends 12 books to Birch; Birch sends half of its then-current books to Oak; Oak sends one third of its then-current books to Birch; Birch lends out 4 books. How many books are in Cedar at the end?",
+      "question_sha256": "d166f61808a002aaeef8333912bed8f9b262c1fb3584c28dbed0ef8f38664305",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 70,
+      "id": "state-0048",
+      "question": "Three reading rooms have 54, 108, and 90 books in Maple, Oak, and Birch, respectively. In order, Maple sends 6 books to Oak; Oak sends half of its then-current books to Maple; Maple sends one third of its then-current books to Birch; Birch lends out 7 books. How many books are in Maple at the end?",
+      "question_sha256": "8a17384234e54612bdd2930231fa50f1918f2c50963a2045e4b0daf281121af3",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 54,
+      "id": "state-0049",
+      "question": "Three reading rooms have 84, 66, and 60 books in Maple, Birch, and Pine, respectively. In order, Pine sends 6 books to Maple; Maple sends half of its then-current books to Birch; Birch sends one third of its then-current books to Maple; Maple lends out 6 books. How many books are in Pine at the end?",
+      "question_sha256": "efeabbd88012b1a29ca388619a595be56cae9d77312d582941788b881d3031e7",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 66,
+      "id": "state-0050",
+      "question": "Three reading rooms have 78, 72, and 60 books in Birch, Cedar, and Maple, respectively. In order, Cedar sends 6 books to Maple; Maple sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Birch; Birch lends out 8 books. How many books are in Cedar at the end?",
+      "question_sha256": "75462e58eb9d80c81833ece3a9bc2e84992e991cb83aa10f003c8e05f7b3e169",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 90,
+      "id": "state-0051",
+      "question": "Three reading rooms have 96, 60, and 84 books in Pine, Birch, and Cedar, respectively. In order, Pine sends 6 books to Cedar; Cedar sends half of its then-current books to Birch; Birch sends one third of its then-current books to Cedar; Cedar lends out 3 books. How many books are in Pine at the end?",
+      "question_sha256": "44bdfbe2cfa3ceeabfe7c52c0978a1f43142cc83885eb7376353a0ed0261894b",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 70,
+      "id": "state-0052",
+      "question": "Three reading rooms have 66, 96, and 78 books in Cedar, Birch, and Pine, respectively. In order, Cedar sends 18 books to Birch; Birch sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Pine; Pine lends out 5 books. How many books are in Cedar at the end?",
+      "question_sha256": "93f661ed009bed73e575e3edb1fce94139df85e33c480f437e13ff59a6286294",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 78,
+      "id": "state-0053",
+      "question": "Three reading rooms have 54, 84, and 84 books in Cedar, Birch, and Pine, respectively. In order, Pine sends 6 books to Cedar; Cedar sends half of its then-current books to Birch; Birch sends one third of its then-current books to Cedar; Cedar lends out 6 books. How many books are in Pine at the end?",
+      "question_sha256": "6bce97a821c8868a11cd18bc0763be54f8a8322014afe6ad789ba4eeb2fe42fe",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 72,
+      "id": "state-0054",
+      "question": "Three reading rooms have 108, 72, and 84 books in Maple, Pine, and Cedar, respectively. In order, Pine sends 12 books to Cedar; Cedar sends half of its then-current books to Pine; Pine sends one third of its then-current books to Maple; Maple lends out 3 books. How many books are in Pine at the end?",
+      "question_sha256": "c9dc9213356cf9abfa441807a557321fd2d7d363ea68c4e3e22376baf9d8861d",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 66,
+      "id": "state-0055",
+      "question": "Three reading rooms have 84, 108, and 54 books in Maple, Cedar, and Pine, respectively. In order, Maple sends 18 books to Pine; Pine sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Pine; Pine lends out 4 books. How many books are in Maple at the end?",
+      "question_sha256": "bca24f927f6565014b38cecb9c44ec5a9fc5ef1f15135fd488df3999b3920b1f",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 62,
+      "id": "state-0056",
+      "question": "Three reading rooms have 66, 66, and 48 books in Cedar, Oak, and Pine, respectively. In order, Cedar sends 12 books to Oak; Oak sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Pine; Pine lends out 3 books. How many books are in Cedar at the end?",
+      "question_sha256": "d87113de2f742aa753a27d456645f81d6eaf723fa8011eacec78becda2788b8b",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 78,
+      "id": "state-0057",
+      "question": "Three reading rooms have 72, 78, and 90 books in Cedar, Birch, and Maple, respectively. In order, Maple sends 12 books to Cedar; Cedar sends half of its then-current books to Birch; Birch sends one third of its then-current books to Cedar; Cedar lends out 2 books. How many books are in Maple at the end?",
+      "question_sha256": "2380a0225e40863d79bffa959adb82e448c6c5a38df51fe4624d3627a9865041",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 64,
+      "id": "state-0058",
+      "question": "Three reading rooms have 102, 72, and 60 books in Birch, Maple, and Oak, respectively. In order, Maple sends 12 books to Oak; Oak sends half of its then-current books to Maple; Maple sends one third of its then-current books to Birch; Birch lends out 5 books. How many books are in Maple at the end?",
+      "question_sha256": "f4383532475556d8c421a9fb6fff73d8ec62996822d3c3ac6fdee3f0ee9d37b0",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 84,
+      "id": "state-0059",
+      "question": "Three reading rooms have 90, 60, and 96 books in Birch, Oak, and Cedar, respectively. In order, Birch sends 6 books to Cedar; Cedar sends half of its then-current books to Oak; Oak sends one third of its then-current books to Cedar; Cedar lends out 5 books. How many books are in Birch at the end?",
+      "question_sha256": "56d4c214671b739b19efee6c1cbfaa5fa73b7e6737b0e54d0af7a3fb89d2cbdd",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 100,
+      "id": "state-0060",
+      "question": "Three reading rooms have 102, 102, and 60 books in Maple, Cedar, and Oak, respectively. In order, Maple sends 6 books to Cedar; Cedar sends half of its then-current books to Maple; Maple sends one third of its then-current books to Oak; Oak lends out 3 books. How many books are in Maple at the end?",
+      "question_sha256": "4ed4cd37109a17fe57c1e80448d671d75b1932bd5ea5ba0d7a5f0afc451d9016",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 42,
+      "id": "state-0061",
+      "question": "Three reading rooms have 84, 48, and 54 books in Oak, Maple, and Birch, respectively. In order, Birch sends 12 books to Oak; Oak sends half of its then-current books to Maple; Maple sends one third of its then-current books to Oak; Oak lends out 3 books. How many books are in Birch at the end?",
+      "question_sha256": "6e960f161cfb7ae0199b215c4b4664b305fcf15d17376cdb5490051deb311e25",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 78,
+      "id": "state-0062",
+      "question": "Three reading rooms have 108, 96, and 48 books in Birch, Cedar, and Pine, respectively. In order, Cedar sends 6 books to Pine; Pine sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Birch; Birch lends out 8 books. How many books are in Cedar at the end?",
+      "question_sha256": "09758e4214a0fcfb4ca26a58abc7a9b2dccf6ccbab2f99f29ae0fa00bd47c8c5",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 90,
+      "id": "state-0063",
+      "question": "Three reading rooms have 108, 108, and 72 books in Pine, Oak, and Birch, respectively. In order, Pine sends 18 books to Birch; Birch sends half of its then-current books to Oak; Oak sends one third of its then-current books to Birch; Birch lends out 4 books. How many books are in Pine at the end?",
+      "question_sha256": "fa08a1d26b80d0cb2e81ccd5dc70112a04a32c9c6b40d27a901318bec898e116",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 76,
+      "id": "state-0064",
+      "question": "Three reading rooms have 66, 108, and 90 books in Cedar, Birch, and Maple, respectively. In order, Cedar sends 12 books to Birch; Birch sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Maple; Maple lends out 5 books. How many books are in Cedar at the end?",
+      "question_sha256": "3c151240cf14f83d0c813c3e211c40b1e697932dfa4d31b029a60091ab5e8bb3",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 60,
+      "id": "state-0065",
+      "question": "Three reading rooms have 48, 54, and 66 books in Pine, Birch, and Maple, respectively. In order, Maple sends 6 books to Pine; Pine sends half of its then-current books to Birch; Birch sends one third of its then-current books to Pine; Pine lends out 3 books. How many books are in Maple at the end?",
+      "question_sha256": "3f0cc166fecb22fe245a841ea35d57a5a7ac0bd9d9711b5fcb1739e49fcf4c42",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 80,
+      "id": "state-0066",
+      "question": "Three reading rooms have 102, 78, and 96 books in Pine, Cedar, and Oak, respectively. In order, Cedar sends 12 books to Oak; Oak sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Pine; Pine lends out 3 books. How many books are in Cedar at the end?",
+      "question_sha256": "fe28b1e1c30eee96f24eaf3e4441d649a202168a94f255eb22745cabed73a04e",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 78,
+      "id": "state-0067",
+      "question": "Three reading rooms have 96, 108, and 48 books in Maple, Pine, and Birch, respectively. In order, Maple sends 18 books to Birch; Birch sends half of its then-current books to Pine; Pine sends one third of its then-current books to Birch; Birch lends out 2 books. How many books are in Maple at the end?",
+      "question_sha256": "42e54402ad952bc77f350f06f78b31e46ffccd9208d40ec7ebdaa4c7f800174f",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 56,
+      "id": "state-0068",
+      "question": "Three reading rooms have 48, 78, and 54 books in Birch, Maple, and Oak, respectively. In order, Birch sends 6 books to Maple; Maple sends half of its then-current books to Birch; Birch sends one third of its then-current books to Oak; Oak lends out 8 books. How many books are in Birch at the end?",
+      "question_sha256": "2b27518ef60537ee3cdeb6a9bb1fb6b24e7f20535e56304092fd4451dd002d4f",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 48,
+      "id": "state-0069",
+      "question": "Three reading rooms have 60, 90, and 60 books in Cedar, Oak, and Maple, respectively. In order, Maple sends 12 books to Cedar; Cedar sends half of its then-current books to Oak; Oak sends one third of its then-current books to Cedar; Cedar lends out 6 books. How many books are in Maple at the end?",
+      "question_sha256": "28abcef8b34a0d3a68bcf8fe72f010e77ccc76610db00935656585423426198d",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 64,
+      "id": "state-0070",
+      "question": "Three reading rooms have 72, 60, and 78 books in Maple, Cedar, and Oak, respectively. In order, Cedar sends 6 books to Oak; Oak sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Maple; Maple lends out 3 books. How many books are in Cedar at the end?",
+      "question_sha256": "0aa1bdb44225e75631e8c3cc36c399b257a171bf920d9393f302abc4444f6abc",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 60,
+      "id": "state-0071",
+      "question": "Three reading rooms have 78, 102, and 48 books in Maple, Birch, and Cedar, respectively. In order, Maple sends 18 books to Cedar; Cedar sends half of its then-current books to Birch; Birch sends one third of its then-current books to Cedar; Cedar lends out 2 books. How many books are in Maple at the end?",
+      "question_sha256": "7a9a23d9a0f87e54554e6942e6ebd35e29369bd6c4b97c0a28a31acf6b9b3554",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 64,
+      "id": "state-0072",
+      "question": "Three reading rooms have 48, 108, and 90 books in Pine, Cedar, and Oak, respectively. In order, Pine sends 12 books to Cedar; Cedar sends half of its then-current books to Pine; Pine sends one third of its then-current books to Oak; Oak lends out 5 books. How many books are in Pine at the end?",
+      "question_sha256": "a9018ddbb5a3e074a07b750fc99090ac61aadc0e62aa2166210e9ae807dc6d86",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 60,
+      "id": "state-0073",
+      "question": "Three reading rooms have 108, 60, and 78 books in Maple, Pine, and Cedar, respectively. In order, Cedar sends 18 books to Maple; Maple sends half of its then-current books to Pine; Pine sends one third of its then-current books to Maple; Maple lends out 7 books. How many books are in Cedar at the end?",
+      "question_sha256": "9a5588ae9197d21d6511ff2e885b9635fb2ee8b0bd426c3722f147cb182bdb2f",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 84,
+      "id": "state-0074",
+      "question": "Three reading rooms have 102, 108, and 54 books in Birch, Oak, and Cedar, respectively. In order, Oak sends 18 books to Cedar; Cedar sends half of its then-current books to Oak; Oak sends one third of its then-current books to Birch; Birch lends out 5 books. How many books are in Oak at the end?",
+      "question_sha256": "4f4b5abf66074f60ba19ba47e1ac27e7ddc08310749a6e49d56b46933e11f0a3",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 84,
+      "id": "state-0075",
+      "question": "Three reading rooms have 90, 102, and 84 books in Pine, Oak, and Cedar, respectively. In order, Pine sends 6 books to Cedar; Cedar sends half of its then-current books to Oak; Oak sends one third of its then-current books to Cedar; Cedar lends out 2 books. How many books are in Pine at the end?",
+      "question_sha256": "752941ea12351a19e2432779d6d0698d7981c5146100c7429de7670d60f5908f",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 96,
+      "id": "state-0076",
+      "question": "Three reading rooms have 108, 84, and 102 books in Cedar, Pine, and Oak, respectively. In order, Cedar sends 12 books to Pine; Pine sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Oak; Oak lends out 8 books. How many books are in Cedar at the end?",
+      "question_sha256": "b61fabed79d03ed8b4973e8558703d7cb6a9e07afca3f5584af05c4aaeb917fd",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 60,
+      "id": "state-0077",
+      "question": "Three reading rooms have 66, 96, and 78 books in Pine, Maple, and Birch, respectively. In order, Birch sends 18 books to Pine; Pine sends half of its then-current books to Maple; Maple sends one third of its then-current books to Pine; Pine lends out 7 books. How many books are in Birch at the end?",
+      "question_sha256": "181ba3d9fea8fd9485ec7d9861f056d5d02da96ce3b54a9df84b3601e53c9ba5",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 72,
+      "id": "state-0078",
+      "question": "Three reading rooms have 66, 84, and 54 books in Maple, Pine, and Oak, respectively. In order, Pine sends 6 books to Oak; Oak sends half of its then-current books to Pine; Pine sends one third of its then-current books to Maple; Maple lends out 3 books. How many books are in Pine at the end?",
+      "question_sha256": "c23fef155a0584c63c6a0e1cc8035b62edf65b7b53a56d17edea02b9cb982a43",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 60,
+      "id": "state-0079",
+      "question": "Three reading rooms have 66, 90, and 60 books in Birch, Oak, and Pine, respectively. In order, Birch sends 6 books to Pine; Pine sends half of its then-current books to Oak; Oak sends one third of its then-current books to Pine; Pine lends out 6 books. How many books are in Birch at the end?",
+      "question_sha256": "36ba4c83a29066eb05c639ccd999465cb2b447eaeb9990e7806f062726f76f02",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 84,
+      "id": "state-0080",
+      "question": "Three reading rooms have 96, 66, and 84 books in Oak, Cedar, and Maple, respectively. In order, Oak sends 6 books to Cedar; Cedar sends half of its then-current books to Oak; Oak sends one third of its then-current books to Maple; Maple lends out 2 books. How many books are in Oak at the end?",
+      "question_sha256": "6fca718867ded2834395efe08b678aee22445cd74fa5a47c6d8fb61095255b03",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 60,
+      "id": "state-0081",
+      "question": "Three reading rooms have 60, 66, and 66 books in Maple, Oak, and Birch, respectively. In order, Birch sends 6 books to Maple; Maple sends half of its then-current books to Oak; Oak sends one third of its then-current books to Maple; Maple lends out 5 books. How many books are in Birch at the end?",
+      "question_sha256": "fe558635612cbc173b2b27e6e8e9990d7fe0e45bc1edb5e1aa5a7016ad0d09c9",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 70,
+      "id": "state-0082",
+      "question": "Three reading rooms have 90, 78, and 66 books in Birch, Pine, and Cedar, respectively. In order, Pine sends 12 books to Cedar; Cedar sends half of its then-current books to Pine; Pine sends one third of its then-current books to Birch; Birch lends out 2 books. How many books are in Pine at the end?",
+      "question_sha256": "ef814c5c843f7ceb3a9a912fb96da6f1a2d623d12a69a1e5f834cbc354941b0f",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 54,
+      "id": "state-0083",
+      "question": "Three reading rooms have 66, 48, and 78 books in Birch, Maple, and Pine, respectively. In order, Birch sends 12 books to Pine; Pine sends half of its then-current books to Maple; Maple sends one third of its then-current books to Pine; Pine lends out 5 books. How many books are in Birch at the end?",
+      "question_sha256": "82adfc774fcfff1bb9611cee5f060e4d3193c33883dd44df938038a0cf62858f",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 52,
+      "id": "state-0084",
+      "question": "Three reading rooms have 48, 72, and 60 books in Maple, Birch, and Pine, respectively. In order, Maple sends 12 books to Birch; Birch sends half of its then-current books to Maple; Maple sends one third of its then-current books to Pine; Pine lends out 4 books. How many books are in Maple at the end?",
+      "question_sha256": "869757236a6827237aa1a42e3a0dfba8c8cc8521f46895300dddc90333825050",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 66,
+      "id": "state-0085",
+      "question": "Three reading rooms have 102, 90, and 72 books in Pine, Maple, and Birch, respectively. In order, Birch sends 6 books to Pine; Pine sends half of its then-current books to Maple; Maple sends one third of its then-current books to Pine; Pine lends out 7 books. How many books are in Birch at the end?",
+      "question_sha256": "720bfa09898e4fe9611af48d9075d70350727257b26a50b62f5d812377e50c1b",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 64,
+      "id": "state-0086",
+      "question": "Three reading rooms have 48, 78, and 48 books in Birch, Pine, and Cedar, respectively. In order, Pine sends 12 books to Cedar; Cedar sends half of its then-current books to Pine; Pine sends one third of its then-current books to Birch; Birch lends out 3 books. How many books are in Pine at the end?",
+      "question_sha256": "3c661e979e49b77632087b1b4c80546193146f19b6868c28b1f2148bc1476941",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 30,
+      "id": "state-0087",
+      "question": "Three reading rooms have 48, 78, and 60 books in Oak, Maple, and Cedar, respectively. In order, Oak sends 18 books to Cedar; Cedar sends half of its then-current books to Maple; Maple sends one third of its then-current books to Cedar; Cedar lends out 4 books. How many books are in Oak at the end?",
+      "question_sha256": "ceeccf376f6f0d6bd2ae6dec38644f67d134d5808e256bdde94c1518e75230ec",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 72,
+      "id": "state-0088",
+      "question": "Three reading rooms have 90, 48, and 48 books in Pine, Cedar, and Oak, respectively. In order, Pine sends 12 books to Cedar; Cedar sends half of its then-current books to Pine; Pine sends one third of its then-current books to Oak; Oak lends out 8 books. How many books are in Pine at the end?",
+      "question_sha256": "9209e4d2b1716a4c258f6697abaae2c71120ab6062f43ee6c3eba610992ca5dc",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 48,
+      "id": "state-0089",
+      "question": "Three reading rooms have 96, 66, and 66 books in Birch, Maple, and Cedar, respectively. In order, Cedar sends 18 books to Birch; Birch sends half of its then-current books to Maple; Maple sends one third of its then-current books to Birch; Birch lends out 5 books. How many books are in Cedar at the end?",
+      "question_sha256": "7bf7af55c1025623a4b92752706ca4d5ac4d4cffa57c7d2421790cb70219849c",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 60,
+      "id": "state-0090",
+      "question": "Three reading rooms have 54, 60, and 66 books in Maple, Birch, and Pine, respectively. In order, Birch sends 6 books to Pine; Pine sends half of its then-current books to Birch; Birch sends one third of its then-current books to Maple; Maple lends out 2 books. How many books are in Birch at the end?",
+      "question_sha256": "081e6fc9a0fd77873b270aa4b9af42fecd5bf19c635a03a5b579b5e88e2a7719",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 90,
+      "id": "state-0091",
+      "question": "Three reading rooms have 96, 102, and 60 books in Birch, Cedar, and Maple, respectively. In order, Birch sends 6 books to Maple; Maple sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Maple; Maple lends out 6 books. How many books are in Birch at the end?",
+      "question_sha256": "19145a8138e99bbd375361f19634963f60d7ac3d3c69ab069a6d14a44f441916",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 84,
+      "id": "state-0092",
+      "question": "Three reading rooms have 90, 90, and 84 books in Pine, Birch, and Maple, respectively. In order, Pine sends 18 books to Birch; Birch sends half of its then-current books to Pine; Pine sends one third of its then-current books to Maple; Maple lends out 8 books. How many books are in Pine at the end?",
+      "question_sha256": "388155c22ea65672fcd9886faf0facc1af353a7b3cea787dced4177d2250804d",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 42,
+      "id": "state-0093",
+      "question": "Three reading rooms have 90, 48, and 60 books in Oak, Maple, and Pine, respectively. In order, Pine sends 18 books to Oak; Oak sends half of its then-current books to Maple; Maple sends one third of its then-current books to Oak; Oak lends out 6 books. How many books are in Pine at the end?",
+      "question_sha256": "3db9dbae77068e2a003a41c561481f1a3848f7084ae07bee2e786fd6624a9732",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 68,
+      "id": "state-0094",
+      "question": "Three reading rooms have 66, 54, and 102 books in Pine, Birch, and Oak, respectively. In order, Birch sends 6 books to Oak; Oak sends half of its then-current books to Birch; Birch sends one third of its then-current books to Pine; Pine lends out 4 books. How many books are in Birch at the end?",
+      "question_sha256": "2b715a0e37f48fdd221b82d72b3b8f5fd27883e0892dde371d7d961db0a84cc8",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 84,
+      "id": "state-0095",
+      "question": "Three reading rooms have 96, 72, and 102 books in Oak, Pine, and Birch, respectively. In order, Oak sends 12 books to Birch; Birch sends half of its then-current books to Pine; Pine sends one third of its then-current books to Birch; Birch lends out 4 books. How many books are in Oak at the end?",
+      "question_sha256": "eb1045ec89dec459c19e8e4fd66be99ae66795908128f2d216bc7d797416e09a",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 76,
+      "id": "state-0096",
+      "question": "Three reading rooms have 72, 96, and 108 books in Cedar, Maple, and Birch, respectively. In order, Cedar sends 12 books to Maple; Maple sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Birch; Birch lends out 2 books. How many books are in Cedar at the end?",
+      "question_sha256": "deaa4de6cd1787c804413e0ae7646a7ce532f7a22cd2184deb6d4244e2c19869",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 96,
+      "id": "state-0097",
+      "question": "Three reading rooms have 96, 90, and 108 books in Maple, Pine, and Oak, respectively. In order, Oak sends 12 books to Maple; Maple sends half of its then-current books to Pine; Pine sends one third of its then-current books to Maple; Maple lends out 3 books. How many books are in Oak at the end?",
+      "question_sha256": "3c8c2724e7d3c6f08daedd40900e14081f76deabbfc0779ac49b37d3f68c1806",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 74,
+      "id": "state-0098",
+      "question": "Three reading rooms have 60, 72, and 84 books in Birch, Pine, and Oak, respectively. In order, Pine sends 6 books to Oak; Oak sends half of its then-current books to Pine; Pine sends one third of its then-current books to Birch; Birch lends out 5 books. How many books are in Pine at the end?",
+      "question_sha256": "58e6a242ab2b40c1b7fd333da5cef119012540acd33e8a7869c1a91b64fd4ca9",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 72,
+      "id": "state-0099",
+      "question": "Three reading rooms have 84, 84, and 66 books in Cedar, Maple, and Pine, respectively. In order, Cedar sends 12 books to Pine; Pine sends half of its then-current books to Maple; Maple sends one third of its then-current books to Pine; Pine lends out 6 books. How many books are in Cedar at the end?",
+      "question_sha256": "9db5d4dd7fdfbf0327179473344b1084481ec2f486d59ca45e34893532d2db2f",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 86,
+      "id": "state-0100",
+      "question": "Three reading rooms have 108, 54, and 108 books in Maple, Cedar, and Birch, respectively. In order, Maple sends 12 books to Cedar; Cedar sends half of its then-current books to Maple; Maple sends one third of its then-current books to Birch; Birch lends out 2 books. How many books are in Maple at the end?",
+      "question_sha256": "77321ce270c67d39211f80fa71b5c999dee6249db3d85aef7fa25b8624794ba7",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 48,
+      "id": "state-0101",
+      "question": "Three reading rooms have 60, 102, and 66 books in Maple, Pine, and Birch, respectively. In order, Birch sends 18 books to Maple; Maple sends half of its then-current books to Pine; Pine sends one third of its then-current books to Maple; Maple lends out 6 books. How many books are in Birch at the end?",
+      "question_sha256": "3dcd7a202d5b66d91992a1d6a6c39b520a06011e5143e0c3a700fe8227346196",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 82,
+      "id": "state-0102",
+      "question": "Three reading rooms have 54, 84, and 96 books in Oak, Maple, and Pine, respectively. In order, Maple sends 18 books to Pine; Pine sends half of its then-current books to Maple; Maple sends one third of its then-current books to Oak; Oak lends out 4 books. How many books are in Maple at the end?",
+      "question_sha256": "804dabfe809a925c7676f4e885528ea935e396fff73ee19e5203eb6830543ad3",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 48,
+      "id": "state-0103",
+      "question": "Three reading rooms have 54, 96, and 78 books in Oak, Birch, and Maple, respectively. In order, Oak sends 6 books to Maple; Maple sends half of its then-current books to Birch; Birch sends one third of its then-current books to Maple; Maple lends out 5 books. How many books are in Oak at the end?",
+      "question_sha256": "680c393dcd71fb7ea47f251ba6dd47c2072907751ac90e18dcd159c561662831",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 66,
+      "id": "state-0104",
+      "question": "Three reading rooms have 54, 102, and 66 books in Birch, Cedar, and Oak, respectively. In order, Birch sends 12 books to Cedar; Cedar sends half of its then-current books to Birch; Birch sends one third of its then-current books to Oak; Oak lends out 4 books. How many books are in Birch at the end?",
+      "question_sha256": "2acf2a5dc0de0b8808197ab83e06e57cbde6738809619bf207b8e09f81e9e79e",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 72,
+      "id": "state-0105",
+      "question": "Three reading rooms have 72, 108, and 78 books in Maple, Pine, and Birch, respectively. In order, Birch sends 6 books to Maple; Maple sends half of its then-current books to Pine; Pine sends one third of its then-current books to Maple; Maple lends out 2 books. How many books are in Birch at the end?",
+      "question_sha256": "3a5e8fb7fb2706849ca493ed6109500d4f5c23f669239d1d4c45818c2c0fa30c",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 72,
+      "id": "state-0106",
+      "question": "Three reading rooms have 54, 84, and 54 books in Maple, Oak, and Pine, respectively. In order, Oak sends 6 books to Pine; Pine sends half of its then-current books to Oak; Oak sends one third of its then-current books to Maple; Maple lends out 5 books. How many books are in Oak at the end?",
+      "question_sha256": "12470e6b76e42dc2df30fe4006636148b95f8f126d547fcc34163d4328231329",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 78,
+      "id": "state-0107",
+      "question": "Three reading rooms have 90, 60, and 84 books in Cedar, Maple, and Pine, respectively. In order, Cedar sends 12 books to Pine; Pine sends half of its then-current books to Maple; Maple sends one third of its then-current books to Pine; Pine lends out 6 books. How many books are in Cedar at the end?",
+      "question_sha256": "02943041874d709b3abe381c2151d2f0556a1ddb9eee33cb8ac232082a3e3391",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 80,
+      "id": "state-0108",
+      "question": "Three reading rooms have 96, 54, and 84 books in Maple, Oak, and Pine, respectively. In order, Maple sends 6 books to Oak; Oak sends half of its then-current books to Maple; Maple sends one third of its then-current books to Pine; Pine lends out 7 books. How many books are in Maple at the end?",
+      "question_sha256": "175eaa6ec8236b451df0152f9a55d5589df37fe81b30aec3decd26f73d59067d",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 96,
+      "id": "state-0109",
+      "question": "Three reading rooms have 102, 84, and 108 books in Cedar, Oak, and Maple, respectively. In order, Maple sends 12 books to Cedar; Cedar sends half of its then-current books to Oak; Oak sends one third of its then-current books to Cedar; Cedar lends out 6 books. How many books are in Maple at the end?",
+      "question_sha256": "eed25910dd29f0a15a82b5085103e04bcf8d8bd3c05778aa969e1fbea6a7fa05",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 58,
+      "id": "state-0110",
+      "question": "Three reading rooms have 78, 72, and 48 books in Cedar, Pine, and Maple, respectively. In order, Pine sends 18 books to Maple; Maple sends half of its then-current books to Pine; Pine sends one third of its then-current books to Cedar; Cedar lends out 4 books. How many books are in Pine at the end?",
+      "question_sha256": "c6675dc0a74d996b4e1e783feff8eb6eca95ac7689c0f0e55807bfe816473d12",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 30,
+      "id": "state-0111",
+      "question": "Three reading rooms have 48, 72, and 48 books in Pine, Birch, and Oak, respectively. In order, Pine sends 18 books to Oak; Oak sends half of its then-current books to Birch; Birch sends one third of its then-current books to Oak; Oak lends out 4 books. How many books are in Pine at the end?",
+      "question_sha256": "29b8388c254d31e4115d32f46f469a2b5163591c17c2bce70558e9e84030e09a",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 96,
+      "id": "state-0112",
+      "question": "Three reading rooms have 108, 78, and 54 books in Birch, Pine, and Maple, respectively. In order, Birch sends 6 books to Pine; Pine sends half of its then-current books to Birch; Birch sends one third of its then-current books to Maple; Maple lends out 3 books. How many books are in Birch at the end?",
+      "question_sha256": "897414c854c7e7c63fc0c3c11140008596b717e1d6ba0c60ed20e257194939ad",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 84,
+      "id": "state-0113",
+      "question": "Three reading rooms have 78, 96, and 96 books in Oak, Pine, and Birch, respectively. In order, Birch sends 12 books to Oak; Oak sends half of its then-current books to Pine; Pine sends one third of its then-current books to Oak; Oak lends out 8 books. How many books are in Birch at the end?",
+      "question_sha256": "b1aed05f5be8136f287c49ffba6614466d18c1d32e7e1b64d455a70d694f52a4",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 64,
+      "id": "state-0114",
+      "question": "Three reading rooms have 78, 72, and 60 books in Pine, Cedar, and Oak, respectively. In order, Cedar sends 12 books to Oak; Oak sends half of its then-current books to Cedar; Cedar sends one third of its then-current books to Pine; Pine lends out 8 books. How many books are in Cedar at the end?",
+      "question_sha256": "38a756bbd74c0402e715e38b46ee77f792c65aa859cba14ea45285cdf21c90bc",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 72,
+      "id": "state-0115",
+      "question": "Three reading rooms have 78, 108, and 84 books in Cedar, Birch, and Pine, respectively. In order, Cedar sends 6 books to Pine; Pine sends half of its then-current books to Birch; Birch sends one third of its then-current books to Pine; Pine lends out 3 books. How many books are in Cedar at the end?",
+      "question_sha256": "18658fe1e34419c756931771bfdaa7246855353678ed0e24e0cf878fb1bdbe14",
+      "structure": "heldout-state-3"
+    },
+    {
+      "family": "state",
+      "gold": 74,
+      "id": "state-0116",
+      "question": "Three reading rooms have 90, 54, and 54 books in Pine, Cedar, and Maple, respectively. In order, Pine sends 12 books to Cedar; Cedar sends half of its then-current books to Pine; Pine sends one third of its then-current books to Maple; Maple lends out 7 books. How many books are in Pine at the end?",
+      "question_sha256": "ca74c815defc9b4ea47605ee53299fed62e286b1a65798543b668365d9d58491",
+      "structure": "heldout-state-0"
+    },
+    {
+      "family": "state",
+      "gold": 54,
+      "id": "state-0117",
+      "question": "Three reading rooms have 54, 90, and 66 books in Maple, Oak, and Cedar, respectively. In order, Cedar sends 12 books to Maple; Maple sends half of its then-current books to Oak; Oak sends one third of its then-current books to Maple; Maple lends out 7 books. How many books are in Cedar at the end?",
+      "question_sha256": "fd63e99c43a61b6a1e2702d446e05c502eb8b2b3334cfb225cac2843c369a4c8",
+      "structure": "heldout-state-1"
+    },
+    {
+      "family": "state",
+      "gold": 84,
+      "id": "state-0118",
+      "question": "Three reading rooms have 90, 96, and 72 books in Cedar, Birch, and Maple, respectively. In order, Birch sends 12 books to Maple; Maple sends half of its then-current books to Birch; Birch sends one third of its then-current books to Cedar; Cedar lends out 4 books. How many books are in Birch at the end?",
+      "question_sha256": "7f458d0aa8439a01c9f6a9f187c06b11f717122cf62e3f8ec8e85857159dc872",
+      "structure": "heldout-state-2"
+    },
+    {
+      "family": "state",
+      "gold": 48,
+      "id": "state-0119",
+      "question": "Three reading rooms have 66, 54, and 48 books in Pine, Birch, and Cedar, respectively. In order, Pine sends 18 books to Cedar; Cedar sends half of its then-current books to Birch; Birch sends one third of its then-current books to Cedar; Cedar lends out 2 books. How many books are in Pine at the end?",
+      "question_sha256": "f60478edeaa9fa42508fcb433d49e136bcd4d8b54b020fb354cd60040536c155",
+      "structure": "heldout-state-3"
+    }
+  ],
+  "created_utc": "2026-11-21T11:22:53Z",
+  "development_manifest_sha256": "d2c2fae19d498ed688d1ad0582343c973cabf7a62fdd3c45c31de15c0f50a3f7",
+  "floor": 0.6,
+  "format_secondary": "final The final answer is integer line",
+  "joint_alpha": 0.05,
+  "kind": "evaluation",
+  "margin": 0.05,
+  "max_tokens": 512,
+  "model_sha256": {
+    "candidate": "e32195c0201ba73ad22308fcf89d43b78ff4fc586390044b96b064177c8508e5",
+    "reference": "dd29f7886c328cc950543bbc88198f25aec04e256cf1b978b14384c19e37e2ec"
+  },
+  "per_bound_alpha": 0.008333333333333333,
+  "per_family": 120,
+  "prompt": "Solve the problem step by step. Show the intermediate quantities and check the arithmetic. Finish with one separate line: The final answer is N. Replace N with the integer answer. Do not write anything after that line.",
+  "prompt_sha256": "e06606b2f1bf72e7d5a1aad6003f3c301a2e454972ddb95d64fa0c584178becc",
+  "quality_rule": "last integer after normal stop; errors and truncation wrong",
+  "reference_development_run_sha256": "ee1ffc85088cb28f49ae0456aa3f624b5e5baf0e9e1223d5982c35ac19f70ba6",
+  "schema": "qwen3-structural-assay-v1",
+  "seed": 2026112104,
+  "server_policy": "b12283, CPU 4 threads, --no-repack, mmap, 2048 context",
+  "temperature": 0
+}

@@ -1,0 +1,495 @@
+{
+  "cases": [
+    {
+      "checks": [
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 207,
+          "position": 1,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 168,
+          "position": 2,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 197,
+          "position": 3,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 144,
+          "position": 4,
+          "symbolically_relevant": true
+        }
+      ],
+      "event_count": 4,
+      "gold": 199,
+      "id": "state-01"
+    },
+    {
+      "checks": [
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 134,
+          "position": 1,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 134,
+          "position": 2,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 134,
+          "position": 3,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 125,
+          "position": 4,
+          "symbolically_relevant": true
+        }
+      ],
+      "event_count": 4,
+      "gold": 134,
+      "id": "state-02"
+    },
+    {
+      "checks": [
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 164,
+          "position": 1,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 175,
+          "position": 2,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 179,
+          "position": 3,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 133,
+          "position": 4,
+          "symbolically_relevant": true
+        }
+      ],
+      "event_count": 4,
+      "gold": 176,
+      "id": "state-03"
+    },
+    {
+      "checks": [
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 79,
+          "position": 1,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 138,
+          "position": 2,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 105,
+          "position": 3,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 101,
+          "position": 4,
+          "symbolically_relevant": true
+        }
+      ],
+      "event_count": 4,
+      "gold": 105,
+      "id": "state-04"
+    },
+    {
+      "checks": [
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 219,
+          "position": 1,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 202,
+          "position": 2,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 215,
+          "position": 3,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 135,
+          "position": 4,
+          "symbolically_relevant": true
+        }
+      ],
+      "event_count": 4,
+      "gold": 220,
+      "id": "state-05"
+    },
+    {
+      "checks": [
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 202,
+          "position": 1,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 155,
+          "position": 2,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 182,
+          "position": 3,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 118,
+          "position": 4,
+          "symbolically_relevant": true
+        }
+      ],
+      "event_count": 4,
+      "gold": 186,
+      "id": "state-06"
+    },
+    {
+      "checks": [
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 145,
+          "position": 1,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 145,
+          "position": 2,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 145,
+          "position": 3,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 145,
+          "position": 4,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 145,
+          "position": 5,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 145,
+          "position": 6,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 138,
+          "position": 7,
+          "symbolically_relevant": true
+        }
+      ],
+      "event_count": 7,
+      "gold": 145,
+      "id": "state-07"
+    },
+    {
+      "checks": [
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 119,
+          "position": 1,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 89,
+          "position": 2,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 164,
+          "position": 3,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 114,
+          "position": 4,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 130,
+          "position": 5,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 117,
+          "position": 6,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 106,
+          "position": 7,
+          "symbolically_relevant": true
+        }
+      ],
+      "event_count": 7,
+      "gold": 119,
+      "id": "state-08"
+    },
+    {
+      "checks": [
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 136,
+          "position": 1,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 170,
+          "position": 2,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 170,
+          "position": 3,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 170,
+          "position": 4,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 170,
+          "position": 5,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 165,
+          "position": 6,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 164,
+          "position": 7,
+          "symbolically_relevant": true
+        }
+      ],
+      "event_count": 7,
+      "gold": 170,
+      "id": "state-09"
+    },
+    {
+      "checks": [
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 162,
+          "position": 1,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 144,
+          "position": 2,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 172,
+          "position": 3,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 171,
+          "position": 4,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 165,
+          "position": 5,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 216,
+          "position": 6,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 129,
+          "position": 7,
+          "symbolically_relevant": true
+        }
+      ],
+      "event_count": 7,
+      "gold": 168,
+      "id": "state-10"
+    },
+    {
+      "checks": [
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 150,
+          "position": 1,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 178,
+          "position": 2,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 159,
+          "position": 3,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 159,
+          "position": 4,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 149,
+          "position": 5,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 151,
+          "position": 6,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 84,
+          "position": 7,
+          "symbolically_relevant": true
+        }
+      ],
+      "event_count": 7,
+      "gold": 153,
+      "id": "state-11"
+    },
+    {
+      "checks": [
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 170,
+          "position": 1,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 181,
+          "position": 2,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 170,
+          "position": 3,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 187,
+          "position": 4,
+          "symbolically_relevant": true
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 181,
+          "position": 5,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": false,
+          "deleted_event_answer": 181,
+          "position": 6,
+          "symbolically_relevant": false
+        },
+        {
+          "changes_answer": true,
+          "deleted_event_answer": 176,
+          "position": 7,
+          "symbolically_relevant": true
+        }
+      ],
+      "event_count": 7,
+      "gold": 181,
+      "id": "state-12"
+    }
+  ],
+  "caveat": "This finite-instance deletion diagnostic neither proves functional dependence nor preserves the originally sampled distribution. A zero change may reflect cancellation or integer rounding; an invalid replay has no answer comparison. No model or sealed case was queried.",
+  "generator_sha256": "97ee41f34a26bf17faa87c7dc689e69688c5939d600d329f6b48624557ea1d6a",
+  "kind": "public_v3_state_numeric_sensitivity_audit",
+  "manifest_sha256": "7b6db8127f63beb1c0a4779b8232d1d64cfc54cc8c207e69f34d845c94330943",
+  "query_ancestor_audit_sha256": "641b7133e01f88261ee944af4783e2a0958e5ff04373f7c5b8341c88c43b49e0",
+  "rule": "Delete one event and replay all later events from the same initial state; compare the queried final value with the frozen gold.",
+  "totals": {
+    "irrelevant_unchanged": 17,
+    "relevant_changed": 48,
+    "relevant_unchanged": 1
+  }
+}

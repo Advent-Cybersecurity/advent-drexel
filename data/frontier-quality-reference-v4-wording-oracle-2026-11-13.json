@@ -1,0 +1,240 @@
+{
+  "branch_histogram": {
+    "high": 6,
+    "low": 6
+  },
+  "by_length": {
+    "7": {
+      "high": 1,
+      "low": 5
+    },
+    "9": {
+      "high": 5,
+      "low": 1
+    }
+  },
+  "case_count": 12,
+  "cases": [
+    {
+      "branch": [
+        "low"
+      ],
+      "checks": {
+        "branches": true,
+        "events": true,
+        "final": true,
+        "gold": true,
+        "initial": true,
+        "length": true,
+        "question_sha256": true,
+        "target": true,
+        "trace": true
+      },
+      "id": "state-01",
+      "length": 7
+    },
+    {
+      "branch": [
+        "low"
+      ],
+      "checks": {
+        "branches": true,
+        "events": true,
+        "final": true,
+        "gold": true,
+        "initial": true,
+        "length": true,
+        "question_sha256": true,
+        "target": true,
+        "trace": true
+      },
+      "id": "state-02",
+      "length": 7
+    },
+    {
+      "branch": [
+        "high"
+      ],
+      "checks": {
+        "branches": true,
+        "events": true,
+        "final": true,
+        "gold": true,
+        "initial": true,
+        "length": true,
+        "question_sha256": true,
+        "target": true,
+        "trace": true
+      },
+      "id": "state-03",
+      "length": 7
+    },
+    {
+      "branch": [
+        "low"
+      ],
+      "checks": {
+        "branches": true,
+        "events": true,
+        "final": true,
+        "gold": true,
+        "initial": true,
+        "length": true,
+        "question_sha256": true,
+        "target": true,
+        "trace": true
+      },
+      "id": "state-04",
+      "length": 7
+    },
+    {
+      "branch": [
+        "low"
+      ],
+      "checks": {
+        "branches": true,
+        "events": true,
+        "final": true,
+        "gold": true,
+        "initial": true,
+        "length": true,
+        "question_sha256": true,
+        "target": true,
+        "trace": true
+      },
+      "id": "state-05",
+      "length": 7
+    },
+    {
+      "branch": [
+        "low"
+      ],
+      "checks": {
+        "branches": true,
+        "events": true,
+        "final": true,
+        "gold": true,
+        "initial": true,
+        "length": true,
+        "question_sha256": true,
+        "target": true,
+        "trace": true
+      },
+      "id": "state-06",
+      "length": 7
+    },
+    {
+      "branch": [
+        "low"
+      ],
+      "checks": {
+        "branches": true,
+        "events": true,
+        "final": true,
+        "gold": true,
+        "initial": true,
+        "length": true,
+        "question_sha256": true,
+        "target": true,
+        "trace": true
+      },
+      "id": "state-07",
+      "length": 9
+    },
+    {
+      "branch": [
+        "high"
+      ],
+      "checks": {
+        "branches": true,
+        "events": true,
+        "final": true,
+        "gold": true,
+        "initial": true,
+        "length": true,
+        "question_sha256": true,
+        "target": true,
+        "trace": true
+      },
+      "id": "state-08",
+      "length": 9
+    },
+    {
+      "branch": [
+        "high"
+      ],
+      "checks": {
+        "branches": true,
+        "events": true,
+        "final": true,
+        "gold": true,
+        "initial": true,
+        "length": true,
+        "question_sha256": true,
+        "target": true,
+        "trace": true
+      },
+      "id": "state-09",
+      "length": 9
+    },
+    {
+      "branch": [
+        "high"
+      ],
+      "checks": {
+        "branches": true,
+        "events": true,
+        "final": true,
+        "gold": true,
+        "initial": true,
+        "length": true,
+        "question_sha256": true,
+        "target": true,
+        "trace": true
+      },
+      "id": "state-10",
+      "length": 9
+    },
+    {
+      "branch": [
+        "high"
+      ],
+      "checks": {
+        "branches": true,
+        "events": true,
+        "final": true,
+        "gold": true,
+        "initial": true,
+        "length": true,
+        "question_sha256": true,
+        "target": true,
+        "trace": true
+      },
+      "id": "state-11",
+      "length": 9
+    },
+    {
+      "branch": [
+        "high"
+      ],
+      "checks": {
+        "branches": true,
+        "events": true,
+        "final": true,
+        "gold": true,
+        "initial": true,
+        "length": true,
+        "question_sha256": true,
+        "target": true,
+        "trace": true
+      },
+      "id": "state-12",
+      "length": 9
+    }
+  ],
+  "failure_count": 0,
+  "failures": [],
+  "kind": "public_v4_reference_wording_oracle_audit",
+  "manifest_sha256": "c565270b75737774d20becd3db623400d747ea3082a74f43850900c4fcff9676",
+  "scope": "Exact text parsing and separate state replay for the 12 public V4 cases; mechanical audit only, not independent human interpretation."
+}
